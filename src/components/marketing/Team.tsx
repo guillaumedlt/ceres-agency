@@ -46,7 +46,7 @@ export default function Team() {
             <p className="text-[13px] text-[#999]">Une équipe d&apos;ops seniors qui ont vécu vos problèmes. Voici ceux qui pilotent.</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {team.map((t) => {
               const initials = t.name.split(" ").map(n => n[0]).join("");
               return (

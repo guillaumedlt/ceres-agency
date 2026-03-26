@@ -129,7 +129,7 @@ export default function Services() {
           </div>
 
           {/* Tabs — 4 columns */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8">
+          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4 sm:gap-2 mb-8">
             {offers.map((o) => (
               <button key={o.id} type="button" onClick={() => setActive(o.id)}
                 className={"relative p-3.5 rounded-xl border text-left transition-all cursor-pointer " + (active === o.id ? "border-[#111] bg-[#FAFAFA] ring-1 ring-[#111]" : "border-[#F2F2F2] hover:border-[#E0E0E0]")}>

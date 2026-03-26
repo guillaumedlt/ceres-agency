@@ -32,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#F2F2F2]">
       <div className="max-w-[1100px] mx-auto px-6 py-14 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-7 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 gap-4 md:gap-6 mb-12">
           {/* Logo + tagline */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="text-[18px] font-bold tracking-[-0.03em] text-[#111] mb-4 block">

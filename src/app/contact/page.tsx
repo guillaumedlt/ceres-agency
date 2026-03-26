@@ -101,7 +101,7 @@ export default function ContactPage() {
 
         {/* 2 colonnes : RDV + Form */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
 
             {/* Gauche : Reserver un appel */}
             <div className="rounded-2xl border-2 border-[#111]/10 bg-white p-6 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">

@@ -48,7 +48,7 @@ export default function Testimonials() {
                 </div>
                 {/* Quote */}
                 <blockquote className="flex-1 mb-5">
-                  <p className="text-[12px] text-[#555] leading-[1.7]">&ldquo;{t.quote}&rdquo;</p>
+                  <p className="text-[11px] sm:text-[12px] text-[#555] leading-[1.7]">&ldquo;{t.quote}&rdquo;</p>
                 </blockquote>
                 {/* Author */}
                 <figcaption className="flex items-center gap-3 pt-4 border-t border-[#F2F2F2]">
