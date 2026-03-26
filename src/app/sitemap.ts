@@ -100,6 +100,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/integration-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/audit-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
 
+    // SEO pages - Prio 1
+    { url: `${base}/agence-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/agence-revops-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/crm-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/onboarding-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    // SEO pages - Prio 2
+    { url: `${base}/hubspot-vs-salesforce`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/migration-pipedrive-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/migration-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/automatisation-commerciale`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/lead-scoring-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // SEO pages - Prio 3
+    { url: `${base}/hubspot-marketing-hub`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-sales-hub`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-operations-hub`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/formation-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/agent-ia-commercial`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/externaliser-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
     // Legal
     { url: `${base}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/politique-confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
