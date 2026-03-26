@@ -1,0 +1,269 @@
+CERES - DIRECTION ARTISTIQUE & DESIGN SYSTEM
+==============================================
+Derniere mise a jour : Mars 2026
+Utilise ce fichier comme reference pour tous les documents, presentations, emails et visuels Ceres.
+
+
+1. IDENTITE
+-----------
+Nom : ceres (toujours en minuscule)
+Tagline : Agence RevOps & IA pour entreprises B2B
+Site : ceres.agency
+Email : guillaume@ceres.agency
+Adresse : 128 rue La Boetie, 75008 Paris
+Entite legale : Ceres Growth Marketing
+
+
+2. COULEURS
+-----------
+Couleurs principales :
+- Noir          #111111   (texte principal, fonds dark, CTA)
+- Orange        #FF7A59   (accent principal, HubSpot, Audit, energie)
+- Bleu          #4B5EFC   (secondaire, CRM, integrations)
+- Vert          #22C55E   (succes, resultats, validations)
+- Violet        #6C5CE7   (process, outils, outbound)
+- Deep Purple   #6D00CC   (IA, agents, innovation)
+- Beige/Claude  #D4A27F   (Claude, IA generative)
+
+Couleurs neutres :
+- Texte          #111111
+- Texte second.  #666666
+- Texte muted    #999999
+- Texte pale     #CCCCCC
+- Bordures       #E8E8E8 / #F2F2F2
+- Fond subtil    #FAFAFA
+- Fond page      #FFFFFF
+
+Couleurs service :
+- Audit RevOps      #FF7A59
+- RevOps Part-Time  #4B5EFC
+- Agence HubSpot    #FF7A59
+- Agents IA         #6D00CC
+
+Couleurs segments :
+- Startups          #22C55E
+- PME               #4B5EFC
+- Scale-ups         #6C5CE7
+- Grands Groupes    #FF7A59
+
+Regles :
+- Les fonds dark utilisent #111111 (pas du noir pur)
+- Le texte sur fond dark est en white/60 (rgba(255,255,255,0.6))
+- Les badges sur fond dark : bg-white/10 text-white/60
+- Les blobs : opacity 0.06-0.15, filter blur(60-70px), border-radius 50%
+
+
+3. TYPOGRAPHIE
+--------------
+Font : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+(Systeme font stack, pas de font custom)
+
+Tailles :
+- Logo "ceres"     18px, font-weight: 800, letter-spacing: -0.03em
+- Titre H1         36-48px, font-weight: 600, letter-spacing: -0.03em, leading: 1.1
+- Titre H2         22-28px, font-weight: 600, letter-spacing: -0.02em
+- Titre H3         14-17px, font-weight: 600
+- Body             13px, font-weight: 400, leading: 1.75, color: #555
+- Small / Label    11-12px
+- Badge            12px, font-weight: 500
+- Micro            9-10px
+
+Regles :
+- Tout en minuscule pour "ceres" (le logo)
+- Pas d'accents dans le code (mais OK dans le contenu visible)
+- Pas d'emojis, jamais
+
+
+4. COMPOSANTS
+-------------
+
+Badge :
+  inline-flex items-center gap-1.5 px-3 py-1 rounded-md
+  border border-[#E5E5E5] bg-white text-[12px] font-medium text-[#666]
+
+Bubble card (section) :
+  rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10
+  shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]
+
+Card interne :
+  rounded-xl border border-[#F2F2F2] p-4
+  hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)]
+  transition-all
+
+Section dark :
+  rounded-2xl bg-[#111]
+  Texte : text-white/60
+  Badges : bg-white/10 text-white/60
+
+Connecteur entre sections :
+  w-px h-8 bg-[#E0E0E0] mx-auto (vertical line)
+
+Dot/carre colore :
+  w-2 h-2 rounded-sm (ou w-3 h-3 selon contexte)
+  Avec la couleur du service/categorie
+
+CTA bouton principal :
+  rounded-md bg-[#111] text-white text-[13px] font-medium
+  hover:bg-[#222] transition-colors
+
+CTA bouton secondaire :
+  rounded-md border border-[#E5E5E5] bg-white text-[#111] text-[13px] font-medium
+  hover:border-[#CCC] transition-colors
+
+Blobs (background) :
+  position: fixed (ou absolute)
+  border-radius: 50%
+  filter: blur(70px)
+  opacity: 0.15
+  Tailles : 280-340px
+  Animation : blobFloat 10s ease-in-out infinite
+  hidden lg:block (desktop only)
+  pointer-events-none
+
+
+5. LAYOUT
+---------
+Max width contenu : 1000-1100px
+Padding horizontal : px-6
+Espacement sections : mb-8 a mb-14 avec Connector entre
+Header fixe : fixed top-0, bg-white/90 backdrop-blur-md, h-16, z-50
+
+Structure page type :
+  <Navbar />
+  <Blobs />  (global, dans le layout)
+  <main>
+    <Hero />
+    <Section> (bubble card)
+    <Connector />
+    <Section>
+    ...
+    <FAQ />
+    <CTA />
+  </main>
+  <Footer />
+  <GuidePopup />
+
+Structure article blog :
+  Barre de progression en haut (h-[2px], couleur categorie)
+  Sidebar sticky a gauche (sommaire + share buttons)
+  Contenu principal a droite (max-w-[700px])
+  Sections dans des bubble cards
+  Connector entre sections
+
+
+6. BLOBS
+--------
+12 blobs globaux dans le layout, couleurs alternees :
+  #FF7A59, #D4A27F, #4B5EFC, #6C5CE7, #6D00CC, #FF7A59,
+  #22C55E, #4B5EFC, #D4A27F, #6C5CE7, #6D00CC, #22C55E
+
+Positions : alternes gauche/droite, espaces de 8% en 8%
+Tailles : 280-340px
+Opacity : 0.15
+Blur : 70px
+Animation : blobFloat (translate + scale, 10s, ease-in-out, infinite)
+Desktop only (hidden lg:block)
+
+
+7. PRESENTATIONS PDF
+--------------------
+Format : A4 paysage (297mm x 210mm)
+Alternance fond blanc / fond #111
+Contenu centre verticalement (flexbox)
+Logo "ceres" en haut a gauche (pages blanches)
+Tag categorie en haut a droite
+Footer : "ceres.agency | Confidentiel"
+Blobs en fond sur chaque slide
+Pas d'images externes (utiliser des initiales colorees pour les logos clients)
+Initiales clients : div 28x28px, border-radius 8px, fond colore, texte blanc 9px bold
+
+
+8. ICONES CLIENTS (INITIALES)
+------------------------------
+Quand on ne peut pas utiliser de favicon Google, utiliser des initiales colorees :
+
+TotalEnergies  → TE  bg:#E11D48
+Alan           → Al  bg:#6366F1
+Edenred        → Ed  bg:#F59E0B
+Ringover       → Ri  bg:#22C55E
+Dougs          → Do  bg:#3B82F6
+Beedeez        → Be  bg:#8B5CF6
+Kameleoon      → Ka  bg:#EC4899
+Spendesk       → Sp  bg:#06B6D4
+Payfit         → Pf  bg:#14B8A6
+Manpower       → Mp  bg:#FF7A59
+Iroko          → Ir  bg:#4B5EFC
+HiPay          → Hi  bg:#6D00CC
+Tennaxia       → Te  bg:#111
+Opendatasoft   → Od  bg:#059669
+Elax Energie   → EE  bg:#22C55E
+Swile          → Sw  bg:#D97706
+
+
+9. PARTENAIRES (OUTILS)
+------------------------
+HubSpot        → Hs  bg:#FF7A59   Partner officiel
+Lemlist         → Lm  bg:#6C5CE7   Partner officiel
+Claude          → Cl  bg:#D4A27F   IA generative
+Clay            → Cy  bg:#4B5EFC   Partner officiel
+Attio           → At  bg:#111      Partner officiel
+Make            → Mk  bg:#6D00CC   Automatisation
+Claap           → Cp  bg:#22C55E   Intelligence calls
+Notion          → No  bg:#111      Documentation
+
+
+10. CHIFFRES CLES (a utiliser dans les docs)
+----------------------------------------------
+- 250+ clients accompagnes
+- 9 ans d'experience
+- 120K+ contacts migres
+- 13 cas clients documentes
+- 4 personnes dans l'equipe (Guillaume, Simon, Bruno, Stephane)
+- Partenaire HubSpot, Lemlist, Attio, Clay
+- Experts Claude & IA
+- 128 rue La Boetie, 75008 Paris
+- ceres.agency
+- guillaume@ceres.agency
+
+
+11. TON & VOIX
+--------------
+- Professionnel mais accessible
+- Direct, pas de jargon inutile
+- On tutoie pas, on vouvoie
+- "On" pour parler de Ceres (pas "nous")
+- Pas d'emojis, jamais
+- Pas de tirets longs (—), utiliser des virgules
+- Chiffres > mots ("250+" pas "plus de deux cent cinquante")
+- Resultats concrets, pas de promesses vagues
+- Honnete : on dit ce qu'on fait et ce qu'on ne fait pas
+
+
+12. STRUCTURE DU SITE
+---------------------
+83 pages statiques :
+- Homepage
+- 4 services (audit-revops, revops-part-time, agence-hubspot, agents-ia)
+- 4 solutions par taille (revops-startup, revops-pme, revops-scaleup, revops-grand-groupe)
+- 43+ articles de blog
+- 13 cas clients
+- 2 guides (guide-revops-ultime, guide-ia-commercial)
+- Glossaire (80+ termes)
+- Page guides (listing)
+- Contact
+- A propos
+- Mentions legales
+- Politique de confidentialite
+- Presentation (noindex)
+- Pillar page RevOps
+
+
+13. SEO
+-------
+- Metadata unique sur chaque page (title + description)
+- JSON-LD : Organization, WebSite, BreadcrumbList, Service, FAQPage, Article, Review, AboutPage, ContactPage, DefinedTermSet
+- Sitemap dynamique (83 URLs)
+- robots.txt : Allow all + Sitemap
+- og:image generee dynamiquement via Next.js OG API
+- Canonical : ceres.agency
+- lang="fr"
