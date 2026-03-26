@@ -91,6 +91,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guide-ia-commercial`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guide-ia-commercial/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
+    // SEO pages
+    { url: `${base}/agence-hubspot-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/consultant-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/migration-salesforce-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/migration-dynamics-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/consultant-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/integration-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/audit-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+
     // Legal
     { url: `${base}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/politique-confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
