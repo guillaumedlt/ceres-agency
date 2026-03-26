@@ -103,7 +103,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden bg-white px-6 pb-5 pt-2 border-t border-[#F2F2F2] max-h-[calc(100vh-64px)] overflow-y-auto">
+        <div className="md:hidden bg-white px-6 pb-20 pt-2 border-t border-[#F2F2F2] max-h-[calc(100dvh-64px)] overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: "touch" }}>
           <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2 mt-2">Services</p>
           {services.map((s) => (
             <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2">
@@ -117,38 +117,25 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2 mt-4">Solutions par taille</p>
-          {solutions.map((s) => (
-            <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2">
-              <div className="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center" style={{ backgroundColor: s.color + "10", color: s.color }}>
-                {s.icon}
-              </div>
-              <div>
-                <span className="text-[14px] text-[#111] font-medium block leading-tight">{s.label}</span>
-                <span className="text-[11px] text-[#999]">{s.desc}</span>
-              </div>
-            </Link>
-          ))}
-
-          <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2 mt-4">Ressources</p>
-          {resources.map((r) => (
-            <Link key={r.href} href={r.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2">
-              <div className="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center" style={{ backgroundColor: r.color + "10", color: r.color }}>
-                {r.icon}
-              </div>
-              <div>
-                <span className="text-[14px] text-[#111] font-medium block leading-tight">{r.label}</span>
-                <span className="text-[11px] text-[#999]">{r.desc}</span>
-              </div>
-            </Link>
-          ))}
-
-          <div className="border-t border-[#F2F2F2] mt-3 pt-3 space-y-1">
-            <Link href="/cas-clients" onClick={() => setMobileOpen(false)} className="block text-[15px] text-[#666] py-1">Cas clients</Link>
-            <Link href="/a-propos" onClick={() => setMobileOpen(false)} className="block text-[15px] text-[#666] py-1">L&apos;agence</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className="block text-[15px] text-[#666] py-1">Contact</Link>
+          <div className="border-t border-[#F2F2F2] mt-3 pt-3">
+            <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2">Ressources</p>
+            <div className="grid grid-cols-2 gap-1">
+              {resources.map((r) => (
+                <Link key={r.href} href={r.href} onClick={() => setMobileOpen(false)} className="text-[14px] text-[#666] py-1.5">{r.label}</Link>
+              ))}
+            </div>
           </div>
-          <a href="/contact" onClick={() => setMobileOpen(false)} className="block text-center h-10 leading-[40px] rounded-md bg-[#111] text-white text-[14px] font-medium mt-3">Prendre RDV</a>
+
+          <div className="border-t border-[#F2F2F2] mt-3 pt-3">
+            <div className="grid grid-cols-2 gap-1">
+              <Link href="/cas-clients" onClick={() => setMobileOpen(false)} className="text-[14px] text-[#666] py-1.5">Cas clients</Link>
+              <Link href="/a-propos" onClick={() => setMobileOpen(false)} className="text-[14px] text-[#666] py-1.5">L&apos;agence</Link>
+              <Link href="/contact" onClick={() => setMobileOpen(false)} className="text-[14px] text-[#666] py-1.5">Contact</Link>
+              <Link href="/blog" onClick={() => setMobileOpen(false)} className="text-[14px] text-[#666] py-1.5">Blog</Link>
+            </div>
+          </div>
+
+          <a href="/contact" onClick={() => setMobileOpen(false)} className="block text-center h-10 leading-[40px] rounded-md bg-[#111] text-white text-[14px] font-medium mt-4">Prendre RDV</a>
         </div>
       )}
     </header>
