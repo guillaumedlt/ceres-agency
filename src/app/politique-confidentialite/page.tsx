@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function PolitiqueConfidentialitePage() {
   return (
-    <div className="relative pt-[100px] pb-16">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16">
       <div className="max-w-[700px] mx-auto px-6">
         <nav className="mb-8 flex items-center gap-2 text-[12px] text-[#999]">
           <Link href="/" className="hover:text-[#111] transition-colors">Accueil</Link><span>/</span>

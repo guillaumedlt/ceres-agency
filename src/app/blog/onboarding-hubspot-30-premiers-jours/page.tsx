@@ -66,7 +66,7 @@ export default function OnboardingHubSpot30JoursArticle() {
   }, []);
 
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

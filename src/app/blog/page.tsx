@@ -90,7 +90,7 @@ export default function BlogPage() {
   const showFeatured = cat === "all" && search === "";
 
   return (
-    <div className="relative pt-[100px] pb-16">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16">
       <div className="relative z-10 max-w-[1000px] mx-auto px-6">
         {/* Hero */}
         <section className="text-center mb-14">

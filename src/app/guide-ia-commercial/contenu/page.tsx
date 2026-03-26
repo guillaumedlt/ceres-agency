@@ -81,7 +81,7 @@ export default function GuideIAContenuPage() {
   const shareText = "Guide IA pour Equipes Commerciales \u2014 le guide le plus complet en fran\u00e7ais pour d\u00e9ployer l\u2019IA dans la vente B2B";
 
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* Progress bar */}
       <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-[#F0F0F0]">
         <div className="h-full bg-[#6D00CC] transition-all duration-150" style={{ width: `${progress}%` }} />

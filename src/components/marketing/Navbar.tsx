@@ -103,7 +103,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden bg-white px-6 pb-5 pt-2 border-t border-[#F2F2F2]">
+        <div className="md:hidden bg-white px-6 pb-5 pt-2 border-t border-[#F2F2F2] max-h-[calc(100vh-64px)] overflow-y-auto">
           <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-2 mt-2">Services</p>
           {services.map((s) => (
             <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2">

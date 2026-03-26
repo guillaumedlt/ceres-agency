@@ -62,7 +62,7 @@ export default function BlogPostPage() {
   }, []);
 
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* Reading progress bar */}
       <div className="fixed top-16 left-0 right-0 z-40 h-[3px] bg-[#F2F2F2]">
         <div className="h-full bg-[#4B5EFC] transition-all duration-150" style={{ width: `${progress}%` }} />

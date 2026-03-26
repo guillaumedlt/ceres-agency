@@ -84,7 +84,7 @@ export default function GuideIALandingPage() {
   }
 
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* Blobs */}
       <div className="hidden lg:block fixed pointer-events-none" style={{ left: "2%", top: "10%", width: 340, height: 340, borderRadius: "50%", background: "#6D00CC", opacity: 0.12, filter: "blur(70px)" }} />
       <div className="hidden lg:block fixed pointer-events-none" style={{ right: "3%", top: "25%", width: 300, height: 300, borderRadius: "50%", background: "#D4A27F", opacity: 0.10, filter: "blur(70px)" }} />

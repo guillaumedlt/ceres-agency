@@ -1,7 +1,7 @@
 export default function Connector() {
   return (
-    <div className="hidden md:flex flex-col items-center py-3">
-      <div className="w-px h-8 bg-[#E0E0E0]" />
+    <div className="flex flex-col items-center py-2 md:py-3">
+      <div className="hidden md:block w-px h-8 bg-[#E0E0E0]" />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative z-20">
+    <section className="relative z-20 py-3 md:py-0">
       <div className="max-w-[1000px] mx-auto px-6">
         <div className="rounded-2xl border border-[#E8E8E8] bg-[#111] p-6 md:p-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.15)]">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

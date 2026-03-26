@@ -95,7 +95,7 @@ const jsonLd = { "@context": "https://schema.org", "@graph": [
 
 export default function RevOpsPage() {
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       <div className="hidden lg:block absolute pointer-events-none" style={{ left: "3%", top: "15%", width: 320, height: 320, borderRadius: "50%", background: "#FF7A59", opacity: 0.16, filter: "blur(70px)" }} />
       <div className="hidden lg:block absolute pointer-events-none" style={{ right: "3%", top: "35%", width: 300, height: 300, borderRadius: "50%", background: "#4B5EFC", opacity: 0.16, filter: "blur(70px)" }} />
       <div className="hidden lg:block absolute pointer-events-none" style={{ left: "5%", top: "60%", width: 280, height: 280, borderRadius: "50%", background: "#6D00CC", opacity: 0.15, filter: "blur(70px)" }} />

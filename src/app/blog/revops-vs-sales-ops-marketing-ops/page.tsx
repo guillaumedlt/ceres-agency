@@ -63,7 +63,7 @@ export default function RevOpsVsSalesOpsMarketingOpsPage() {
   }, []);
 
   return (
-    <div className="relative pt-[100px] pb-16 overflow-x-hidden">
+    <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* Progress bar */}
       <div className="fixed top-0 left-0 right-0 h-[2px] z-50">
         <div className="h-full bg-[#FF7A59] transition-all duration-150" style={{ width: `${progress}%` }} />
