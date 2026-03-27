@@ -23,7 +23,7 @@ export default function CTA() {
                 <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
                 Réserver un appel
               </a>
-              <a href="mailto:hello@ceres.fr"
+              <a href="mailto:guillaume@ceres.agency"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-2 rounded-md text-[13px] text-white/60 hover:text-white/80 transition-colors">
                 Nous écrire
               </a>
