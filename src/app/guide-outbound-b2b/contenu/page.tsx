@@ -814,7 +814,7 @@ with open("prospects_enrichis.csv", "w", newline="") as f:
               </div>
 
               <p className="text-[15px] text-[#555] leading-[1.8] mb-6">
-                L&apos;email seul genere des resultats. L&apos;email combine a LinkedIn genere des resultats significativement meilleurs, surtout pour les deals a forte valeur (ACV > 5 000 EUR) et les decideurs C-level. Lemlist permet de creer des sequences combinant email, visite de profil LinkedIn, demande de connexion et message LinkedIn.
+                L&apos;email seul genere des resultats. L&apos;email combine a LinkedIn genere des resultats significativement meilleurs, surtout pour les deals a forte valeur (ACV de plus de 5 000 EUR) et les decideurs C-level. Lemlist permet de creer des sequences combinant email, visite de profil LinkedIn, demande de connexion et message LinkedIn.
               </p>
 
               <h3 className="text-[18px] font-semibold text-[#111] mb-4">Quand ajouter LinkedIn</h3>
