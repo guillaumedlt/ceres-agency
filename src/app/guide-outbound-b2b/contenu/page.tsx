@@ -219,15 +219,18 @@ export default function GuideOutboundContenuPage() {
                 <p className="text-[11px] font-semibold text-white/50 uppercase tracking-wider mb-4">Le combo qu&apos;on recommande</p>
                 <div className="space-y-3">
                   {[
-                    { tool: "Lemlist", role: "Execution des sequences (email + LinkedIn), warm-up (Lemwarm), base de donnees B2B avec signaux d\u2019intent, AI enrichment integre" },
-                    { tool: "Clay", role: "Enrichissement avance multi-sources (waterfall), AI columns pour les use cases complexes, 75+ fournisseurs de donnees" },
-                    { tool: "Claude", role: "Generation de contenus personnalises (icebreakers, emails, analyse de pain points), scoring de prospects, analyse de reponses" },
-                    { tool: "Claude Code", role: "Scripts d\u2019enrichissement custom, nettoyage de donnees, automatisation de taches repetitives, outils internes" },
-                    { tool: "HubSpot", role: "CRM central. Sync via Make ou webhooks Lemlist. Pipeline outbound dedie." },
-                    { tool: "Make", role: "Automatisation inter-outils : Lemlist vers HubSpot, scoring automatique, rapports hebdomadaires" },
+                    { tool: "Lemlist", domain: "lemlist.com", role: "Execution des sequences (email + LinkedIn), warm-up (Lemwarm), base de donnees B2B avec signaux d\u2019intent, AI enrichment integre" },
+                    { tool: "Clay", domain: "clay.com", role: "Enrichissement avance multi-sources (waterfall), AI columns pour les use cases complexes, 75+ fournisseurs de donnees" },
+                    { tool: "Claude", domain: "claude.ai", role: "Generation de contenus personnalises (icebreakers, emails, analyse de pain points), scoring de prospects, analyse de reponses" },
+                    { tool: "Claude Code", domain: "claude.ai", role: "Scripts d\u2019enrichissement custom, nettoyage de donnees, automatisation de taches repetitives, outils internes" },
+                    { tool: "HubSpot", domain: "hubspot.com", role: "CRM central. Sync via Make ou webhooks Lemlist. Pipeline outbound dedie." },
+                    { tool: "Make", domain: "make.com", role: "Automatisation inter-outils : Lemlist vers HubSpot, scoring automatique, rapports hebdomadaires" },
                   ].map((item) => (
                     <div key={item.tool} className="flex gap-3 items-start">
-                      <span className="text-[11px] font-bold text-[#6C5CE7] w-[90px] shrink-0">{item.tool}</span>
+                      <div className="flex items-center gap-2 w-[110px] shrink-0">
+                        <img src={`https://www.google.com/s2/favicons?domain=${item.domain}&sz=32`} alt={item.tool} className="w-4 h-4" />
+                        <span className="text-[11px] font-bold text-white">{item.tool}</span>
+                      </div>
                       <p className="text-[11px] text-white/60 leading-[1.65]">{item.role}</p>
                     </div>
                   ))}
@@ -352,7 +355,7 @@ export default function GuideOutboundContenuPage() {
                 La qualite de vos listes determine 80% de vos resultats. Un email parfait envoye a la mauvaise personne ne generera aucun resultat. Cette etape merite autant de temps que la redaction de vos emails.
               </p>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">LinkedIn Sales Navigator</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=32" alt="LinkedIn" className="w-5 h-5" />LinkedIn Sales Navigator</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Sales Navigator reste la source la plus fiable pour identifier des decideurs B2B. La cle est de maitriser la recherche booleenne et les filtres avances.
               </p>
@@ -373,7 +376,7 @@ Changement recent : Changement de poste dans les 90 derniers jours`}</pre>
                 </p>
               </div>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Lemlist B2B Database</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=lemlist.com&sz=32" alt="Lemlist" className="w-5 h-5" />Lemlist B2B Database</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Lemlist dispose d&apos;une base de donnees de plus de 450 millions de contacts. L&apos;avantage principal : les emails sont directement verifies et vous pouvez importer les prospects dans une sequence sans quitter Lemlist. Mais le vrai differenciant, ce sont les filtres d&apos;intent signals integres.
               </p>
@@ -401,12 +404,12 @@ Changement recent : Changement de poste dans les 90 derniers jours`}</pre>
                 </div>
               </div>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Apollo.io</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=apollo.io&sz=32" alt="Apollo" className="w-5 h-5" />Apollo.io</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Apollo propose une base de 275 millions de contacts avec des filtres de recherche avances. Il est particulierement utile pour le marche americain et pour les recherches croisees entreprise + contact. La fonctionnalite Sequences est un bonus, mais nous recommandons Lemlist pour l&apos;execution. Utilisez Apollo principalement pour le sourcing, puis exportez vers Lemlist ou Clay.
               </p>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Dropcontact</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=dropcontact.com&sz=32" alt="Dropcontact" className="w-5 h-5" />Dropcontact</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Dropcontact est l&apos;outil de reference pour l&apos;enrichissement conforme au RGPD, specialement en France. Il ne stocke aucune donnee personnelle dans une base tierce : les emails sont generes algorithmiquement a partir du nom et du domaine, puis verifies en temps reel. Si vous prospectez en France, Dropcontact est indispensable en complement de Lemlist ou Apollo pour maximiser le taux de verification des emails.
               </p>
@@ -448,7 +451,7 @@ Changement recent : Changement de poste dans les 90 derniers jours`}</pre>
                 C&apos;est le chapitre le plus important du guide. L&apos;enrichissement IA est ce qui fait la difference entre un cold email generique (ignore) et un message pertinent (qui recoit une reponse). En 2026, deux solutions dominent : l&apos;AI enrichment integre de Lemlist et les AI columns de Clay. Chacune a ses forces.
               </p>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Lemlist AI Enrichment : l&apos;enrichissement IA integre</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=lemlist.com&sz=32" alt="Lemlist" className="w-5 h-5" />Lemlist AI Enrichment : l&apos;enrichissement IA integre</h3>
 
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Lemlist a integre un systeme d&apos;enrichissement par IA directement dans sa plateforme. Le concept : vous ajoutez des colonnes enrichies par IA a vos listes de prospects, directement dans Lemlist, sans avoir besoin d&apos;un outil externe. Pour de nombreux use cases, cette fonctionnalite remplace completement Clay.
@@ -549,7 +552,7 @@ Changement recent : Changement de poste dans les 90 derniers jours`}</pre>
                 ))}
               </div>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Claude Code pour l&apos;enrichissement custom</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" alt="Claude" className="w-5 h-5" />Claude Code pour l&apos;enrichissement custom</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Claude Code permet de construire rapidement des scripts d&apos;enrichissement sur mesure. Au lieu de configurer manuellement des workflows dans Clay ou Lemlist, vous decrivez ce que vous voulez en langage naturel et Claude Code genere le script.
               </p>
@@ -1058,7 +1061,7 @@ with open("prospects_enrichis.csv", "w", newline="") as f:
                 </div>
               </div>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Lemlist AI Variables</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=lemlist.com&sz=32" alt="Lemlist" className="w-5 h-5" />Lemlist AI Variables</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Les AI Variables sont differentes des AI columns d&apos;enrichissement (chapitre 4). Les AI Variables sont generees automatiquement au moment de l&apos;envoi de chaque email, en fonction du template et du contexte du prospect. C&apos;est une couche de personnalisation supplementaire.
               </p>
@@ -1080,12 +1083,12 @@ with open("prospects_enrichis.csv", "w", newline="") as f:
                 </div>
               </div>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Lemlist AI Campaign Generator</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=lemlist.com&sz=32" alt="Lemlist" className="w-5 h-5" />Lemlist AI Campaign Generator</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Lemlist propose un generateur de campagne par IA. Vous decrivez votre ICP et votre proposition de valeur, et l&apos;IA genere une sequence complete : sujets, emails, timing, conditions. C&apos;est un bon point de depart, mais nous recommandons toujours d&apos;adapter et d&apos;affiner le contenu genere en utilisant vos propres donnees de performance. Ne lancez jamais une campagne IA-generee sans relecture.
               </p>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Integration CRM (HubSpot)</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=32" alt="HubSpot" className="w-5 h-5" />Integration CRM (HubSpot)</h3>
               <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 mb-6 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
                 <p className="text-[12px] font-semibold text-[#111] mb-3">Ce qui se synchronise</p>
                 <div className="space-y-2">
@@ -1123,7 +1126,7 @@ with open("prospects_enrichis.csv", "w", newline="") as f:
                 Ce chapitre est destine aux equipes qui veulent aller plus loin que la configuration standard. Claude Code, Make et les integrations API permettent d&apos;automatiser des taches qui prendraient des heures manuellement.
               </p>
 
-              <h3 className="text-[18px] font-semibold text-[#111] mb-4">Claude Code pour l&apos;outbound</h3>
+              <h3 className="text-[18px] font-semibold text-[#111] mb-4 flex items-center gap-2"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" alt="Claude" className="w-5 h-5" />Claude Code pour l&apos;outbound</h3>
               <p className="text-[15px] text-[#555] leading-[1.8] mb-5">
                 Claude Code est un environnement de developpement assiste par IA. Vous decrivez ce que vous voulez en langage naturel et Claude Code ecrit, execute et itere le code pour vous. Voici les trois scripts les plus utiles pour l&apos;outbound.
               </p>
