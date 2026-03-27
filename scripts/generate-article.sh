@@ -1,7 +1,7 @@
 #!/bin/bash
 # Auto-generate a blog article for ceres.agency
 # Run: ./scripts/generate-article.sh
-# Cron: 0 8 * * 1 (every Monday at 8am)
+# Cron: 0 8 * * 1,3,5 (every Monday, Wednesday, Friday at 8am)
 
 set -e
 
