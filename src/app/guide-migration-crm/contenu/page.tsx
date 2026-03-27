@@ -324,8 +324,12 @@ export default function GuideContenuPage() {
         <div className="h-full bg-[#4B5EFC] transition-all duration-150" style={{ width: `${progress}%` }} />
       </div>
 
+      <div className="relative z-10 max-w-[1100px] mx-auto px-6">
+      <div className="flex gap-10">
+
       {/* ── Sticky Sidebar (desktop) ── */}
-      <aside className="hidden xl:block fixed left-8 top-[140px] w-[220px] z-40">
+      <aside className="hidden lg:block w-[220px] shrink-0">
+        <div className="sticky top-28">
         <p className="text-[10px] font-semibold text-[#999] uppercase tracking-wider mb-4">Sommaire</p>
         <nav className="space-y-1">
           {chapters.map((ch) => (
@@ -344,17 +348,16 @@ export default function GuideContenuPage() {
           ))}
         </nav>
         <div className="mt-6 pt-4 border-t border-[#F0F0F0]">
-          <Link
-            href="/guide-migration-crm"
-            className="text-[11px] text-[#4B5EFC] hover:underline"
+          <Link href="/guide-migration-crm" className="text-[11px] text-[#4B5EFC] hover:underline"
           >
             Telecharger le guide PDF
           </Link>
         </div>
+        </div>
       </aside>
 
       {/* ── Main Content ── */}
-      <div className="relative z-10 max-w-[800px] mx-auto px-6 xl:ml-[300px] xl:mr-auto">
+      <div className="flex-1 min-w-0 max-w-[750px]">
 
         {/* ── Breadcrumb ── */}
         <nav className="mb-8 flex items-center gap-2 text-[12px] text-[#999]">
@@ -1867,6 +1870,8 @@ export default function GuideContenuPage() {
             <Link href="/" className="hover:text-[#999] transition-colors">Accueil</Link>
           </p>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );
