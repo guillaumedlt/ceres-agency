@@ -129,3 +129,19 @@
   0%   { offset-distance: 0%; }
   100% { offset-distance: 100%; }
 }
+
+/* HubSpot form - LP */
+#hs-lp-form .hs-form-field { margin-bottom: 10px; }
+#hs-lp-form .hs-form-field label { display: block; font-size: 12px; font-weight: 500; color: #666; margin-bottom: 3px; }
+#hs-lp-form .hs-form-field label .hs-form-required { color: #FF7A59; }
+#hs-lp-form .hs-input { width: 100% !important; padding: 10px 12px; border: 1px solid #E8E8E8; border-radius: 10px; font-size: 14px; color: #111; background: #FAFAFA; transition: border-color 0.2s; outline: none; }
+#hs-lp-form .hs-input:focus { border-color: #FF7A59; background: #fff; }
+#hs-lp-form textarea.hs-input { min-height: 80px; resize: vertical; }
+#hs-lp-form .hs-button { width: 100%; padding: 12px 16px; background: #FF7A59; color: #fff; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+#hs-lp-form .hs-button:hover { background: #E86D4F; }
+#hs-lp-form .hs-error-msgs { list-style: none; padding: 0; margin: 3px 0 0; }
+#hs-lp-form .hs-error-msgs li label { font-size: 11px; color: #EF4444; font-weight: 400; }
+#hs-lp-form .hs-form-booleancheckbox label { font-size: 11px; color: #999; display: flex; align-items: flex-start; gap: 6px; }
+#hs-lp-form .legal-consent-container { margin-top: 6px; }
+#hs-lp-form .legal-consent-container p { font-size: 10px; color: #CCC; line-height: 1.5; }
+#hs-lp-form .submitted-message { text-align: center; padding: 24px 0; font-size: 15px; color: #22C55E; font-weight: 600; }
