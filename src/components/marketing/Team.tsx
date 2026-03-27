@@ -29,7 +29,7 @@ const team = [
     role: "COO",
     desc: "Operations et delivery. S'assure que chaque mission livre des résultats concrets.",
     color: "#22C55E",
-    image: "/team/stephane.jpg",
+    image: "/team/stephane.png",
   },
 ];
 
