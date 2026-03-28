@@ -36,49 +36,29 @@ type Guide = {
   landingUrl?: string;
 };
 
-/* SVG icons for each guide */
-const guideIcons: Record<string, React.ReactNode> = {
-  "guide-revops-complet": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" />
-    </svg>
-  ),
-  "playbook-hubspot-setup": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 20V10" /><path d="M18 20V4" /><path d="M6 20v-4" />
-    </svg>
-  ),
-  "guide-prospection-outbound": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 2L11 13" /><path d="M22 2l-7 20-4-9-9-4 20-7z" />
-    </svg>
-  ),
-  "template-audit-crm": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-    </svg>
-  ),
-  "guide-ia-commerciale": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z" /><circle cx="12" cy="15" r="2" />
-    </svg>
-  ),
-  "kit-metriques-revops": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" />
-    </svg>
-  ),
-  "framework-lead-scoring": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M2 20h20" /><path d="M5 20V8l5-6 5 6v12" /><path d="M19 20V14l-4-4" /><path d="M9 12h2" /><path d="M9 16h2" />
-    </svg>
-  ),
-  "playbook-migration-crm": (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 14h6v6" /><path d="M14 4h6v6" /><path d="M10 20L20 4" />
-    </svg>
-  ),
+/* Mini book covers for each guide */
+const guideCovers: Record<string, { gradient: string; title: string }> = {
+  "guide-revops-complet": { gradient: "linear-gradient(135deg, #FF7A59 0%, #FF5733 50%, #C0392B 100%)", title: "RevOps" },
+  "guide-ia-commerciale": { gradient: "linear-gradient(135deg, #6D00CC 0%, #8B5CF6 50%, #4C1D95 100%)", title: "IA" },
+  "guide-outbound-b2b": { gradient: "linear-gradient(135deg, #6C5CE7 0%, #4B5EFC 50%, #3B3B98 100%)", title: "Outbound" },
+  "guide-migration-crm": { gradient: "linear-gradient(135deg, #4B5EFC 0%, #3B82F6 50%, #1D4ED8 100%)", title: "Migration" },
+  "guide-data-quality-crm": { gradient: "linear-gradient(135deg, #22C55E 0%, #16A34A 50%, #15803D 100%)", title: "Data" },
 };
+
+function MiniBookCover({ slug, size = 40 }: { slug: string; size?: number }) {
+  const cover = guideCovers[slug];
+  if (!cover) return <div className="w-10 h-10 rounded-lg bg-[#F5F5F5]" />;
+  return (
+    <div
+      className="rounded-lg shadow-[2px_2px_8px_-2px_rgba(0,0,0,0.15)] relative overflow-hidden flex flex-col justify-end p-1.5"
+      style={{ width: size, height: size * 1.3, background: cover.gradient }}
+    >
+      <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-black/10" />
+      <div className="w-3 h-[1px] bg-white/40 mb-1" />
+      <p className="text-white text-[6px] font-bold leading-none">{cover.title}</p>
+    </div>
+  );
+}
 
 const categories = [
   { key: "all", label: "Tout", color: "#111" },
@@ -317,8 +297,8 @@ function DownloadModal({ guide, onClose }: { guide: Guide; onClose: () => void }
         {!submitted ? (
           <>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white" style={{ background: guide.color }}>
-                {guideIcons[guide.slug]}
+              <div>
+                <MiniBookCover slug={guide.slug} size={32} />
               </div>
               <div>
                 <p className="text-[14px] font-semibold text-[#111]">{guide.title}</p>
@@ -441,8 +421,8 @@ export default function GuidesPage() {
                   style={{ borderColor: `${g.color}30` }}
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white" style={{ background: g.color }}>
-                      {guideIcons[g.slug]}
+                    <div>
+                      <MiniBookCover slug={g.slug} />
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-[10px] px-1.5 py-0.5 rounded font-medium text-white" style={{ background: g.color }}>{g.pages} pages</span>
@@ -491,8 +471,8 @@ export default function GuidesPage() {
                   {/* Left: Info */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white shrink-0" style={{ background: g.color }}>
-                        {guideIcons[g.slug]}
+                      <div className="shrink-0">
+                        <MiniBookCover slug={g.slug} />
                       </div>
                       <div>
                         <h2 className="text-[17px] font-semibold text-[#111]">{g.title}</h2>
