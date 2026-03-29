@@ -127,6 +127,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/agent-ia-commercial`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/externaliser-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
+    // Outils directory
+    { url: `${base}/outils`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
     // Legal
     { url: `${base}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/politique-confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
