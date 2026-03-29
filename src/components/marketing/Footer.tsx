@@ -6,23 +6,44 @@ const cols = {
     { label: "Audit CRM", href: "/audit-crm" },
     { label: "RevOps Part-Time", href: "/revops-part-time" },
     { label: "Agence HubSpot", href: "/agence-hubspot" },
-    { label: "Agence HubSpot Paris", href: "/agence-hubspot-paris" },
     { label: "Agents IA", href: "/agents-ia" },
-    { label: "Migration Salesforce", href: "/migration-salesforce-hubspot" },
+    { label: "Migration CRM", href: "/migration-crm" },
     { label: "Integration HubSpot", href: "/integration-hubspot" },
+    { label: "Onboarding HubSpot", href: "/onboarding-hubspot" },
+    { label: "Formation HubSpot", href: "/formation-hubspot" },
+  ],
+  Expertise: [
+    { label: "Agence RevOps", href: "/agence-revops" },
+    { label: "Agence RevOps Paris", href: "/agence-revops-paris" },
+    { label: "Agence HubSpot Paris", href: "/agence-hubspot-paris" },
+    { label: "Consultant HubSpot", href: "/consultant-hubspot" },
+    { label: "Consultant RevOps", href: "/consultant-revops" },
+    { label: "CRM HubSpot", href: "/crm-hubspot" },
+    { label: "HubSpot vs Salesforce", href: "/hubspot-vs-salesforce" },
+    { label: "Externaliser RevOps", href: "/externaliser-revops" },
+    { label: "Automatisation commerciale", href: "/automatisation-commerciale" },
   ],
   Ressources: [
     { label: "Blog", href: "/blog" },
     { label: "Guides", href: "/guides" },
-    { label: "Glossaire", href: "/glossaire" },
+    { label: "Glossaire RevOps", href: "/glossaire" },
+    { label: "Outils B2B (173+)", href: "/outils" },
     { label: "Cas clients", href: "/cas-clients" },
     { label: "RevOps, c'est quoi ?", href: "/revops" },
+    { label: "Guide RevOps Ultime", href: "/guide-revops-ultime" },
+    { label: "Guide Outbound B2B", href: "/guide-outbound-b2b" },
+    { label: "Guide Claude & IA", href: "/guide-claude-marketing" },
   ],
   Solutions: [
-    { label: "Startups", href: "/revops-startup" },
-    { label: "PME", href: "/revops-pme" },
-    { label: "Scale-ups", href: "/revops-scaleup" },
-    { label: "Grands Groupes", href: "/revops-grand-groupe" },
+    { label: "Startups (5-50)", href: "/revops-startup" },
+    { label: "PME (50-200)", href: "/revops-pme" },
+    { label: "Scale-ups (200-1K)", href: "/revops-scaleup" },
+    { label: "Grands Groupes (1K+)", href: "/revops-grand-groupe" },
+    { label: "Migration Salesforce", href: "/migration-salesforce-hubspot" },
+    { label: "Migration Dynamics", href: "/migration-dynamics-hubspot" },
+    { label: "Migration Pipedrive", href: "/migration-pipedrive-hubspot" },
+    { label: "Lead Scoring HubSpot", href: "/lead-scoring-hubspot" },
+    { label: "Agent IA Commercial", href: "/agent-ia-commercial" },
   ],
   Agence: [
     { label: "A propos", href: "/a-propos" },
@@ -35,10 +56,10 @@ const cols = {
 export default function Footer() {
   return (
     <footer className="border-t border-[#F2F2F2]">
-      <div className="max-w-[1100px] mx-auto px-6 py-14 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 gap-4 md:gap-6 mb-12">
+      <div className="max-w-[1200px] mx-auto px-6 py-14 md:py-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 md:gap-5 mb-12">
           {/* Logo + tagline */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2 sm:col-span-3 md:col-span-1">
             <Link href="/" className="text-[18px] font-bold tracking-[-0.03em] text-[#111] mb-4 block">
               ceres
             </Link>
@@ -52,11 +73,11 @@ export default function Footer() {
           {/* Columns */}
           {Object.entries(cols).map(([t, links]) => (
             <div key={t}>
-              <h4 className="text-[12px] font-semibold text-[#111] uppercase tracking-wider mb-3">{t}</h4>
-              <ul className="space-y-2">
+              <h4 className="text-[11px] font-semibold text-[#111] uppercase tracking-wider mb-3">{t}</h4>
+              <ul className="space-y-1.5">
                 {links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="text-[13px] text-[#999] hover:text-[#111] transition-colors">{l.label}</Link>
+                    <Link href={l.href} className="text-[12px] text-[#999] hover:text-[#111] transition-colors">{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -67,26 +88,19 @@ export default function Footer() {
         {/* Partenaires */}
         <div className="flex flex-wrap items-center gap-4 mb-8 pb-6 border-b border-[#F2F2F2]">
           <span className="text-[10px] font-semibold text-[#CCC] uppercase tracking-wider">Partenaires</span>
-          <div className="flex items-center gap-1.5">
-            <img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=32" alt="HubSpot" className="w-4 h-4" />
-            <span className="text-[11px] text-[#999]">HubSpot Partner</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img src="https://www.google.com/s2/favicons?domain=lemlist.com&sz=32" alt="Lemlist" className="w-4 h-4" />
-            <span className="text-[11px] text-[#999]">Lemlist Partner</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img src="https://www.google.com/s2/favicons?domain=attio.com&sz=32" alt="Attio" className="w-4 h-4" />
-            <span className="text-[11px] text-[#999]">Attio Partner</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img src="https://www.google.com/s2/favicons?domain=clay.com&sz=32" alt="Clay" className="w-4 h-4" />
-            <span className="text-[11px] text-[#999]">Clay Partner</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" alt="Claude" className="w-4 h-4" />
-            <span className="text-[11px] text-[#999]">Experts Claude &amp; IA</span>
-          </div>
+          {[
+            { name: "HubSpot", domain: "hubspot.com" },
+            { name: "Lemlist", domain: "lemlist.com" },
+            { name: "Claude", domain: "claude.ai" },
+            { name: "Clay", domain: "clay.com" },
+            { name: "Attio", domain: "attio.com" },
+            { name: "Make", domain: "make.com" },
+          ].map((p) => (
+            <div key={p.name} className="flex items-center gap-1.5">
+              <img src={`https://www.google.com/s2/favicons?domain=${p.domain}&sz=32`} alt={p.name} className="w-4 h-4" />
+              <span className="text-[11px] text-[#999]">{p.name}</span>
+            </div>
+          ))}
         </div>
 
         {/* Bottom bar */}
