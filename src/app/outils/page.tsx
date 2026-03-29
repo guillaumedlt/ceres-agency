@@ -17,6 +17,13 @@ const categories = [
   { key: "communication", label: "Communication & Calls", color: "#22C55E" },
   { key: "design", label: "Design & Contenu", color: "#6C5CE7" },
   { key: "dev", label: "Dev & Infrastructure", color: "#111" },
+  { key: "ai-sdr", label: "AI SDR & Agents", color: "#6D00CC" },
+  { key: "sales-intelligence", label: "Sales Intelligence & Intent", color: "#FF7A59" },
+  { key: "customer-success", label: "Customer Success", color: "#22C55E" },
+  { key: "proposals", label: "Proposals & Contracts", color: "#4B5EFC" },
+  { key: "linkedin", label: "LinkedIn Tools", color: "#0A66C2" },
+  { key: "deliverability", label: "Email Deliverability", color: "#EF4444" },
+  { key: "conversational", label: "Conversational & Chatbots", color: "#6C5CE7" },
 ];
 
 type Tool = {
@@ -150,6 +157,105 @@ const tools: Tool[] = [
   { name: "Stripe", domain: "stripe.com", price: "Pay-per-use", avis: "Incontournable", description: "Paiements en ligne. API developer-first.", category: "dev" },
   { name: "Railway", domain: "railway.app", price: "Freemium / $$", avis: "Bon", description: "D\u00e9ploiement infra simplifi\u00e9.", category: "dev" },
   { name: "Neon", domain: "neon.tech", price: "Freemium / $$", avis: "A tester", description: "PostgreSQL serverless.", category: "dev" },
+
+  // CRM (ajouts)
+  { name: "GetCargo", domain: "getcargo.ai", price: "$$$", avis: "A tester", description: "Orchestration revenue IA. Alternative Clay avec agents multi-sources. YC S23.", category: "crm" },
+  { name: "Breakcold", domain: "breakcold.com", price: "$$", avis: "A tester", description: "Social selling CRM. Pipeline + LinkedIn + Twitter en un seul outil.", category: "crm" },
+
+  // Enrichissement & Data (ajouts)
+  { name: "Datagma", domain: "datagma.com", price: "$$", avis: "Bon", description: "Enrichissement B2B temps r\u00e9el. Emails, t\u00e9l\u00e9phones, donn\u00e9es entreprise.", category: "enrichissement" },
+  { name: "Surfe", domain: "surfe.com", price: "Freemium / $$", avis: "Bon", description: "Extension LinkedIn qui sync avec HubSpot/Salesforce/Pipedrive en 1 clic.", category: "enrichissement" },
+  { name: "Hublead", domain: "hublead.io", price: "$$", avis: "Bon", description: "Connecter LinkedIn \u00e0 HubSpot. Import, enrichissement, sync.", category: "enrichissement" },
+  { name: "UserGems", domain: "usergems.com", price: "$$$", avis: "Excellent", description: "Track job changes de vos champions. Signal selling.", category: "enrichissement" },
+  { name: "BuiltWith", domain: "builtwith.com", price: "$$ / $$$", avis: "Bon", description: "D\u00e9tecter la stack technologique de n\u2019importe quel site.", category: "enrichissement" },
+
+  // Outbound & Cold Email (ajouts)
+  { name: "Smartlead", domain: "smartlead.ai", price: "$$", avis: "Bon", description: "Cold email \u00e0 volume. Bo\u00eetes email illimit\u00e9es. Alternative Instantly.", category: "outbound" },
+  { name: "Outplay", domain: "outplay.com", price: "$$", avis: "Bon", description: "Sales engagement multicanal. Alternative Outreach abordable.", category: "outbound" },
+  { name: "Sendspark", domain: "sendspark.com", price: "$$", avis: "A tester", description: "Vid\u00e9o prospection personnalis\u00e9e. Alternative Loom pour l\u2019outbound.", category: "outbound" },
+  { name: "Vidyard", domain: "vidyard.com", price: "Freemium / $$", avis: "Bon", description: "Vid\u00e9o selling. Tracking des vues.", category: "outbound" },
+
+  // AI SDR & Agents (nouvelle cat\u00e9gorie)
+  { name: "11x", domain: "11x.ai", price: "$$$$", avis: "A tester", description: "AI SDR autonome. Alice prospecte, qualifie et book des meetings.", category: "ai-sdr" },
+  { name: "AiSDR", domain: "aisdr.com", price: "$$$", avis: "A tester", description: "SDR IA qui \u00e9crit et envoie des emails personnalis\u00e9s automatiquement.", category: "ai-sdr" },
+  { name: "Artisan", domain: "artisan.co", price: "$$$", avis: "A tester", description: "Ava, la collaboratrice IA qui g\u00e8re tout l\u2019outbound.", category: "ai-sdr" },
+  { name: "Jason AI", domain: "jason.ai", price: "$$", avis: "A tester", description: "Assistant IA pour la prospection par Reply.io.", category: "ai-sdr" },
+  { name: "Regie.ai", domain: "regie.ai", price: "$$$", avis: "Bon", description: "Plateforme de prospection IA g\u00e9n\u00e9rative.", category: "ai-sdr" },
+  { name: "Amplemarket", domain: "amplemarket.com", price: "$$$", avis: "Bon", description: "Full-stack IA : base B2B massive + intent + warm-up int\u00e9gr\u00e9.", category: "ai-sdr" },
+  { name: "Coldreach AI", domain: "coldreach.ai", price: "$$$", avis: "A tester", description: "Outbound research-first, taux de r\u00e9ponse 10x l\u2019industrie.", category: "ai-sdr" },
+  { name: "Salesforge", domain: "salesforge.ai", price: "$$", avis: "A tester", description: "Outbound IA : writing + infra email + sequencing en un lieu.", category: "ai-sdr" },
+  { name: "Persana AI", domain: "persana.ai", price: "$$", avis: "A tester", description: "Automation prospection B2B avec 700M contacts, 75+ sources data.", category: "ai-sdr" },
+
+  // Automatisation (ajouts)
+  { name: "Activepieces", domain: "activepieces.com", price: "Freemium", avis: "A tester", description: "Alternative Make open source. Self-hosted possible.", category: "automatisation" },
+
+  // IA & LLM (ajouts)
+  { name: "Lovable", domain: "lovable.dev", price: "Freemium / $$", avis: "A tester", description: "G\u00e9n\u00e9rateur d\u2019apps full-stack par IA. Alternative v0.", category: "ia" },
+  { name: "Bolt", domain: "bolt.new", price: "Freemium / $$", avis: "A tester", description: "Codage IA dans le navigateur. Full-stack instant.", category: "ia" },
+  { name: "Windsurf", domain: "codeium.com", price: "Freemium / $$", avis: "Bon", description: "IDE IA. Alternative Cursor.", category: "ia" },
+  { name: "Groq", domain: "groq.com", price: "Freemium", avis: "A tester", description: "Inf\u00e9rence LLM ultra rapide. Hardware custom.", category: "ia" },
+  { name: "Writer", domain: "writer.com", price: "$$$", avis: "Bon", description: "IA enterprise pour le contenu. Gouvernance et brand voice.", category: "ia" },
+  { name: "Writesonic", domain: "writesonic.com", price: "Freemium / $$", avis: "Bon", description: "IA marketing. Blog, ads, landing pages.", category: "ia" },
+
+  // Sales Intelligence & Intent (nouvelle cat\u00e9gorie)
+  { name: "Warmly", domain: "warmly.ai", price: "$$$", avis: "Excellent", description: "Identifie les visiteurs de votre site en temps r\u00e9el. Signal selling.", category: "sales-intelligence" },
+  { name: "Koala", domain: "getkoala.com", price: "Freemium / $$", avis: "A tester", description: "Intent signals + visitor identification. PLG-focused.", category: "sales-intelligence" },
+  { name: "RB2B", domain: "rb2b.com", price: "Freemium", avis: "A tester", description: "Identifie les visiteurs B2B de votre site. Gratuit pour commencer.", category: "sales-intelligence" },
+  { name: "Common Room", domain: "commonroom.io", price: "$$$", avis: "Bon", description: "Intelligence communautaire. Signals sociaux + produit.", category: "sales-intelligence" },
+  { name: "6sense", domain: "6sense.com", price: "$$$$", avis: "Excellent", description: "ABM + intent data enterprise. La r\u00e9f\u00e9rence.", category: "sales-intelligence" },
+  { name: "Demandbase", domain: "demandbase.com", price: "$$$$", avis: "Bon", description: "ABM platform. Intent + advertising + analytics.", category: "sales-intelligence" },
+  { name: "Bombora", domain: "bombora.com", price: "$$$", avis: "Bon", description: "Intent data B2B. Coop\u00e9rative de donn\u00e9es.", category: "sales-intelligence" },
+  { name: "Keyplay", domain: "keyplay.io", price: "$$$", avis: "Bon", description: "Scoring ICP avec IA pour prioriser comptes ABM.", category: "sales-intelligence" },
+  { name: "Factors.ai", domain: "factors.ai", price: "$$$", avis: "Bon", description: "Attribution marketing + activation ABM signal-driven.", category: "sales-intelligence" },
+
+  // Customer Success (nouvelle cat\u00e9gorie)
+  { name: "Vitally", domain: "vitally.io", price: "$$$", avis: "Excellent", description: "Customer success platform. Health scoring, playbooks, analytics.", category: "customer-success" },
+  { name: "ChurnZero", domain: "churnzero.com", price: "$$$", avis: "Bon", description: "Pr\u00e9vention du churn. Usage tracking, automation.", category: "customer-success" },
+  { name: "Gainsight", domain: "gainsight.com", price: "$$$$", avis: "Excellent", description: "La r\u00e9f\u00e9rence enterprise customer success.", category: "customer-success" },
+  { name: "Planhat", domain: "planhat.com", price: "$$$", avis: "Bon", description: "Customer platform. Revenue, usage, health.", category: "customer-success" },
+  { name: "Custify", domain: "custify.com", price: "$$", avis: "Bon", description: "Alternative l\u00e9g\u00e8re \u00e0 Gainsight pour PME SaaS.", category: "customer-success" },
+  { name: "Totango", domain: "totango.com", price: "$$$", avis: "Bon", description: "CS + Catalyst + Unison AI plateforme unifi\u00e9e.", category: "customer-success" },
+
+  // Proposals & Contracts (nouvelle cat\u00e9gorie)
+  { name: "PandaDoc", domain: "pandadoc.com", price: "Freemium / $$", avis: "Excellent", description: "Propositions, devis et contrats. E-signature int\u00e9gr\u00e9e.", category: "proposals" },
+  { name: "Qwilr", domain: "qwilr.com", price: "$$", avis: "Bon", description: "Propositions commerciales interactives et trackables.", category: "proposals" },
+  { name: "GetAccept", domain: "getaccept.com", price: "$$", avis: "Bon", description: "Digital sales room. Propositions + e-sign + vid\u00e9o.", category: "proposals" },
+  { name: "DocuSign", domain: "docusign.com", price: "$$ / $$$", avis: "Incontournable", description: "Signature \u00e9lectronique. Le standard mondial.", category: "proposals" },
+  { name: "Trumpet", domain: "trumpet.com", price: "$$", avis: "A tester", description: "Digital sales rooms. #1 G2 2026. En forte croissance.", category: "proposals" },
+  { name: "Proposify", domain: "proposify.com", price: "$$", avis: "Bon", description: "Gestion propositions avec templates et analytics.", category: "proposals" },
+  { name: "DealHub", domain: "dealhub.io", price: "$$$", avis: "Bon", description: "CPQ + CLM + billing unifi\u00e9. Leader Gartner 2025.", category: "proposals" },
+  { name: "Dock", domain: "dock.us", price: "$$$", avis: "Bon", description: "Espaces client partag\u00e9s pour g\u00e9rer le cycle de vente.", category: "proposals" },
+
+  // LinkedIn Tools (nouvelle cat\u00e9gorie)
+  { name: "Taplio", domain: "taplio.com", price: "$$", avis: "Bon", description: "Outil LinkedIn pour cr\u00e9er, programmer et analyser ses posts.", category: "linkedin" },
+  { name: "Shield", domain: "shieldapp.ai", price: "$$", avis: "Bon", description: "Analytics LinkedIn. Mesurer la performance de vos posts.", category: "linkedin" },
+  { name: "Aware", domain: "useaware.co", price: "$$", avis: "A tester", description: "LinkedIn analytics pour les \u00e9quipes. Employee advocacy.", category: "linkedin" },
+  { name: "Evaboot", domain: "evaboot.com", price: "$$", avis: "Bon", description: "Scraping LinkedIn Sales Navigator + nettoyage donn\u00e9es.", category: "linkedin" },
+  { name: "Expandi", domain: "expandi.io", price: "$$", avis: "Bon", description: "Automatisation LinkedIn cloud-based s\u00e9curis\u00e9e.", category: "linkedin" },
+  { name: "La Growth Machine", domain: "lagrowthmachine.com", price: "$$ / $$$", avis: "Bon", description: "Prospection multicanal : LinkedIn + email + X + calls.", category: "linkedin" },
+
+  // Email Deliverability (nouvelle cat\u00e9gorie)
+  { name: "Mailreach", domain: "mailreach.co", price: "$$", avis: "Excellent", description: "Warm-up email. Int\u00e9gr\u00e9 dans Lemlist. Le meilleur du march\u00e9.", category: "deliverability" },
+  { name: "GlockApps", domain: "glockapps.com", price: "$$", avis: "Bon", description: "Test de d\u00e9livrabilit\u00e9. Inbox placement testing.", category: "deliverability" },
+  { name: "Mail-tester", domain: "mail-tester.com", price: "Gratuit", avis: "Bon", description: "Testez votre score de spam gratuitement.", category: "deliverability" },
+  { name: "Folderly", domain: "folderly.com", price: "$$", avis: "A tester", description: "D\u00e9livrabilit\u00e9 email IA.", category: "deliverability" },
+  { name: "Mailtrap", domain: "mailtrap.io", price: "Freemium / $$", avis: "Bon", description: "Test email pr\u00e9-envoi en environnement sandbox.", category: "deliverability" },
+
+  // Conversational & Chatbots (nouvelle cat\u00e9gorie)
+  { name: "Intercom", domain: "intercom.com", price: "$$ / $$$", avis: "Excellent", description: "Chat, bots, help center. Fin AI int\u00e9gr\u00e9.", category: "conversational" },
+  { name: "Qualified", domain: "qualified.com", price: "$$$$", avis: "Bon", description: "Pipeline generation via chat. ABM conversationnel.", category: "conversational" },
+  { name: "Drift", domain: "salesloft.com", price: "$$$", avis: "Bon", description: "Conversational marketing. Rachet\u00e9 par Salesloft.", category: "conversational" },
+  { name: "Crisp", domain: "crisp.chat", price: "Freemium / $$", avis: "Bon", description: "Chat, chatbot, CRM l\u00e9ger. Fran\u00e7ais.", category: "conversational" },
+  { name: "HubSpot Chatbot", domain: "hubspot.com", price: "Freemium", avis: "Bon", description: "Chatbot natif HubSpot. Gratuit avec le CRM.", category: "conversational" },
+  { name: "Tidio", domain: "tidio.com", price: "$$", avis: "Bon", description: "Chatbot IA pour PME. Version Drift abordable.", category: "conversational" },
+
+  // Data Infrastructure (ajouts Dev)
+  { name: "Fivetran", domain: "fivetran.com", price: "$$$", avis: "Excellent", description: "ELT automatis\u00e9. 300+ connecteurs.", category: "dev" },
+  { name: "Hightouch", domain: "hightouch.com", price: "$$ / $$$", avis: "Bon", description: "Reverse ETL. Sync donn\u00e9es vers vos outils business.", category: "dev" },
+  { name: "Census", domain: "census.app", price: "$$ / $$$", avis: "Bon", description: "Reverse ETL. Data activation. Rachet\u00e9 par Fivetran.", category: "dev" },
+  { name: "dbt", domain: "getdbt.com", price: "Freemium / $$", avis: "Excellent", description: "Transformation de donn\u00e9es. Standard data engineering.", category: "dev" },
+  { name: "Snowflake", domain: "snowflake.com", price: "$$$", avis: "Excellent", description: "Data warehouse cloud. Le standard enterprise.", category: "dev" },
+  { name: "Airbyte", domain: "airbyte.com", price: "Freemium", avis: "Bon", description: "600+ connecteurs. Framework open-source pour workflows data.", category: "dev" },
 ];
 
 /* ─── HELPERS ─── */
@@ -217,7 +323,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Les meilleurs outils RevOps, CRM, IA et Sales en 2026",
-  description: "Annuaire complet de 100+ outils pour les \u00e9quipes commerciales et marketing B2B.",
+  description: "Annuaire complet de 170+ outils pour les \u00e9quipes commerciales et marketing B2B.",
   numberOfItems: tools.length,
   itemListElement: tools.map((tool, i) => ({
     "@type": "ListItem",
