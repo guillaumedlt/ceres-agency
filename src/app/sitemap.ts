@@ -96,6 +96,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guide-migration-crm/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guide-data-quality-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guide-data-quality-crm/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/guide-claude-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/guide-claude-marketing/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // SEO pages
     { url: `${base}/agence-hubspot-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
