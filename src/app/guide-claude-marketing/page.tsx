@@ -45,14 +45,14 @@ export default function GuideClaudeMarketingLandingPage() {
 
   useEffect(() => {
     if ((window as any).hbspt) {
-      (window as any).hbspt.forms.create({ portalId: "2703445", formId: "461a976f-66db-4946-9e3f-883c83d4a084", region: "na1", target: "#hs-guide-claude-marketing-form" });
+      (window as any).hbspt.forms.create({ portalId: "2703445", formId: "136a7e82-277e-4338-ad02-e8619e0624fe", region: "na1", target: "#hs-guide-claude-marketing-form" });
       return;
     }
     const script = document.createElement("script");
     script.src = "//js.hsforms.net/forms/embed/v2.js";
     script.charset = "utf-8";
     script.async = true;
-    script.onload = () => { if ((window as any).hbspt) (window as any).hbspt.forms.create({ portalId: "2703445", formId: "461a976f-66db-4946-9e3f-883c83d4a084", region: "na1", target: "#hs-guide-claude-marketing-form" }); };
+    script.onload = () => { if ((window as any).hbspt) (window as any).hbspt.forms.create({ portalId: "2703445", formId: "136a7e82-277e-4338-ad02-e8619e0624fe", region: "na1", target: "#hs-guide-claude-marketing-form" }); };
     document.head.appendChild(script);
   }, []);
 
