@@ -49,6 +49,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "revops-startups-par-ou-commencer",
     "metriques-revops-indicateurs-performance",
     "structurer-equipe-revops",
+    "geo-optimiser-site-llm",
+    "sellsy-vs-hubspot",
+    "brevo-vs-hubspot",
+    "facturation-electronique-crm-2026",
+    "intent-data-signaux-achat-b2b",
+    "sales-enablement-guide",
+    "customer-success-revops",
+    "crm-ia-intelligence-artificielle",
+    "marketing-ops-definition",
+    "zapier-vs-make-vs-n8n-revops",
+    "inbound-marketing-b2b-revops",
+    "onboarding-client-b2b-churn",
+    "ia-scoring-predictif-lead-scoring",
+    "revops-facturation-crm-erp",
+    "apparaitre-reponses-claude-chatgpt",
   ];
 
   // Case study slugs

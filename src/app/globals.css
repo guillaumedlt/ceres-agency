@@ -34,6 +34,22 @@
 #hs-guide-ia-form .legal-consent-container p { font-size: 10px; color: #CCC; line-height: 1.5; }
 #hs-guide-ia-form .submitted-message { text-align: center; padding: 20px 0; font-size: 14px; color: #22C55E; font-weight: 600; }
 
+/* HubSpot form - Guide Claude Marketing */
+#hs-guide-claude-marketing-form .hs-form-field { margin-bottom: 12px; }
+#hs-guide-claude-marketing-form .hs-form-field label { display: block; font-size: 12px; font-weight: 500; color: #666; margin-bottom: 4px; }
+#hs-guide-claude-marketing-form .hs-form-field label .hs-form-required { color: #D4A27F; }
+#hs-guide-claude-marketing-form .hs-input { width: 100% !important; padding: 8px 12px; border: 1px solid #E8E8E8; border-radius: 8px; font-size: 13px; color: #111; background: #fff; transition: border-color 0.2s; outline: none; }
+#hs-guide-claude-marketing-form .hs-input:focus { border-color: #D4A27F; }
+#hs-guide-claude-marketing-form .hs-button { width: 100%; padding: 10px 16px; background: #D4A27F; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+#hs-guide-claude-marketing-form .hs-button:hover { background: #B8956A; }
+#hs-guide-claude-marketing-form .hs-error-msgs { list-style: none; padding: 0; margin: 4px 0 0; }
+#hs-guide-claude-marketing-form .hs-error-msgs li label { font-size: 11px; color: #EF4444; font-weight: 400; }
+#hs-guide-claude-marketing-form .hs-form-booleancheckbox label { font-size: 11px; color: #999; display: flex; align-items: flex-start; gap: 6px; }
+#hs-guide-claude-marketing-form .hs-form-booleancheckbox input { margin-top: 2px; }
+#hs-guide-claude-marketing-form .legal-consent-container { margin-top: 8px; }
+#hs-guide-claude-marketing-form .legal-consent-container p { font-size: 10px; color: #CCC; line-height: 1.5; }
+#hs-guide-claude-marketing-form .submitted-message { text-align: center; padding: 20px 0; font-size: 14px; color: #22C55E; font-weight: 600; }
+
 /* HubSpot form - Contact */
 #hs-contact-form .hs-form-field { margin-bottom: 12px; }
 #hs-contact-form .hs-form-field label { display: block; font-size: 12px; font-weight: 500; color: #666; margin-bottom: 4px; }
