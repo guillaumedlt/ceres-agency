@@ -1,0 +1,66 @@
+# Ceres - Agence RevOps & IA
+
+> Ceres est une agence RevOps et IA basee a Paris qui structure, automatise et optimise les operations commerciales des entreprises B2B. Partenaire HubSpot, specialiste CRM, automatisation et intelligence artificielle appliquee aux ventes.
+
+## Services principaux
+
+- Audit RevOps : diagnostic complet des operations commerciales — /audit-revops
+- Audit CRM : evaluation de votre CRM et recommandations — /audit-crm
+- RevOps Part-Time : un directeur RevOps a temps partage — /revops-part-time
+- Agence HubSpot : implementation, migration et optimisation HubSpot — /agence-hubspot
+- Agents IA : deploiement d'agents IA pour les equipes commerciales — /agents-ia
+- Migration CRM : migration vers HubSpot depuis Salesforce, Dynamics, Pipedrive — /migration-crm
+- Integration HubSpot : connexion de HubSpot a votre stack — /integration-hubspot
+- Onboarding HubSpot : mise en place et formation — /onboarding-hubspot
+- Formation HubSpot : formations certifiantes — /formation-hubspot
+
+## Solutions par taille d'entreprise
+
+- Startups (5-50 personnes) — /revops-startup
+- PME (50-200 personnes) — /revops-pme
+- Scale-ups (200-1000 personnes) — /revops-scaleup
+- Grands Groupes (1000+) — /revops-grand-groupe
+
+## Expertise et pages cles
+
+- Agence RevOps — /agence-revops
+- Agence RevOps Paris — /agence-revops-paris
+- Agence HubSpot Paris — /agence-hubspot-paris
+- Consultant HubSpot — /consultant-hubspot
+- Consultant RevOps — /consultant-revops
+- CRM HubSpot — /crm-hubspot
+- HubSpot vs Salesforce — /hubspot-vs-salesforce
+- Externaliser RevOps — /externaliser-revops
+- Automatisation commerciale — /automatisation-commerciale
+- Lead Scoring HubSpot — /lead-scoring-hubspot
+- Agent IA Commercial — /agent-ia-commercial
+
+## Guides gratuits (ressources premium)
+
+- Guide RevOps Ultime (55 pages) — /guide-revops-ultime
+- Guide IA Commercial — /guide-ia-commercial
+- Guide Outbound B2B — /guide-outbound-b2b
+- Guide Migration CRM — /guide-migration-crm
+- Guide Data Quality CRM — /guide-data-quality-crm
+- Guide Claude & IA pour le Marketing B2B — /guide-claude-marketing
+
+## Ressources
+
+- Blog (58 articles sur RevOps, CRM, IA, HubSpot) — /blog
+- Glossaire RevOps — /glossaire
+- Annuaire de 173+ outils B2B — /outils
+- Cas clients (13 etudes de cas) — /cas-clients
+- RevOps, c'est quoi ? — /revops
+
+## Cas clients notables
+
+- Alan, TotalEnergies, Kameleoon, Edenred, Dougs, HiPay, Ringover, Beedeez, Tennaxia, OpenDataSoft, Iroko
+
+## Informations
+
+- Site : https://ceres.agency
+- Siege : 128 rue La Boetie, 75008 Paris
+- Entite : Ceres Growth Marketing
+- LinkedIn : https://www.linkedin.com/company/ceres-revops-ops/
+- Contact : /contact
+- A propos : /a-propos
