@@ -65,6 +65,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "revops-facturation-crm-erp",
     "apparaitre-reponses-claude-chatgpt",
     "hubspot-ia-fonctionnalites",
+    "cold-email-b2b-templates",
+    "hubspot-vs-dynamics-365-comparatif",
+    "hubspot-vs-zoho-comparatif",
+    "clay-enrichissement-donnees-b2b-guide",
   ];
 
   // Case study slugs
@@ -136,6 +140,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/automatisation-commerciale`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/lead-scoring-hubspot`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/agence-attio`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/agence-hubspot-lyon`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/agence-hubspot-bordeaux`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/agence-hubspot-nantes`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/agence-hubspot-marseille`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/agence-hubspot-toulouse`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // SEO pages - Prio 3
     { url: `${base}/hubspot-marketing-hub`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/hubspot-sales-hub`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

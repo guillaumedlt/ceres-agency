@@ -228,10 +228,6 @@ const nextConfig = {
       { source: "/cas-clients/spendesk-migration-crm", destination: "/cas-clients", permanent: true },
 
       // Batch 6 - old misc pages
-      { source: "/agence-hubspot-bordeaux", destination: "/agence-hubspot", permanent: true },
-      { source: "/agence-hubspot-marseille", destination: "/agence-hubspot", permanent: true },
-      { source: "/agence-hubspot-nantes", destination: "/agence-hubspot", permanent: true },
-      { source: "/agence-hubspot-toulouse", destination: "/agence-hubspot", permanent: true },
       { source: "/cro-part-time", destination: "/revops-part-time", permanent: true },
       { source: "/data-enrichissement", destination: "/blog/comparatif-outils-generation-leads-enrichissement", permanent: true },
       { source: "/definition-du-revops", destination: "/revops", permanent: true },

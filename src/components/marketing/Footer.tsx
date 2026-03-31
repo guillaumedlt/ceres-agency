@@ -16,6 +16,7 @@ const cols = {
     { label: "Agence RevOps", href: "/agence-revops" },
     { label: "Agence RevOps Paris", href: "/agence-revops-paris" },
     { label: "Agence HubSpot Paris", href: "/agence-hubspot-paris" },
+    { label: "Agence HubSpot Lyon", href: "/agence-hubspot-lyon" },
     { label: "Consultant HubSpot", href: "/consultant-hubspot" },
     { label: "Consultant RevOps", href: "/consultant-revops" },
     { label: "CRM HubSpot", href: "/crm-hubspot" },
