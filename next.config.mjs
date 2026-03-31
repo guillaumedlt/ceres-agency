@@ -200,6 +200,9 @@ const nextConfig = {
       { source: "/guides/implementation-hubspot", destination: "/blog/onboarding-hubspot-30-premiers-jours", permanent: true },
       { source: "/integrateur-connecteurs-hubspot", destination: "/integration-hubspot", permanent: true },
       { source: "/hubspot/integration-aircall", destination: "/blog/integration-hubspot-whatsapp", permanent: true },
+
+      // Batch 5 - remaining duplicates
+      { source: "/blog/comment-savoir-dou-viennent-vos-conversions-telephoniques", destination: "/blog/tracking-conversions-hubspot-guide-complet", permanent: true },
     ];
   },
 };
