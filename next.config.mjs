@@ -9,6 +9,7 @@ const nextConfig = {
     return [
       { source: "/tools-stack", destination: "/outils", permanent: true },
       { source: "/blog/comment-calculer-roi-crm", destination: "/blog/metriques-revops-indicateurs-performance", permanent: true },
+      { source: "/guide-revops", destination: "/revops", permanent: true },
     ];
   },
 };
