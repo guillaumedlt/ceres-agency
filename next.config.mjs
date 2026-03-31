@@ -160,6 +160,34 @@ const nextConfig = {
       { source: "/cas-clients/toyota", destination: "/cas-clients", permanent: true },
       { source: "/mini-guide-revops", destination: "/guide-revops-ultime", permanent: true },
       { source: "/sitemap", destination: "/sitemap.xml", permanent: true },
+
+      // Batch 3 - index.html and misc
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/fr", destination: "/", permanent: true },
+      { source: "/fr/:path*", destination: "/:path*", permanent: true },
+      { source: "/agence-salesforce", destination: "/migration-salesforce-hubspot", permanent: true },
+      { source: "/revops-explained", destination: "/revops", permanent: true },
+      { source: "/cas-clients/metron-zuora", destination: "/cas-clients", permanent: true },
+      { source: "/lp/agence-attio", destination: "/agence-attio", permanent: true },
+      { source: "/resources/tools-stack", destination: "/outils", permanent: true },
+      { source: "/hubspot/integration-custom", destination: "/integration-hubspot", permanent: true },
+
+      // Batch 3 - old blog articles
+      { source: "/blog/choisir-agence-hubspot", destination: "/agence-hubspot", permanent: true },
+      { source: "/blog/raccourcir-cycle-vente-b2b", destination: "/blog/kpi-commerciaux-indicateurs-vente", permanent: true },
+      { source: "/blog/lead-nurturing-guide", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/ia-hubspot", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/cout-migration-crm-estimation", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/ab-test-hubspot-marketing", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+
+      // Batch 3 - old faq-revops
+      { source: "/faq-revops/accompagnement-post-projet", destination: "/contact", permanent: true },
+      { source: "/faq-revops/premier-contact-audit", destination: "/audit-revops", permanent: true },
+      { source: "/faq-revops/garantie-resultats", destination: "/revops", permanent: true },
+      { source: "/faq-revops/difference-revops-salesops", destination: "/blog/revops-vs-sales-ops-marketing-ops", permanent: true },
+
+      // Batch 3 - old expertises
+      { source: "/expertises/service/architecture-outils-support", destination: "/revops-part-time", permanent: true },
     ];
   },
 };
