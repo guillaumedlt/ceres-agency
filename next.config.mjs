@@ -188,6 +188,18 @@ const nextConfig = {
 
       // Batch 3 - old expertises
       { source: "/expertises/service/architecture-outils-support", destination: "/revops-part-time", permanent: true },
+
+      // Batch 4 - Soft 404s
+      { source: "/components/tabs", destination: "/", permanent: true },
+      { source: "/hubspot/marketing-ops", destination: "/blog/marketing-ops-definition", permanent: true },
+      { source: "/dashboards-reporting", destination: "/blog/kpi-commerciaux-indicateurs-vente", permanent: true },
+      { source: "/backoffice", destination: "/", permanent: true },
+      { source: "/avis-clients/:slug*", destination: "/cas-clients", permanent: true },
+      { source: "/services/acquisition", destination: "/blog/inbound-marketing-b2b-revops", permanent: true },
+      { source: "/outils/hubspot", destination: "/agence-hubspot", permanent: true },
+      { source: "/guides/implementation-hubspot", destination: "/blog/onboarding-hubspot-30-premiers-jours", permanent: true },
+      { source: "/integrateur-connecteurs-hubspot", destination: "/integration-hubspot", permanent: true },
+      { source: "/hubspot/integration-aircall", destination: "/blog/integration-hubspot-whatsapp", permanent: true },
     ];
   },
 };
