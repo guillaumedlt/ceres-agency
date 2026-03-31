@@ -203,6 +203,62 @@ const nextConfig = {
 
       // Batch 5 - remaining duplicates
       { source: "/blog/comment-savoir-dou-viennent-vos-conversions-telephoniques", destination: "/blog/tracking-conversions-hubspot-guide-complet", permanent: true },
+
+      // Batch 6 - "Sans objet" pages: old blog → nearest equivalent
+      { source: "/blog/account-based-marketing-abm-guide-revops", destination: "/blog/account-based-marketing-guide", permanent: true },
+      { source: "/blog/agents-ia-revops-dust-clay-hubspot-guide", destination: "/agents-ia", permanent: true },
+      { source: "/blog/clay-enrichissement-donnees-b2b-guide", destination: "/blog/comparatif-outils-generation-leads-enrichissement", permanent: true },
+      { source: "/blog/cold-email-b2b-templates", destination: "/blog/lemlist-test-complet-outil-prospection", permanent: true },
+      { source: "/blog/crm-migration-guide-complet", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/hubspot-vs-dynamics-365-comparatif", destination: "/migration-dynamics-hubspot", permanent: true },
+      { source: "/blog/hubspot-vs-zoho-comparatif", destination: "/blog/meilleur-crm-b2b-france", permanent: true },
+      { source: "/blog/marketing-automation-b2b-guide-revops", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/metriques-revops-par-departement", destination: "/blog/metriques-revops-indicateurs-performance", permanent: true },
+      { source: "/blog/pipeline-forecasting-revops-2026", destination: "/blog/forecasting-commercial-methodes-outils", permanent: true },
+      { source: "/blog/revops-reporting-dashboards-guide", destination: "/blog/kpi-commerciaux-indicateurs-vente", permanent: true },
+      { source: "/blog/sales-enablement-b2b-guide-revops", destination: "/blog/sales-enablement-guide", permanent: true },
+      { source: "/blog/salesforce-vs-pipedrive-comparatif", destination: "/blog/hubspot-vs-salesforce-comparatif", permanent: true },
+      { source: "/blog/test-agents-hubspot-recherche-entreprise", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/test-agents-hubspot-transmission-vente-csm", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+
+      // Batch 6 - old cas-clients variants
+      { source: "/cas-clients/alan-stack-marketing", destination: "/cas-clients/alan", permanent: true },
+      { source: "/cas-clients/beedeez-integration-clay-hubspot", destination: "/cas-clients/beedeez", permanent: true },
+      { source: "/cas-clients/iroko-transformation-digitale", destination: "/cas-clients/iroko", permanent: true },
+      { source: "/cas-clients/spendesk-migration-crm", destination: "/cas-clients", permanent: true },
+
+      // Batch 6 - old misc pages
+      { source: "/agence-hubspot-bordeaux", destination: "/agence-hubspot", permanent: true },
+      { source: "/agence-hubspot-marseille", destination: "/agence-hubspot", permanent: true },
+      { source: "/agence-hubspot-nantes", destination: "/agence-hubspot", permanent: true },
+      { source: "/agence-hubspot-toulouse", destination: "/agence-hubspot", permanent: true },
+      { source: "/cro-part-time", destination: "/revops-part-time", permanent: true },
+      { source: "/data-enrichissement", destination: "/blog/comparatif-outils-generation-leads-enrichissement", permanent: true },
+      { source: "/definition-du-revops", destination: "/revops", permanent: true },
+      { source: "/expertises", destination: "/agence-revops", permanent: true },
+      { source: "/expertises/strategy/diagnostic-go-to-market", destination: "/audit-revops", permanent: true },
+      { source: "/expertises/strategy/plan-revops-trimestriel", destination: "/revops-part-time", permanent: true },
+      { source: "/integrations", destination: "/integration-hubspot", permanent: true },
+      { source: "/lead-scoring-explained", destination: "/lead-scoring-hubspot", permanent: true },
+      { source: "/marketing-automation", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/sales-ops-automation", destination: "/automatisation-commerciale", permanent: true },
+      { source: "/sectors/scaleup", destination: "/revops-scaleup", permanent: true },
+      { source: "/projet-evernex", destination: "/cas-clients", permanent: true },
+      { source: "/outils/generique", destination: "/outils", permanent: true },
+      { source: "/outils/odoo", destination: "/outils", permanent: true },
+      { source: "/resources/outils/dashboard-template", destination: "/outils", permanent: true },
+      { source: "/resources/outils/formatage-telephone", destination: "/outils", permanent: true },
+      { source: "/resources/outils/lead-scoring-simple", destination: "/outils", permanent: true },
+      { source: "/lp/guide-revops", destination: "/guide-revops-ultime", permanent: true },
+
+      // Batch 6 - /guide/ pages
+      { source: "/guide/qu-est-ce-que-le-lead-scoring", destination: "/lead-scoring-hubspot", permanent: true },
+      { source: "/guide/qu-est-ce-que-le-marketing-ops", destination: "/blog/marketing-ops-definition", permanent: true },
+      { source: "/guide/qu-est-ce-que-le-sales-ops", destination: "/blog/revops-vs-sales-ops-marketing-ops", permanent: true },
+      { source: "/guide/qu-est-ce-que-le-service-ops", destination: "/blog/customer-success-revops", permanent: true },
+
+      // Batch 6 - /faq-revops/ catch-all (covers all remaining variants)
+      { source: "/faq-revops/:slug*", destination: "/revops", permanent: true },
     ];
   },
 };
