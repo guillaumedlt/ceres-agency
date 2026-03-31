@@ -153,6 +153,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/agent-ia-commercial`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/externaliser-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
+    // Claude Business
+    { url: `${base}/claude-business`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
     // Outils directory
     { url: `${base}/outils`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 

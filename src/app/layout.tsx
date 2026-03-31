@@ -4,6 +4,7 @@ import Navbar from "@/components/marketing/Navbar";
 import Footer from "@/components/marketing/Footer";
 import Blobs from "@/components/marketing/Blobs";
 import GuidePopup from "@/components/marketing/GuidePopup";
+import ClaudeBanner from "@/components/marketing/ClaudeBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ceres.agency"),
@@ -106,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5B9QRB" height="0" width="0" style={{ display: "none", visibility: "hidden" }} /></noscript>
         <Blobs />
         <Navbar />
+        <ClaudeBanner />
         {children}
         <Footer />
         <GuidePopup />
