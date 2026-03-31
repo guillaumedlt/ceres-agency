@@ -118,10 +118,48 @@ const nextConfig = {
       { source: "/lp/agence-sales-ops", destination: "/revops-part-time", permanent: true },
       { source: "/lp/growth", destination: "/", permanent: true },
 
+      // Old /lp/ pages (additional)
+      { source: "/lp/agence-hubspot", destination: "/agence-hubspot", permanent: true },
+
+      // Old /sectors/ pages
+      { source: "/sectors/pme", destination: "/revops-pme", permanent: true },
+      { source: "/sectors/startup", destination: "/revops-startup", permanent: true },
+      { source: "/sectors/grand-groupe", destination: "/revops-grand-groupe", permanent: true },
+
+      // Old /fr/ pages
+      { source: "/fr/avis-clients/toyota", destination: "/cas-clients", permanent: true },
+      { source: "/fr/blog/les-sieges-hubspot-nouveau-pricing-nouveau-format", destination: "/blog/hubspot-tarifs-prix-2026", permanent: true },
+
+      // Old /hubspot/ pages
+      { source: "/hubspot/migration-salesforce-hubspot", destination: "/migration-salesforce-hubspot", permanent: true },
+
+      // Old blog articles (batch 2)
+      { source: "/blog/9-trucs-appris-suite-a-limplantation-et-la-gestion-de-quatre-crm-differents", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/reseaux-sociaux-pourquoi-payer-pour-un-clic", destination: "/blog", permanent: true },
+      { source: "/blog/hubspot-facebook-ads-connection-des-audiences", destination: "/blog", permanent: true },
+      { source: "/blog/marketing-b2b-outbound-quels-outils-sont-adaptes", destination: "/blog/comparatif-outils-generation-leads-enrichissement", permanent: true },
+      { source: "/blog/hubspot-linkedin-ads-comment-generer-des-leads", destination: "/blog", permanent: true },
+      { source: "/blog/le-test-les-objets-custom-hubspot", destination: "/blog/onboarding-hubspot-30-premiers-jours", permanent: true },
+      { source: "/blog/automatisation-optimisation-service-ops-hubspot", destination: "/blog/9-actions-commerciales-automatiser-hubspot", permanent: true },
+      { source: "/blog/les-workflows-hubspot-essentiels-pour-closer-plus-plus-rapidement", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/hubspot-comparatif-des-integrations-de-gestion-devenements-et-webinaire", destination: "/integration-hubspot", permanent: true },
+      { source: "/blog/guide-implementation-hubspot", destination: "/blog/onboarding-hubspot-30-premiers-jours", permanent: true },
+
       // Old misc pages
       { source: "/lovable-help", destination: "/", permanent: true },
       { source: "/diagnostic", destination: "/audit-revops", permanent: true },
       { source: "/inbound-marketing/seo", destination: "/blog/geo-optimiser-site-llm", permanent: true },
+      { source: "/meilleures-agences-revops", destination: "/blog/top-agences-revops-france", permanent: true },
+      { source: "/agence-lovable", destination: "/agents-ia", permanent: true },
+      { source: "/agence-cargo", destination: "/outils", permanent: true },
+      { source: "/comment-choisir-consultant-revops", destination: "/consultant-revops", permanent: true },
+      { source: "/glossaire-revops", destination: "/glossaire", permanent: true },
+      { source: "/service-support-ops", destination: "/revops-part-time", permanent: true },
+      { source: "/qu-est-ce-que-le-revops", destination: "/revops", permanent: true },
+      { source: "/acquisition-outbound", destination: "/blog/lemlist-test-complet-outil-prospection", permanent: true },
+      { source: "/cas-clients/toyota", destination: "/cas-clients", permanent: true },
+      { source: "/mini-guide-revops", destination: "/guide-revops-ultime", permanent: true },
+      { source: "/sitemap", destination: "/sitemap.xml", permanent: true },
     ];
   },
 };
