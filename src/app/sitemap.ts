@@ -64,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ia-scoring-predictif-lead-scoring",
     "revops-facturation-crm-erp",
     "apparaitre-reponses-claude-chatgpt",
+    "hubspot-ia-fonctionnalites",
   ];
 
   // Case study slugs

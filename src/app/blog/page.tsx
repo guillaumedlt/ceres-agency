@@ -81,6 +81,7 @@ const articles = [
   { slug: "ia-scoring-predictif-lead-scoring", title: "IA et scoring prédictif : le futur du lead scoring B2B", excerpt: "Scoring prédictif par IA vs scoring traditionnel. ML, données requises, HubSpot predictive scoring et implémentation.", category: "ia", date: "29 mars 2026", readTime: "16 min" },
   { slug: "revops-facturation-crm-erp", title: "RevOps : connecter facturation, CRM et ERP", excerpt: "Intégration CRM-ERP-facturation. Quote-to-cash, HubSpot + Pennylane, revenue recognition et automatisation.", category: "revops", date: "29 mars 2026", readTime: "15 min" },
   { slug: "apparaitre-reponses-claude-chatgpt", title: "Comment apparaître dans les réponses de Claude et ChatGPT", excerpt: "Guide pratique pour être cité par les IA. Structured data, autorité, E-E-A-T, optimisation de contenu et monitoring.", category: "ia", date: "29 mars 2026", readTime: "17 min" },
+  { slug: "hubspot-ia-fonctionnalites", title: "HubSpot IA : toutes les fonctionnalités intelligentes en 2026", excerpt: "Guide complet des fonctionnalités IA de HubSpot (Breeze). Copilot, agents, scoring prédictif, résumé de calls, enrichissement et verdict honnête.", category: "crm", date: "31 mars 2026", readTime: "22 min", featured: true },
 ];
 
 const categoryColors: Record<string, string> = { revops: "#FF7A59", crm: "#4B5EFC", ia: "#6D00CC", process: "#6C5CE7", data: "#22C55E" };
