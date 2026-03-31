@@ -22,6 +22,7 @@ const cols = {
     { label: "HubSpot vs Salesforce", href: "/hubspot-vs-salesforce" },
     { label: "Externaliser RevOps", href: "/externaliser-revops" },
     { label: "Automatisation commerciale", href: "/automatisation-commerciale" },
+    { label: "Agence Attio", href: "/agence-attio" },
   ],
   Ressources: [
     { label: "Blog", href: "/blog" },
