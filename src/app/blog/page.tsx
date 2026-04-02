@@ -86,6 +86,7 @@ const articles = [
   { slug: "hubspot-vs-dynamics-365-comparatif", title: "HubSpot vs Dynamics 365 : comparatif complet en 2026", excerpt: "Comparaison détaillée HubSpot vs Dynamics 365 : UX, CRM, marketing, IA (Copilot vs Breeze), pricing, intégrations et implémentation.", category: "crm", date: "31 mars 2026", readTime: "18 min" },
   { slug: "hubspot-vs-zoho-comparatif", title: "HubSpot vs Zoho CRM : comparatif honnête en 2026", excerpt: "Comparatif complet HubSpot vs Zoho CRM : prix, fonctionnalités, UX, automatisation, IA (Zia vs Breeze), intégrations et verdict.", category: "crm", date: "31 mars 2026", readTime: "16 min" },
   { slug: "clay-enrichissement-donnees-b2b-guide", title: "Clay : le guide complet de l'enrichissement de données B2B", excerpt: "Guide complet Clay : waterfall enrichment, 75+ providers, AI columns, intégration HubSpot, use cases concrets et comparatif.", category: "process", date: "31 mars 2026", readTime: "20 min" },
+  { slug: "process-data-ia-ordre-revops", title: "Process, Data, IA : pourquoi l'ordre compte en RevOps", excerpt: "L'IA ne compense pas une fondation bancale. L'évolution naturelle des RevOps suit un chemin précis : structurer les process, normaliser les données, puis déployer l'IA.", category: "revops", date: "2 avr 2026", readTime: "15 min", featured: true },
 ];
 
 const categoryColors: Record<string, string> = { revops: "#FF7A59", crm: "#4B5EFC", ia: "#6D00CC", process: "#6C5CE7", data: "#22C55E" };
