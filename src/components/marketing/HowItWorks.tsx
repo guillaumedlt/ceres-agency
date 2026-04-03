@@ -3,20 +3,20 @@ import Badge from "./Badge";
 const steps = [
   {
     num: "01",
-    title: "Fondation Data",
-    desc: "On cartographie votre stack, nettoie votre base, unifie les flux de donnees. Sans donnees propres, rien ne tient. C'est le prerequis a toute initiative IA.",
+    title: "Data clean + KPIs",
+    desc: "On nettoie votre base, unifie vos flux de donnees et definit les KPIs par silo. La fondation sur laquelle tout repose. Sans ca, l'IA multiplie par zero.",
     duration: "4-6 semaines",
   },
   {
     num: "02",
-    title: "Deploiement IA",
-    desc: "On deploie les agents IA silo par silo : enrichissement, scoring, reporting, detection de signaux. L'IA prepare, l'humain decide.",
+    title: "L'IA optimise chaque silo",
+    desc: "Marketing, Sales, CS, Finance : l'IA enrichit, score, automatise et detecte les signaux silo par silo. Elle orchestre ce que les equipes n'ont pas le temps de faire.",
     duration: "4-8 semaines",
   },
   {
     num: "03",
-    title: "Optimisation continue",
-    desc: "On mesure les resultats, on itere, on ajoute des briques. Formation des equipes, veille technologique. L'outil peut changer, la methode reste.",
+    title: "Iteration et expansion",
+    desc: "On mesure les resultats, on ajuste les modeles, on ajoute des briques. Chaque iteration rend le systeme plus intelligent. L'avantage se compose avec le temps.",
     duration: "Continu",
   },
 ];
@@ -29,9 +29,9 @@ export default function HowItWorks() {
           <div className="mb-8">
             <div className="mb-4"><Badge>Méthode</Badge></div>
             <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">
-              Data, IA, optimisation. Dans cet ordre.
+              L&apos;IA au service du RevOps
             </h2>
-            <p className="text-[13px] text-[#999]">L&apos;IA est un multiplicateur. Plus la fondation est solide, plus les resultats sont puissants.</p>
+            <p className="text-[13px] text-[#999]">Donnees propres, KPIs alignes, IA qui orchestre. Chaque etape renforce la suivante.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

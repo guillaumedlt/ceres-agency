@@ -40,11 +40,11 @@ const iaCapabilities = [
 ];
 
 const offers = [
-  { id: "data", title: "Fondation Data", subtitle: "Le prerequis a toute initiative IA", desc: "On cartographie votre stack, nettoie votre base CRM, unifie les flux de donnees et met en place la gouvernance. Sans donnees propres, l'IA multiplie par zero.", color: "#22C55E", features: ["Deduplication et standardisation", "Enrichissement IA", "Gouvernance automatisee", "Source unique de verite"], badge: "Nouveau", href: "/audit-crm" },
+  { id: "data", title: "Fondation Data", subtitle: "Donnees propres + KPIs alignes", desc: "On nettoie votre base, unifie vos flux de donnees, et definit les KPIs par silo. C'est la fondation sur laquelle l'IA peut operer. Sans ca, rien ne tient.", color: "#22C55E", features: ["Deduplication et standardisation", "Enrichissement IA des fiches", "Gouvernance automatisee", "KPIs definis par silo"], badge: "Nouveau", href: "/audit-crm" },
   { id: "audit", title: "Audit RevOps", subtitle: "Diagnostic complet", desc: "On passe votre CRM, vos process et votre stack au crible. Rapport actionnable en 2 semaines.", color: "#FF7A59", features: ["Rapport 40-60 pages", "Score de maturite RevOps", "Plan d'action a 90 jours"], href: "/audit-revops" },
   { id: "parttime", title: "RevOps Part-Time", subtitle: "Un expert dedie chaque mois", desc: "Un ops RevOps & IA integre a votre equipe qui gere votre CRM, automatise vos process et deploie l'IA au quotidien.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Roadmap trimestrielle", "Deploiement IA continu", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
   { id: "crm", title: "Agence HubSpot", subtitle: "Setup, migration & optimisation", desc: "On configure, migre et optimise votre HubSpot de A a Z. Choisissez vos Hubs et vos options.", color: "#6C5CE7", features: ["Operationnel en 4 semaines", "Support 30 jours post-launch", "Documentation complete"], href: "/agence-hubspot" },
-  { id: "ia", title: "Agents IA", subtitle: "IA connectee a votre stack", desc: "On deploie des agents IA connectes a votre CRM, vos outils et vos donnees. Qualification, scoring, enrichissement, reporting automatise.", color: "#6D00CC", features: ["Agents connectes au CRM", "Enrichissement automatique", "Resultats en 2 semaines", "Formation incluse"], href: "/agents-ia" },
+  { id: "ia", title: "Agents IA", subtitle: "L'IA qui optimise chaque silo", desc: "On deploie des agents IA silo par silo : scoring, enrichissement, reporting, detection de churn. L'IA orchestre, les equipes se concentrent sur ce qui cree de la valeur.", color: "#6D00CC", features: ["Un agent par silo, mesure", "Orchestration cross-silo", "Resultats en 2 semaines", "Formation incluse"], href: "/agents-ia" },
 ];
 
 function CardStack({ colors }: { colors: string[] }) {
@@ -127,7 +127,7 @@ export default function Services() {
           <div className="mb-8">
             <div className="mb-4"><Badge>Nos offres</Badge></div>
             <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">Choisissez votre formule</h2>
-            <p className="text-[13px] text-[#999]">4 façons de travailler avec nous selon vos besoins.</p>
+            <p className="text-[13px] text-[#999]">5 facons de travailler avec nous. De la donnee a l&apos;IA, selon ou vous en etes.</p>
           </div>
 
           {/* Tabs — 4 columns */}

@@ -40,7 +40,7 @@ export default function Hero() {
             pas vos slides.
           </h1>
           <p className="text-[16px] text-[#666] max-w-[440px] mx-auto mb-8 leading-[1.7]">
-            On structure vos donnees, connecte vos outils et deploie l&apos;IA pour que vos equipes avancent ensemble.
+            On nettoie vos donnees, identifie vos KPIs et deploie l&apos;IA pour optimiser chaque silo de votre revenue engine.
           </p>
           <div className="flex items-center justify-center gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-md border border-[#E5E5E5] bg-white text-[13px] text-[#111] font-medium hover:border-[#CCC] hover:shadow-sm transition-all">
