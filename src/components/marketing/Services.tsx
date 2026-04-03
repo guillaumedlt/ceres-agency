@@ -40,11 +40,10 @@ const iaCapabilities = [
 ];
 
 const offers = [
-  { id: "data", title: "Fondation Data", subtitle: "Donnees propres + KPIs alignes", desc: "On nettoie votre base, unifie vos flux de donnees, et definit les KPIs par silo. C'est la fondation sur laquelle l'IA peut operer. Sans ca, rien ne tient.", color: "#22C55E", features: ["Deduplication et standardisation", "Enrichissement IA des fiches", "Gouvernance automatisee", "KPIs definis par silo"], badge: "Nouveau", href: "/audit-crm" },
-  { id: "audit", title: "Audit RevOps", subtitle: "Diagnostic complet", desc: "On passe votre CRM, vos process et votre stack au crible. Rapport actionnable en 2 semaines.", color: "#FF7A59", features: ["Rapport 40-60 pages", "Score de maturite RevOps", "Plan d'action a 90 jours"], href: "/audit-revops" },
-  { id: "parttime", title: "RevOps Part-Time", subtitle: "Un expert dedie chaque mois", desc: "Un ops RevOps & IA integre a votre equipe qui gere votre CRM, automatise vos process et deploie l'IA au quotidien.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Roadmap trimestrielle", "Deploiement IA continu", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
-  { id: "crm", title: "Agence HubSpot", subtitle: "Setup, migration & optimisation", desc: "On configure, migre et optimise votre HubSpot de A a Z. Choisissez vos Hubs et vos options.", color: "#6C5CE7", features: ["Operationnel en 4 semaines", "Support 30 jours post-launch", "Documentation complete"], href: "/agence-hubspot" },
-  { id: "ia", title: "Agents IA", subtitle: "L'IA qui optimise chaque silo", desc: "On deploie des agents IA silo par silo : scoring, enrichissement, reporting, detection de churn. L'IA orchestre, les equipes se concentrent sur ce qui cree de la valeur.", color: "#6D00CC", features: ["Un agent par silo, mesure", "Orchestration cross-silo", "Resultats en 2 semaines", "Formation incluse"], href: "/agents-ia" },
+  { id: "diagnostic", title: "Diagnostic", subtitle: "Audit CRM, RevOps et data quality", desc: "On audite votre CRM, vos process RevOps, votre stack et la qualite de vos donnees. Vous repartez avec un plan clair : ou en etes-vous, quels sont les trous, par ou commencer.", color: "#FF7A59", features: ["Audit CRM et process RevOps", "Score de maturite data + RevOps", "Cartographie de la stack", "Plan d'action a 90 jours"], href: "/audit-revops" },
+  { id: "data", title: "Fondation Data", subtitle: "CRM propre, KPIs alignes, pret pour l'IA", desc: "On nettoie votre base CRM, standardise vos donnees, unifie les flux entre vos outils et definit les KPIs par silo. C'est la fondation RevOps sur laquelle l'IA peut operer.", color: "#22C55E", features: ["Deduplication et nettoyage CRM", "Standardisation et enrichissement", "Gouvernance automatisee", "KPIs RevOps definis par silo"], href: "/audit-crm" },
+  { id: "ia", title: "Deploiement IA", subtitle: "L'IA qui optimise chaque silo RevOps", desc: "On deploie des agents IA silo par silo sur votre CRM : scoring, enrichissement, reporting, detection de churn. L'IA orchestre vos operations, les equipes se concentrent sur ce qui cree de la valeur.", color: "#6D00CC", features: ["Agents IA connectes au CRM", "Un agent par silo, mesure", "Orchestration RevOps cross-silo", "Formation incluse"], href: "/agents-ia" },
+  { id: "continu", title: "Accompagnement continu", subtitle: "Un expert RevOps & IA chaque mois", desc: "Un expert integre a votre equipe qui pilote votre CRM, optimise les agents IA, itere sur les process RevOps et deploie de nouvelles briques. L'avantage se compose avec le temps.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Optimisation IA continue", "Veille techno et formation", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
 ];
 
 function CardStack({ colors }: { colors: string[] }) {
@@ -97,7 +96,7 @@ function ToggleChip({ label, color, active, onClick }: { label: string; color?: 
 }
 
 export default function Services() {
-  const [active, setActive] = useState("data");
+  const [active, setActive] = useState("diagnostic");
   const [selectedHubs, setSelectedHubs] = useState<string[]>(["sales", "marketing"]);
   const [selectedCrmOpts, setSelectedCrmOpts] = useState<string[]>(["migration", "workflow", "formation"]);
   const [selectedIA, setSelectedIA] = useState<string[]>(["qualify", "summary", "mcp"]);
@@ -111,11 +110,10 @@ export default function Services() {
   // Card colors based on active offer
   function getColors() {
     switch (active) {
+      case "diagnostic": return ["#FF7A59", "#4B5EFC", "#6C5CE7", "#22C55E"];
       case "data": return ["#22C55E", "#4B5EFC", "#FF7A59", "#6D00CC"];
-      case "audit": return ["#FF7A59", "#4B5EFC", "#6C5CE7", "#D4A27F", "#22C55E"];
-      case "parttime": return ["#FF7A59", "#4B5EFC", "#22C55E"];
-      case "crm": return selectedHubs.map((id) => hubsList.find((h) => h.id === id)?.color || "#CCC");
       case "ia": return selectedIA.map((id) => iaCapabilities.find((c) => c.id === id)?.color || "#CCC");
+      case "continu": return ["#4B5EFC", "#6D00CC", "#22C55E", "#FF7A59"];
       default: return [];
     }
   }
@@ -126,12 +124,12 @@ export default function Services() {
         <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
           <div className="mb-8">
             <div className="mb-4"><Badge>Nos offres</Badge></div>
-            <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">Choisissez votre formule</h2>
-            <p className="text-[13px] text-[#999]">5 facons de travailler avec nous. De la donnee a l&apos;IA, selon ou vous en etes.</p>
+            <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">Choisissez votre point d&apos;entree</h2>
+            <p className="text-[13px] text-[#999]">4 etapes progressives. Diagnostic, data, IA, accompagnement. Commencez la ou vous en etes.</p>
           </div>
 
           {/* Tabs — 4 columns */}
-          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-5 sm:gap-2 mb-8">
+          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4 sm:gap-2 mb-8">
             {offers.map((o) => (
               <button key={o.id} type="button" onClick={() => setActive(o.id)}
                 className={"relative p-3.5 rounded-xl border text-left transition-all cursor-pointer " + (active === o.id ? "border-[#111] bg-[#FAFAFA] ring-1 ring-[#111]" : "border-[#F2F2F2] hover:border-[#E0E0E0]")}>
