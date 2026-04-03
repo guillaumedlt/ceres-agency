@@ -6,49 +6,49 @@ import Badge from "./Badge";
 type Problem = { title: string; desc: string; icons: string[]; cat: string };
 
 const problems: Problem[] = [
-  // CRM & Pipeline
-  { title: "Ecart forecast vs réel", desc: "Vos prévisions ne collent jamais au réel. Le board perd confiance et chaque QBR est un exercise de rattrapage.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
-  { title: "CRM rempli n'importe comment", desc: "Chaque commercial a sa façon de remplir HubSpot. Les données sont inexploitables pour le management.", icons: ["hubspot.com", "clay.com"], cat: "crm" },
-  { title: "Deals fantômes dans le pipe", desc: "Des opportunités ouvertes depuis 6 mois sans activité. Ça gonfle le pipe artificiellement.", icons: ["hubspot.com", "claap.io"], cat: "crm" },
-  { title: "Aucune visibilité vélocité", desc: "Combien de temps un deal met de discovery à closing ? Personne ne peut répondre. Impossible d'optimiser.", icons: ["hubspot.com", "claude.ai"], cat: "crm" },
-  { title: "Lead routing au doigt mouillé", desc: "Les leads sont assignés manuellement. Pas de round-robin, pas de règles, pas de SLA.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
-  { title: "Dashboards inutilisables", desc: "15 dashboards que personne ne regarde. Les métriques ne racontent rien et personne ne prend de décision avec.", icons: ["hubspot.com", "notion.so"], cat: "crm" },
+  // Mon CRM ne marche pas
+  { title: "Ecart forecast vs reel", desc: "Vos previsions ne collent jamais au reel. Le board perd confiance et chaque QBR est un exercice de rattrapage.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
+  { title: "CRM rempli n'importe comment", desc: "Chaque commercial a sa facon de remplir le CRM. Les donnees sont inexploitables pour le management.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
+  { title: "Deals fantomes dans le pipe", desc: "Des opportunites ouvertes depuis 6 mois sans activite. Ca gonfle le pipeline artificiellement et fausse toutes les previsions.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
+  { title: "MQL vs SQL : personne n'est d'accord", desc: "Marketing et Sales n'ont pas la meme definition d'un lead qualifie. Les SLA ne sont pas respectes, les leads refroidissent.", icons: ["hubspot.com", "slack.com"], cat: "crm" },
+  { title: "Lead routing au doigt mouille", desc: "Les leads sont assignes manuellement. Pas de round-robin, pas de regles, pas de SLA. Les meilleurs leads tombent chez le mauvais commercial.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
+  { title: "Aucune visibilite sur le cycle de vente", desc: "Combien de temps un deal met de discovery a closing ? Personne ne peut repondre. Impossible d'optimiser ce qu'on ne mesure pas.", icons: ["hubspot.com", "salesforce.com"], cat: "crm" },
 
-  // Silos & Process
-  { title: "MQL vs SQL : personne n'est d'accord", desc: "Marketing et Sales n'ont pas la même définition d'un lead qualifié. Les termes ne sont pas alignés, les SLA ne sont pas respectés.", icons: ["hubspot.com", "lemlist.com"], cat: "silos" },
-  { title: "Données dupliquées partout", desc: "Les mêmes infos sont copiées dans 4 outils différents. Ça crée du bruit, des erreurs et personne ne sait quelle version est la bonne.", icons: ["make.com", "hubspot.com", "notion.so"], cat: "silos" },
-  { title: "Pas de structure unifiée", desc: "Marketing, Sales et CS fonctionnent chacun avec leurs process, leurs outils, leurs métriques. Aucune vision transverse.", icons: ["hubspot.com", "slack.com"], cat: "silos" },
-  { title: "Outils complètement déconnectés", desc: "HubSpot, Slack, Lemlist, Notion, Claap, rien ne se parle. Vos équipes jonglent entre 8 onglets.", icons: ["make.com", "slack.com", "hubspot.com"], cat: "silos" },
-  { title: "3h de reporting chaque lundi", desc: "Les managers copient-collent des chiffres dans des slides au lieu de coacher leurs équipes.", icons: ["notion.so", "hubspot.com"], cat: "silos" },
-  { title: "SLA inter-équipes inexistants", desc: "Aucun engagement de temps de réponse entre Marketing et Sales. Les leads refroidissent pendant que personne ne bouge.", icons: ["hubspot.com", "slack.com"], cat: "silos" },
-
-  // IA & Automatisation
-  { title: "L'IA ? Pas commencé", desc: "Vous savez que l'IA peut aider mais personne n'a le temps ni le setup pour s'y mettre.", icons: ["claude.ai", "make.com"], cat: "ia" },
-  { title: "Agents IA pas connectés", desc: "Vous avez testé des LLMs mais vos agents ne sont pas branchés sur votre CRM, vos calls, vos données.", icons: ["claude.ai", "hubspot.com", "slack.com"], cat: "ia" },
-  { title: "Enrichissement à la main", desc: "Vos SDR passent 30 min par prospect à chercher des infos sur LinkedIn. L'IA pourrait le faire en 30 secondes.", icons: ["clay.com", "claude.ai", "hubspot.com"], cat: "ia" },
-  { title: "Calls jamais analysés", desc: "Des centaines d'heures de calls commerciaux sans en extraire un seul pattern ou learning exploitable.", icons: ["claap.io", "claude.ai"], cat: "ia" },
-  { title: "Pas de connexion IA-CRM", desc: "L'IA pourrait automatiser vos ops mais elle n'est pas connectée a vos outils. Tout reste en copier-coller.", icons: ["claude.ai", "hubspot.com", "make.com"], cat: "ia" },
-  { title: "Scoring inexistant", desc: "Aucun modèle de scoring IA sur vos leads. Du stagiaire au C-level, tout le monde est traité pareil.", icons: ["claude.ai", "clay.com", "hubspot.com"], cat: "ia" },
-
-  // Data Quality
-  { title: "40% de votre base est obsolète", desc: "Contacts qui ont changé de poste, emails invalides, champs vides. La dégradation est naturelle, 30% par an. Sans maintenance, votre CRM se dégrade mécaniquement.", icons: ["hubspot.com", "salesforce.com"], cat: "data" },
-  { title: "Aucune source unique de vérité", desc: "Le MRR dit un chiffre dans le CRM, un autre dans Stripe, un autre dans le fichier Excel du DAF. Personne ne sait quel est le bon.", icons: ["hubspot.com", "notion.so"], cat: "data" },
-  { title: "Doublons partout", desc: "15 à 25% de doublons en moyenne. Même contact créé par 3 commerciaux différents. Pipeline gonflé artificiellement, reportings faussés.", icons: ["hubspot.com", "clay.com"], cat: "data" },
+  // Mes donnees sont sales
+  { title: "40% de votre base est obsolete", desc: "Contacts qui ont change de poste, emails invalides, champs vides. La degradation est naturelle : 30% par an. Sans maintenance, votre CRM se degrade mecaniquement.", icons: ["hubspot.com", "salesforce.com"], cat: "data" },
+  { title: "Doublons partout", desc: "15 a 25% de doublons en moyenne. Meme contact cree par 3 commerciaux differents. Pipeline gonfle, reportings fausses, experiences client deplorables.", icons: ["hubspot.com", "salesforce.com"], cat: "data" },
+  { title: "Aucune source unique de verite", desc: "Le MRR dit un chiffre dans le CRM, un autre dans Stripe, un autre dans le fichier Excel du DAF. Personne ne sait quel est le bon.", icons: ["hubspot.com", "notion.so"], cat: "data" },
+  { title: "Conventions differentes par equipe", desc: "'France', 'FR', 'fra', 'FRANCE' dans le meme champ. 'PDG', 'CEO', 'DG' pour le meme poste. Impossible de filtrer, trier ou automatiser.", icons: ["hubspot.com", "slack.com"], cat: "data" },
   { title: "Champs vides, segmentation impossible", desc: "Un contact sans industrie est exclu de toute segmentation. Un deal sans montant fausse le forecast. Les champs vides ne sont pas neutres, ils sont toxiques.", icons: ["hubspot.com", "make.com"], cat: "data" },
-  { title: "Conventions différentes par équipe", desc: "'France', 'FR', 'fra', 'FRANCE' dans le même champ. 'PDG', 'CEO', 'DG' pour le même poste. Impossible de filtrer, trier ou automatiser.", icons: ["hubspot.com", "slack.com"], cat: "data" },
-  { title: "Nettoyage ponctuel, jamais de gouvernance", desc: "On nettoie la base une fois par an. 3 mois plus tard, c'est reparti. Le nettoyage sans gouvernance, c'est un régime sans changement d'habitudes.", icons: ["hubspot.com", "make.com"], cat: "data" },
+  { title: "Pas de gouvernance", desc: "On nettoie la base une fois par an. 3 mois plus tard, c'est reparti. Le nettoyage sans gouvernance, c'est un regime sans changement d'habitudes.", icons: ["hubspot.com", "make.com"], cat: "data" },
+
+  // Mon equipe perd du temps
+  { title: "3h de reporting chaque lundi", desc: "Les managers copient-collent des chiffres dans des slides au lieu de coacher leurs equipes. Le reporting devrait etre automatique.", icons: ["notion.so", "hubspot.com"], cat: "ops" },
+  { title: "Outils completement deconnectes", desc: "CRM, Slack, outil de prospection, Notion, outil de calls : rien ne se parle. Vos equipes jonglent entre 8 onglets.", icons: ["make.com", "slack.com", "hubspot.com"], cat: "ops" },
+  { title: "Enrichissement a la main", desc: "Vos commerciaux passent 15 min par prospect a chercher des infos sur LinkedIn. A grande echelle, c'est des centaines d'heures perdues par mois.", icons: ["hubspot.com", "slack.com"], cat: "ops" },
+  { title: "Pas de structure unifiee", desc: "Marketing, Sales et CS fonctionnent chacun avec leurs process, leurs outils, leurs metriques. Aucune vision transverse, chaque silo avance seul.", icons: ["hubspot.com", "slack.com"], cat: "ops" },
+  { title: "Process non documentes", desc: "Quand un commercial quitte l'entreprise, son process part avec lui. Rien n'est formalise, rien n'est reproductible, rien n'est scalable.", icons: ["hubspot.com", "notion.so"], cat: "ops" },
+  { title: "Donnees dupliquees entre les outils", desc: "Les memes infos sont copiees dans 4 outils differents. Ca cree du bruit, des erreurs et personne ne sait quelle version est la bonne.", icons: ["make.com", "hubspot.com", "notion.so"], cat: "ops" },
+
+  // L'IA pourrait aider
+  { title: "L'IA ? Pas commence", desc: "Vous savez que l'IA peut aider mais personne n'a le temps ni le setup pour s'y mettre. Pendant ce temps, vos concurrents avancent.", icons: ["claude.ai", "make.com"], cat: "ia" },
+  { title: "L'IA n'est pas connectee au CRM", desc: "Vous utilisez l'IA en copier-coller. Elle n'a pas acces a vos contacts, vos deals, vos donnees. Elle ne peut rien faire d'intelligent sans contexte.", icons: ["claude.ai", "hubspot.com"], cat: "ia" },
+  { title: "Scoring inexistant", desc: "Aucun modele de scoring sur vos leads. Du stagiaire au C-level, tout le monde est traite pareil. L'IA pourrait scorer en temps reel.", icons: ["claude.ai", "hubspot.com"], cat: "ia" },
+  { title: "Calls jamais analyses", desc: "Des centaines d'heures de calls commerciaux sans en extraire un seul pattern. L'IA pourrait resumer, detecter les objections et alimenter le CRM.", icons: ["claude.ai", "hubspot.com"], cat: "ia" },
+  { title: "Reporting manuel alors que l'IA le fait", desc: "Vos managers passent des heures a compiler des rapports. L'IA peut generer un reporting complet chaque lundi matin en 30 secondes.", icons: ["claude.ai", "hubspot.com"], cat: "ia" },
+  { title: "Detection de churn a l'aveugle", desc: "Vous detectez le churn quand le client a deja un pied dehors. L'IA peut alerter 45 jours avant en surveillant les signaux faibles.", icons: ["claude.ai", "hubspot.com"], cat: "ia" },
 ];
 
 const tabs = [
-  { key: "data", label: "Data Quality" },
-  { key: "crm", label: "CRM & Pipeline" },
-  { key: "silos", label: "Silos & Process" },
-  { key: "ia", label: "IA & Automatisation" },
+  { key: "crm", label: "Mon CRM ne marche pas" },
+  { key: "data", label: "Mes donnees sont sales" },
+  { key: "ops", label: "Mon equipe perd du temps" },
+  { key: "ia", label: "L'IA pourrait aider" },
 ];
 
 export default function Features() {
   const [selected, setSelected] = useState<string[]>([]);
-  const [activeTab, setActiveTab] = useState("data");
+  const [activeTab, setActiveTab] = useState("crm");
   const count = selected.length;
   const visible = problems.filter((p) => p.cat === activeTab);
 
