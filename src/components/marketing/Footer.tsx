@@ -2,11 +2,10 @@ import Link from "next/link";
 
 const cols = {
   Services: [
-    { label: "Audit RevOps", href: "/audit-revops" },
-    { label: "Audit CRM", href: "/audit-crm" },
-    { label: "RevOps Part-Time", href: "/revops-part-time" },
-    { label: "Agence HubSpot", href: "/agence-hubspot" },
-    { label: "Agents IA", href: "/agents-ia" },
+    { label: "Diagnostic", href: "/audit-revops" },
+    { label: "Fondation Data", href: "/audit-crm" },
+    { label: "Deploiement IA", href: "/agents-ia" },
+    { label: "Accompagnement continu", href: "/revops-part-time" },
     { label: "Migration CRM", href: "/migration-crm" },
     { label: "Integration HubSpot", href: "/integration-hubspot" },
     { label: "Onboarding HubSpot", href: "/onboarding-hubspot" },
