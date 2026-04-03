@@ -23,15 +23,24 @@ const problems: Problem[] = [
   { title: "SLA inter-équipes inexistants", desc: "Aucun engagement de temps de réponse entre Marketing et Sales. Les leads refroidissent pendant que personne ne bouge.", icons: ["hubspot.com", "slack.com"], cat: "silos" },
 
   // IA & Automatisation
-  { title: "L'IA ? Pas commencé", desc: "Vous savez que Claude peut aider mais personne n'a le temps ni le setup pour s'y mettre.", icons: ["claude.ai", "make.com"], cat: "ia" },
-  { title: "Agents IA pas connectés", desc: "Vous avez testé ChatGPT mais vos agents ne sont pas branchés sur votre CRM, vos calls, vos données.", icons: ["claude.ai", "hubspot.com", "slack.com"], cat: "ia" },
-  { title: "Enrichissement à la main", desc: "Vos SDR passent 30 min par prospect à chercher des infos sur LinkedIn. Clay + Claude pourraient le faire en 3 secondes.", icons: ["clay.com", "claude.ai", "hubspot.com"], cat: "ia" },
+  { title: "L'IA ? Pas commencé", desc: "Vous savez que l'IA peut aider mais personne n'a le temps ni le setup pour s'y mettre.", icons: ["claude.ai", "make.com"], cat: "ia" },
+  { title: "Agents IA pas connectés", desc: "Vous avez testé des LLMs mais vos agents ne sont pas branchés sur votre CRM, vos calls, vos données.", icons: ["claude.ai", "hubspot.com", "slack.com"], cat: "ia" },
+  { title: "Enrichissement à la main", desc: "Vos SDR passent 30 min par prospect à chercher des infos sur LinkedIn. L'IA pourrait le faire en 30 secondes.", icons: ["clay.com", "claude.ai", "hubspot.com"], cat: "ia" },
   { title: "Calls jamais analysés", desc: "Des centaines d'heures de calls commerciaux sans en extraire un seul pattern ou learning exploitable.", icons: ["claap.io", "claude.ai"], cat: "ia" },
-  { title: "Pas de serveur MCP", desc: "Claude Code pourrait automatiser vos ops mais personne n'a mis en place l'infra MCP pour le connecter.", icons: ["claude.ai", "hubspot.com", "make.com"], cat: "ia" },
+  { title: "Pas de connexion IA-CRM", desc: "L'IA pourrait automatiser vos ops mais elle n'est pas connectée a vos outils. Tout reste en copier-coller.", icons: ["claude.ai", "hubspot.com", "make.com"], cat: "ia" },
   { title: "Scoring inexistant", desc: "Aucun modèle de scoring IA sur vos leads. Du stagiaire au C-level, tout le monde est traité pareil.", icons: ["claude.ai", "clay.com", "hubspot.com"], cat: "ia" },
+
+  // Data Quality
+  { title: "40% de votre base est obsolète", desc: "Contacts qui ont changé de poste, emails invalides, champs vides. La dégradation est naturelle, 30% par an. Sans maintenance, votre CRM se dégrade mécaniquement.", icons: ["hubspot.com", "salesforce.com"], cat: "data" },
+  { title: "Aucune source unique de vérité", desc: "Le MRR dit un chiffre dans le CRM, un autre dans Stripe, un autre dans le fichier Excel du DAF. Personne ne sait quel est le bon.", icons: ["hubspot.com", "notion.so"], cat: "data" },
+  { title: "Doublons partout", desc: "15 à 25% de doublons en moyenne. Même contact créé par 3 commerciaux différents. Pipeline gonflé artificiellement, reportings faussés.", icons: ["hubspot.com", "clay.com"], cat: "data" },
+  { title: "Champs vides, segmentation impossible", desc: "Un contact sans industrie est exclu de toute segmentation. Un deal sans montant fausse le forecast. Les champs vides ne sont pas neutres, ils sont toxiques.", icons: ["hubspot.com", "make.com"], cat: "data" },
+  { title: "Conventions différentes par équipe", desc: "'France', 'FR', 'fra', 'FRANCE' dans le même champ. 'PDG', 'CEO', 'DG' pour le même poste. Impossible de filtrer, trier ou automatiser.", icons: ["hubspot.com", "slack.com"], cat: "data" },
+  { title: "Nettoyage ponctuel, jamais de gouvernance", desc: "On nettoie la base une fois par an. 3 mois plus tard, c'est reparti. Le nettoyage sans gouvernance, c'est un régime sans changement d'habitudes.", icons: ["hubspot.com", "make.com"], cat: "data" },
 ];
 
 const tabs = [
+  { key: "data", label: "Data Quality" },
   { key: "crm", label: "CRM & Pipeline" },
   { key: "silos", label: "Silos & Process" },
   { key: "ia", label: "IA & Automatisation" },
@@ -39,7 +48,7 @@ const tabs = [
 
 export default function Features() {
   const [selected, setSelected] = useState<string[]>([]);
-  const [activeTab, setActiveTab] = useState("crm");
+  const [activeTab, setActiveTab] = useState("data");
   const count = selected.length;
   const visible = problems.filter((p) => p.cat === activeTab);
 

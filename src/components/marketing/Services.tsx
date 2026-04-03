@@ -40,10 +40,11 @@ const iaCapabilities = [
 ];
 
 const offers = [
-  { id: "audit", title: "Audit RevOps", subtitle: "Diagnostic complet", desc: "On passe votre CRM, vos process et votre stack au crible. Rapport actionnable en 2 semaines.", color: "#FF7A59", features: ["Rapport 40-60 pages", "Score de maturité RevOps", "Plan d'action à 90 jours"], href: "/audit-revops" },
-  { id: "parttime", title: "RevOps Part-Time", subtitle: "Un expert dédié chaque mois", desc: "Un ops RevOps & IA intégré à votre équipe qui gère votre CRM, automatise vos process et déploie l'IA au quotidien.", color: "#4B5EFC", features: ["Channel Slack dédié", "Itérations hebdomadaires", "Roadmap trimestrielle", "Déploiement IA continu", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
-  { id: "crm", title: "Agence HubSpot", subtitle: "Setup, migration & optimisation", desc: "On configure, migre et optimise votre HubSpot de A à Z. Choisissez vos Hubs et vos options.", color: "#6C5CE7", features: ["Opérationnel en 4 semaines", "Support 30 jours post-launch", "Documentation complète"], href: "/agence-hubspot" },
-  { id: "ia", title: "Agents IA", subtitle: "Claude, MCP & automatisation", desc: "On connecte Claude à votre stack via MCP. Qualification, résumés de calls, enrichissement, scoring.", color: "#6D00CC", features: ["Agents connectés au CRM", "Serveur MCP déployé", "Résultats en 2 semaines", "Formation incluse"], href: "/agents-ia" },
+  { id: "data", title: "Fondation Data", subtitle: "Le prerequis a toute initiative IA", desc: "On cartographie votre stack, nettoie votre base CRM, unifie les flux de donnees et met en place la gouvernance. Sans donnees propres, l'IA multiplie par zero.", color: "#22C55E", features: ["Deduplication et standardisation", "Enrichissement IA", "Gouvernance automatisee", "Source unique de verite"], badge: "Nouveau", href: "/audit-crm" },
+  { id: "audit", title: "Audit RevOps", subtitle: "Diagnostic complet", desc: "On passe votre CRM, vos process et votre stack au crible. Rapport actionnable en 2 semaines.", color: "#FF7A59", features: ["Rapport 40-60 pages", "Score de maturite RevOps", "Plan d'action a 90 jours"], href: "/audit-revops" },
+  { id: "parttime", title: "RevOps Part-Time", subtitle: "Un expert dedie chaque mois", desc: "Un ops RevOps & IA integre a votre equipe qui gere votre CRM, automatise vos process et deploie l'IA au quotidien.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Roadmap trimestrielle", "Deploiement IA continu", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
+  { id: "crm", title: "Agence HubSpot", subtitle: "Setup, migration & optimisation", desc: "On configure, migre et optimise votre HubSpot de A a Z. Choisissez vos Hubs et vos options.", color: "#6C5CE7", features: ["Operationnel en 4 semaines", "Support 30 jours post-launch", "Documentation complete"], href: "/agence-hubspot" },
+  { id: "ia", title: "Agents IA", subtitle: "IA connectee a votre stack", desc: "On deploie des agents IA connectes a votre CRM, vos outils et vos donnees. Qualification, scoring, enrichissement, reporting automatise.", color: "#6D00CC", features: ["Agents connectes au CRM", "Enrichissement automatique", "Resultats en 2 semaines", "Formation incluse"], href: "/agents-ia" },
 ];
 
 function CardStack({ colors }: { colors: string[] }) {
@@ -96,7 +97,7 @@ function ToggleChip({ label, color, active, onClick }: { label: string; color?: 
 }
 
 export default function Services() {
-  const [active, setActive] = useState("parttime");
+  const [active, setActive] = useState("data");
   const [selectedHubs, setSelectedHubs] = useState<string[]>(["sales", "marketing"]);
   const [selectedCrmOpts, setSelectedCrmOpts] = useState<string[]>(["migration", "workflow", "formation"]);
   const [selectedIA, setSelectedIA] = useState<string[]>(["qualify", "summary", "mcp"]);
@@ -110,6 +111,7 @@ export default function Services() {
   // Card colors based on active offer
   function getColors() {
     switch (active) {
+      case "data": return ["#22C55E", "#4B5EFC", "#FF7A59", "#6D00CC"];
       case "audit": return ["#FF7A59", "#4B5EFC", "#6C5CE7", "#D4A27F", "#22C55E"];
       case "parttime": return ["#FF7A59", "#4B5EFC", "#22C55E"];
       case "crm": return selectedHubs.map((id) => hubsList.find((h) => h.id === id)?.color || "#CCC");
@@ -129,7 +131,7 @@ export default function Services() {
           </div>
 
           {/* Tabs — 4 columns */}
-          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4 sm:gap-2 mb-8">
+          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-5 sm:gap-2 mb-8">
             {offers.map((o) => (
               <button key={o.id} type="button" onClick={() => setActive(o.id)}
                 className={"relative p-3.5 rounded-xl border text-left transition-all cursor-pointer " + (active === o.id ? "border-[#111] bg-[#FAFAFA] ring-1 ring-[#111]" : "border-[#F2F2F2] hover:border-[#E0E0E0]")}>

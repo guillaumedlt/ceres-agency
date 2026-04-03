@@ -3,20 +3,20 @@ import Badge from "./Badge";
 const steps = [
   {
     num: "01",
-    title: "Diagnostic",
-    desc: "On audite votre CRM, vos process et votre stack. Quick wins et chantiers structurants identifiés. Vous recevez un rapport actionnable.",
-    duration: "1-2 semaines",
+    title: "Fondation Data",
+    desc: "On cartographie votre stack, nettoie votre base, unifie les flux de donnees. Sans donnees propres, rien ne tient. C'est le prerequis a toute initiative IA.",
+    duration: "4-6 semaines",
   },
   {
     num: "02",
-    title: "Build",
-    desc: "On conçoit et implémente votre architecture RevOps. Pipelines, automatisations, intégrations, agents IA. Tout est déployé dans vos outils.",
-    duration: "3-6 semaines",
+    title: "Deploiement IA",
+    desc: "On deploie les agents IA silo par silo : enrichissement, scoring, reporting, detection de signaux. L'IA prepare, l'humain decide.",
+    duration: "4-8 semaines",
   },
   {
     num: "03",
-    title: "Accompagnement",
-    desc: "On forme vos équipes, on itère sur les process, on mesure les résultats. On reste à vos côtés jusqu'à l'autonomie complète.",
+    title: "Optimisation continue",
+    desc: "On mesure les resultats, on itere, on ajoute des briques. Formation des equipes, veille technologique. L'outil peut changer, la methode reste.",
     duration: "Continu",
   },
 ];
@@ -29,9 +29,9 @@ export default function HowItWorks() {
           <div className="mb-8">
             <div className="mb-4"><Badge>Méthode</Badge></div>
             <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">
-              Comment on travaille
+              Data, IA, optimisation. Dans cet ordre.
             </h2>
-            <p className="text-[13px] text-[#999]">Pas de théorie. Du concret, des résultats mesurables dès les premières semaines.</p>
+            <p className="text-[13px] text-[#999]">L&apos;IA est un multiplicateur. Plus la fondation est solide, plus les resultats sont puissants.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

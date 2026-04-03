@@ -93,8 +93,8 @@ export default function LandingPage() {
               {[
                 { title: "Guide RevOps Ultime", desc: "62 pages de frameworks, templates et checklists. Le playbook qu\u2019on utilise chez Ceres.", href: "/guide-revops-ultime", color: "#FF7A59", tag: "Guide" },
                 { title: "Guide IA Commercial", desc: "42 pages, 25 prompts prouves et 3 workflows Make prets a importer.", href: "/guide-ia-commercial", color: "#6D00CC", tag: "Guide" },
-                { title: "Blog", desc: "43+ articles sur le RevOps, le CRM, l\u2019outbound et l\u2019IA. Contenu actionnable.", href: "/blog", color: "#4B5EFC", tag: "43+ articles" },
-                { title: "Glossaire RevOps", desc: "80+ termes du RevOps, CRM, Marketing et IA expliques simplement.", href: "/glossaire", color: "#22C55E", tag: "80+ termes" },
+                { title: "Blog", desc: "68+ articles sur le RevOps, le CRM, la data et l\u2019IA. Contenu actionnable.", href: "/blog", color: "#4B5EFC", tag: "68+ articles" },
+                { title: "Playbook IA & RevOps", desc: "La methodologie en 3 phases pour integrer l\u2019IA dans vos operations commerciales.", href: "/guide-claude-marketing", color: "#22C55E", tag: "Playbook" },
               ].map((r) => (
                 <Link key={r.title} href={r.href} className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
                   <div className="flex items-center justify-between mb-2">
