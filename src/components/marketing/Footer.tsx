@@ -25,15 +25,15 @@ const cols = {
     { label: "Agence Attio", href: "/agence-attio" },
   ],
   Ressources: [
+    { label: "Notre methode", href: "/methode" },
     { label: "Blog", href: "/blog" },
     { label: "Guides", href: "/guides" },
-    { label: "Glossaire RevOps", href: "/glossaire" },
-    { label: "Outils B2B (173+)", href: "/outils" },
     { label: "Cas clients", href: "/cas-clients" },
     { label: "RevOps, c'est quoi ?", href: "/revops" },
     { label: "Guide RevOps Ultime", href: "/guide-revops-ultime" },
-    { label: "Guide Outbound B2B", href: "/guide-outbound-b2b" },
     { label: "Guide Claude & IA", href: "/guide-claude-marketing" },
+    { label: "Glossaire RevOps", href: "/glossaire" },
+    { label: "Outils B2B (173+)", href: "/outils" },
   ],
   Solutions: [
     { label: "Startups (5-50)", href: "/revops-startup" },
