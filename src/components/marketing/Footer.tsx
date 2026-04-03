@@ -3,7 +3,7 @@ import Link from "next/link";
 const cols = {
   Services: [
     { label: "Diagnostic", href: "/audit-revops" },
-    { label: "Fondation Data", href: "/audit-crm" },
+    { label: "Fondation Data", href: "/fondation-data" },
     { label: "Deploiement IA", href: "/agents-ia" },
     { label: "Accompagnement continu", href: "/revops-part-time" },
     { label: "Migration CRM", href: "/migration-crm" },
