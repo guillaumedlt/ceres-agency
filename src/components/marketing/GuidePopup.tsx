@@ -65,12 +65,7 @@ export default function GuidePopup() {
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
-    const dismissed = sessionStorage.getItem("guide-popup-dismissed");
-    if (dismissed) return;
-
-    // Show after 5 seconds
-    const timer = setTimeout(() => setVisible(true), 5000);
-    return () => clearTimeout(timer);
+    setVisible(true);
   }, []);
 
   function dismiss() {
