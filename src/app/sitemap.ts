@@ -74,6 +74,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "claude-code-equipes-non-techniques",
     "agents-ia-deployes-clients-b2b",
     "data-cleaning-checklist-avant-ia",
+    "claude-reporting-automatise-revops",
+    "metriques-ia-revops-kpi",
+    "ia-remplace-quoi-equipe-commerciale",
+    "prompt-engineering-equipes-commerciales",
+    "roi-ia-b2b-calculer",
+    "ia-customer-success-detection-churn",
   ];
 
   // Case study slugs
