@@ -704,6 +704,28 @@ export default function AgenceRevOpsPage() {
         </section>
         <Connector />
 
+        {/* Liens */}
+        <section className="mt-12 mb-8">
+          <div className="mb-4"><Badge>A decouvrir</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/methode" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Notre methode</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">La methodologie en 5 etapes qui guide chaque mission.</p>
+            </Link>
+            <Link href="/fondation-data" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Fondation Data</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Le prerequis a toute initiative IA : des donnees propres.</p>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
         {/* ── 11. FAQ ── */}
         <section>
           <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">

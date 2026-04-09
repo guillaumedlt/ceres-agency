@@ -266,6 +266,28 @@ export default function AutomatisationCommercialePage() {
         </section>
         <Connector />
 
+        {/* Liens */}
+        <section className="mt-12 mb-8">
+          <div className="mb-4"><Badge>A decouvrir</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/agents-ia" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Deploiement IA</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;automatisation par l&apos;IA va plus loin que les workflows classiques.</p>
+            </Link>
+            <Link href="/formation-claude" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#D4A27F" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Formation Claude</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Formez vos equipes a utiliser l&apos;IA au quotidien.</p>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
         {/* ── FAQ ── */}
         <section className="mb-0">
           <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
