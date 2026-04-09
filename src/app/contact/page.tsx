@@ -113,14 +113,26 @@ export default function ContactPage() {
                 30 minutes pour comprendre votre situation, identifier vos enjeux et voir si on peut vous aider. Sans engagement.
               </p>
 
-              <a
-                href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full py-3 rounded-xl bg-[#111] text-white text-[14px] font-medium text-center hover:bg-[#222] transition-colors mb-5"
-              >
-                Choisir un creneau
-              </a>
+              <div className="flex flex-col sm:flex-row gap-2 mb-5">
+                <a
+                  href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 rounded-xl bg-[#111] text-white text-[13px] font-medium text-center hover:bg-[#222] transition-colors"
+                >
+                  <span className="inline-block w-2 h-2 rounded-sm bg-[#FF7A59] mr-2 align-middle" />
+                  France &amp; International
+                </a>
+                <a
+                  href="https://meetings.hubspot.com/simon156"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 rounded-xl bg-[#111] text-white text-[13px] font-medium text-center hover:bg-[#222] transition-colors"
+                >
+                  <span className="inline-block w-2 h-2 rounded-sm bg-[#4B5EFC] mr-2 align-middle" />
+                  Canada
+                </a>
+              </div>
 
               <div className="space-y-3">
                 {[
@@ -310,10 +322,16 @@ export default function ContactPage() {
           <div className="rounded-2xl bg-[#111] p-6 md:p-10 text-center">
             <h2 className="text-[20px] sm:text-[28px] font-semibold text-white tracking-[-0.02em] mb-3">Pret a discuter ?</h2>
             <p className="text-[14px] text-white/50 mb-6 max-w-[400px] mx-auto leading-[1.7]">Le plus simple : reservez 30 minutes. On analyse votre situation et on vous dit si on peut vous aider.</p>
-            <a href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#FF7A59] text-white text-[14px] font-medium hover:bg-[#E86D4F] transition-colors shadow-[0_4px_12px_-4px_rgba(255,122,89,0.4)]">
-              <span className="w-2 h-2 rounded-full bg-white/30 animate-pulse" />
-              Reserver un appel decouverte
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors">
+                <span className="w-2 h-2 rounded-sm bg-[#FF7A59]" />
+                France &amp; International
+              </a>
+              <a href="https://meetings.hubspot.com/simon156" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/10 text-white text-[13px] font-medium hover:bg-white/20 transition-colors">
+                <span className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
+                Canada
+              </a>
+            </div>
           </div>
         </section>
       </div>
