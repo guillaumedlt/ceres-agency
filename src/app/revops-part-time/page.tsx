@@ -23,14 +23,14 @@ const painPoints = [
 const whatYouGet = [
   { title: "Un ops dédié, pas un consultant", desc: "Il connaît vos deals, vos reps, vos process. Il est dans votre Slack, pas dans un slide deck.", color: "#4B5EFC" },
   { title: "Exécution, pas conseil", desc: "On ne vous dit pas quoi faire. On le fait. Chaque semaine, des livrables concrets dans vos outils.", color: "#FF7A59" },
-  { title: "L'IA deployée pour vous", desc: "Agents Claude connectés à votre CRM via MCP. Qualification, résumés, enrichissement, scoring.", color: "#6D00CC" },
+  { title: "L'IA deployee et optimisee", desc: "Agents IA connectes a votre CRM. Enrichissement, scoring, reporting, detection de churn. On deploie et on optimise en continu.", color: "#6D00CC" },
   { title: "Une équipe derrière", desc: "Votre ops est backed par +10 experts (IA, CRM, data). Pas un freelance seul sur son île.", color: "#22C55E" },
 ];
 
 const monthly = [
   { title: "Gestion CRM", desc: "Maintenance, data quality, vues, rapports, support users", color: "#FF7A59" },
   { title: "Automatisation", desc: "Nouveaux workflows chaque semaine, tâches manuelles éliminées", color: "#4B5EFC" },
-  { title: "Déploiement IA", desc: "Agents Claude, serveur MCP, enrichissement, scoring", color: "#6D00CC" },
+  { title: "Deploiement IA", desc: "Agents IA silo par silo, enrichissement, scoring, reporting", color: "#6D00CC" },
   { title: "Roadmap RevOps", desc: "Plan trimestriel aligné sur vos objectifs revenue", color: "#6C5CE7" },
   { title: "Alignement équipes", desc: "SLA, définition MQL/SQL, lead routing, handoff documentés", color: "#D4A27F" },
   { title: "Reporting", desc: "Dashboards, forecasts, weekly review automatisé", color: "#22C55E" },
@@ -55,7 +55,7 @@ const faqItems = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Service", name: "RevOps Part-Time", provider: { "@type": "Organization", name: "Ceres" }, description: "Un expert RevOps & IA dédié chaque mois, intégré à votre équipe.", serviceType: "Revenue Operations Outsourcing" },
+    { "@type": "Service", name: "Accompagnement RevOps & IA", provider: { "@type": "Organization", name: "Ceres" }, description: "Un expert RevOps et IA integre a votre equipe chaque mois. Pilotage CRM, optimisation des agents IA, iteration continue.", serviceType: "Revenue Operations Outsourcing" },
     { "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   ],
 };
@@ -75,10 +75,10 @@ export default function RevOpsPartTimePage() {
 
         {/* Hero */}
         <section className="text-center mb-20">
-          <div className="mb-4"><Badge>Offre phare</Badge></div>
-          <h1 className="text-[36px] sm:text-[48px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-5">RevOps Part-Time</h1>
+          <div className="mb-4"><Badge>Accompagnement continu</Badge></div>
+          <h1 className="text-[36px] sm:text-[48px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-5">Accompagnement RevOps &amp; IA</h1>
           <p className="text-[17px] text-[#666] max-w-[520px] mx-auto leading-[1.7] mb-8">
-            Votre Head of RevOps & IA, sans le recrutement. Intégré à votre équipe, dès le mois prochain.
+            Un expert RevOps &amp; IA integre a votre equipe chaque mois. Il pilote votre CRM, optimise les agents IA, itere sur les process et deploie de nouvelles briques. Sans engagement.
           </p>
           <a href="#contact" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-md border border-[#E5E5E5] bg-white text-[13px] text-[#111] font-medium hover:border-[#CCC] hover:shadow-sm transition-all">
             <span className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
