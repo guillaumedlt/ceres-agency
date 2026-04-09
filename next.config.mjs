@@ -255,6 +255,13 @@ const nextConfig = {
 
       // Batch 6 - /faq-revops/ catch-all (covers all remaining variants)
       { source: "/faq-revops/:slug*", destination: "/revops", permanent: true },
+
+      // Consolidation : ancien agent-ia-commercial -> deploiement IA
+      { source: "/agent-ia-commercial", destination: "/agents-ia", permanent: true },
+
+      // SEO : consultant-claude -> agence-claude
+      { source: "/consultant-claude", destination: "/agence-claude", permanent: true },
+      { source: "/expert-claude", destination: "/agence-claude", permanent: true },
     ];
   },
 };
