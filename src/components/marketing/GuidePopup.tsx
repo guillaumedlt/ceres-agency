@@ -78,7 +78,7 @@ export default function GuidePopup() {
   const active = guides[activeIdx];
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 w-[340px] max-w-[calc(100vw-24px)] rounded-2xl bg-white border border-[#E8E8E8] shadow-[0_12px_40px_-10px_rgba(0,0,0,0.15)] overflow-hidden animate-[fadeSlideIn_0.4s_ease-out]">
+    <div className="hidden lg:block fixed bottom-5 right-5 z-50 w-[340px] max-w-[calc(100vw-24px)] rounded-2xl bg-white border border-[#E8E8E8] shadow-[0_12px_40px_-10px_rgba(0,0,0,0.15)] overflow-hidden animate-[fadeSlideIn_0.4s_ease-out]">
       {/* Header */}
       <div className="bg-[#111] px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">

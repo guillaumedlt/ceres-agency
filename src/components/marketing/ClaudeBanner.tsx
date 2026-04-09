@@ -28,7 +28,7 @@ export default function ClaudeBanner() {
 
   return (
     <div
-      className="fixed top-16 left-0 right-0 z-40 h-10 bg-[#F8F5F0] border-b border-[#E8E4DF] transition-opacity duration-300"
+      className="hidden lg:block fixed top-16 left-0 right-0 z-40 h-10 bg-[#F8F5F0] border-b border-[#E8E4DF] transition-opacity duration-300"
       style={{ opacity: visible ? 1 : 0 }}
     >
       <div className="h-full flex items-center justify-center gap-2 px-4">
