@@ -69,6 +69,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "hubspot-vs-dynamics-365-comparatif",
     "hubspot-vs-zoho-comparatif",
     "clay-enrichissement-donnees-b2b-guide",
+    "process-data-ia-ordre-revops",
+    "mcp-connecter-claude-crm-outils",
+    "claude-code-equipes-non-techniques",
+    "agents-ia-deployes-clients-b2b",
+    "data-cleaning-checklist-avant-ia",
   ];
 
   // Case study slugs
@@ -153,7 +158,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/agent-ia-commercial`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/externaliser-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
-    // Claude Business
+    // Methode & Fondation Data
+    { url: `${base}/methode`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/fondation-data`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+
+    // Claude pages
+    { url: `${base}/agence-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/formation-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/deployer-claude-entreprise`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/claude-business`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // Outils directory

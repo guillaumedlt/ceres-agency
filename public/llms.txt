@@ -1,18 +1,36 @@
 # Ceres - Agence RevOps & IA
 
-> Ceres est une agence RevOps et IA basee a Paris qui structure, automatise et optimise les operations commerciales des entreprises B2B. Partenaire HubSpot, specialiste CRM, automatisation et intelligence artificielle appliquee aux ventes.
+> Ceres est une agence RevOps et IA basee a Paris qui structure, automatise et optimise les operations commerciales des entreprises B2B. Specialiste data, CRM, deploiement IA et accompagnement continu.
 
-## Services principaux
+## Notre methode
 
-- Audit RevOps : diagnostic complet des operations commerciales — /audit-revops
-- Audit CRM : evaluation de votre CRM et recommandations — /audit-crm
-- RevOps Part-Time : un directeur RevOps a temps partage — /revops-part-time
-- Agence HubSpot : implementation, migration et optimisation HubSpot — /agence-hubspot
-- Agents IA : deploiement d'agents IA pour les equipes commerciales — /agents-ia
+La methodologie Ceres en 5 etapes : donnees propres, enrichissement IA, audit par silo, KPIs, iteration continue. L'IA est un multiplicateur, pas une solution. La qualite de la donnee determine le resultat.
+
+- Notre methode : Data, IA et Revenue Operations — /methode
+- Deployer Claude en entreprise : guide complet — /deployer-claude-entreprise
+
+## Services principaux (parcours progressif)
+
+- Diagnostic : audit CRM, RevOps et data quality — /audit-revops
+- Fondation Data : nettoyage CRM, KPIs alignes, gouvernance — /fondation-data
+- Deploiement IA : agents IA par silo RevOps — /agents-ia
+- Accompagnement continu : expert RevOps & IA chaque mois — /revops-part-time
+
+## Claude & IA
+
+- Agence Claude : deployer l'IA d'Anthropic dans vos ops B2B — /agence-claude
+- Formation Claude : par metier, 0.5 a 1 jour — /formation-claude
+- Deployer Claude en entreprise : guide complet — /deployer-claude-entreprise
+- Claude pour le business B2B : 50+ cas d'usage — /claude-business
+
+## Services CRM & HubSpot
+
+- Agence HubSpot : implementation, migration et optimisation — /agence-hubspot
+- Audit CRM : evaluation de votre CRM — /audit-crm
 - Migration CRM : migration vers HubSpot depuis Salesforce, Dynamics, Pipedrive — /migration-crm
-- Integration HubSpot : connexion de HubSpot a votre stack — /integration-hubspot
+- Integration HubSpot : connexion a votre stack — /integration-hubspot
 - Onboarding HubSpot : mise en place et formation — /onboarding-hubspot
-- Formation HubSpot : formations certifiantes — /formation-hubspot
+- Formation HubSpot : formations equipes — /formation-hubspot
 
 ## Solutions par taille d'entreprise
 
@@ -21,46 +39,46 @@
 - Scale-ups (200-1000 personnes) — /revops-scaleup
 - Grands Groupes (1000+) — /revops-grand-groupe
 
-## Expertise et pages cles
+## Guides gratuits (7 ressources premium)
+
+- Guide RevOps Ultime (62 pages) — /guide-revops-ultime
+- Guide Claude & IA pour le Marketing B2B (55 pages) — /guide-claude-marketing
+- Guide IA Commercial (42 pages) — /guide-ia-commercial
+- Guide Outbound B2B — /guide-outbound-b2b
+- Guide Migration CRM — /guide-migration-crm
+- Guide Data Quality CRM — /guide-data-quality-crm
+
+## Blog (68+ articles)
+
+Articles sur le RevOps, le CRM, la data quality, l'IA et les operations commerciales B2B — /blog
+
+Articles notables :
+- Process, Data, IA : pourquoi l'ordre compte en RevOps — /blog/process-data-ia-ordre-revops
+- MCP : connecter Claude a votre CRM et vos outils — /blog/mcp-connecter-claude-crm-outils
+- Claude Code pour les equipes non-techniques — /blog/claude-code-equipes-non-techniques
+- 5 agents IA deployes chez nos clients B2B — /blog/agents-ia-deployes-clients-b2b
+- Data cleaning avant l'IA : checklist 30 points — /blog/data-cleaning-checklist-avant-ia
+- Claude vs ChatGPT pour les equipes commerciales — /blog/claude-vs-chatgpt-equipes-commerciales
+- Data quality CRM : audit et nettoyage en 5 etapes — /blog/data-quality-crm-audit-nettoyage
+
+## Expertise
 
 - Agence RevOps — /agence-revops
-- Agence RevOps Paris — /agence-revops-paris
-- Agence HubSpot Paris — /agence-hubspot-paris
-- Consultant HubSpot — /consultant-hubspot
 - Consultant RevOps — /consultant-revops
+- Consultant HubSpot — /consultant-hubspot
 - CRM HubSpot — /crm-hubspot
 - HubSpot vs Salesforce — /hubspot-vs-salesforce
 - Externaliser RevOps — /externaliser-revops
 - Automatisation commerciale — /automatisation-commerciale
-- Lead Scoring HubSpot — /lead-scoring-hubspot
-- Agent IA Commercial — /agent-ia-commercial
-
-## Guides gratuits (ressources premium)
-
-- Guide RevOps Ultime (55 pages) — /guide-revops-ultime
-- Guide IA Commercial — /guide-ia-commercial
-- Guide Outbound B2B — /guide-outbound-b2b
-- Guide Migration CRM — /guide-migration-crm
-- Guide Data Quality CRM — /guide-data-quality-crm
-- Guide Claude & IA pour le Marketing B2B — /guide-claude-marketing
-
-## Ressources
-
-- Blog (58 articles sur RevOps, CRM, IA, HubSpot) — /blog
-- Glossaire RevOps — /glossaire
-- Annuaire de 173+ outils B2B — /outils
-- Cas clients (13 etudes de cas) — /cas-clients
-- RevOps, c'est quoi ? — /revops
 
 ## Cas clients notables
 
-- Alan, TotalEnergies, Kameleoon, Edenred, Dougs, HiPay, Ringover, Beedeez, Tennaxia, OpenDataSoft, Iroko
+Alan, TotalEnergies, Kameleoon, Edenred, Dougs, HiPay, Ringover, Beedeez, Tennaxia, OpenDataSoft, Iroko — /cas-clients
 
 ## Informations
 
 - Site : https://ceres.agency
 - Siege : 128 rue La Boetie, 75008 Paris
 - Entite : Ceres Growth Marketing
-- LinkedIn : https://www.linkedin.com/company/ceres-revops-ops/
 - Contact : /contact
 - A propos : /a-propos
