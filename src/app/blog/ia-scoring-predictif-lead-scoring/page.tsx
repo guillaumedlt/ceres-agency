@@ -8,40 +8,40 @@ import Connector from "@/components/marketing/Connector";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Scoring predictif IA : remplacer le lead scoring manuel",
-  description: "Lead scoring classique vs scoring predictif par IA : comment le machine learning analyse vos deals CRM pour generer un score predictif. Implementation, outils, resultats concrets.",
+  headline: "IA et scoring predictif : le futur du lead scoring B2B",
+  description: "Guide complet du scoring predictif par IA en B2B : machine learning vs scoring manuel, donnees requises, HubSpot predictive scoring, outils tiers (6sense, Madkudu), implementation et mesure de la precision.",
   author: { "@type": "Person", name: "Guillaume Delachet", url: "https://ceres.agency" },
   publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency", logo: { "@type": "ImageObject", url: "https://ceres.agency/logo.png" } },
   datePublished: "2026-03-29",
   dateModified: "2026-03-29",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://ceres.agency/blog/ia-scoring-predictif-lead-scoring" },
-  articleSection: "IA & RevOps",
-  wordCount: 2800,
+  articleSection: "IA & Automatisation",
+  wordCount: 3400,
   inLanguage: "fr",
 };
 
 const sections = [
-  { id: "scoring-classique", title: "Le scoring classique" },
-  { id: "limites", title: "Ses limites" },
-  { id: "scoring-predictif", title: "Le scoring predictif" },
-  { id: "comment-ca-marche", title: "Comment ca marche" },
-  { id: "hubspot-predictive", title: "HubSpot predictive" },
-  { id: "claude-alternative", title: "Claude comme alternative" },
-  { id: "implementation", title: "Implementation" },
-  { id: "resultats", title: "Resultats concrets" },
-  { id: "erreurs", title: "Erreurs a eviter" },
-  { id: "approche-ceres", title: "Notre approche" },
+  { id: "traditional-vs-predictive", title: "Traditionnel vs predictif" },
+  { id: "how-ml-scoring-works", title: "Comment fonctionne le ML" },
+  { id: "data-requirements", title: "Donnees requises" },
+  { id: "hubspot-predictive", title: "HubSpot predictive scoring" },
+  { id: "third-party-tools", title: "Outils tiers" },
+  { id: "implementation-steps", title: "Etapes d\u2019implementation" },
+  { id: "accuracy-metrics", title: "Metriques de precision" },
+  { id: "common-pitfalls", title: "Erreurs courantes" },
+  { id: "hybrid-approach", title: "Approche hybride" },
+  { id: "future-trends", title: "Tendances futures" },
 ];
 
 const relatedArticles = [
-  { title: "Lead Scoring : le guide complet", slug: "lead-scoring-guide-complet", category: "CRM & HubSpot", color: "#FF7A59" },
-  { title: "CRM et IA : intelligence artificielle au service du commercial", slug: "crm-ia-intelligence-artificielle", category: "IA", color: "#4B5EFC" },
-  { title: "IA dans le processus commercial et la vente B2B", slug: "ia-processus-commercial-vente-b2b", category: "IA & Vente", color: "#6C5CE7" },
+  { title: "Lead Scoring : le guide complet", slug: "lead-scoring-guide-complet", category: "CRM & HubSpot", color: "#4B5EFC" },
+  { title: "IA dans le processus commercial B2B", slug: "ia-processus-commercial-vente-b2b", category: "IA & Automatisation", color: "#6D00CC" },
+  { title: "Data quality CRM : audit et nettoyage", slug: "data-quality-crm-audit-nettoyage", category: "RevOps", color: "#FF7A59" },
 ];
 
-export default function ScoringPredictifIAPage() {
+export default function IAScoringPredictifPage() {
   const [progress, setProgress] = useState(0);
-  const [activeSection, setActiveSection] = useState("scoring-classique");
+  const [activeSection, setActiveSection] = useState("traditional-vs-predictive");
 
   useEffect(() => {
     function onScroll() {
@@ -66,10 +66,16 @@ export default function ScoringPredictifIAPage() {
     <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
       {/* Progress bar */}
       <div className="fixed top-0 left-0 right-0 h-[2px] z-50">
-        <div className="h-full bg-[#FF7A59] transition-all duration-150" style={{ width: `${progress}%` }} />
+        <div className="h-full bg-[#6D00CC] transition-all duration-150" style={{ width: `${progress}%` }} />
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* Decorative blobs */}
+      <div className="hidden lg:block absolute top-[120px] left-[-200px] w-[500px] h-[500px] rounded-full bg-[#6D00CC]/5 blur-[100px] pointer-events-none" />
+      <div className="hidden lg:block absolute top-[600px] right-[-250px] w-[400px] h-[400px] rounded-full bg-[#4B5EFC]/5 blur-[100px] pointer-events-none" />
+      <div className="hidden lg:block absolute top-[1200px] left-[-150px] w-[350px] h-[350px] rounded-full bg-[#22C55E]/5 blur-[100px] pointer-events-none" />
+      <div className="hidden lg:block absolute top-[1800px] right-[-200px] w-[450px] h-[450px] rounded-full bg-[#6D00CC]/5 blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6">
         <div className="flex gap-10">
@@ -84,7 +90,7 @@ export default function ScoringPredictifIAPage() {
                     href={`#${s.id}`}
                     className={`block text-[11px] py-1.5 pl-3 border-l-2 transition-all ${
                       activeSection === s.id
-                        ? "border-[#FF7A59] text-[#111] font-medium"
+                        ? "border-[#6D00CC] text-[#111] font-medium"
                         : "border-transparent text-[#999] hover:text-[#666] hover:border-[#DDD]"
                     }`}
                   >
@@ -95,10 +101,10 @@ export default function ScoringPredictifIAPage() {
               <div className="mt-8 pt-6 border-t border-[#F2F2F2]">
                 <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-3">Partager</p>
                 <div className="flex gap-2">
-                  <a href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
+                  <a href="https://twitter.com/intent/tweet?text=IA%20scoring%20predictif%20lead%20scoring%20B2B&url=https://ceres.agency/blog/ia-scoring-predictif-lead-scoring" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                   </a>
-                  <a href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ceres.agency/blog/ia-scoring-predictif-lead-scoring" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
                   </a>
                 </div>
@@ -111,20 +117,19 @@ export default function ScoringPredictifIAPage() {
             <nav className="mb-8 flex items-center gap-2 text-[12px] text-[#999]">
               <Link href="/" className="hover:text-[#111] transition-colors">Accueil</Link><span>/</span>
               <Link href="/blog" className="hover:text-[#111] transition-colors">Blog</Link><span>/</span>
-              <span className="text-[#666]">Scoring predictif IA</span>
+              <span className="text-[#666]">IA et scoring predictif</span>
             </nav>
 
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-5">
-                <Badge>IA</Badge>
-                <Badge>RevOps</Badge>
-                <span className="text-[11px] text-[#CCC]">15 min de lecture</span>
+                <Badge>IA &amp; Automatisation</Badge>
+                <span className="text-[11px] text-[#CCC]">26 min de lecture</span>
               </div>
               <h1 className="text-[28px] sm:text-[36px] font-semibold text-[#111] leading-[1.15] tracking-[-0.025em] mb-5">
-                Scoring predictif IA : remplacer le lead scoring manuel
+                IA et scoring predictif : le futur du lead scoring B2B
               </h1>
               <p className="text-[16px] text-[#666] leading-[1.7] mb-6">
-                Le lead scoring manuel (regles if/then) a atteint ses limites. Le scoring predictif IA analyse les patterns de vos deals gagnes et perdus pour generer un score automatique, plus precis et qui s&apos;ameliore dans le temps. Ce guide couvre la theorie, les outils et l&apos;implementation pas a pas.
+                Le lead scoring manuel atteint ses limites. Les modeles de machine learning analysent des centaines de signaux pour predire la probabilite de conversion avec une precision que les regles manuelles ne peuvent pas atteindre. Ce guide compare scoring traditionnel et predictif, detaille les donnees necessaires, presente les outils disponibles (HubSpot, 6sense, Madkudu) et fournit une feuille de route d&apos;implementation concrete.
               </p>
               <div className="flex items-center gap-4 text-[12px] text-[#999]">
                 <div className="flex items-center gap-2">
@@ -136,300 +141,290 @@ export default function ScoringPredictifIAPage() {
             </header>
 
             <article>
-              {/* Section 1 — Scoring classique */}
-              <section id="scoring-classique" className="mb-8">
+              {/* ================================================================ */}
+              {/* Section 1 : Traditionnel vs predictif */}
+              {/* ================================================================ */}
+              <section id="traditional-vs-predictive" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Le lead scoring classique : regles manuelles</h2>
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Scoring traditionnel vs scoring predictif : deux philosophies</h2>
                   <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Le lead scoring classique repose sur des regles definies manuellement par les equipes marketing et sales. Le principe : chaque action ou attribut d&apos;un contact recoit un nombre de points. Quand le total atteint un seuil, le contact est considere comme qualifie (MQL) et passe aux commerciaux.</p>
-                    <p>Les criteres sont generalement divises en deux categories. Le <strong className="text-[#111]">fit</strong> mesure la correspondance du lead avec votre ICP (Ideal Customer Profile). Il inclut des attributs statiques : secteur d&apos;activite (+10 si SaaS B2B), taille d&apos;entreprise (+15 si 50-200 employes), poste du contact (+20 si VP Sales ou CEO), localisation (+5 si France), budget declare (+10 si superieur a 50K euros). Le fit repond a la question : ce lead correspond-il au type de client que nous signons habituellement ?</p>
-                    <p>L&apos;<strong className="text-[#111]">engagement</strong> mesure l&apos;interet manifeste du lead pour votre solution. Il inclut des actions comportementales : visite de la page pricing (+15), telechargement d&apos;un livre blanc (+10), ouverture d&apos;un email BOFU (+5), participation a un webinar (+20), demande de demo (+30), visite repetee du site (+3 par visite). L&apos;engagement repond a la question : ce lead est-il activement interesse par notre solution ?</p>
-                    <p>Un lead avec un fit eleve mais un engagement faible est un &ldquo;bon profil endormi&rdquo; : il faut le nourrir avec du contenu. Un lead avec un engagement eleve mais un fit faible est un &ldquo;curieux non qualifie&rdquo; : il ne sera probablement pas un bon client. Le scoring idéal combine les deux dimensions pour identifier les leads qui sont a la fois bien profiles et activement engages.</p>
-                    <p>Ce modele a fonctionne pendant des annees et reste la base de la majorite des implementations de lead scoring en 2026. Il a le merite d&apos;etre simple, transparent et facile a expliquer aux equipes. Mais il a des limites fondamentales qui deviennent de plus en plus visibles a mesure que les volumes de leads augmentent et que les parcours d&apos;achat se complexifient.</p>
+                    <p>Le lead scoring traditionnel repose sur des regles definies manuellement par les equipes marketing et commerciales. On attribue des points a des criteres demographiques (taille d&apos;entreprise, poste, secteur) et comportementaux (pages visitees, emails ouverts, formulaires soumis). Le score final determine si le lead est pret a etre transmis au commercial.</p>
+                    <p><strong className="text-[#111]">Les limites du scoring manuel.</strong> Le scoring traditionnel presente trois faiblesses structurelles. Premierement, les poids attribues sont subjectifs : pourquoi donner 15 points a la visite de la page tarifs plutot que 10 ou 20 ? Deuxiemement, le nombre de variables prises en compte est limite par la capacite humaine : un analyste peut gerer 20-30 criteres, un modele ML peut en traiter des centaines. Troisiemement, les regles ne s&apos;adaptent pas : les comportements des acheteurs evoluent, mais les regles de scoring restent figees jusqu&apos;a la prochaine revision trimestrielle.</p>
+                    <p><strong className="text-[#111]">Le scoring predictif par IA.</strong> Le scoring predictif utilise des algorithmes de machine learning pour analyser l&apos;historique des deals gagnes et perdus et identifier les patterns qui predisent la conversion. Au lieu de definir manuellement les criteres et les poids, le modele les decouvre dans les donnees. Il detecte des correlations invisibles a l&apos;oeil humain : un lead qui visite la page carriere et la page integration dans la meme session a peut-etre une probabilite de conversion 3 fois superieure, meme si individuellement ces pages ne semblent pas significatives.</p>
                   </div>
 
-                  {/* CSS Mockup: scoring classique */}
-                  <div className="mt-6 p-4 rounded-xl bg-[#FAFAFA] border border-[#F0F0F0]">
-                    <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-4">Scoring classique - Exemple de grille</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <p className="text-[11px] font-semibold text-[#FF7A59] mb-2">Fit (attributs)</p>
-                        <div className="space-y-1.5">
-                          {[
-                            { criteria: "Secteur SaaS B2B", points: "+10" },
-                            { criteria: "50-200 employes", points: "+15" },
-                            { criteria: "VP Sales / CEO", points: "+20" },
-                            { criteria: "Budget superieur a 50K", points: "+10" },
-                            { criteria: "Localisation France", points: "+5" },
-                          ].map((c) => (
-                            <div key={c.criteria} className="flex items-center justify-between text-[11px]">
-                              <span className="text-[#555]">{c.criteria}</span>
-                              <span className="font-semibold text-[#FF7A59]">{c.points}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <p className="text-[11px] font-semibold text-[#4B5EFC] mb-2">Engagement (actions)</p>
-                        <div className="space-y-1.5">
-                          {[
-                            { criteria: "Visite page pricing", points: "+15" },
-                            { criteria: "Telechargement livre blanc", points: "+10" },
-                            { criteria: "Participation webinar", points: "+20" },
-                            { criteria: "Demande de demo", points: "+30" },
-                            { criteria: "Ouverture email BOFU", points: "+5" },
-                          ].map((c) => (
-                            <div key={c.criteria} className="flex items-center justify-between text-[11px]">
-                              <span className="text-[#555]">{c.criteria}</span>
-                              <span className="font-semibold text-[#4B5EFC]">{c.points}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-4 pt-3 border-t border-[#E8E8E8] text-center">
-                      <p className="text-[11px] text-[#999]">Seuil MQL : <span className="font-semibold text-[#22C55E]">50 points</span> (fit minimum 20 + engagement minimum 30)</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <Connector />
-
-              {/* Section 2 — Limites */}
-              <section id="limites" className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Les limites du scoring manuel</h2>
-                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Le scoring manuel a cinq limites structurelles qui deviennent critiques a mesure que votre volume de leads augmente.</p>
-                    <p><strong className="text-[#111]">Limite 1 : les biais humains.</strong> Les regles de scoring sont definies par les equipes, basees sur leur intuition et leur experience. Le VP Sales est convaincu que les leads du secteur fintech convertissent mieux. Le marketing pense que les telechargeurs de livres blancs sont les meilleurs leads. Ces hypotheses ne sont pas toujours verifiees par les donnees. L&apos;IA, elle, analyse les patterns reels dans les donnees sans biais preconcu.</p>
-                    <p><strong className="text-[#111]">Limite 2 : l&apos;incapacite a detecter les patterns complexes.</strong> Le scoring manuel fonctionne avec des regles lineaires : +10 pour tel critere, +15 pour tel autre. Mais les patterns de conversion sont rarement lineaires. Un lead du secteur fintech qui visite la page pricing ET qui a ete refere par un client existant a peut-etre 5 fois plus de chances de convertir que la somme de ses points individuels. Le scoring manuel ne capture pas ces interactions entre variables.</p>
-                    <p><strong className="text-[#111]">Limite 3 : la maintenance permanente.</strong> Les patterns de conversion evoluent. Ce qui fonctionnait il y a 6 mois ne fonctionne plus aujourd&apos;hui. Le scoring manuel doit etre recalibre regulierement, ce qui demande du temps et des ressources. En pratique, la plupart des equipes definissent le scoring une fois et ne le mettent jamais a jour. Le modele devient obsolete en quelques mois.</p>
-                    <p><strong className="text-[#111]">Limite 4 : le volume de donnees inexploite.</strong> Le scoring manuel utilise typiquement 5 a 15 criteres. Mais votre CRM contient des centaines de donnees par contact : historique des interactions, proprietes de l&apos;entreprise, donnees d&apos;intent, signaux sociaux, sequences d&apos;emails, tickets de support. Le scoring manuel ne peut pas exploiter cette richesse de donnees. L&apos;IA peut analyser des centaines de variables simultanement.</p>
-                    <p><strong className="text-[#111]">Limite 5 : pas d&apos;apprentissage automatique.</strong> Quand un lead score 80 mais ne convertit pas, le scoring manuel ne s&apos;ajuste pas. L&apos;equipe doit manuellement analyser pourquoi et modifier les regles. Le scoring predictif IA, lui, apprend de chaque deal gagne ou perdu et recalibre automatiquement le modele.</p>
-                  </div>
-                </div>
-              </section>
-              <Connector />
-
-              {/* Section 3 — Le scoring predictif */}
-              <section id="scoring-predictif" className="mb-8">
-                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 text-[12px] font-medium text-white/60 mb-4">IA</span>
-                  <h2 className="text-[17px] font-semibold text-white mb-4">Le scoring predictif : l&apos;IA analyse vos deals</h2>
-                  <div className="space-y-3 text-[13px] text-white/60 leading-[1.75]">
-                    <p>Le scoring predictif inverse la logique. Au lieu de definir des regles manuellement, on donne a un algorithme de machine learning l&apos;ensemble des donnees historiques de votre CRM : tous les deals gagnes, tous les deals perdus, toutes les proprietes des contacts et entreprises associes, toutes les interactions (emails, appels, reunions, pages visitees). L&apos;algorithme identifie les patterns qui differencient les deals gagnes des deals perdus et genere un score de probabilite de conversion pour chaque nouveau lead.</p>
-                    <p>Concretement, l&apos;IA decouvre des correlations que l&apos;humain ne voit pas. Par exemple : les leads qui visitent la page &ldquo;integrations&rdquo; avant la page pricing ont un taux de conversion 3 fois superieur. Ou : les entreprises entre 80 et 150 employes dans le secteur e-commerce qui ont un CTO dans le comite de decision signent 65% du temps. Ces patterns sont trop complexes et trop nombreux pour etre detectes manuellement, mais l&apos;IA les identifie en analysant des milliers de deals.</p>
-                    <p>Le resultat est un score de 0 a 100 pour chaque lead, representant la probabilite de conversion en client. Un lead a 85 signifie que, parmi les leads historiques avec un profil et un comportement similaires, 85% sont devenus clients. Ce score est recalcule en temps reel a chaque nouvelle interaction du lead, et le modele se recalibre periodiquement en integrant les nouveaux deals gagnes et perdus.</p>
-                    <p>L&apos;avantage principal est la precision. Les etudes montrent que le scoring predictif augmente le taux de conversion des MQLs de 25 a 40% par rapport au scoring manuel, car il envoie aux commerciaux des leads reellement susceptibles de convertir, pas juste des leads qui ont coche les bonnes cases dans une grille arbitraire.</p>
-                  </div>
-
-                  {/* Comparison mockup: classique vs predictif */}
-                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                      <p className="text-[12px] font-semibold text-[#999] mb-3">Scoring classique</p>
-                      <ul className="space-y-2">
+                  <div className="mt-5 overflow-x-auto">
+                    <table className="w-full text-[11px]">
+                      <thead>
+                        <tr className="border-b border-[#E8E8E8]">
+                          <th className="text-left py-2 pr-3 text-[#999] font-semibold">Critere</th>
+                          <th className="text-left py-2 pr-3 text-[#999] font-semibold">Scoring traditionnel</th>
+                          <th className="text-left py-2 text-[#999] font-semibold">Scoring predictif (IA)</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-[#555]">
                         {[
-                          "Regles definies manuellement",
-                          "5-15 criteres utilises",
-                          "Pas d\u2019apprentissage automatique",
-                          "Maintenance manuelle requise",
-                          "Biais humains integres",
-                          "Score lineaire (somme de points)",
-                        ].map((item) => (
-                          <li key={item} className="flex items-start gap-2 text-[11px] text-white/40">
-                            <span className="w-1 h-1 rounded-full mt-1.5 shrink-0 bg-[#999]" />
-                            {item}
-                          </li>
+                          { critere: "Definition des criteres", trad: "Manuelle, par les equipes", pred: "Automatique, par les algorithmes" },
+                          { critere: "Nombre de variables", trad: "20-30 criteres", pred: "Des centaines de signaux" },
+                          { critere: "Ponderation", trad: "Subjective, basee sur l\u2019intuition", pred: "Objective, basee sur les donnees" },
+                          { critere: "Adaptation", trad: "Revision trimestrielle manuelle", pred: "Reentrainement automatique continu" },
+                          { critere: "Precision", trad: "60-70% de leads bien qualifies", pred: "80-90% de leads bien qualifies" },
+                          { critere: "Transparence", trad: "Totale (regles explicites)", pred: "Variable (boite noire vs explicable)" },
+                          { critere: "Volume de donnees requis", trad: "Faible (applicable des le debut)", pred: "Eleve (min. 500-1000 deals historiques)" },
+                          { critere: "Cout de mise en oeuvre", trad: "Faible (natif dans le CRM)", pred: "Moyen a eleve (outil tiers ou ML interne)" },
+                        ].map((row) => (
+                          <tr key={row.critere} className="border-b border-[#F5F5F5]">
+                            <td className="py-2 pr-3 font-medium text-[#111]">{row.critere}</td>
+                            <td className="py-2 pr-3">{row.trad}</td>
+                            <td className="py-2">{row.pred}</td>
+                          </tr>
                         ))}
-                      </ul>
-                    </div>
-                    <div className="p-4 rounded-xl bg-white/5 border border-[#FF7A59]/30">
-                      <p className="text-[12px] font-semibold text-[#FF7A59] mb-3">Scoring predictif IA</p>
-                      <ul className="space-y-2">
-                        {[
-                          "Patterns detectes automatiquement",
-                          "Centaines de variables analysees",
-                          "Auto-apprentissage continu",
-                          "Recalibrage automatique",
-                          "Pas de biais humain",
-                          "Score probabiliste (0-100%)",
-                        ].map((item) => (
-                          <li key={item} className="flex items-start gap-2 text-[11px] text-white/60">
-                            <span className="w-1 h-1 rounded-full mt-1.5 shrink-0 bg-[#FF7A59]" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+              <Connector />
+
+              {/* ================================================================ */}
+              {/* Section 2 : Comment fonctionne le ML */}
+              {/* ================================================================ */}
+              <section id="how-ml-scoring-works" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Comment le machine learning genere un score predictif</h2>
+                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Le scoring predictif repose sur un processus en 4 etapes que tout professionnel RevOps doit comprendre pour evaluer et piloter son modele, meme sans etre data scientist.</p>
+                    <p><strong className="text-[#111]">Etape 1 : collecte des donnees historiques.</strong> Le modele a besoin d&apos;un historique de deals closed-won et closed-lost avec toutes les donnees associees : proprietes du contact, de l&apos;entreprise, historique d&apos;engagement (pages vues, emails, formulaires), donnees d&apos;enrichissement (technographiques, firmographiques) et timeline du deal. Plus l&apos;historique est riche et complet, plus le modele sera precis.</p>
+                    <p><strong className="text-[#111]">Etape 2 : feature engineering.</strong> Les donnees brutes sont transformees en &ldquo;features&rdquo; (variables) exploitables par le modele. Par exemple, au lieu d&apos;utiliser la liste brute des pages visitees, on calcule des features comme &ldquo;nombre de pages produit visitees&rdquo;, &ldquo;temps total passe sur le site&rdquo;, &ldquo;ratio pages BOFU/pages totales&rdquo;, &ldquo;delai entre premiere visite et soumission de formulaire&rdquo;. Cette etape est cruciale car la qualite des features determine la qualite du modele.</p>
+                    <p><strong className="text-[#111]">Etape 3 : entrainement du modele.</strong> L&apos;algorithme (generalement une regression logistique, un random forest ou un gradient boosting) est entraine sur les donnees historiques. Il apprend les patterns qui distinguent les deals gagnes des deals perdus. Le modele est valide sur un jeu de donnees qu&apos;il n&apos;a jamais vu pour mesurer sa capacite de generalisation.</p>
+                    <p><strong className="text-[#111]">Etape 4 : scoring en temps reel.</strong> Une fois entraine, le modele est deploye en production. Chaque nouveau lead recoit un score predictif en temps reel, generalement exprime en probabilite de conversion (0 a 100%). Ce score est mis a jour a chaque nouvelle interaction du lead. Le modele est reentrainer periodiquement (mensuel ou trimestriel) avec les nouvelles donnees pour maintenir sa precision.</p>
+                  </div>
+
+                  <div className="mt-5 rounded-xl bg-[#F9FAFB] border border-[#F2F2F2] p-4">
+                    <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-3">Pipeline du scoring predictif</p>
+                    <div className="flex flex-col sm:flex-row items-stretch gap-2">
+                      {[
+                        { step: "1", label: "Donnees CRM", desc: "Deals historiques, contacts, activites", color: "#6D00CC" },
+                        { step: "2", label: "Feature engineering", desc: "Transformation en variables ML", color: "#4B5EFC" },
+                        { step: "3", label: "Entrainement", desc: "Modele apprend les patterns", color: "#22C55E" },
+                        { step: "4", label: "Score en temps reel", desc: "Probabilite 0-100% par lead", color: "#FF7A59" },
+                      ].map((s) => (
+                        <div key={s.step} className="flex-1 rounded-lg p-3 text-center" style={{ background: `${s.color}10`, border: `1px solid ${s.color}30` }}>
+                          <p className="text-[16px] font-bold mb-1" style={{ color: s.color }}>{s.step}</p>
+                          <p className="text-[10px] font-semibold text-[#111] mb-0.5">{s.label}</p>
+                          <p className="text-[9px] text-[#999]">{s.desc}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* Section 4 — Comment ca marche */}
-              <section id="comment-ca-marche" className="mb-8">
+              {/* ================================================================ */}
+              {/* Section 3 : Donnees requises */}
+              {/* ================================================================ */}
+              <section id="data-requirements" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Comment fonctionne le scoring predictif</h2>
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Les donnees necessaires pour un scoring predictif fiable</h2>
                   <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Le scoring predictif repose sur des algorithmes de machine learning supervise. Le terme &ldquo;supervise&rdquo; signifie que l&apos;algorithme apprend a partir d&apos;exemples etiquetes : des deals avec un resultat connu (gagne ou perdu). Voici le processus technique simplifie.</p>
-                    <p><strong className="text-[#111]">Etape 1 : collecte des donnees.</strong> On extrait du CRM l&apos;ensemble des deals clos (gagnes et perdus) avec toutes les proprietes associees : attributs du contact (poste, departement, anciennete), attributs de l&apos;entreprise (secteur, taille, revenu, technologie utilisee), historique des interactions (emails envoyes/ouverts, pages visitees, contenus telecharges, appels, reunions), donnees de deal (montant, duree du cycle, nombre de decisionnaires, source du lead).</p>
-                    <p><strong className="text-[#111]">Etape 2 : preparation des donnees.</strong> Les donnees sont nettoyees (valeurs manquantes traitees, doublons supprimes, formats normalises) et transformees en features (variables) exploitables par l&apos;algorithme. Par exemple, la date du premier email ouverte est transformee en &ldquo;nombre de jours entre le premier contact et l&apos;ouverture du premier email&rdquo;. Les donnees textuelles (notes, descriptions) peuvent etre vectorisees pour capturer des patterns semantiques.</p>
-                    <p><strong className="text-[#111]">Etape 3 : entrainement du modele.</strong> L&apos;algorithme (typiquement un Random Forest, un Gradient Boosting ou un reseau de neurones) est entraine sur les donnees historiques. Il apprend les correlations entre les features et le resultat (gagne/perdu). Le jeu de donnees est divise en un ensemble d&apos;entrainement (70-80%) et un ensemble de test (20-30%) pour evaluer la performance du modele sur des donnees qu&apos;il n&apos;a jamais vues.</p>
-                    <p><strong className="text-[#111]">Etape 4 : generation des scores.</strong> Le modele entraine est applique a chaque nouveau lead dans le CRM. Il genere un score de 0 a 100 representant la probabilite de conversion. Le score est mis a jour en temps reel (ou quotidiennement) a chaque nouvelle interaction du lead. Les leads avec les scores les plus eleves sont priorises par les commerciaux.</p>
-                    <p><strong className="text-[#111]">Etape 5 : recalibrage.</strong> A mesure que de nouveaux deals se closent (gagnes ou perdus), le modele est reentrainer periodiquement (mensuellement ou trimestriellement) pour integrer les nouveaux patterns. C&apos;est la boucle d&apos;apprentissage continu qui rend le scoring predictif de plus en plus precis dans le temps.</p>
+                    <p>La qualite du scoring predictif depend directement de la qualite et du volume des donnees disponibles. Sans donnees suffisantes, le modele ne sera pas plus precis qu&apos;un scoring manuel. Voici les categories de donnees necessaires et les seuils minimaux.</p>
                   </div>
 
-                  {/* Process flow */}
-                  <div className="mt-6 flex flex-col sm:flex-row gap-2 items-stretch">
+                  <div className="mt-5 space-y-2">
                     {[
-                      { step: "1", label: "Collecte", desc: "Export CRM", color: "#FF7A59" },
-                      { step: "2", label: "Preparation", desc: "Nettoyage et features", color: "#FF7A59" },
-                      { step: "3", label: "Entrainement", desc: "ML supervise", color: "#4B5EFC" },
-                      { step: "4", label: "Scores", desc: "0-100 par lead", color: "#22C55E" },
-                      { step: "5", label: "Recalibrage", desc: "Mensuel", color: "#6C5CE7" },
-                    ].map((s, i) => (
-                      <div key={s.step} className="flex-1 p-3 rounded-xl bg-[#FAFAFA] border border-[#F0F0F0] text-center relative">
-                        <div className="w-6 h-6 rounded-full mx-auto mb-2 flex items-center justify-center text-[10px] font-bold text-white" style={{ backgroundColor: s.color }}>{s.step}</div>
-                        <p className="text-[11px] font-semibold text-[#111]">{s.label}</p>
-                        <p className="text-[10px] text-[#999] mt-0.5">{s.desc}</p>
-                        {i < 4 && <div className="hidden sm:block absolute right-[-8px] top-1/2 -translate-y-1/2 text-[#DDD] text-[14px] z-10">&rarr;</div>}
+                      { cat: "Donnees firmographiques", exemples: "Taille, secteur, CA, localisation, technologie utilisee", source: "CRM + enrichissement (Clearbit, ZoomInfo)", importance: "Haute" },
+                      { cat: "Donnees demographiques", exemples: "Poste, seniorite, departement, anciennete dans le poste", source: "CRM + LinkedIn", importance: "Haute" },
+                      { cat: "Donnees comportementales", exemples: "Pages vues, emails ouverts/cliques, formulaires soumis, contenus telecharges", source: "CRM + tracking web", importance: "Critique" },
+                      { cat: "Donnees d\u2019intent", exemples: "Recherches sur des sujets cibles, engagement avec des concurrents, signaux d\u2019achat", source: "Bombora, G2, 6sense", importance: "Haute" },
+                      { cat: "Donnees conversationnelles", exemples: "Tonalite des emails, mots-cles dans les echanges, nombre de participants aux calls", source: "Gong, Chorus, analyse NLP", importance: "Moyenne" },
+                      { cat: "Donnees temporelles", exemples: "Vitesse de progression dans le funnel, temps entre les interactions, saisonnalite", source: "CRM (calcule)", importance: "Haute" },
+                    ].map((d) => (
+                      <div key={d.cat} className="rounded-xl border border-[#F2F2F2] p-4">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#6D00CC]" />
+                          <p className="text-[12px] font-semibold text-[#111]">{d.cat}</p>
+                          <span className={`text-[9px] font-bold uppercase ml-auto ${d.importance === "Critique" ? "text-[#FF3B30]" : d.importance === "Haute" ? "text-[#FF7A59]" : "text-[#F59E0B]"}`}>{d.importance}</span>
+                        </div>
+                        <p className="text-[10px] text-[#777] leading-[1.5] mb-1">{d.exemples}</p>
+                        <p className="text-[10px] text-[#999]">Source : {d.source}</p>
                       </div>
                     ))}
                   </div>
+
+                  <div className="mt-5 space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p><strong className="text-[#111]">Volume minimum.</strong> Pour un modele predictif fiable, comptez au minimum 500 deals closes (gagnes et perdus) avec au moins 6 mois d&apos;historique. L&apos;ideal est 1 000 deals sur 12 mois. En dessous de 200 deals, le scoring predictif n&apos;apportera pas de gain significatif par rapport au scoring manuel bien calibre.</p>
+                    <p><strong className="text-[#111]">La qualite avant le volume.</strong> 500 deals avec des donnees propres et completes valent mieux que 2 000 deals avec des proprietes vides ou incorrectes. Avant de deployer un scoring predictif, faites un audit de qualite des donnees : taux de completude par propriete, taux de doublons, coherence des valeurs. Un taux de completude inferieur a 70% sur les proprietes cles (secteur, taille, poste) compromettra la precision du modele.</p>
+                  </div>
                 </div>
               </section>
               <Connector />
 
-              {/* Section 5 — HubSpot predictive */}
+              {/* ================================================================ */}
+              {/* Section 4 : HubSpot predictive scoring */}
+              {/* ================================================================ */}
               <section id="hubspot-predictive" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">HubSpot Predictive Lead Scoring : possibilites et limites</h2>
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">HubSpot Predictive Lead Scoring : ce qu&apos;il fait et ne fait pas</h2>
                   <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>HubSpot propose depuis 2024 un scoring predictif natif dans ses plans Enterprise. Le systeme analyse automatiquement les donnees du CRM (proprietes de contact, interactions, deals clos) pour generer deux scores : la probabilite de conversion (Likelihood to close) et la priorite de contact (Contact priority). Le score est mis a jour quotidiennement et visible directement sur la fiche contact.</p>
-                    <p>Les <strong className="text-[#111]">avantages</strong> du scoring predictif HubSpot sont la simplicite de mise en oeuvre (zero configuration, il s&apos;active en un clic), l&apos;integration native avec le CRM (le score est utilisable dans les workflows, les listes et les vues) et la transparence partielle (HubSpot affiche les facteurs qui contribuent positivement ou negativement au score).</p>
-                    <p>Les <strong className="text-[#111]">limites</strong> sont reelles. Premierement, le modele est une boite noire : vous ne controlez pas les variables utilisees ni les poids attribues. Deuxiemement, il necessite un volume minimum de donnees (environ 300 deals clos sur les 12 derniers mois) pour fonctionner correctement. En dessous, le modele n&apos;a pas assez d&apos;exemples pour apprendre des patterns fiables. Troisiemement, il ne prend en compte que les donnees presentes dans HubSpot. Si des informations critiques sont stockees dans d&apos;autres outils (ERP, outil d&apos;intent, base de donnees externe), elles ne sont pas integrees au modele. Quatriemement, il ne permet pas de personnaliser le modele : vous ne pouvez pas ajouter des features custom ou exclure certaines variables.</p>
-                    <p>Pour les PME avec un CRM HubSpot Enterprise et un volume suffisant de deals, le scoring predictif natif est un excellent point de depart. Il donne de meilleurs resultats que le scoring manuel dans la grande majorite des cas. Mais pour les entreprises avec des besoins plus avances (donnees multi-sources, modeles custom, explicabilite complete), il faut aller plus loin.</p>
+                    <p>HubSpot propose un scoring predictif natif dans ses plans Enterprise. Ce scoring utilise le machine learning pour analyser les proprietes des contacts et leur historique d&apos;engagement afin de predire la probabilite de conversion. C&apos;est la solution la plus accessible pour les utilisateurs HubSpot car elle ne necessite aucune configuration technique.</p>
+                    <p><strong className="text-[#111]">Comment fonctionne le predictive scoring HubSpot.</strong> HubSpot analyse automatiquement toutes les proprietes de vos contacts et toutes les interactions enregistrees pour identifier les facteurs qui correlent avec la conversion. Le modele genere deux scores : la probabilite de contact (likelihood to close) et la priorite (contact priority). Ces scores sont mis a jour automatiquement et apparaissent sur chaque fiche contact.</p>
+                    <p><strong className="text-[#111]">Les forces.</strong> Zero configuration technique. Prise en compte automatique de toutes les proprietes et interactions HubSpot. Mise a jour continue. Explications des facteurs (HubSpot indique quels criteres contribuent positivement ou negativement au score). Integration native avec les workflows, les listes et les rapports.</p>
+                    <p><strong className="text-[#111]">Les limites.</strong> Le modele est une boite noire : vous ne pouvez pas modifier les poids ou les variables. Il ne prend pas en compte les donnees externes (intent data, technographiques) sauf si elles sont importees dans les proprietes HubSpot. La precision depend fortement de la qualite des donnees dans votre portail. Et il necessite un volume minimum de donnees pour etre fiable (HubSpot recommande au moins 500 contacts avec un outcome connu).</p>
+                    <p><strong className="text-[#111]">Configuration recommandee.</strong> Activez le predictive scoring dans les parametres de votre portail Enterprise. Verifiez que vos lifecycle stages sont correctement configures et que les deals sont associes aux contacts. Creez un rapport comparant le score predictif avec le taux de conversion reel par tranche de score. Si le score est pertinent (les leads avec un score eleve convertissent davantage), integrez-le dans vos workflows de routing et vos vues commerciales.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* Section 6 — Claude comme alternative */}
-              <section id="claude-alternative" className="mb-8">
-                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 text-[12px] font-medium text-white/60 mb-4">IA generative</span>
-                  <h2 className="text-[17px] font-semibold text-white mb-4">Claude comme alternative au scoring predictif classique</h2>
-                  <div className="space-y-3 text-[13px] text-white/60 leading-[1.75]">
-                    <p>L&apos;approche la plus innovante en 2026 est d&apos;utiliser un LLM (Large Language Model) comme Claude pour analyser les donnees CRM et generer un scoring predictif contextuel. Cette approche est differente du machine learning classique : au lieu d&apos;entrainer un modele statistique, on utilise la capacite de raisonnement du LLM pour analyser chaque deal individuellement.</p>
-                    <p><strong className="text-white/80">Comment ca fonctionne.</strong> On exporte les donnees des deals clos (gagnes et perdus) sous forme structuree. On les fournit a Claude avec un prompt systeme qui lui demande d&apos;identifier les patterns de succes : quels attributs, comportements et sequences d&apos;interactions sont associes aux deals gagnes versus perdus. Claude genere une analyse des patterns, une grille de scoring ponderee et un score pour chaque nouveau lead.</p>
-                    <p><strong className="text-white/80">L&apos;avantage majeur</strong> est l&apos;explicabilite. Contrairement a un modele ML classique qui donne un score sans explication claire, Claude peut expliquer en langage naturel pourquoi un lead a un score eleve ou faible : &ldquo;Ce lead a un score de 82 parce qu&apos;il correspond au profil des deals gagnes dans le secteur SaaS B2B (50-200 employes), qu&apos;il a visite la page integrations avant la page pricing (pattern associe a un taux de conversion 3x superieur) et que le cycle de decision implique un CTO (facteur positif identifie dans 67% des deals gagnes).&rdquo;</p>
-                    <p><strong className="text-white/80">Les limites</strong> sont la scalabilite (analyser 10 000 leads un par un avec Claude est lent et couteux) et la reproductibilite (le LLM peut donner des scores legerement differents pour le meme lead a des moments differents). La meilleure approche est hybride : utiliser Claude pour l&apos;analyse des patterns et la generation de la grille de scoring, puis implementer cette grille dans HubSpot ou un outil d&apos;automatisation pour le scoring en temps reel.</p>
-                    <p>Chez Ceres, nous utilisons Claude pour analyser les 100 a 200 derniers deals d&apos;un client, identifier les patterns de win/loss, et generer une grille de scoring personnalisee que nous implementons ensuite dans HubSpot. Le resultat est un scoring plus precis que le scoring manuel, plus transparent que le ML classique et adapte au contexte specifique de chaque entreprise.</p>
-                  </div>
-
-                  {/* Claude scoring example */}
-                  <div className="mt-6 p-4 rounded-xl bg-white/5 border border-white/10">
-                    <p className="text-[11px] font-semibold text-[#FF7A59] mb-3">Exemple d&apos;analyse Claude</p>
-                    <div className="text-[11px] text-white/50 font-mono leading-[1.8] space-y-2">
-                      <p className="text-white/30">// Patterns identifies sur 187 deals clos</p>
-                      <p><span className="text-[#22C55E]">Pattern 1 :</span> Secteur SaaS + 50-200 employes = win rate 72%</p>
-                      <p><span className="text-[#22C55E]">Pattern 2 :</span> Visite integrations avant pricing = conversion x3.2</p>
-                      <p><span className="text-[#22C55E]">Pattern 3 :</span> CTO dans le comite = +28% win rate</p>
-                      <p><span className="text-[#FF7A59]">Pattern 4 :</span> Cycle superieur a 45j sans demo = -40% win rate</p>
-                      <p><span className="text-[#FF7A59]">Pattern 5 :</span> Source cold email seul = win rate 12%</p>
-                      <p className="text-white/30 pt-2">// Score genere pour le lead #4521</p>
-                      <p><span className="text-[#4B5EFC]">Score :</span> <span className="text-white/80 font-semibold">82/100</span> (haute probabilite)</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <Connector />
-
-              {/* Section 7 — Implementation */}
-              <section id="implementation" className="mb-8">
+              {/* ================================================================ */}
+              {/* Section 5 : Outils tiers */}
+              {/* ================================================================ */}
+              <section id="third-party-tools" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Implementation pas a pas</h2>
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Outils tiers : 6sense, Madkudu et alternatives</h2>
                   <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Voici le processus d&apos;implementation du scoring predictif, de l&apos;audit initial a la mise en production. Le timeline typique est de 4 a 6 semaines pour une premiere version fonctionnelle.</p>
+                    <p>Si le scoring predictif natif de HubSpot ne suffit pas a vos besoins, plusieurs outils specialises offrent des capacites avancees. Voici les principales solutions du marche avec leurs specificites.</p>
                   </div>
 
                   <div className="mt-5 space-y-3">
                     {[
-                      { num: "01", title: "Audit des donnees CRM", desc: "Verifier la qualite et le volume des donnees. Minimum 200 deals clos (gagnes + perdus) sur les 12 derniers mois. Identifier les proprietes disponibles et leur taux de remplissage. Nettoyer les doublons et les valeurs incoherentes.", timing: "Semaine 1" },
-                      { num: "02", title: "Export et preparation", desc: "Exporter les deals avec toutes les proprietes associees (contact, entreprise, interactions). Transformer les donnees en features exploitables. Creer les variables derivees (duree du cycle, nombre d\u2019interactions, sequences de pages visitees).", timing: "Semaine 1-2" },
-                      { num: "03", title: "Analyse des patterns", desc: "Utiliser Claude pour analyser les patterns de win/loss. Identifier les 10 a 20 facteurs les plus predictifs. Valider les patterns avec l\u2019equipe sales (est-ce coherent avec leur experience terrain ?).", timing: "Semaine 2" },
-                      { num: "04", title: "Construction du modele", desc: "Definir la grille de scoring ponderee basee sur les patterns identifies. Attribuer des poids a chaque facteur en fonction de son impact sur le win rate. Tester le modele sur les deals historiques pour valider la precision.", timing: "Semaine 3" },
-                      { num: "05", title: "Implementation dans HubSpot", desc: "Configurer les proprietes de scoring dans HubSpot. Creer les workflows qui calculent et mettent a jour le score. Definir les seuils de qualification (MQL, SQL). Connecter le score aux notifications et aux vues commerciales.", timing: "Semaine 3-4" },
-                      { num: "06", title: "Test et calibrage", desc: "Lancer le scoring en parallele du systeme existant pendant 2 semaines. Comparer les predictions du nouveau scoring avec les resultats reels. Ajuster les poids si necessaire. Former l\u2019equipe sales a l\u2019utilisation du nouveau score.", timing: "Semaine 4-5" },
-                      { num: "07", title: "Mise en production et suivi", desc: "Basculer sur le nouveau scoring comme systeme principal. Mettre en place un dashboard de suivi de la precision (taux de conversion par tranche de score). Planifier le recalibrage trimestriel.", timing: "Semaine 5-6" },
-                    ].map((step) => (
-                      <div key={step.num} className="flex items-start gap-3 p-4 rounded-xl bg-[#FAFAFA] border border-[#F0F0F0]">
-                        <span className="text-[18px] font-bold text-[#E8E8E8] shrink-0">{step.num}</span>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <p className="text-[12px] font-semibold text-[#111]">{step.title}</p>
-                            <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#F5F5F5] text-[#999]">{step.timing}</span>
+                      { nom: "6sense", domain: "6sense.com", desc: "Plateforme d\u2019ABM et d\u2019intent data qui identifie les comptes en phase d\u2019achat grace a l\u2019analyse de signaux d\u2019intention anonymes. Le scoring combine intent data, donnees firmographiques et engagement. Ideal pour les entreprises pratiquant l\u2019account-based marketing.", prix: "Enterprise (25k+ EUR/an)", integration: "HubSpot, Salesforce, Marketo" },
+                      { nom: "Madkudu", domain: "madkudu.com", desc: "Scoring predictif specialise pour le PLG (Product-Led Growth) et le B2B SaaS. Analyse le comportement produit (events, feature usage) pour scorer les leads et identifier les comptes prets a l\u2019upgrade. Modeles explicables avec feature importance.", prix: "A partir de 15k EUR/an", integration: "HubSpot, Salesforce, Segment" },
+                      { nom: "Clearbit Reveal", domain: "clearbit.com", desc: "Enrichissement de donnees firmographiques et technographiques avec un scoring de fit integre. Identifie les visiteurs anonymes et les score en fonction de leur correspondance avec votre ICP. Excellent en complement d\u2019un scoring comportemental.", prix: "A partir de 10k EUR/an", integration: "HubSpot, Salesforce, Segment" },
+                      { nom: "Infer (Ignite)", domain: "infer.com", desc: "Un des premiers outils de scoring predictif B2B, maintenant integre a Ignite. Analyse des milliers de signaux publics (web, social, actualites) pour scorer les leads. Modeles personnalisables avec apprentissage continu.", prix: "Sur devis", integration: "HubSpot, Salesforce, Marketo" },
+                    ].map((outil) => (
+                      <div key={outil.nom} className="rounded-xl border border-[#F2F2F2] p-4">
+                        <div className="flex items-start gap-3">
+                          <img src={`https://www.google.com/s2/favicons?domain=${outil.domain}&sz=32`} alt={outil.nom} className="w-5 h-5 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="text-[12px] font-semibold text-[#111] mb-1">{outil.nom}</p>
+                            <p className="text-[11px] text-[#777] leading-[1.6] mb-2">{outil.desc}</p>
+                            <div className="flex items-center gap-4 text-[10px] text-[#999]">
+                              <span>Prix : {outil.prix}</span>
+                              <span>Integrations : {outil.integration}</span>
+                            </div>
                           </div>
-                          <p className="text-[11px] text-[#777] leading-[1.6]">{step.desc}</p>
                         </div>
                       </div>
                     ))}
                   </div>
-                </div>
-              </section>
-              <Connector />
 
-              {/* Section 8 — Resultats */}
-              <section id="resultats" className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Resultats concrets du scoring predictif</h2>
-                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Les resultats du passage au scoring predictif sont mesurables et significatifs. Voici les benchmarks observes sur nos implementations et dans les etudes du marche.</p>
-                    <p>Le taux de conversion MQL-vers-client augmente de 25 a 40%. La raison est simple : les commerciaux passent leur temps sur des leads reellement susceptibles de convertir, au lieu de traiter indifferemment tous les leads qui ont atteint un seuil de points arbitraire. Le scoring predictif concentre l&apos;effort commercial sur les opportunites les plus prometteuses.</p>
-                    <p>Le cycle de vente se reduit de 15 a 25%. Les leads a fort score predictif sont generalement plus avances dans leur reflexion et plus proches de la decision. En les identifiant plus tot et en les priorisant, les commerciaux engagent la conversation au bon moment, ce qui accelere le cycle.</p>
-                    <p>Le pipeline genere augmente de 20 a 35%. Meilleure priorisation signifie que les commerciaux ont plus de temps pour traiter les vrais bons leads, ce qui augmente le volume de deals qualifies dans le pipeline. C&apos;est un effet mecanique : meme nombre de commerciaux, mais mieux deployes.</p>
-                    <p>Le taux de satisfaction des sales augmente significativement. La premiere raison de friction entre marketing et sales est la qualite des leads. Quand le scoring predictif envoie des leads plus qualifies, les sales reprennent confiance dans le systeme et traitent les leads plus rapidement. Le cercle vertueux s&apos;installe.</p>
-                  </div>
-
-                  {/* Results stats */}
-                  <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    {[
-                      { value: "+25-40%", label: "Conversion MQL vers client", color: "#22C55E" },
-                      { value: "-15-25%", label: "Reduction du cycle de vente", color: "#4B5EFC" },
-                      { value: "+20-35%", label: "Pipeline genere", color: "#FF7A59" },
-                      { value: "4-6 sem.", label: "Delai d\u2019implementation", color: "#6C5CE7" },
-                    ].map((stat) => (
-                      <div key={stat.label} className="text-center p-4 rounded-xl bg-[#FAFAFA] border border-[#F2F2F2]">
-                        <div className="text-[22px] font-bold" style={{ color: stat.color }}>{stat.value}</div>
-                        <div className="text-[10px] text-[#999] mt-1 leading-[1.4]">{stat.label}</div>
-                      </div>
-                    ))}
+                  <div className="mt-5 space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p><strong className="text-[#111]">Comment choisir.</strong> Si votre volume de donnees est suffisant et que vous utilisez HubSpot Enterprise, commencez par le scoring natif. Si vous avez besoin d&apos;intent data, optez pour 6sense. Si vous etes en PLG et que le comportement produit est determinant, Madkudu est le meilleur choix. Si votre priorite est l&apos;enrichissement de donnees, Clearbit est le point de depart.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* Section 9 — Erreurs */}
-              <section id="erreurs" className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Erreurs a eviter avec le scoring predictif</h2>
-                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Le scoring predictif n&apos;est pas une baguette magique. Voici les erreurs les plus courantes qui reduisent ou annulent les benefices attendus.</p>
+              {/* ================================================================ */}
+              {/* Section 6 : Etapes d'implementation */}
+              {/* ================================================================ */}
+              <section id="implementation-steps" className="mb-8">
+                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
+                  <h2 className="text-[17px] font-semibold text-white mb-4">Feuille de route d&apos;implementation du scoring predictif</h2>
+                  <div className="space-y-3 text-[13px] text-[#999] leading-[1.75]">
+                    <p>Deployer un scoring predictif ne se fait pas en un jour. Voici la feuille de route en 6 etapes que nous suivons avec nos clients.</p>
                   </div>
 
                   <div className="mt-5 space-y-3">
                     {[
-                      { num: "01", title: "Pas assez de donnees", desc: "Lancer un scoring predictif avec 50 deals clos est voue a l\u2019echec. Le minimum viable est 200 deals, idealement 500+. En dessous, le modele n\u2019a pas assez d\u2019exemples pour detecter des patterns fiables. Si vous n\u2019avez pas le volume, commencez par un scoring manuel bien calibre." },
-                      { num: "02", title: "Donnees de mauvaise qualite", desc: "Garbage in, garbage out. Si vos proprietes CRM sont mal renseignees (secteur manquant dans 40% des fiches, montant du deal absent, source du lead incorrecte), le modele apprendra des patterns errones. La qualite des donnees est le prerequis absolu." },
-                      { num: "03", title: "Ignorer le feedback des sales", desc: "Le scoring predictif doit etre valide par les commerciaux. Si le modele attribue un score eleve a un profil que les sales savent non qualifie, il y a un probleme dans les donnees ou le modele. L\u2019expertise terrain reste indispensable." },
-                      { num: "04", title: "Ne jamais recalibrer", desc: "Un modele entraine une fois et jamais mis a jour perd en precision au fil du temps. Les patterns de conversion evoluent (nouveau produit, nouveau marche, changement de ICP). Recalibrez au minimum trimestriellement." },
-                      { num: "05", title: "Traiter le score comme une verite absolue", desc: "Un score de 80 ne garantit pas la conversion. C\u2019est une probabilite, pas une certitude. Les commerciaux doivent continuer a qualifier humainement. Le score est un outil de priorisation, pas un substitut au jugement commercial." },
-                    ].map((err) => (
-                      <div key={err.num} className="flex items-start gap-3 p-4 rounded-xl bg-[#FAFAFA] border border-[#F0F0F0]">
-                        <span className="text-[18px] font-bold text-[#E8E8E8] shrink-0">{err.num}</span>
+                      { etape: "Semaine 1-2", titre: "Audit des donnees", desc: "Analysez la qualite, la completude et le volume de vos donnees CRM. Identifiez les trous. Corrigez les proprietes mal renseignees. Objectif : un taux de completude de 80% minimum sur les proprietes cles." },
+                      { etape: "Semaine 3-4", titre: "Definition des outcomes", desc: "Definissez clairement ce que signifie une conversion : deal closed-won, ou SQL accepte, ou premiere demo completee. Choisissez l\u2019outcome le plus pertinent pour votre cycle de vente. Constituez le dataset d\u2019entrainement." },
+                      { etape: "Semaine 5-6", titre: "Selection et configuration de l\u2019outil", desc: "Choisissez entre le scoring natif HubSpot et un outil tiers. Configurez l\u2019integration. Definissez les features a prendre en compte. Lancez le premier entrainement du modele." },
+                      { etape: "Semaine 7-8", titre: "Validation en shadow mode", desc: "Deployer le scoring en parallele du scoring existant sans l\u2019activer pour les equipes. Comparez les predictions du modele avec les resultats reels. Mesurez la precision. Ajustez si necessaire." },
+                      { etape: "Semaine 9-10", titre: "Deploiement progressif", desc: "Activez le scoring predictif pour une equipe pilote. Formez les commerciaux a l\u2019interpretation du score. Integrez le score dans les workflows de routing et les vues CRM. Collectez les feedbacks." },
+                      { etape: "Semaine 11-12", titre: "Generalisation et optimisation", desc: "Deploiement a toute l\u2019equipe. Mise en place du reentrainement automatique. Creation des dashboards de suivi de la precision. Revue mensuelle des performances du modele." },
+                    ].map((s) => (
+                      <div key={s.titre} className="rounded-xl border border-[#333] bg-[#1A1A1A] p-4">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="text-[10px] font-bold text-[#6D00CC] uppercase">{s.etape}</span>
+                        </div>
+                        <p className="text-[12px] font-semibold text-white mb-1">{s.titre}</p>
+                        <p className="text-[10px] text-[#888] leading-[1.6]">{s.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-5 grid grid-cols-3 gap-3">
+                    {[
+                      { stat: "12 sem.", label: "Timeline de deploiement recommandee", color: "#6D00CC" },
+                      { stat: "80%+", label: "Taux de completude requis sur les donnees cles", color: "#22C55E" },
+                      { stat: "500+", label: "Deals historiques minimum pour un modele fiable", color: "#FF7A59" },
+                    ].map((s) => (
+                      <div key={s.label} className="rounded-xl border border-[#333] bg-[#1A1A1A] p-4 text-center">
+                        <p className="text-[22px] font-bold mb-1" style={{ color: s.color }}>{s.stat}</p>
+                        <p className="text-[10px] text-[#888] leading-[1.4]">{s.label}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+              <Connector />
+
+              {/* ================================================================ */}
+              {/* Section 7 : Metriques de precision */}
+              {/* ================================================================ */}
+              <section id="accuracy-metrics" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Mesurer la precision du scoring predictif</h2>
+                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Un modele de scoring predictif n&apos;est utile que s&apos;il est precis. Voici les metriques essentielles pour evaluer la performance de votre modele et les seuils de reference.</p>
+                  </div>
+
+                  <div className="mt-5 space-y-2">
+                    {[
+                      { metric: "AUC-ROC", benchmark: "0.75 ou plus", desc: "Capacite du modele a distinguer les leads qui convertissent de ceux qui ne convertissent pas. 0.5 = aleatoire, 1.0 = parfait. Un score de 0.80 est excellent en B2B." },
+                      { metric: "Precision", benchmark: "70% ou plus", desc: "Parmi les leads que le modele classe comme qualifies, quel pourcentage convertit reellement. Une precision faible signifie trop de faux positifs." },
+                      { metric: "Recall", benchmark: "60% ou plus", desc: "Parmi tous les leads qui ont effectivement converti, quel pourcentage le modele avait correctement identifie. Un recall faible signifie que le modele rate des opportunites." },
+                      { metric: "Lift", benchmark: "2x ou plus", desc: "Facteur d\u2019amelioration par rapport au hasard. Si le top 20% des leads selon le score predictif contient 40% des conversions, le lift est de 2x." },
+                      { metric: "Taux de conversion par decile", benchmark: "Monotone decroissant", desc: "Le taux de conversion doit diminuer regulierement du decile 1 (score le plus eleve) au decile 10 (score le plus bas). Si ce n\u2019est pas monotone, le modele a des anomalies." },
+                    ].map((m) => (
+                      <div key={m.metric} className="flex items-start gap-3 rounded-xl border border-[#F2F2F2] p-3">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#6D00CC] mt-1.5 shrink-0" />
                         <div>
-                          <p className="text-[12px] font-semibold text-[#111] mb-1">{err.title}</p>
-                          <p className="text-[11px] text-[#777] leading-[1.6]">{err.desc}</p>
+                          <div className="flex items-center gap-2">
+                            <p className="text-[11px] font-semibold text-[#111]">{m.metric}</p>
+                            <span className="text-[10px] text-[#6D00CC] font-medium">{m.benchmark}</span>
+                          </div>
+                          <p className="text-[10px] text-[#999] leading-[1.5]">{m.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-5 space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p><strong className="text-[#111]">Frequence de validation.</strong> Validez la precision du modele mensuellement pendant les 3 premiers mois, puis trimestriellement. Comparez les predictions avec les outcomes reels. Si le AUC-ROC chute en dessous de 0.70, c&apos;est le signal qu&apos;il faut reentrainer le modele ou revoir les donnees d&apos;entree.</p>
+                  </div>
+                </div>
+              </section>
+              <Connector />
+
+              {/* ================================================================ */}
+              {/* Section 8 : Erreurs courantes */}
+              {/* ================================================================ */}
+              <section id="common-pitfalls" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Les 7 erreurs les plus courantes en scoring predictif</h2>
+                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Le scoring predictif n&apos;est pas une baguette magique. Voici les erreurs que nous voyons le plus frequemment et comment les eviter.</p>
+                  </div>
+
+                  <div className="mt-4 space-y-2">
+                    {[
+                      { num: "01", erreur: "Deployer avec des donnees insuffisantes", solution: "Attendez d\u2019avoir au moins 500 deals avant de deployer. En attendant, affinez votre scoring manuel." },
+                      { num: "02", erreur: "Ignorer la qualite des donnees", solution: "Un modele entraine sur des donnees sales produit des predictions sales. Investissez dans l\u2019hygiene des donnees avant le scoring predictif." },
+                      { num: "03", erreur: "Ne pas valider le modele sur des donnees hors echantillon", solution: "Toujours tester le modele sur des donnees qu\u2019il n\u2019a jamais vues. L\u2019overfitting est le risque principal." },
+                      { num: "04", erreur: "Faire confiance aveuglément au score", solution: "Le score est un outil d\u2019aide a la decision, pas un oracle. Les commerciaux doivent garder leur jugement et remonter les cas ou le score semble aberrant." },
+                      { num: "05", erreur: "Ne jamais reentrainer le modele", solution: "Les comportements d\u2019achat evoluent. Un modele entraine sur des donnees de 2024 sera obsolete en 2026. Reentrainez au minimum tous les trimestres." },
+                      { num: "06", erreur: "Utiliser un seul score pour tout", solution: "Un score de fit et un score d\u2019engagement sont plus utiles qu\u2019un score unique. Un lead avec un excellent fit mais zero engagement n\u2019est pas pret." },
+                      { num: "07", erreur: "Ne pas mesurer l\u2019impact business", solution: "Mesurez l\u2019impact sur les taux de conversion, le cycle de vente et le revenu, pas seulement la precision du modele. Un modele precis mais ignore par les commerciaux n\u2019a aucune valeur." },
+                    ].map((e) => (
+                      <div key={e.num} className="flex items-start gap-3 rounded-xl border border-[#F2F2F2] p-3">
+                        <span className="text-[14px] font-bold text-[#6D00CC] w-8 shrink-0">{e.num}</span>
+                        <div>
+                          <p className="text-[11px] font-semibold text-[#111] mb-0.5">{e.erreur}</p>
+                          <p className="text-[10px] text-[#999] leading-[1.5]">{e.solution}</p>
                         </div>
                       </div>
                     ))}
@@ -438,64 +433,72 @@ export default function ScoringPredictifIAPage() {
               </section>
               <Connector />
 
-              {/* Section 10 — Approche Ceres */}
-              <section id="approche-ceres" className="mb-8">
-                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 text-[12px] font-medium text-white/60 mb-4">Notre methode</span>
-                  <h2 className="text-[17px] font-semibold text-white mb-4">Notre approche du scoring predictif chez Ceres</h2>
-                  <div className="space-y-3 text-[13px] text-white/60 leading-[1.75]">
-                    <p>Chez Ceres, nous combinons l&apos;analyse IA (Claude) et l&apos;implementation HubSpot pour deployer un scoring predictif adapte a votre contexte. Notre approche hybride offre la precision du machine learning et la transparence de l&apos;IA generative.</p>
-                    <p>Nous commencons par un audit de la qualite de vos donnees CRM et du volume de deals disponible. Si les prerequis sont remplis, nous exportons les donnees, analysons les patterns avec Claude, validons les resultats avec votre equipe sales, et implementons la grille de scoring dans HubSpot. Le tout en 4 a 6 semaines, avec des resultats mesurables des le premier mois.</p>
-                  </div>
-
-                  <div className="mt-6 space-y-2.5">
-                    {[
-                      "Audit qualite des donnees CRM et volume de deals",
-                      "Export et preparation des donnees historiques",
-                      "Analyse des patterns win/loss avec Claude",
-                      "Validation des patterns avec l\u2019equipe sales",
-                      "Construction et test de la grille de scoring",
-                      "Implementation dans HubSpot (workflows, vues, notifications)",
-                      "Formation de l\u2019equipe et recalibrage trimestriel",
-                    ].map((item) => (
-                      <div key={item} className="flex items-start gap-2 text-[12px] text-white/50">
-                        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" className="shrink-0 mt-0.5 text-[#22C55E]"><path d="M13.3 4.3L6 11.6L2.7 8.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                        {item}
-                      </div>
-                    ))}
+              {/* ================================================================ */}
+              {/* Section 9 : Approche hybride */}
+              {/* ================================================================ */}
+              <section id="hybrid-approach" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">L&apos;approche hybride : combiner scoring manuel et predictif</h2>
+                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Dans la pratique, les entreprises les plus performantes ne choisissent pas entre scoring manuel et predictif. Elles les combinent dans une approche hybride qui tire le meilleur des deux mondes.</p>
+                    <p><strong className="text-[#111]">Le scoring manuel comme baseline.</strong> Le scoring manuel reste pertinent pour les regles metier non negociables. Par exemple, si votre produit ne fonctionne pas pour les entreprises de moins de 10 salaries, c&apos;est un critere eliminatoire qui doit etre code en dur, independamment de ce que le modele ML pourrait dire. Le scoring manuel sert aussi de filet de securite quand le modele predictif dysfonctionne.</p>
+                    <p><strong className="text-[#111]">Le scoring predictif comme amplificateur.</strong> Le scoring predictif excelle pour ponderer les signaux comportementaux complexes et identifier les combinaisons de facteurs invisibles aux regles manuelles. Il est particulierement puissant pour les leads qui se situent dans la zone grise : ceux qui ne declenchent pas de regle manuelle evidente mais qui presentent un pattern de comportement predictif de conversion.</p>
+                    <p><strong className="text-[#111]">Implementation hybride dans HubSpot.</strong> Creez une propriete calculee qui combine le score manuel (propriete HubSpot Score natif) et le score predictif (Likelihood to close). Par exemple : Score Hybride = 0.4 x Score Manuel (normalise sur 100) + 0.6 x Score Predictif. Ajustez les poids en fonction de la precision relative de chaque score. Utilisez ce score hybride pour le routing et la priorisation.</p>
+                    <p><strong className="text-[#111]">Quand basculer vers le 100% predictif.</strong> Quand votre modele predictif atteint un AUC-ROC stable superieur a 0.80 sur 3 trimestres consecutifs, et que les commerciaux confirment que les leads haute priorite sont effectivement les plus qualifies, vous pouvez progressivement reduire le poids du scoring manuel. Mais conservez toujours les regles eliminatoires en dur.</p>
                   </div>
                 </div>
               </section>
+              <Connector />
 
-              {/* Related articles */}
-              <section className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-7 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
-                  <h2 className="text-[14px] font-semibold text-[#111] mb-4">Articles lies</h2>
-                  <div className="space-y-2">
-                    {relatedArticles.map((a) => (
-                      <Link key={a.slug} href={`/blog/${a.slug}`} className="flex items-center justify-between p-3 rounded-lg hover:bg-[#FAFAFA] transition-colors group">
-                        <div className="flex items-center gap-3">
-                          <div className="w-2 h-2 rounded-sm shrink-0" style={{ backgroundColor: a.color }} />
-                          <span className="text-[13px] font-medium text-[#111] group-hover:text-[#444] transition-colors">{a.title}</span>
-                        </div>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#DDD] group-hover:text-[#999] group-hover:translate-x-0.5 transition-all"><path d="M4 2L8 6L4 10" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                      </Link>
-                    ))}
+              {/* ================================================================ */}
+              {/* Section 10 : Tendances futures */}
+              {/* ================================================================ */}
+              <section id="future-trends" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                  <h2 className="text-[17px] font-semibold text-[#111] mb-4">Tendances futures du scoring predictif B2B</h2>
+                  <div className="space-y-3 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Le scoring predictif evolue rapidement sous l&apos;impulsion des avancees en IA generative et en traitement du langage naturel. Voici les tendances qui vont transformer la discipline dans les 2-3 prochaines annees.</p>
+                    <p><strong className="text-[#111]">Scoring conversationnel avec les LLMs.</strong> Les modeles de langage comme GPT-4 et Claude peuvent analyser le contenu des emails, des transcriptions d&apos;appels et des messages chat pour extraire des signaux de qualification. La tonalite, les questions posees, les objections soulevees et le vocabulaire utilise sont autant d&apos;indicateurs de maturite que le scoring traditionnel ne capte pas.</p>
+                    <p><strong className="text-[#111]">Scoring en temps reel au niveau du compte.</strong> Au lieu de scorer des leads individuels, les modeles scorent de plus en plus des comptes entiers en agregant les signaux de tous les contacts et toutes les interactions. Cette approche est alignee avec l&apos;ABM et permet de detecter les comptes en phase d&apos;achat meme quand aucun contact individuel n&apos;a encore atteint un score eleve.</p>
+                    <p><strong className="text-[#111]">Explainability et transparence.</strong> Les modeles de scoring deviennent plus transparents grace aux techniques d&apos;IA explicable (SHAP values, LIME). Au lieu de dire &ldquo;ce lead a un score de 85&rdquo;, le modele explique &ldquo;ce lead a un score de 85 principalement parce qu&apos;il a visite la page tarifs 3 fois, que son entreprise est dans le bon segment, et qu&apos;il a telecharge une etude de cas&rdquo;. Cette transparence augmente la confiance des commerciaux.</p>
+                    <p><strong className="text-[#111]">Integration avec les agents IA.</strong> Les agents IA commerciaux (comme ceux de Salesforce Einstein ou de HubSpot Breeze) integrent le scoring predictif dans des workflows autonomes. L&apos;agent detecte un lead a haut potentiel, redige un email personnalise base sur le contexte, et planifie un appel. Le role du commercial passe de la prospection a la validation et au closing.</p>
+                    <p><strong className="text-[#111]">Notre conviction chez Ceres.</strong> Le scoring predictif n&apos;est plus une option pour les entreprises B2B qui veulent scaler leur acquisition. C&apos;est un prerequis. La question n&apos;est plus &ldquo;faut-il l&apos;adopter ?&rdquo; mais &ldquo;comment l&apos;implementer correctement ?&rdquo;. Et la reponse commence toujours par les donnees : sans donnees propres et suffisantes, aucun algorithme ne peut faire de miracles.</p>
                   </div>
-                </div>
-              </section>
-
-              {/* CTA */}
-              <section>
-                <div className="rounded-2xl border border-[#E8E8E8] bg-[#FAFAFA] p-6 md:p-10 text-center">
-                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-3">Pret a passer au scoring predictif ?</h2>
-                  <p className="text-[13px] text-[#999] mb-6 max-w-[420px] mx-auto">On analyse vos donnees CRM, on identifie les patterns de conversion et on deploie un scoring predictif dans HubSpot. Premiers resultats en 4 semaines.</p>
-                  <a href="/contact" className="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-[#111] text-white text-[13px] font-medium hover:bg-[#222] transition-colors">
-                    <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />Reserver un appel decouverte
-                  </a>
                 </div>
               </section>
             </article>
+
+            {/* Related articles */}
+            <section className="mt-12 mb-8">
+              <p className="text-[13px] font-semibold text-[#111] mb-4">Articles similaires</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {relatedArticles.map((a) => (
+                  <Link key={a.slug} href={`/blog/${a.slug}`} className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] transition-colors group">
+                    <div className="w-6 h-6 rounded-md flex items-center justify-center text-[10px] font-bold text-white mb-3" style={{ background: a.color }}>
+                      {a.category[0]}
+                    </div>
+                    <p className="text-[12px] font-semibold text-[#111] leading-[1.4] group-hover:text-[#6D00CC] transition-colors">{a.title}</p>
+                    <p className="text-[10px] text-[#999] mt-2">{a.category}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+
+            {/* CTA */}
+            <section>
+              <div className="rounded-2xl border border-[#E8E8E8] bg-[#FAFAFA] p-6 md:p-10 text-center">
+                <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-3">Vous voulez deployer un scoring predictif dans votre CRM ?</h2>
+                <p className="text-[13px] text-[#999] mb-6 max-w-[500px] mx-auto">On audite vos donnees, on configure le modele, on valide la precision et on forme vos equipes. Premiers resultats mesurables sous 12 semaines.</p>
+                <div className="flex items-center justify-center gap-3">
+                  <a href="/contact" className="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-[#111] text-white text-[13px] font-medium hover:bg-[#222] transition-colors">
+                    <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />Deployer le scoring IA
+                  </a>
+                  <Link href="/blog" className="inline-flex items-center gap-2 px-5 py-2 rounded-md border border-[#E5E5E5] bg-white text-[#111] text-[13px] font-medium hover:border-[#CCC] transition-colors">
+                    Tous les articles
+                  </Link>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>

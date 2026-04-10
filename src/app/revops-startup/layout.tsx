@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "RevOps pour Startups : structurez vos operations de 5 a 50 personnes",
+  title: "RevOps Startups : structurez vos operations | Ceres",
   description:
     "Accompagnement RevOps adapte aux startups. Setup CRM, pipeline, scoring et dashboards en 2 semaines. A partir de 0 EUR/mois de stack.",
 };

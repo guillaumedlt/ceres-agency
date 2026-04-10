@@ -5,7 +5,7 @@ import Link from "next/link";
 import ClaudeFAQ from "@/components/marketing/ClaudeFAQ";
 
 export const metadata: Metadata = {
-  title: "Claude pour le business B2B : IA appliquee au RevOps, Marketing & Sales | Ceres",
+  title: "Claude pour le B2B : IA RevOps, Marketing & Sales | Ceres",
   description:
     "Decouvrez comment Claude et Claude Code transforment vos operations B2B. 50+ cas d'usage concrets en RevOps, marketing, sales, service, developpement et data.",
   keywords: [

@@ -5,7 +5,7 @@ import Badge from "@/components/marketing/Badge";
 export const metadata: Metadata = {
   title: "Audit RevOps — Diagnostic CRM, Process & Data | Ceres",
   description:
-    "Audit complet de votre stack RevOps : CRM HubSpot ou Salesforce, process commerciaux, data quality, intégrations et automatisations. Rapport actionnable avec plan d'action priorisé. Résultats en 2 semaines.",
+    "Audit complet RevOps : CRM, process commerciaux, data quality, integrations. Rapport actionnable avec plan d'action priorise. Resultats en 2 semaines.",
   keywords: [
     "audit revops", "audit crm", "audit hubspot", "diagnostic commercial",
     "data quality crm", "audit process commercial", "optimisation pipeline",

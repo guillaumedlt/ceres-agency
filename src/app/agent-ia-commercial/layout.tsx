@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agent IA commercial : automatiser la vente B2B avec l\u2019IA | Ceres",
+  title: "Agent IA commercial : automatiser la vente B2B | Ceres",
   description:
     "Deployez un agent IA commercial pour automatiser enrichissement, qualification, scoring, emails et coaching. Stack Claude + MCP + Make. ROI mesurable.",
   keywords: [

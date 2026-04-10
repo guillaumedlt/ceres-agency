@@ -44,8 +44,14 @@ mkdir -p "$BLOG_DIR/$SLUG"
 TODAY=$(date +"%d %B %Y" | sed 's/January/janvier/;s/February/fevrier/;s/March/mars/;s/April/avril/;s/May/mai/;s/June/juin/;s/July/juillet/;s/August/aout/;s/September/septembre/;s/October/octobre/;s/November/novembre/;s/December/decembre/')
 
 # Generate article using Claude CLI
+# Find latest Claude binary (path changes with VSCode extension updates)
+CLAUDE_BIN=$(ls -t /Users/guillaumedelachet/.vscode/extensions/anthropic.claude-code-*-darwin-arm64/resources/native-binary/claude 2>/dev/null | head -1)
+if [ -z "$CLAUDE_BIN" ]; then
+  echo "ERROR: Claude CLI not found"
+  exit 1
+fi
 cd "$PROJECT_DIR"
-claude -p "Create a comprehensive French blog article page for the Ceres RevOps agency website.
+"$CLAUDE_BIN" -p "Create a comprehensive French blog article page for the Ceres RevOps agency website.
 
 Write the file at: $BLOG_DIR/$SLUG/page.tsx
 Also create a layout.tsx in the same directory with unique metadata.

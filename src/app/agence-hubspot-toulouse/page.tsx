@@ -6,7 +6,7 @@ import Link from "next/link";
 /* ─── Metadata ─────────────────────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Agence HubSpot Toulouse — Setup, Migration & Optimisation CRM | Ceres",
+  title: "Agence HubSpot Toulouse | Optimisation CRM | Ceres",
   description:
     "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie. Partenaire certifie.",
   keywords: [

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Formation HubSpot : programmes sur mesure pour vos equipes | Ceres",
+  title: "Formation HubSpot sur mesure | Paris & remote | Ceres",
   description:
     "Formation HubSpot sur mesure a Paris et en remote. Programmes par role : admin, commercial, marketing, manager. 1 journee, 3 jours ou programme personnalise.",
   keywords: [

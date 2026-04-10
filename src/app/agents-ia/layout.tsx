@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Deploiement IA : optimiser chaque silo RevOps avec l'intelligence artificielle | Ceres",
+  title: "Deploiement IA : agents et scoring RevOps | Ceres",
   description:
-    "On deploie l'IA silo par silo dans vos operations commerciales. Audit des taches remplacables, agents IA sur le CRM, scoring, enrichissement, reporting automatise. De la donnee propre a l'intelligence operationnelle.",
+    "On deploie l'IA silo par silo dans vos operations commerciales. Agents IA sur le CRM, scoring, enrichissement, reporting automatise.",
   keywords: [
     "deploiement ia revops",
     "ia operations commerciales",

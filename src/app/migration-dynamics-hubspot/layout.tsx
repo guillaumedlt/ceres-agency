@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Migration Dynamics vers HubSpot | Ceres",
   description:
-    "Migrez de Microsoft Dynamics 365 vers HubSpot sans perte de donnees. Methodologie eprouvee, 45 000 contacts migres pour TotalEnergies, accompagnement complet. Devis gratuit.",
+    "Migrez de Dynamics 365 vers HubSpot sans perte de donnees. 45 000 contacts migres pour TotalEnergies. Accompagnement complet, devis gratuit.",
   keywords: [
     "migration dynamics hubspot",
     "dynamics 365 vers hubspot",

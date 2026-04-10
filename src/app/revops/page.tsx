@@ -4,9 +4,9 @@ import Badge from "@/components/marketing/Badge";
 import RevOpsQuiz from "@/components/marketing/RevOpsQuiz";
 
 export const metadata: Metadata = {
-  title: "Qu'est-ce que le RevOps ? — Guide complet Revenue Operations | Ceres",
+  title: "RevOps : guide Revenue Operations complet | Ceres",
   description:
-    "Le RevOps (Revenue Operations) aligne Sales, Marketing et Customer Success autour de process, outils et données communs. Définition, enjeux, mise en place et bénéfices concrets pour les entreprises B2B.",
+    "Le RevOps aligne Sales, Marketing et CS autour de process, outils et donnees communs. Definition, enjeux et mise en place pour les entreprises B2B.",
   keywords: [
     "revops", "revenue operations", "qu'est-ce que le revops",
     "revops définition", "revenue operations définition",

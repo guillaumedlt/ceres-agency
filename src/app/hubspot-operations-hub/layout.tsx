@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HubSpot Operations Hub : data sync, qualite et automatisation | Ceres",
+  title: "HubSpot Operations Hub : guide et deploiement | Ceres",
   description:
     "Guide complet HubSpot Operations Hub : data sync, data quality, programmable automation, datasets, custom code. Plans, prix et deploiement RevOps par Ceres.",
   keywords: [

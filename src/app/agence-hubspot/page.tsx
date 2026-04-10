@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Agence HubSpot — Setup, Migration & Optimisation | Ceres",
-  description: "Agence HubSpot spécialisée RevOps & IA en France. Configuration, migration Salesforce, optimisation, administration récurrente. Sales Hub, Marketing Hub, Service Hub, Operations Hub.",
+  description: "Agence HubSpot specialisee RevOps & IA en France. Configuration, migration, optimisation CRM. Sales Hub, Marketing Hub, Operations Hub.",
   keywords: ["agence hubspot","agence hubspot france","partenaire hubspot","intégration hubspot","migration hubspot","migration salesforce hubspot","configuration hubspot","hubspot sales hub","hubspot marketing hub","consultant hubspot","optimisation hubspot","hubspot crm","hubspot vs salesforce","admin hubspot externalisé"],
 };
 

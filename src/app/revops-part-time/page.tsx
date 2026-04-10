@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 
 export const metadata: Metadata = {
-  title: "Accompagnement RevOps & IA — Un expert dedie chaque mois | Ceres",
+  title: "RevOps & IA Part-Time | Expert dedie mensuel | Ceres",
   description:
-    "Un expert RevOps & IA integre a votre equipe chaque mois. Il pilote votre CRM, optimise les agents IA, itere sur les process et deploie de nouvelles briques. Sans engagement.",
+    "Un expert RevOps & IA integre a votre equipe chaque mois. CRM, agents IA, process et nouvelles briques. Sans engagement.",
   keywords: [
     "revops part time", "revops externalise", "accompagnement revops",
     "revops as a service", "consultant revops mensuel", "revops ia",

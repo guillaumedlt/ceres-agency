@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Integration HubSpot | Connectez vos outils a votre CRM | Ceres",
+  title: "Integration HubSpot | Connectez vos outils | Ceres",
   description:
     "Integration HubSpot avec Salesforce, Slack, Make, Lemlist, Clay, ERP et +1500 outils. API, iPaaS, webhooks. Approche RevOps. Devis gratuit.",
   keywords: [

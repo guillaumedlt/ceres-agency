@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fondation Data : nettoyage CRM, KPIs et gouvernance des donnees | Ceres",
+  title: "Fondation Data : nettoyage CRM et gouvernance | Ceres",
   description:
-    "On nettoie votre base CRM, standardise vos donnees, unifie les flux entre vos outils et definit les KPIs par silo. Le prerequis a toute initiative IA. Deduplication, enrichissement, gouvernance automatisee.",
+    "On nettoie votre CRM, standardise vos donnees et definit les KPIs par silo. Prerequis a toute initiative IA. Deduplication et gouvernance.",
   keywords: [
     "fondation data",
     "nettoyage crm",
