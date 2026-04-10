@@ -128,7 +128,7 @@ export default function Features() {
                     <div className="flex gap-1">
                       {p.icons.map((d, j) => (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img key={`${d}-${j}`} src={`https://www.google.com/s2/favicons?domain=${d}&sz=64`} alt="tool" width={14} height={14} className="rounded-sm rounded" loading="lazy" />
+                        <img key={`${d}-${j}`} src={`https://www.google.com/s2/favicons?domain=${d}&sz=64`} alt={d.replace('.com','').replace('.io','').replace('.ai','')} width={14} height={14} className="rounded-sm rounded" loading="lazy" />
                       ))}
                     </div>
                   </div>

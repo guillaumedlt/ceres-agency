@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ceres.agency"),
   title: {
     default: "Ceres | Agence RevOps & IA",
-    template: "%s | Ceres",
+    template: "%s",
   },
   description:
     "Ceres est l'agence RevOps & IA qui structure, automatise et optimise vos operations commerciales. Audit HubSpot, automatisation des process, intelligence artificielle appliquee aux ventes. Basee en France.",
@@ -54,8 +54,7 @@ export const metadata: Metadata = {
     description: "Structurez, automatisez et optimisez vos operations commerciales avec le RevOps et l'IA.",
   },
   alternates: {
-    canonical: "https://ceres.agency",
-    languages: { "fr-FR": "https://ceres.agency" },
+    canonical: "/",
   },
   category: "technology",
 };
@@ -64,15 +63,20 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
+      "@type": ["ProfessionalService", "LocalBusiness"],
       "@id": "https://ceres.agency/#organization",
       name: "Ceres",
       url: "https://ceres.agency",
       description: "Agence RevOps & IA specialisee dans la structuration, l'automatisation et l'optimisation des operations commerciales B2B en France.",
       foundingDate: "2024",
-      areaServed: { "@type": "Country", name: "France" },
-      serviceType: ["Audit CRM", "Revenue Operations", "Automatisation commerciale", "Intelligence Artificielle appliquee aux ventes", "Integration HubSpot", "Optimisation pipeline commercial"],
-      knowsAbout: ["Revenue Operations", "Intelligence Artificielle", "CRM Automation", "HubSpot", "Sales Analytics", "Pipeline Management", "Data Quality", "Sales Forecasting"],
+      areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Canada" }],
+      serviceType: ["Audit CRM", "Revenue Operations", "Automatisation commerciale", "Intelligence Artificielle appliquee aux ventes", "Integration HubSpot", "Deploiement IA", "Formation Claude"],
+      knowsAbout: ["Revenue Operations", "Intelligence Artificielle", "CRM Automation", "HubSpot", "Sales Analytics", "Pipeline Management", "Data Quality", "Claude AI", "MCP"],
+      address: { "@type": "PostalAddress", streetAddress: "128 rue La Boetie", addressLocality: "Paris", postalCode: "75008", addressCountry: "FR" },
+      email: "guillaume@ceres.agency",
+      openingHours: "Mo-Fr 09:00-19:00",
+      priceRange: "$$",
+      sameAs: ["https://www.linkedin.com/company/ceres-revops-ops/"],
     },
     {
       "@type": "WebSite",

@@ -150,7 +150,7 @@ export default function AuditRevOpsPage() {
           <div className="flex items-center justify-center gap-2 mb-8 flex-wrap">
             {["hubspot.com", "salesforce.com", "clay.com", "make.com", "notion.so", "slack.com"].map((d) => (
               // eslint-disable-next-line @next/next/no-img-element
-              <img key={d} src={`https://www.google.com/s2/favicons?domain=${d}&sz=64`} alt="tool" width={18} height={18} className="rounded-sm opacity-40" loading="lazy" />
+              <img key={d} src={`https://www.google.com/s2/favicons?domain=${d}&sz=64`} alt={d.replace('.com','').replace('.io','').replace('.ai','')} width={18} height={18} className="rounded-sm opacity-40" loading="lazy" />
             ))}
           </div>
           <div className="flex items-center justify-center gap-3">

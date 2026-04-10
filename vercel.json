@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.ceres.agency" }],
+      "destination": "https://ceres.agency/:path",
+      "permanent": true
+    }
+  ]
+}

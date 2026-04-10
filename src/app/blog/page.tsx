@@ -128,7 +128,7 @@ export default function BlogPage() {
         <section className="text-center mb-14">
           <div className="mb-4"><Badge>Blog</Badge></div>
           <h1 className="text-[36px] sm:text-[48px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-5">
-            RevOps, CRM & IA
+            Blog RevOps, CRM &amp; IA pour les equipes B2B
           </h1>
           <p className="text-[17px] text-[#666] max-w-[480px] mx-auto leading-[1.7] mb-8">
             Articles, guides et analyses pour structurer vos opérations commerciales et déployer l&apos;IA.
