@@ -168,6 +168,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/methode`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/fondation-data`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
 
+    // Tarifs
+    { url: `${base}/tarifs`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+
+    // Sectorielles
+    { url: `${base}/revops-saas`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/revops-fintech`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/crm-immobilier`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/revops-healthtech`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/revops-industrie`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Comparaisons
+    { url: `${base}/hubspot-vs-monday-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-vs-folk`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-vs-axonaut`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-vs-notion-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/claude-vs-chatgpt-vs-gemini-b2b`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
     // Claude pages
     { url: `${base}/agence-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/formation-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
