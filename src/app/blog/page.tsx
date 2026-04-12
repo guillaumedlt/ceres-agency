@@ -135,17 +135,29 @@ const categoryLetters: Record<string, string> = {
   data: "D",
 };
 
+const monthMap: Record<string, number> = { "jan": 0, "fév": 1, "fev": 1, "mars": 2, "mar": 2, "avr": 3, "mai": 4, "juin": 5, "juil": 6, "août": 7, "aou": 7, "sep": 8, "oct": 9, "nov": 10, "déc": 11, "dec": 11 };
+function parseDate(d: string): number {
+  const parts = d.toLowerCase().replace(/[.]/g, "").split(" ");
+  if (parts.length < 3) return 0;
+  const day = parseInt(parts[0]) || 1;
+  const month = monthMap[parts[1]] ?? 0;
+  const year = parseInt(parts[2]) || 2026;
+  return new Date(year, month, day).getTime();
+}
+
+const sortedArticles = [...articles].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
 export default function BlogPage() {
   const [cat, setCat] = useState("all");
   const [search, setSearch] = useState("");
 
-  const filtered = articles.filter((a) => {
+  const filtered = sortedArticles.filter((a) => {
     const matchesCat = cat === "all" || a.category === cat;
     const matchesSearch = search === "" || a.title.toLowerCase().includes(search.toLowerCase()) || a.excerpt.toLowerCase().includes(search.toLowerCase());
     return matchesCat && matchesSearch;
   });
 
-  const featured = articles.filter((a) => a.featured);
+  const featured = sortedArticles.filter((a) => a.featured);
   const showFeatured = cat === "all" && search === "";
 
   return (
