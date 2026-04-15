@@ -124,6 +124,7 @@ const articles = [
   { slug: "ia-qualification-leads-automatique", title: "Qualification automatique des leads avec l'IA : methode et resultats", excerpt: "Comment l'IA qualifie (comportement + firmographie + intent). MQL>SQL de 15% a 35%. La difference avec le scoring classique.", category: "ia", date: "12 avr 2026", readTime: "14 min" },
   { slug: "migration-crm-sans-perdre-donnees", title: "Migration CRM : comment migrer sans perdre de donnees", excerpt: "L'audit pre-migration, le mapping des champs, le nettoyage AVANT, la migration technique, les tests, le go-live.", category: "crm", date: "12 avr 2026", readTime: "14 min" },
   { slug: "ia-b2b-par-ou-commencer", title: "IA en B2B : par ou commencer quand on n'a rien fait", excerpt: "Les 3 prerequis, les 3 premiers use cases (enrichissement, reporting, emails), ce qu'il ne faut PAS faire en premier.", category: "ia", date: "12 avr 2026", readTime: "13 min" },
+  { slug: "agence-ia-monaco-quanta", title: "Quanta : on ouvre notre agence IA a Monaco", excerpt: "Ceres lance Quanta, son agence specialisee en intelligence artificielle a Monaco. Deploiement IA pour les entreprises monegasques et de la Cote d'Azur.", category: "ia", date: "15 avr 2026", readTime: "8 min", featured: true },
 ];
 
 const categoryColors: Record<string, string> = { revops: "#FF7A59", crm: "#4B5EFC", ia: "#6D00CC", process: "#6C5CE7", data: "#22C55E" };

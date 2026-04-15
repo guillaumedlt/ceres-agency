@@ -106,6 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ia-qualification-leads-automatique",
     "migration-crm-sans-perdre-donnees",
     "ia-b2b-par-ou-commencer",
+    "agence-ia-monaco-quanta",
   ];
 
   // Case study slugs
