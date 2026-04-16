@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cas client Alan : tracking marketing multi-touch dans HubSpot",
+  title: "Cas client Alan : tracking marketing HubSpot | Ceres",
   description:
     "Cas client Alan : mise en place du tracking marketing multi-touch dans HubSpot pour mesurer l'impact de chaque canal sur la generation de leads qualifies.",
 };

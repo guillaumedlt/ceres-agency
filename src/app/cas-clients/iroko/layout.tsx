@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cas client Iroko : agents IA Claude pour accelerer les ventes",
+  title: "Cas client Iroko : agents IA pour les ventes | Ceres",
   description:
     "Cas client Iroko : deploiement d'agents IA Claude pour automatiser la prospection, qualifier les leads et accelerer les ventes de la fintech immobiliere.",
 };

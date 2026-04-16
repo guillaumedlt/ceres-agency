@@ -4,9 +4,9 @@ import Badge from "@/components/marketing/Badge";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "RevOps pour PME (50-200 personnes) — Alignez vos equipes | Ceres",
+  title: "RevOps pour PME : alignez vos equipes | Ceres",
   description:
-    "Consultant RevOps specialise PME. Audit CRM, restructuration pipeline, SLA marketing-sales, lead scoring, automatisation. Accelerez votre croissance sans recruter.",
+    "Consultant RevOps PME. Audit CRM, restructuration pipeline, SLA marketing-sales, lead scoring et automatisation. Accelerez sans recruter.",
   keywords: [
     "revops pme",
     "crm pme",

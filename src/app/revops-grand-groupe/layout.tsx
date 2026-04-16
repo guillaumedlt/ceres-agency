@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "RevOps pour Grands Groupes : migrations CRM et unification multi-instances",
+  title: "RevOps pour Grands Groupes : migrations CRM | Ceres",
   description:
     "Accompagnement RevOps grands comptes. Migration Dynamics et Salesforce vers HubSpot, multi-regions, RGPD. Cas client TotalEnergies.",
 };

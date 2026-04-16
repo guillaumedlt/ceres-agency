@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "RevOps pour SaaS B2B : structurez votre revenue engine | Ceres",
+  title: "RevOps pour SaaS B2B : votre revenue engine | Ceres",
   description:
     "RevOps specialise pour les SaaS B2B. Pipeline ARR/MRR, scoring, churn prediction, onboarding automatise. 100+ SaaS accompagnes.",
   keywords: [
