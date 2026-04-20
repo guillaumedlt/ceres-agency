@@ -1,5 +1,3 @@
-"use client";
-
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
