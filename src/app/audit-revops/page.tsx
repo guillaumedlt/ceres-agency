@@ -1,18 +1,5 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
-
-export const metadata: Metadata = {
-  title: "Audit RevOps — Diagnostic CRM, Process & Data | Ceres",
-  description:
-    "Audit complet RevOps : CRM, process commerciaux, data quality, integrations. Rapport actionnable avec plan d'action priorise. Resultats en 2 semaines.",
-  keywords: [
-    "audit revops", "audit crm", "audit hubspot", "diagnostic commercial",
-    "data quality crm", "audit process commercial", "optimisation pipeline",
-    "consultant revops", "audit salesforce", "revops diagnostic",
-    "audit ops commerciales", "revops france",
-  ],
-};
 
 const auditPillars = [
   {

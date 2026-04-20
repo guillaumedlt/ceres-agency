@@ -1,12 +1,5 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
-
-export const metadata: Metadata = {
-  title: "Agence Attio — Setup, Migration & Optimisation CRM | Ceres",
-  description: "Agence Attio en France. Configuration, migration, personnalisation et optimisation du CRM AI-native pour startups et scale-ups B2B. Partenaire officiel.",
-  keywords: ["agence attio","attio crm","attio france","attio vs hubspot","crm startup","crm ia","attio migration","attio configuration","attio integration","crm moderne","crm ai-native","alternative hubspot","alternative salesforce","attio partenaire"],
-};
 
 const whyAttio = [
   { title: "CRM AI-native", desc: "Attio est construit autour de l\u2019IA depuis le premier jour. Enrichissement automatique, scoring, r\u00e9sum\u00e9s de calls, recherche de prospects. L\u2019IA n\u2019est pas un add-on, c\u2019est le coeur du produit.", color: "#111" },

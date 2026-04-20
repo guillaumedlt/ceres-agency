@@ -1,23 +1,6 @@
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
-
-/* ─── Metadata ─────────────────────────────────────────────────────────────── */
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot Lyon | Optimisation CRM | Ceres",
-  description:
-    "Agence HubSpot a Lyon. Configuration, migration, optimisation CRM pour startups et PME de la region Auvergne-Rhone-Alpes. Partenaire certifie.",
-  keywords: [
-    "agence hubspot lyon",
-    "hubspot lyon",
-    "consultant hubspot lyon",
-    "crm lyon",
-    "migration hubspot lyon",
-  ],
-  alternates: { canonical: "https://www.ceres-music.com/agence-hubspot-lyon" },
-};
 
 /* ─── Data ──────────────────────────────────────────────────────────────────── */
 
@@ -104,7 +87,7 @@ const jsonLd = {
         addressRegion: "Auvergne-Rhone-Alpes",
         addressCountry: "FR",
       },
-      url: "https://www.ceres-music.com/agence-hubspot-lyon",
+      url: "https://ceres.agency/agence-hubspot-lyon",
       areaServed: { "@type": "City", name: "Lyon" },
       priceRange: "\u20ac\u20ac\u20ac",
     },

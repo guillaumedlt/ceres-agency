@@ -134,7 +134,7 @@ const jsonLd = {
         addressCountry: "FR",
       },
       geo: { "@type": "GeoCoordinates", latitude: 48.8738, longitude: 2.3071 },
-      url: "https://www.ceres-music.com/agence-revops-paris",
+      url: "https://ceres.agency/agence-revops-paris",
       telephone: "+33-1-00-00-00-00",
       areaServed: { "@type": "City", name: "Paris" },
       priceRange: "\u20ac\u20ac\u20ac",

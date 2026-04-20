@@ -1,22 +1,6 @@
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
-
-/* ─── Metadata ─────────────────────────────────────────────────────────────── */
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot Nantes | Optimisation CRM | Ceres",
-  description:
-    "Agence HubSpot a Nantes. Configuration, migration et optimisation CRM pour entreprises du Grand Ouest. Partenaire certifie.",
-  keywords: [
-    "agence hubspot nantes",
-    "hubspot nantes",
-    "consultant hubspot nantes",
-    "crm nantes",
-  ],
-  alternates: { canonical: "https://www.ceres-music.com/agence-hubspot-nantes" },
-};
 
 /* ─── Data ──────────────────────────────────────────────────────────────────── */
 
@@ -103,7 +87,7 @@ const jsonLd = {
         addressRegion: "Pays de la Loire",
         addressCountry: "FR",
       },
-      url: "https://www.ceres-music.com/agence-hubspot-nantes",
+      url: "https://ceres.agency/agence-hubspot-nantes",
       areaServed: { "@type": "City", name: "Nantes" },
       priceRange: "\u20ac\u20ac\u20ac",
     },

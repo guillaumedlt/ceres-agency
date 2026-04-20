@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     "expert revenue operations france",
     "cabinet revops",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/consultant-revops",
+  },
+  openGraph: {
+    title: "Consultant RevOps | Expert Revenue Operations France | Ceres",
+    description:
+      "Consultant RevOps specialise en Revenue Operations. Alignement Sales, Marketing, CS. Audit, CRM, automatisation, IA.",
+    url: "https://ceres.agency/consultant-revops",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

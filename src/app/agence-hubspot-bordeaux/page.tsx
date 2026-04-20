@@ -1,22 +1,6 @@
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
-
-/* ─── Metadata ─────────────────────────────────────────────────────────────── */
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot Bordeaux | Optimisation CRM | Ceres",
-  description:
-    "Agence HubSpot a Bordeaux. Configuration, migration et optimisation CRM pour entreprises de Nouvelle-Aquitaine. Partenaire certifie.",
-  keywords: [
-    "agence hubspot bordeaux",
-    "hubspot bordeaux",
-    "consultant hubspot bordeaux",
-    "crm bordeaux",
-  ],
-  alternates: { canonical: "https://www.ceres-music.com/agence-hubspot-bordeaux" },
-};
 
 /* ─── Data ──────────────────────────────────────────────────────────────────── */
 
@@ -103,7 +87,7 @@ const jsonLd = {
         addressRegion: "Nouvelle-Aquitaine",
         addressCountry: "FR",
       },
-      url: "https://www.ceres-music.com/agence-hubspot-bordeaux",
+      url: "https://ceres.agency/agence-hubspot-bordeaux",
       areaServed: { "@type": "City", name: "Bordeaux" },
       priceRange: "\u20ac\u20ac\u20ac",
     },

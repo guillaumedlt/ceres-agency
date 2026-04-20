@@ -1,17 +1,5 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
-
-export const metadata: Metadata = {
-  title: "RevOps & IA Part-Time | Expert dedie mensuel | Ceres",
-  description:
-    "Un expert RevOps & IA integre a votre equipe chaque mois. CRM, agents IA, process et nouvelles briques. Sans engagement.",
-  keywords: [
-    "revops part time", "revops externalise", "accompagnement revops",
-    "revops as a service", "consultant revops mensuel", "revops ia",
-    "accompagnement ia entreprise", "revenue operations france",
-  ],
-};
 
 const painPoints = [
   "Vous n'avez pas le budget pour un Head of RevOps à 80K€",

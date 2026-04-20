@@ -1,13 +1,6 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot — Setup, Migration & Optimisation | Ceres",
-  description: "Agence HubSpot specialisee RevOps & IA en France. Configuration, migration, optimisation CRM. Sales Hub, Marketing Hub, Operations Hub.",
-  keywords: ["agence hubspot","agence hubspot france","partenaire hubspot","intégration hubspot","migration hubspot","migration salesforce hubspot","configuration hubspot","hubspot sales hub","hubspot marketing hub","consultant hubspot","optimisation hubspot","hubspot crm","hubspot vs salesforce","admin hubspot externalisé"],
-};
 
 const whyAgency = [
   { title: "Expertise certifiee", desc: "Une agence HubSpot certifiee a deja deploye des dizaines d'instances. Elle connait les pieges, les bonnes pratiques et les raccourcis. Vous beneficiez de 9 ans d'experience cumulee des le premier jour, sans passer par la courbe d'apprentissage.", color: "#FF7A59" },
