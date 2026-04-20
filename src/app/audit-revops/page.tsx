@@ -329,6 +329,22 @@ export default function AuditRevOpsPage() {
         </section>
         <Connector />
 
+        {/* Related */}
+        <section>
+          <p className="text-[13px] text-[#777] text-center mb-3">Apres l&apos;audit, passez a l&apos;action :</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a href="/agence-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#FF7A59] hover:text-[#E5684A] transition-colors">
+              Agence RevOps
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
+            <a href="/consultant-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Consultant RevOps
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
+          </div>
+        </section>
+        <Connector />
+
         {/* CTA */}
         <section id="contact">
           <div className="rounded-2xl border border-[#E8E8E8] bg-[#FAFAFA] p-8 md:p-12 text-center">

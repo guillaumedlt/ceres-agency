@@ -345,6 +345,22 @@ export default function FormationHubSpotPage() {
         </section>
         <Connector />
 
+        {/* ── Related ── */}
+        <section>
+          <p className="text-[13px] text-[#777] text-center mb-3">Besoin d&apos;aller plus loin que la formation ?</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link href="/consultant-hubspot" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Consultant HubSpot dedie
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
+            <Link href="/tarifs" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#22C55E] hover:text-[#1BA34E] transition-colors">
+              Voir nos tarifs
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
         {/* ── CTA ── */}
         <section className="text-center">
           <div className="rounded-2xl bg-[#111] p-8 md:p-14">

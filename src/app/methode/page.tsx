@@ -679,7 +679,7 @@ export default function MethodePage() {
               {/* ───── Related links ───── */}
               <section>
                 <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-4">Continuer la lecture</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <Link href="/fondation-data" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-2 h-2 rounded-sm bg-[#FF7A59]" />
@@ -694,12 +694,19 @@ export default function MethodePage() {
                     </div>
                     <p className="text-[11px] text-[#777] leading-[1.5]">Optimiser chaque silo</p>
                   </Link>
-                  <Link href="/blog" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                  <Link href="/deployer-claude-entreprise" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                      <h3 className="text-[12px] font-semibold text-[#111]">Blog</h3>
+                      <div className="w-2 h-2 rounded-sm bg-[#D4A27F]" />
+                      <h3 className="text-[12px] font-semibold text-[#111]">Deployer Claude en entreprise</h3>
                     </div>
-                    <p className="text-[11px] text-[#777] leading-[1.5]">68+ articles RevOps, Data et IA</p>
+                    <p className="text-[11px] text-[#777] leading-[1.5]">Guide complet du deploiement</p>
+                  </Link>
+                  <Link href="/tarifs" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                      <h3 className="text-[12px] font-semibold text-[#111]">Tarifs</h3>
+                    </div>
+                    <p className="text-[11px] text-[#777] leading-[1.5]">Nos forfaits et options</p>
                   </Link>
                 </div>
               </section>

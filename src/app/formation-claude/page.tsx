@@ -286,16 +286,22 @@ export default function FormationClaudePage() {
                 <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </span>
             </Link>
-            <Link href="/revops-part-time" className="block rounded-2xl border border-[#E8E8E8] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)] hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+            <Link href="/deployer-claude-entreprise" className="block rounded-2xl border border-[#E8E8E8] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)] hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
               <div className="flex items-center gap-2.5 mb-3">
-                <div className="w-3 h-3 rounded-sm bg-[#4B5EFC]" />
-                <h3 className="text-[14px] font-semibold text-[#111]">Accompagnement continu</h3>
+                <div className="w-3 h-3 rounded-sm bg-[#D4A27F]" />
+                <h3 className="text-[14px] font-semibold text-[#111]">Deployer Claude en entreprise</h3>
               </div>
-              <p className="text-[12px] text-[#777] leading-[1.65] mb-3">Un expert RevOps & IA integre a votre equipe chaque mois pour iterer et ajouter des briques.</p>
+              <p className="text-[12px] text-[#777] leading-[1.65] mb-3">Le guide complet : prerequis, cas d&apos;usage par departement, couts et securite.</p>
               <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-[#4B5EFC]">
-                Decouvrir le RevOps Part-Time
+                Lire le guide
                 <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </span>
+            </Link>
+          </div>
+          <div className="mt-4">
+            <Link href="/tarifs" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Voir nos tarifs
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </Link>
           </div>
         </section>

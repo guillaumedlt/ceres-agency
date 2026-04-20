@@ -309,6 +309,16 @@ export default function AgentsIAPage() {
               <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </span>
           </Link>
+          <div className="mt-4 flex flex-wrap gap-4">
+            <Link href="/deployer-claude-entreprise" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#D4A27F] hover:text-[#B8896A] transition-colors">
+              Deployer Claude en entreprise
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
+            <Link href="/tarifs" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Voir nos tarifs
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
+          </div>
         </section>
         <Connector />
 

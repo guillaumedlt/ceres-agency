@@ -487,10 +487,15 @@ export default function ConsultantHubSpotPage() {
             <p className="text-[14px] text-[#999] mb-6 max-w-[480px] mx-auto">
               30 minutes pour comprendre votre situation, identifier les quick wins et definir les prochaines etapes. Sans engagement.
             </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-[#111] text-white text-[13px] font-medium hover:bg-[#222] transition-colors">
-              <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
-              Reserver un appel gratuit
-            </Link>
+            <div className="flex items-center justify-center gap-3">
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2 rounded-md bg-[#111] text-white text-[13px] font-medium hover:bg-[#222] transition-colors">
+                <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                Reserver un appel gratuit
+              </Link>
+              <Link href="/tarifs" className="inline-flex items-center px-5 py-2 rounded-md text-[13px] text-[#666] hover:text-[#111] hover:bg-[#F0F0F0] transition-colors">
+                Voir nos tarifs
+              </Link>
+            </div>
           </div>
         </section>
 

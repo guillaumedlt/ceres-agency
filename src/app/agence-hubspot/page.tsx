@@ -227,6 +227,13 @@ export default function AgenceHubSpotPage() {
         <section>
           <div className="mb-4"><Badge>A decouvrir</Badge></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/consultant-hubspot" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Consultant HubSpot</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Vous cherchez un consultant HubSpot dedie ? Decouvrez notre approche.</p>
+            </Link>
             <Link href="/fondation-data" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
@@ -241,16 +248,9 @@ export default function AgenceHubSpotPage() {
               </div>
               <p className="text-[12px] text-[#777] leading-[1.65]">Une fois HubSpot en place, deployez l&apos;IA pour optimiser chaque silo.</p>
             </Link>
-            <Link href="/methode" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
-                <h3 className="text-[14px] font-semibold text-[#111]">Notre methode</h3>
-              </div>
-              <p className="text-[12px] text-[#777] leading-[1.65]">Cadrage, deploiement, formation, iteration. Comment on structure chaque mission HubSpot.</p>
-            </Link>
             <Link href="/tarifs" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
                 <h3 className="text-[14px] font-semibold text-[#111]">Tarifs</h3>
               </div>
               <p className="text-[12px] text-[#777] leading-[1.65]">Nos forfaits HubSpot : implementation, migration, optimisation, admin recurrente.</p>
