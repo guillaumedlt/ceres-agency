@@ -1,3 +1,5 @@
+"use client";
+
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
@@ -49,10 +51,16 @@ const services = [
 ];
 
 const ecosysteme = [
-  { titre: "Startups", desc: "Station F, incubateurs, lev\u00e9es de fonds : Paris est le premier hub startup europ\u00e9en. Ces entreprises ont besoin de structurer leurs Revenue Operations d\u00e8s la s\u00e9rie A pour scaler proprement. On les accompagne depuis le premier pipeline jusqu\u2019\u00e0 la structuration \u00e9quipe.", color: "#FF7A59", link: "/revops-startup" },
-  { titre: "Scale-ups", desc: "De 50 \u00e0 500 collaborateurs, les scale-ups parisiennes affrontent le m\u00eame d\u00e9fi : leurs process artisanaux ne tiennent plus. On restructure l\u2019ensemble de la cha\u00eene revenue, on automatise ce qui peut l\u2019\u00eatre et on d\u00e9ploie le reporting dont le board a besoin.", color: "#4B5EFC", link: "/revops-scaleup" },
-  { titre: "PME et ETI", desc: "Les PME et ETI fran\u00e7aises sont le c\u0153ur de notre client\u00e8le. Elles ont des enjeux sp\u00e9cifiques : ERP \u00e0 connecter, \u00e9quipes terrain, cycles de vente longs, double validation. On configure des Revenue Operations adapt\u00e9es \u00e0 leur r\u00e9alit\u00e9, pas un mod\u00e8le US copi\u00e9-coll\u00e9.", color: "#22C55E", link: "/revops-pme" },
-  { titre: "Grands groupes", desc: "TotalEnergies, Edenred, Alan : on accompagne aussi les grands groupes dans leur transformation RevOps. Multi-BU, multi-pays, gouvernance donn\u00e9es, int\u00e9grations ERP et BI. HubSpot France est \u00e0 Paris, on travaille en direct avec leurs \u00e9quipes.", color: "#6C5CE7", link: "/revops-grand-groupe" },
+  { titre: "Startups post-Station F", desc: "Station F produit des dizaines de startups par an qui doivent structurer leur revenue engine des la Serie A. Product-led growth, premiers sales hires, premier pipeline : on les accompagne depuis le premier deal jusqu'a la structuration d'equipe RevOps complete. On connait les VCs parisiens (Partech, Elaia, Breega) et leurs attentes en matiere de reporting.", color: "#FF7A59", link: "/revops-startup" },
+  { titre: "Scale-ups du Sentier et de South Pigalle", desc: "Contentsquare, Spendesk, PayFit, Swile : les quartiers tech parisiens concentrent des scale-ups en hypercroissance. Leurs process artisanaux ne tiennent plus au-dela de 50 personnes. On restructure la chaine revenue, on automatise le handoff marketing-sales et on deploie le reporting dont le board a besoin pour les prochaines levees.", color: "#4B5EFC", link: "/revops-scaleup" },
+  { titre: "PME et ETI franciliennes", desc: "Les PME et ETI d'Ile-de-France ont des enjeux specifiques : ERP Sage ou Cegid a connecter, equipes terrain et siege a aligner, cycles de vente longs avec double validation Direction + Achats. On configure des Revenue Operations adaptees a la realite francaise, pas un modele US copie-colle.", color: "#22C55E", link: "/revops-pme" },
+  { titre: "Grands groupes parisiens", desc: "TotalEnergies a La Defense, Edenred a Malakoff, Alan a Paris 10e : on accompagne les grands groupes dans leur transformation RevOps. Multi-BU, multi-pays, gouvernance donnees, integrations SAP et Power BI. On travaille en direct avec les equipes HubSpot France basees a Paris.", color: "#6C5CE7", link: "/revops-grand-groupe" },
+];
+
+const parisRevOpsLandscape = [
+  { titre: "Le RevOps n'est plus optionnel a Paris", desc: "En 2024, 73% des scale-ups parisiennes ayant leve plus de 5M euros ont un poste RevOps ou un prestataire dedie. Les VCs parisiens (Partech, Eurazeo Growth, Bpifrance) exigent desormais un reporting revenue structure avant le Series B. Ne pas avoir de RevOps a Paris en 2025, c'est arriver en board meeting sans chiffres." },
+  { titre: "L'ecosysteme d'outils SaaS est parisien", desc: "Lemlist (prospection), Clay (enrichissement), Pennylane (compta), Qonto (banque), Spendesk (depenses), La Growth Machine (outbound), Claap (call recording) : la moitie de votre stack est developpee a Paris. On connait ces outils personnellement, on travaille avec leurs equipes et on sait exactement comment les connecter a HubSpot." },
+  { titre: "Les meetups RevOps se passent ici", desc: "RevOps Network Paris, les events HubSpot France, les afterworks SaaS du Sentier : la communaute RevOps francaise vit a Paris. Nos consultants y participent activement, ce qui nous permet de rester a la pointe des pratiques et de vous faire beneficier du retour d'experience de dizaines d'entreprises similaires a la votre." },
 ];
 
 const clients = [
@@ -105,16 +113,16 @@ const tarifs = [
 ];
 
 const faqItems = [
-  { q: "O\u00f9 trouver une agence RevOps \u00e0 Paris ?", a: "Ceres est une agence RevOps bas\u00e9e au 128 rue La Bo\u00e9tie, dans le 8e arrondissement de Paris. Nous accompagnons les entreprises fran\u00e7aises dans la structuration de leurs Revenue Operations depuis 9 ans. Vous pouvez nous rencontrer sur site ou d\u00e9marrer en remote." },
-  { q: "Combien co\u00fbte un consultant RevOps \u00e0 Paris ?", a: "Un consultant RevOps \u00e0 Paris co\u00fbte entre 3 000 et 8 000 euros par mois en mode part-time (2 \u00e0 4 jours par semaine). Un audit RevOps d\u00e9marre \u00e0 3 000 euros. L\u2019appel de cadrage est gratuit et sans engagement." },
-  { q: "Quelle est la diff\u00e9rence entre RevOps et Sales Ops ?", a: "Sales Ops se concentre uniquement sur l\u2019\u00e9quipe commerciale. RevOps aligne les trois \u00e9quipes revenue (Marketing, Sales, Customer Success) autour d\u2019un m\u00eame stack, des m\u00eames donn\u00e9es et des m\u00eames objectifs. C\u2019est une vision holistique de la cha\u00eene revenue." },
-  { q: "Pourquoi choisir une agence RevOps locale \u00e0 Paris ?", a: "Une agence RevOps locale \u00e0 Paris vous offre la proximit\u00e9 g\u00e9ographique pour les ateliers sur site, la connaissance de l\u2019\u00e9cosyst\u00e8me tech fran\u00e7ais, la r\u00e9activit\u00e9 dans le m\u00eame fuseau horaire et la compr\u00e9hension des sp\u00e9cificit\u00e9s du march\u00e9 fran\u00e7ais (RGPD, facturation, cycles de vente)." },
-  { q: "Combien de temps pour d\u00e9ployer le RevOps dans mon entreprise ?", a: "Un audit RevOps prend 2 \u00e0 3 semaines. Un d\u00e9ploiement complet (CRM, process, automatisations, reporting) prend 4 \u00e0 8 semaines. Un accompagnement part-time s\u2019\u00e9tale sur 3 \u00e0 12 mois avec des r\u00e9sultats visibles d\u00e8s le premier mois." },
-  { q: "Travaillez-vous avec des entreprises hors de Paris ?", a: "Oui, nous accompagnons des clients dans toute la France et en Europe en remote. 60% de nos missions sont hybrides : cadrage sur site \u00e0 Paris puis ex\u00e9cution en remote. Nous nous d\u00e9pla\u00e7ons aussi ponctuellement en r\u00e9gion pour les go-live et formations." },
-  { q: "Quel CRM utilisez-vous pour le RevOps ?", a: "Nous sommes partenaires certifi\u00e9s HubSpot. HubSpot est la plateforme id\u00e9ale pour le RevOps car elle unifie Marketing, Sales et Service sur une seule base de donn\u00e9es. On travaille aussi avec des clients sur Salesforce pour des audits et des optimisations." },
-  { q: "Comment l\u2019IA am\u00e9liore le RevOps \u00e0 Paris ?", a: "L\u2019IA transform RevOps en automatisant la qualification des leads, l\u2019enrichissement de donn\u00e9es, le scoring pr\u00e9dictif et la g\u00e9n\u00e9ration de contenu personnalis\u00e9. Nous d\u00e9ployons des agents IA connect\u00e9s directement \u00e0 HubSpot via le protocole MCP pour des r\u00e9sultats concrets." },
-  { q: "Proposez-vous des formations RevOps sur site \u00e0 Paris ?", a: "Oui, nous nous d\u00e9pla\u00e7ons dans vos locaux parisiens pour des formations adapt\u00e9es \u00e0 vos process. Formations par \u00e9quipe (Sales, Marketing, CS, Ops, Direction) avec exercices pratiques sur vos propres donn\u00e9es et votre CRM." },
-  { q: "Comment se passe un projet RevOps avec votre agence \u00e0 Paris ?", a: "1) Appel de cadrage gratuit de 30 minutes. 2) Audit RevOps avec nos 87 points de contr\u00f4le. 3) Proposition d\u00e9taill\u00e9e avec p\u00e9rim\u00e8tre, planning et tarif. 4) Ateliers de cadrage process sur site. 5) D\u00e9ploiement it\u00e9ratif avec validation \u00e0 chaque \u00e9tape. 6) Formation et go-live. 7) Support post-lancement et am\u00e9lioration continue." },
+  { q: "Peut-on rencontrer un consultant RevOps a Paris ?", a: "Oui, c'est meme notre approche privilegiee. Nos consultants sont bases au 128 rue La Boetie (Paris 8e). On se deplace dans vos locaux pour les ateliers de cadrage, les immersions equipe et les formations. Le RevOps est un metier de terrain : il faut observer vos process en situation reelle pour les optimiser." },
+  { q: "Combien coute un accompagnement RevOps a Paris ?", a: "Un audit RevOps (87 points de controle) demarre a 3 000 euros. Un consultant part-time (2 a 4 jours/semaine) coute entre 3 000 et 8 000 euros par mois. Un deploiement complet entre 10 000 et 30 000 euros. Le premier appel de cadrage est gratuit, venez nous voir rue La Boetie ou on se deplace chez vous." },
+  { q: "Accompagnez-vous les startups post-Station F ?", a: "Oui, c'est un de nos segments cles. Les startups qui sortent d'incubateurs parisiens (Station F, The Family, Y Combinator Paris) doivent structurer leur revenue engine des la Serie A. On les aide a poser les fondations RevOps : premier CRM, premier pipeline, premiers dashboards pour le board et les VCs." },
+  { q: "Travaillez-vous avec les scale-ups SaaS parisiennes ?", a: "C'est notre coeur de metier. On accompagne des scale-ups comme Beedeez, Kameleoon et d'autres. Leurs enjeux sont specifiques : passer de process artisanaux a une machine revenue structuree, deployer le reporting pour le board, automatiser le handoff marketing-sales a l'echelle." },
+  { q: "Quelle est la difference entre RevOps et un admin CRM ?", a: "Un admin CRM gere l'outil. Un consultant RevOps aligne vos equipes Marketing, Sales et CS autour d'une meme infrastructure, de memes donnees et de memes objectifs. C'est la difference entre configurer des champs dans HubSpot et transformer votre chaine revenue. A Paris, la maturite RevOps est plus elevee et les entreprises comprennent cette distinction." },
+  { q: "Connaissez-vous les outils SaaS de l'ecosysteme parisien ?", a: "On travaille quotidiennement avec Lemlist, Clay, Pennylane, Qonto, Spendesk, La Growth Machine, Claap, Modjo. La moitie de ces outils ont ete crees a Paris. On connait leurs equipes, leurs API et on sait exactement comment les connecter a HubSpot pour construire une stack RevOps complete." },
+  { q: "Comment l'IA change le RevOps pour les entreprises parisiennes ?", a: "On deploie des agents IA (Claude + MCP) connectes directement a HubSpot. Qualification automatique des leads en 30 secondes, enrichissement continu des fiches, scoring predictif, generation de sequences personnalisees. Les scale-ups parisiennes qui adoptent l'IA RevOps reduisent de 60 a 80% le temps passe sur les taches admin CRM." },
+  { q: "On a une equipe distribuee mais le siege est a Paris, ca marche ?", a: "C'est le scenario le plus frequent. 60% de nos missions sont hybrides : on demarre par 1-2 jours sur site a Paris pour le cadrage strategique et l'immersion. Ensuite, l'execution se fait en remote avec des points hebdomadaires. On revient sur site pour les formations, les go-live et les revues trimestrielles." },
+  { q: "Quels resultats attendre d'un projet RevOps a Paris ?", a: "Sur nos 20 derniers projets parisiens : adoption CRM passee de 40% a 95%+, temps de reporting divise par 4, taux de conversion MQL-SQL ameliore de 25 a 40%, et une visibilite complete sur le pipeline pour le board. Les premiers quick wins sont visibles des la semaine 1." },
+  { q: "Comment demarrer avec votre agence RevOps a Paris ?", a: "Reservez un appel de cadrage gratuit de 30 minutes ou passez nous voir au 128 rue La Boetie. On peut aussi venir dans vos locaux. Sous 48h, vous recevez un diagnostic initial avec nos recommandations et une proposition detaillee avec perimetre, planning et tarif." },
 ];
 
 const jsonLd = {
@@ -122,8 +130,8 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      name: "Ceres - Agence RevOps Paris",
-      description: "Agence RevOps \u00e0 Paris, 8e arrondissement. Audit, accompagnement et d\u00e9ploiement Revenue Operations + IA. 250+ clients, partenaire HubSpot certifi\u00e9.",
+      name: "Ceres - Consultants RevOps Paris 8e",
+      description: "Consultants RevOps bases a Paris 8e. Ateliers sur site dans vos locaux. Expertise scale-ups parisiennes, Station F, ecosysteme SaaS. 250+ clients.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "128 rue La Bo\u00e9tie",
@@ -132,16 +140,16 @@ const jsonLd = {
         addressCountry: "FR",
       },
       geo: { "@type": "GeoCoordinates", latitude: 48.8738, longitude: 2.3071 },
-      url: "https://ceres.agency/agence-revops-paris",
+      url: "https://www.ceres-music.com/agence-revops-paris",
       telephone: "+33-1-00-00-00-00",
       areaServed: { "@type": "City", name: "Paris" },
       priceRange: "\u20ac\u20ac\u20ac",
     },
     {
       "@type": "Service",
-      name: "Agence RevOps Paris",
+      name: "Consultants RevOps Paris 8e",
       provider: { "@type": "Organization", name: "Ceres" },
-      description: "Agence Revenue Operations \u00e0 Paris sp\u00e9cialis\u00e9e RevOps, HubSpot & IA. Audit, accompagnement part-time, d\u00e9ploiement CRM et agents IA.",
+      description: "Consultants Revenue Operations a Paris. Ateliers sur site, immersion dans vos equipes. Expertise scale-ups parisiennes, ecosystem SaaS B2B, agents IA.",
       serviceType: "Revenue Operations Consulting",
       areaServed: [
         { "@type": "City", name: "Paris" },
@@ -185,13 +193,13 @@ export default function AgenceRevOpsParisPage() {
         <section className="text-center mb-20">
           <div className="mb-4"><Badge>Agence RevOps Paris</Badge></div>
           <h1 className="text-[36px] sm:text-[48px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-5">
-            Agence RevOps &agrave; Paris : votre partenaire revenue operations
+            Consultants RevOps &agrave; Paris : on vient dans vos locaux
           </h1>
           <p className="text-[17px] text-[#666] max-w-[620px] mx-auto leading-[1.7] mb-4">
-            Audit, accompagnement part-time et d&eacute;ploiement RevOps + IA. Nous alignons vos &eacute;quipes Marketing, Sales et Customer Success sur une m&ecirc;me infrastructure revenue pour acc&eacute;l&eacute;rer votre croissance.
+            Nos consultants Revenue Operations sont bas&eacute;s &agrave; Paris 8e et se d&eacute;placent chez vous pour les ateliers strat&eacute;giques, les formations et les go-live. On conna&icirc;t l&apos;&eacute;cosyst&egrave;me tech parisien, de Station F aux scale-ups du Sentier.
           </p>
           <p className="text-[14px] text-[#999] mb-6">
-            Bas&eacute;s au 128 rue La Bo&eacute;tie, 75008 Paris. Sur site ou remote dans toute la France.
+            128 rue La Bo&eacute;tie, 75008 Paris. Ateliers sur site + ex&eacute;cution remote.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
             <div className="text-center">
@@ -340,6 +348,28 @@ export default function AgenceRevOpsParisPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+        <Connector />
+
+        {/* ── 4b. Le paysage RevOps parisien ───────────────────────────────── */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>Paris</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">
+              Le paysage RevOps &agrave; Paris en 2025
+            </h2>
+            <p className="text-[13px] text-[#999] max-w-[560px] mx-auto">
+              Paris est devenu l&apos;&eacute;picentre du RevOps en France. Les scale-ups parisiennes structurent leurs Revenue Operations plus t&ocirc;t et plus vite que partout ailleurs en Europe. Voici ce que nous observons sur le terrain.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {parisRevOpsLandscape.map((item) => (
+              <div key={item.titre} className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <h3 className="text-[15px] font-semibold text-[#111] mb-2">{item.titre}</h3>
+                <p className="text-[12px] text-[#777] leading-[1.65]">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </section>
         <Connector />
