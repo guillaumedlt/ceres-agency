@@ -9,6 +9,29 @@ export const metadata: Metadata = {
   keywords: ["agence hubspot","agence hubspot france","partenaire hubspot","intégration hubspot","migration hubspot","migration salesforce hubspot","configuration hubspot","hubspot sales hub","hubspot marketing hub","consultant hubspot","optimisation hubspot","hubspot crm","hubspot vs salesforce","admin hubspot externalisé"],
 };
 
+const whyAgency = [
+  { title: "Expertise certifiee", desc: "Une agence HubSpot certifiee a deja deploye des dizaines d'instances. Elle connait les pieges, les bonnes pratiques et les raccourcis. Vous beneficiez de 9 ans d'experience cumulee des le premier jour, sans passer par la courbe d'apprentissage.", color: "#FF7A59" },
+  { title: "Rapidite de deploiement", desc: "Un projet HubSpot en interne prend 3 a 6 mois. Avec une agence HubSpot specialisee, comptez 3 a 4 semaines pour une implementation complete. On a deja fait le travail des dizaines de fois, on sait exactement quoi configurer et dans quel ordre.", color: "#4B5EFC" },
+  { title: "Stack complete, pas juste le CRM", desc: "HubSpot ne fonctionne pas seul. Il faut connecter Make, Clay, Lemlist, Slack, votre ERP. Une agence HubSpot integre toute la stack RevOps, pas seulement le CRM. C'est la difference entre un outil isole et un systeme qui fait tourner votre revenue.", color: "#6C5CE7" },
+  { title: "Formation des equipes", desc: "Deployer HubSpot sans former les equipes, c'est acheter une Ferrari et ne pas savoir conduire. On forme vos commerciaux, vos marketeurs et vos managers sur VOS process, pas sur un tuto generique. L'adoption passe de 40% a 95%+.", color: "#22C55E" },
+  { title: "Support continu", desc: "Un freelance HubSpot disparait apres le projet. En interne, la personne qui a configure change de poste. Une agence HubSpot assure la continuite : maintenance, evolutions, support quotidien via Slack dedie.", color: "#D4A27F" },
+  { title: "Integration IA", desc: "HubSpot integre Breeze (IA native), mais une agence HubSpot va plus loin. On connecte Claude via MCP pour du scoring predictif, des resumes de calls automatises et des agents IA qui enrichissent votre CRM en continu.", color: "#6D00CC" },
+];
+
+const caseStudies = [
+  { name: "TotalEnergies", desc: "Migration complete de Dynamics vers HubSpot pour les equipes commerciales B2B. Mapping des objets, migration incrementale, zero perte de donnees.", result: "45K+ contacts migres", link: "/cas-clients/totalenergies", color: "#E11D48", initials: "TE" },
+  { name: "Beedeez", desc: "Mise en place RevOps complete avec HubSpot et deploiement d'agents IA pour qualifier les leads et automatiser le pipeline commercial.", result: "+45% pipeline", link: "/cas-clients/beedeez", color: "#8B5CF6", initials: "Be" },
+  { name: "Alan", desc: "Implementation du tracking marketing multi-touch dans HubSpot. Attribution complete de chaque lead a sa source d'acquisition.", result: "100% leads traces", link: "/cas-clients/alan", color: "#6366F1", initials: "Al" },
+  { name: "Kameleoon", desc: "Optimisation d'une instance HubSpot devenue ingerable. Nettoyage, restructuration des workflows et suppression des proprietes inutiles.", result: "150 workflows optimises, 300 proprietes supprimees", link: "/cas-clients/kameleoon", color: "#EC4899", initials: "Ka" },
+  { name: "Dougs", desc: "Structuration du pipeline commercial dans HubSpot pour accompagner la croissance d'une scale-up comptable en forte acceleration.", result: "Pipeline structure de 0", link: "/cas-clients/dougs", color: "#3B82F6", initials: "Do" },
+];
+
+const testimonials = [
+  { quote: "L'equipe Ceres est ultra reactive. On a toujours une reponse dans la journee, meme pour les sujets complexes.", author: "Antoine C.", role: "Head of Sales", company: "Iroko", color: "#4B5EFC", initials: "Ir" },
+  { quote: "Ce qui nous a rassures, c'est qu'ils comprennent les enjeux business, pas juste la technique.", author: "Ludovic R.", role: "VP Sales", company: "Ringover", color: "#22C55E", initials: "Ri" },
+  { quote: "Projet de migration complexe, zero perte de donnees, dans les delais. C'est rare.", author: "Laisa L.", role: "CRM Manager", company: "TotalEnergies", color: "#E11D48", initials: "TE" },
+];
+
 const crmProblems = [
   "Votre CRM est un tableur géant que personne ne remplit correctement",
   "Sales, Marketing et CS utilisent 3 outils différents qui ne communiquent pas",
@@ -51,7 +74,7 @@ const results = [
   { before: "Salesforce 2K€/user/an", after: "Fraction du coût", metric: "-60%" },
 ];
 
-const faqItems = [
+const faqItems: { q: string; a: string; link?: string; linkText?: string }[] = [
   { q: "Vous êtes partenaire officiel HubSpot ?", a: "On travaille avec HubSpot depuis 2019. +100 instances déployées. On connaît le produit en profondeur, des fonctionnalités de base aux custom coded actions." },
   { q: "Combien coûte une intégration HubSpot ?", a: "Au forfait, après cadrage. Dépend du nombre de Hubs, volume de données, intégrations tierces. L'appel de cadrage est gratuit." },
   { q: "On a Salesforce, on peut migrer ?", a: "Oui. On gère le mapping, la migration, la reconstruction des workflows et la formation. Période de double-run incluse." },
@@ -59,11 +82,16 @@ const faqItems = [
   { q: "Notre HubSpot est mal configuré, vous reprenez ?", a: "C'est notre cas le plus fréquent. Audit, restructuration, nettoyage sans perdre vos données." },
   { q: "Vous formez nos équipes ?", a: "Oui, chaque mission inclut de la formation adaptée à VOS process, pas un tuto générique." },
   { q: "Et l'IA dans HubSpot ?", a: "HubSpot intègre Breeze (IA native) mais on va plus loin en connectant Claude via MCP pour du scoring et des résumés custom." },
+  { q: "Quel est le prix d'une agence HubSpot ?", a: "Ca depend du scope : nombre de Hubs, volume de donnees, integrations. On travaille au forfait apres cadrage. Consultez notre page tarifs pour les fourchettes.", link: "/tarifs", linkText: "Voir les tarifs" },
+  { q: "Combien de temps pour deployer HubSpot ?", a: "3 a 4 semaines pour une implementation standard. 4 a 8 semaines pour une migration CRM complete (Salesforce, Dynamics, Pipedrive). On inclut toujours la formation des equipes dans le planning.", link: "/blog/onboarding-hubspot-30-premiers-jours", linkText: "Lire : les 30 premiers jours" },
+  { q: "Est-ce que vous gerez aussi l'IA et les agents ?", a: "Oui. Une fois HubSpot en place, on deploie des agents IA (Claude, scoring predictif, enrichissement automatique). C'est la suite logique du CRM.", link: "/agents-ia", linkText: "Voir nos agents IA" },
+  { q: "Quelle est la difference avec un freelance HubSpot ?", a: "Un freelance HubSpot intervient seul, souvent sur un perimetre restreint. Une agence HubSpot comme Ceres couvre la stack complete : CRM, integrations, IA, formation, support continu. Et on ne disparait pas apres le projet." },
 ];
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
-  { "@type": "Service", name: "Agence HubSpot", provider: { "@type": "Organization", name: "Ceres" }, description: "Agence HubSpot spécialisée RevOps & IA. Configuration, migration, optimisation.", serviceType: "HubSpot Consulting" },
+  { "@type": "Service", name: "Agence HubSpot", provider: { "@type": "Organization", name: "Ceres" }, description: "Agence HubSpot spécialisée RevOps & IA. Configuration, migration, optimisation CRM pour entreprises B2B.", serviceType: "HubSpot Consulting", areaServed: "FR" },
   { "@type": "FAQPage", mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  ...testimonials.map((t) => ({ "@type": "Review", author: { "@type": "Person", name: t.author }, reviewBody: t.quote, itemReviewed: { "@type": "Organization", name: "Ceres" } })),
 ]};
 
 export default function AgenceHubSpotPage() {
@@ -75,6 +103,8 @@ export default function AgenceHubSpotPage() {
       <div className="hidden lg:block absolute pointer-events-none" style={{ right: "2%", top: "55%", width: 280, height: 280, borderRadius: "50%", background: "#6D00CC", opacity: 0.15, filter: "blur(70px)" }} />
       <div className="hidden lg:block absolute pointer-events-none" style={{ left: "5%", top: "72%", width: 300, height: 300, borderRadius: "50%", background: "#6C5CE7", opacity: 0.15, filter: "blur(70px)" }} />
       <div className="hidden lg:block absolute pointer-events-none" style={{ right: "4%", top: "85%", width: 320, height: 320, borderRadius: "50%", background: "#22C55E", opacity: 0.14, filter: "blur(70px)" }} />
+      <div className="hidden lg:block absolute pointer-events-none" style={{ left: "3%", top: "92%", width: 300, height: 300, borderRadius: "50%", background: "#FF7A59", opacity: 0.15, filter: "blur(70px)" }} />
+      <div className="hidden lg:block absolute pointer-events-none" style={{ right: "5%", top: "96%", width: 280, height: 280, borderRadius: "50%", background: "#D4A27F", opacity: 0.14, filter: "blur(70px)" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="relative z-10 max-w-[900px] mx-auto px-6">
 
@@ -90,6 +120,28 @@ export default function AgenceHubSpotPage() {
           <a href="#contact" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-md border border-[#E5E5E5] bg-white text-[13px] text-[#111] font-medium hover:border-[#CCC] hover:shadow-sm transition-all">
             <span className="w-2 h-2 rounded-sm bg-[#FF7A59]" />Discuter de mon projet
           </a>
+        </section>
+        <Connector />
+
+        {/* Why Agency */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>Pourquoi nous</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Pourquoi choisir une agence HubSpot</h2>
+            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Deployer HubSpot en interne, c&apos;est possible. Le deployer correctement du premier coup, c&apos;est une autre histoire. Voici pourquoi 250+ entreprises B2B passent par une agence HubSpot specialisee plutot que par un freelance ou une equipe interne.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {whyAgency.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-[#E8E8E8] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <div className="flex items-center gap-2.5 mb-3">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: item.color }} />
+                  <h3 className="text-[14px] font-semibold text-[#111]">{item.title}</h3>
+                </div>
+                <p className="text-[12px] text-[#777] leading-[1.65]">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-[13px] text-[#777] leading-[1.7] mt-6 text-center max-w-[600px] mx-auto">Avant de configurer HubSpot, il est essentiel de partir sur des <Link href="/fondation-data" className="text-[#4B5EFC] underline underline-offset-2">donnees propres</Link>. C&apos;est pourquoi on commence souvent par un <Link href="/audit-revops" className="text-[#FF7A59] underline underline-offset-2">audit RevOps</Link> pour identifier les vrais problemes avant de toucher au CRM.</p>
         </section>
         <Connector />
 
@@ -131,8 +183,55 @@ export default function AgenceHubSpotPage() {
         </div></section>
         <Connector />
 
-        {/* Liens */}
-        <section className="mt-12 mb-8">
+        {/* Case Studies */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>Cas clients</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Nos realisations HubSpot</h2>
+            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Chaque projet HubSpot est different. Voici 5 exemples concrets de ce qu&apos;on a deploye pour des entreprises B2B en France.</p>
+          </div>
+          <div className="space-y-3">
+            {caseStudies.map((cs) => (
+              <Link key={cs.name} href={cs.link} className="flex items-start gap-4 rounded-2xl border border-[#E8E8E8] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)] hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+                <div className="w-10 h-10 rounded-lg shrink-0 flex items-center justify-center text-white text-[11px] font-bold" style={{ backgroundColor: cs.color }}>{cs.initials}</div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-[14px] font-semibold text-[#111] mb-1 group-hover:text-[#4B5EFC] transition-colors">{cs.name}</h3>
+                  <p className="text-[12px] text-[#777] leading-[1.65] mb-2">{cs.desc}</p>
+                  <span className="text-[13px] font-bold text-[#22C55E]">{cs.result}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <p className="text-[13px] text-[#777] leading-[1.7] mt-6 text-center">Voir tous nos <Link href="/cas-clients" className="text-[#4B5EFC] underline underline-offset-2">cas clients HubSpot</Link></p>
+        </section>
+        <Connector />
+
+        {/* Testimonials */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>Temoignages</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Ce que disent nos clients</h2>
+            <p className="text-[13px] text-[#999] max-w-[480px] mx-auto">Des retours concrets d&apos;entreprises qui ont deploye HubSpot avec Ceres.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {testimonials.map((t) => (
+              <div key={t.author} className="rounded-2xl border border-[#E8E8E8] bg-white p-6 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <p className="text-[13px] text-[#555] leading-[1.7] mb-5 italic">&quot;{t.quote}&quot;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-white text-[9px] font-bold" style={{ backgroundColor: t.color }}>{t.initials}</div>
+                  <div>
+                    <p className="text-[12px] font-semibold text-[#111]">{t.author}</p>
+                    <p className="text-[11px] text-[#999]">{t.role}, {t.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Connector />
+
+        {/* Internal links */}
+        <section>
           <div className="mb-4"><Badge>A decouvrir</Badge></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Link href="/fondation-data" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
@@ -149,14 +248,64 @@ export default function AgenceHubSpotPage() {
               </div>
               <p className="text-[12px] text-[#777] leading-[1.65]">Une fois HubSpot en place, deployez l&apos;IA pour optimiser chaque silo.</p>
             </Link>
+            <Link href="/methode" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Notre methode</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Cadrage, deploiement, formation, iteration. Comment on structure chaque mission HubSpot.</p>
+            </Link>
+            <Link href="/tarifs" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Tarifs</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Nos forfaits HubSpot : implementation, migration, optimisation, admin recurrente.</p>
+            </Link>
           </div>
         </section>
         <Connector />
 
         <section><div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
           <div className="mb-8"><div className="mb-4"><Badge>FAQ</Badge></div><h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Questions fréquentes</h2></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">{faqItems.map((f, i) => (<div key={i} className="border-b border-[#F2F2F2] py-4"><h3 className="text-[13px] font-semibold text-[#111] mb-1.5">{f.q}</h3><p className="text-[12px] text-[#777] leading-[1.6]">{f.a}</p></div>))}</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">{faqItems.map((f, i) => (<div key={i} className="border-b border-[#F2F2F2] py-4"><h3 className="text-[13px] font-semibold text-[#111] mb-1.5">{f.q}</h3><p className="text-[12px] text-[#777] leading-[1.6]">{f.a}{f.link && <>{" "}<Link href={f.link} className="text-[#4B5EFC] underline underline-offset-2">{f.linkText}</Link></>}</p></div>))}</div>
         </div></section>
+        <Connector />
+
+        {/* Et apres HubSpot */}
+        <section>
+          <div className="rounded-2xl bg-[#111] p-6 md:p-10">
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/10 text-[12px] font-medium text-white/60 mb-4">Et apres</span>
+              <h2 className="text-[24px] sm:text-[30px] font-semibold text-white tracking-[-0.02em] mb-2">Et apres HubSpot ?</h2>
+              <p className="text-[13px] text-white/40 max-w-[520px]">HubSpot est la fondation. Mais le vrai avantage competitif vient de ce qu&apos;on construit dessus. Voici les etapes suivantes que nos clients deploient apres leur projet HubSpot.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <Link href="/fondation-data" className="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                  <h3 className="text-[14px] font-semibold text-white">Fondation Data</h3>
+                </div>
+                <p className="text-[12px] text-white/40 leading-[1.65]">Nettoyage, deduplication et structuration de vos donnees pour un CRM fiable a long terme.</p>
+              </Link>
+              <Link href="/agents-ia" className="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                  <h3 className="text-[14px] font-semibold text-white">Agents IA</h3>
+                </div>
+                <p className="text-[12px] text-white/40 leading-[1.65]">Deployer des agents IA connectes a HubSpot : scoring, enrichissement, resumes de calls automatises.</p>
+              </Link>
+              <Link href="/methode" className="rounded-xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-all group">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
+                  <h3 className="text-[14px] font-semibold text-white">Notre methode</h3>
+                </div>
+                <p className="text-[12px] text-white/40 leading-[1.65]">Cadrage, deploiement, formation, iteration. Un framework teste sur 250+ projets.</p>
+              </Link>
+            </div>
+            <p className="text-[12px] text-white/30 mt-5">Vous pouvez aussi explorer notre <Link href="/formation-claude" className="text-white/50 underline underline-offset-2">formation Claude</Link>, notre <Link href="/agence-claude" className="text-white/50 underline underline-offset-2">expertise IA</Link> ou lire notre article sur <Link href="/blog/hubspot-tarifs-prix-2026" className="text-white/50 underline underline-offset-2">les tarifs HubSpot en 2026</Link>.</p>
+          </div>
+        </section>
         <Connector />
 
         <section id="contact"><div className="rounded-2xl border border-[#E8E8E8] bg-[#FAFAFA] p-8 md:p-12 text-center">

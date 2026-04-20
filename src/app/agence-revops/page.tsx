@@ -322,22 +322,22 @@ const faqItems = [
 
 const testimonials = [
   {
-    quote: "Ceres a compl\u00e8tement transform\u00e9 notre machine revenue. En 3 mois, on est pass\u00e9 d\u2019un CRM que personne ne remplissait \u00e0 un syst\u00e8me o\u00f9 chaque action est trac\u00e9e et automatis\u00e9e. Le plus impressionnant, c\u2019est la vitesse d\u2019ex\u00e9cution.",
-    name: "Directeur Commercial",
-    company: "Scale-up SaaS B2B, 150 personnes",
-    color: "#4B5EFC",
-  },
-  {
-    quote: "On cherchait un consultant HubSpot et on a trouv\u00e9 une \u00e9quipe RevOps compl\u00e8te. Ils ont restructur\u00e9 nos pipelines, automatis\u00e9 le lead routing et d\u00e9ploy\u00e9 des agents IA qui font gagner 2h par jour \u00e0 chaque commercial. Le ROI est clair d\u00e8s le premier mois.",
-    name: "VP Sales",
-    company: "Fintech, 80 personnes",
-    color: "#FF7A59",
-  },
-  {
-    quote: "La diff\u00e9rence avec les autres agences qu\u2019on a test\u00e9es, c\u2019est qu\u2019ils ex\u00e9cutent vraiment. Pas de slides, pas de th\u00e9orie. D\u00e8s la semaine 1, on avait des dashboards fonctionnels et des workflows en production. En 6 mois, notre CAC a baiss\u00e9 de 35%.",
-    name: "COO",
-    company: "PME tech, 60 personnes",
+    quote: "Ce qui nous a rassur\u00e9s, c\u2019est qu\u2019ils comprennent les enjeux business, pas juste la technique.",
+    name: "Ludovic R., VP Sales",
+    company: "Ringover",
     color: "#22C55E",
+  },
+  {
+    quote: "On a compar\u00e9 avec 3 agences. Ceres \u00e9tait la seule \u00e0 proposer un diagnostic avant de vendre.",
+    name: "Hamza, Head of Sales",
+    company: "Beedeez",
+    color: "#8B5CF6",
+  },
+  {
+    quote: "L\u2019\u00e9quipe Ceres est ultra r\u00e9active. On a toujours une r\u00e9ponse dans la journ\u00e9e.",
+    name: "Antoine C., Head of Sales",
+    company: "Iroko",
+    color: "#4B5EFC",
   },
 ];
 
@@ -396,7 +396,7 @@ export default function AgenceRevOpsPage() {
             Agence RevOps : alignez vos {"\u00e9"}quipes et acc{"\u00e9"}l{"\u00e9"}rez votre croissance
           </h1>
           <p className="text-[17px] text-[#666] max-w-[600px] mx-auto leading-[1.7] mb-8">
-            Ceres est l&apos;agence RevOps de r{"\u00e9"}f{"\u00e9"}rence en France. On aligne marketing, sales et customer success pour cr{"\u00e9"}er un revenue engine pr{"\u00e9"}visible, mesurable et scalable. Pas de slides. Pas de th{"\u00e9"}orie. On ex{"\u00e9"}cute.
+            Ceres est l&apos;agence RevOps de r{"\u00e9"}f{"\u00e9"}rence en France. On aligne marketing, sales et customer success pour cr{"\u00e9"}er un revenue engine pr{"\u00e9"}visible, mesurable et scalable. Pas de slides. Pas de th{"\u00e9"}orie. On ex{"\u00e9"}cute. D{"\u00e9"}couvrez nos <Link href="/tarifs" className="text-[#4B5EFC] hover:underline">tarifs</Link> et nos <Link href="/cas-clients" className="text-[#4B5EFC] hover:underline">cas clients</Link>.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             {heroStats.map((s) => (
@@ -425,10 +425,10 @@ export default function AgenceRevOpsPage() {
                 Une <strong className="text-[#111]">agence RevOps</strong> (agence Revenue Operations) est une {"\u00e9"}quipe externe sp{"\u00e9"}cialis{"\u00e9"}e dans l&apos;alignement des fonctions marketing, sales et customer success autour d&apos;un objectif commun : g{"\u00e9"}n{"\u00e9"}rer du revenu de fa{"\u00e7"}on pr{"\u00e9"}visible, mesurable et scalable. Le RevOps est une discipline n{"\u00e9"}e aux {"\u00c9"}tats-Unis au d{"\u00e9"}but des ann{"\u00e9"}es 2020, qui s&apos;est impos{"\u00e9"}e comme le standard d&apos;organisation des {"\u00e9"}quipes revenue dans les entreprises B2B les plus performantes. En 2026, selon Gartner, 75% des entreprises SaaS \u00e0 forte croissance ont adopt{"\u00e9"} une structure RevOps. En France, le march{"\u00e9"} est encore en pleine structuration, ce qui cr{"\u00e9"}e une opportunit{"\u00e9"} massive pour les entreprises qui s&apos;y mettent maintenant.
               </p>
               <p>
-                Concr{"\u00e8"}tement, une agence RevOps intervient sur trois piliers fondamentaux. Le premier pilier est <strong className="text-[#111]">les process</strong> : elle formalise le parcours complet du prospect, depuis le premier point de contact marketing jusqu&apos;au renouvellement client. Elle d{"\u00e9"}finit les {"\u00e9"}tapes du funnel, les crit{"\u00e8"}res de qualification (MQL, SQL, opportunit{"\u00e9"}), les r{"\u00e8"}gles de handoff entre {"\u00e9"}quipes, les SLA (Service Level Agreements) et les process d&apos;escalade. Le deuxi{"\u00e8"}me pilier est <strong className="text-[#111]">la technologie</strong> : elle s{"\u00e9"}lectionne, configure et int{"\u00e8"}gre les outils qui supportent ces process. Le CRM en est la pi{"\u00e8"}ce centrale, mais la stack RevOps inclut aussi les outils d&apos;enrichissement de donn{"\u00e9"}es, d&apos;automatisation, de prospection, de reporting et d{"\u00e9"}sormais d&apos;intelligence artificielle. Le troisi{"\u00e8"}me pilier est <strong className="text-[#111]">la donn{"\u00e9"}e</strong> : elle cr{"\u00e9"}e une source de v{"\u00e9"}rit{"\u00e9"} unique partag{"\u00e9"}e par toutes les {"\u00e9"}quipes, avec des dashboards, des KPIs align{"\u00e9"}s et un reporting qui permet de piloter la croissance avec des faits, pas des intuitions.
+                Concr{"\u00e8"}tement, une agence RevOps intervient sur trois piliers fondamentaux. Le premier pilier est <strong className="text-[#111]">les process</strong> : elle formalise le parcours complet du prospect, depuis le premier point de contact marketing jusqu&apos;au renouvellement client. Elle d{"\u00e9"}finit les {"\u00e9"}tapes du funnel, les crit{"\u00e8"}res de qualification (MQL, SQL, opportunit{"\u00e9"}), les r{"\u00e8"}gles de handoff entre {"\u00e9"}quipes, les SLA (Service Level Agreements) et les process d&apos;escalade. Le deuxi{"\u00e8"}me pilier est <strong className="text-[#111]">la technologie</strong> : elle s{"\u00e9"}lectionne, configure et int{"\u00e8"}gre les outils qui supportent ces process. Le CRM en est la pi{"\u00e8"}ce centrale, mais la stack RevOps inclut aussi les outils d&apos;enrichissement de donn{"\u00e9"}es, d&apos;automatisation, de prospection, de reporting et d{"\u00e9"}sormais d&apos;intelligence artificielle. Le troisi{"\u00e8"}me pilier est <strong className="text-[#111]"><Link href="/fondation-data" className="text-[#111] hover:underline">la donn{"\u00e9"}e</Link></strong> : elle cr{"\u00e9"}e une source de v{"\u00e9"}rit{"\u00e9"} unique partag{"\u00e9"}e par toutes les {"\u00e9"}quipes, avec des dashboards, des KPIs align{"\u00e9"}s et un reporting qui permet de piloter la croissance avec des faits, pas des intuitions.
               </p>
               <p>
-                La diff{"\u00e9"}rence entre une <strong className="text-[#111]">agence RevOps</strong> et un cabinet de conseil classique est fondamentale. Un cabinet de conseil produit un diagnostic, des recommandations et un plan de transformation sous forme de slides. Une agence RevOps fait tout cela ET ex{"\u00e9"}cute. Elle est dans votre CRM, dans votre Slack, dans vos outils. Elle configure les pipelines, cr{"\u00e9"}e les workflows, d{"\u00e9"}ploie les automatisations, construit les dashboards et forme vos {"\u00e9"}quipes. Chez Ceres, notre sp{"\u00e9"}cificit{"\u00e9"} est d&apos;aller encore plus loin en int{"\u00e9"}grant l&apos;intelligence artificielle (agents IA, scoring pr{"\u00e9"}dictif, automatisation cognitive) dans chaque brique du revenue engine. C&apos;est ce qui fait de nous l&apos;agence RevOps la plus compl{"\u00e8"}te en France.
+                La diff{"\u00e9"}rence entre une <strong className="text-[#111]">agence RevOps</strong> et un cabinet de conseil classique est fondamentale. Un cabinet de conseil produit un diagnostic, des recommandations et un plan de transformation sous forme de slides. Une agence RevOps fait tout cela ET ex{"\u00e9"}cute. Elle est dans votre CRM, dans votre Slack, dans vos outils. Elle configure les pipelines, cr{"\u00e9"}e les workflows, d{"\u00e9"}ploie les automatisations, construit les dashboards et forme vos {"\u00e9"}quipes. Chez Ceres, notre sp{"\u00e9"}cificit{"\u00e9"} est d&apos;aller encore plus loin en int{"\u00e9"}grant l&apos;intelligence artificielle (<Link href="/agents-ia" className="text-[#6D00CC] hover:underline">agents IA</Link>, scoring pr{"\u00e9"}dictif, automatisation cognitive) dans chaque brique du revenue engine. Notre <Link href="/methode" className="text-[#4B5EFC] hover:underline">m{"\u00e9"}thode</Link> repose sur trois phases : Diagnostic, Build et Scale. C&apos;est ce qui fait de nous l&apos;agence RevOps la plus compl{"\u00e8"}te en France.
               </p>
             </div>
           </div>
@@ -557,7 +557,7 @@ export default function AgenceRevOpsPage() {
               RevOps + IA : notre diff{"\u00e9"}renciateur
             </h2>
             <p className="text-[13px] text-[#999] max-w-[560px] mx-auto leading-[1.6]">
-              La plupart des agences RevOps configurent votre CRM et automatisent vos workflows. Nous, on va plus loin : on d{"\u00e9"}ploie de l&apos;intelligence artificielle dans chaque brique de votre revenue engine. Aucune autre agence RevOps en France ne combine cette double expertise.
+              La plupart des agences RevOps configurent votre CRM et automatisent vos workflows. Nous, on va plus loin : on d{"\u00e9"}ploie de l&apos;intelligence artificielle dans chaque brique de votre revenue engine. On utilise notamment <Link href="/formation-claude" className="text-[#D4A27F] hover:underline">Claude</Link> pour cr{"\u00e9"}er des agents connect{"\u00e9"}s a votre <Link href="/agence-hubspot" className="text-[#FF7A59] hover:underline">HubSpot</Link>. Aucune autre agence RevOps en France ne combine cette double expertise.
             </p>
           </div>
           <div className="space-y-3">
@@ -704,6 +704,21 @@ export default function AgenceRevOpsPage() {
         </section>
         <Connector />
 
+        {/* ── Et apres ── */}
+        <section>
+          <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+            <div className="mb-4"><Badge>Et apr{"\u00e8"}s</Badge></div>
+            <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-3">Une fois vos fondations RevOps pos{"\u00e9"}es</h2>
+            <p className="text-[14px] text-[#555] leading-[1.8] mb-4">
+              Le RevOps ne s&apos;arr{"\u00ea"}te pas au CRM et aux process. Une fois votre <Link href="/fondation-data" className="text-[#6D00CC] hover:underline">fondation data</Link> en place, vous pouvez passer a l&apos;{"\u00e9"}tape suivante : d{"\u00e9"}ployer des <Link href="/agents-ia" className="text-[#6D00CC] hover:underline">agents IA</Link> connect{"\u00e9"}s a votre CRM pour automatiser la qualification, le scoring pr{"\u00e9"}dictif et les r{"\u00e9"}sum{"\u00e9"}s de calls. C&apos;est la que la vraie acc{"\u00e9"}l{"\u00e9"}ration se produit.
+            </p>
+            <p className="text-[13px] text-[#999] leading-[1.7]">
+              Pour aller plus loin, consultez nos articles <Link href="/blog/revops-startups-par-ou-commencer" className="text-[#4B5EFC] hover:underline">RevOps pour startups : par ou commencer</Link> et <Link href="/blog/structurer-equipe-revops" className="text-[#4B5EFC] hover:underline">Comment structurer une {"\u00e9"}quipe RevOps</Link>.
+            </p>
+          </div>
+        </section>
+        <Connector />
+
         {/* Liens */}
         <section className="mt-12 mb-8">
           <div className="mb-4"><Badge>A decouvrir</Badge></div>
@@ -721,6 +736,56 @@ export default function AgenceRevOpsPage() {
                 <h3 className="text-[14px] font-semibold text-[#111]">Fondation Data</h3>
               </div>
               <p className="text-[12px] text-[#777] leading-[1.65]">Le prerequis a toute initiative IA : des donnees propres.</p>
+            </Link>
+            <Link href="/agence-hubspot" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Agence HubSpot</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Configuration, migration et optimisation de votre HubSpot.</p>
+            </Link>
+            <Link href="/agents-ia" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Agents IA</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Des agents Claude connectes a votre CRM via MCP.</p>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
+        {/* ── Ressources blog ── */}
+        <section className="mb-8">
+          <div className="mb-4"><Badge>Ressources</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/blog/revops-startups-par-ou-commencer" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">RevOps pour startups</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Par ou commencer quand on structure ses premieres operations revenue.</p>
+            </Link>
+            <Link href="/blog/structurer-equipe-revops" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Structurer une equipe RevOps</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Roles, competences et organisation pour une equipe RevOps performante.</p>
+            </Link>
+            <Link href="/blog/audit-revops-checklist-complete" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Audit RevOps : checklist complete</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">La checklist pour auditer vos operations revenue de A a Z.</p>
+            </Link>
+            <Link href="/tarifs" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6C5CE7" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Nos tarifs</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Audit, Part-Time, projet : tous nos formats et prix.</p>
             </Link>
           </div>
         </section>

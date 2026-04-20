@@ -1010,6 +1010,13 @@ export default function TopAgencesRevOpsFranceArticle() {
               </section>
               <Connector />
 
+              <div className="my-6 rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4">
+                <Link href="/agence-revops" className="flex items-center gap-2 text-[12px] font-medium text-[#4B5EFC] hover:text-[#111] transition-colors">
+                  <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
+                  Decouvrez l&apos;approche RevOps de Ceres en detail →
+                </Link>
+              </div>
+
               {/* ============================================================= */}
               {/* Section 14 : Comment choisir votre agence */}
               {/* ============================================================= */}

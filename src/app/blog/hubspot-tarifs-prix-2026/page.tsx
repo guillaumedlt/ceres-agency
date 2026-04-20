@@ -1082,6 +1082,13 @@ export default function HubSpotTarifsPrix2026Article() {
                 </div>
               </section>
 
+              <div className="my-6 rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4">
+                <Link href="/agence-hubspot" className="flex items-center gap-2 text-[12px] font-medium text-[#4B5EFC] hover:text-[#111] transition-colors">
+                  <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
+                  Besoin d&apos;aide pour choisir le bon plan HubSpot ? Decouvrez notre agence HubSpot →
+                </Link>
+              </div>
+
               {/* ═══════════════════════════════════════════════ */}
               {/* Section 13 : Notre avis global */}
               {/* ═══════════════════════════════════════════════ */}

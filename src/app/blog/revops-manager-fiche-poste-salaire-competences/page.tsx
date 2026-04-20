@@ -854,6 +854,13 @@ export default function RevOpsManagerFichePostePage() {
               </section>
               <Connector />
 
+              <div className="my-6 rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4">
+                <Link href="/consultant-revops" className="flex items-center gap-2 text-[12px] font-medium text-[#4B5EFC] hover:text-[#111] transition-colors">
+                  <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
+                  Pas pret a recruter ? Decouvrez notre offre Consultant RevOps →
+                </Link>
+              </div>
+
               {/* ===================== SECTION 10 : Externaliser le RevOps ===================== */}
               <section id="externaliser" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">

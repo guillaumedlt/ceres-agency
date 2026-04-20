@@ -879,6 +879,13 @@ export default function OnboardingHubSpot30JoursArticle() {
                 </div>
               </section>
 
+              <div className="my-6 rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4">
+                <Link href="/agence-hubspot" className="flex items-center gap-2 text-[12px] font-medium text-[#4B5EFC] hover:text-[#111] transition-colors">
+                  <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
+                  Besoin d&apos;un accompagnement pour votre onboarding HubSpot ? Decouvrez notre agence HubSpot →
+                </Link>
+              </div>
+
               <Connector />
 
               {/* ============ SECTION 9 : CHECKLIST 30 JOURS ============ */}

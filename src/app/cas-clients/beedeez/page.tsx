@@ -462,6 +462,14 @@ export default function BeedeezCaseStudy() {
               </section>
             </article>
 
+            <div className="mt-8 mb-4 rounded-xl border border-[#F2F2F2] p-4 flex items-center gap-3">
+              <div className="w-3 h-3 rounded-sm shrink-0" style={{ backgroundColor: "#FF7A59" }} />
+              <div>
+                <Link href="/agence-revops" className="text-[13px] font-semibold text-[#111] hover:text-[#4B5EFC] transition-colors">Decouvrir notre agence RevOps →</Link>
+                <p className="text-[11px] text-[#999]">Structuration RevOps, deploiement IA et automatisation pour scale-ups B2B</p>
+              </div>
+            </div>
+
             {/* CTA */}
             <section className="mt-12">
               <div className="rounded-2xl border border-[#E8E8E8] bg-[#FAFAFA] p-6 md:p-10 text-center">

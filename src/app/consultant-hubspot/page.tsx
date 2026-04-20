@@ -139,7 +139,7 @@ export default function ConsultantHubSpotPage() {
             Consultant HubSpot : l&apos;expertise sans le recrutement
           </h1>
           <p className="text-[17px] text-[#666] max-w-[560px] mx-auto leading-[1.7] mb-4">
-            Un expert HubSpot certifie, dedie a votre projet. Il configure, migre, optimise et forme vos equipes. A Paris et partout en France.
+            Un expert HubSpot certifie, dedie a votre projet. Il configure, migre, optimise et forme vos equipes. Adosse a notre <Link href="/agence-hubspot" className="text-[#FF7A59] hover:underline">agence HubSpot</Link> et a notre expertise <Link href="/agents-ia" className="text-[#6D00CC] hover:underline">IA</Link>. A Paris et partout en France.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             {[
@@ -168,7 +168,7 @@ export default function ConsultantHubSpotPage() {
               <div className="mb-4"><Badge>Definition</Badge></div>
               <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-3">Qu&apos;est-ce qu&apos;un consultant HubSpot ?</h2>
               <p className="text-[14px] text-[#666] leading-[1.7] max-w-[700px]">
-                Un <strong>consultant HubSpot</strong> est un expert certifie de la plateforme HubSpot CRM. Son role : vous aider a tirer le maximum de l&apos;outil, que ce soit pour une premiere implementation, une migration depuis un autre CRM, l&apos;optimisation d&apos;une instance existante ou la formation de vos equipes. Contrairement a un administrateur CRM classique, le consultant HubSpot combine expertise technique et vision strategique. Il ne se contente pas de configurer des champs et des workflows : il aligne votre CRM sur vos objectifs de croissance et structure vos operations revenue (RevOps) pour que Marketing, Sales et Customer Success travaillent ensemble, sur la meme donnee, avec les memes objectifs.
+                Un <strong>consultant HubSpot</strong> est un expert certifie de la plateforme HubSpot CRM. Son role : vous aider a tirer le maximum de l&apos;outil, que ce soit pour une premiere implementation, une migration depuis un autre CRM, l&apos;optimisation d&apos;une instance existante ou la formation de vos equipes. Contrairement a un administrateur CRM classique, le consultant HubSpot combine expertise technique et vision strategique. Il ne se contente pas de configurer des champs et des workflows : il aligne votre CRM sur vos objectifs de croissance et structure vos operations revenue (RevOps) pour que Marketing, Sales et Customer Success travaillent ensemble, sur la meme donnee, avec les memes objectifs. Decouvrez notre <Link href="/methode" className="text-[#4B5EFC] hover:underline">methode</Link> et notre approche <Link href="/fondation-data" className="text-[#6D00CC] hover:underline">Fondation Data</Link>.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -307,7 +307,7 @@ export default function ConsultantHubSpotPage() {
               <div className="mb-4"><Badge>Offre phare</Badge></div>
               <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-3">Consultant HubSpot Part-Time</h2>
               <p className="text-[14px] text-[#666] leading-[1.7] max-w-[700px]">
-                Vous n&apos;avez pas besoin d&apos;un consultant HubSpot a plein temps, mais vous avez besoin d&apos;un expert disponible chaque semaine. Notre offre Part-Time vous donne acces a un consultant HubSpot dedie, integre a votre equipe, pour 2 a 5 jours par semaine. Il gere votre CRM, automatise vos process, deploie l&apos;IA et fait evoluer votre instance en continu. Sans engagement long terme.
+                Vous n&apos;avez pas besoin d&apos;un consultant HubSpot a plein temps, mais vous avez besoin d&apos;un expert disponible chaque semaine. Notre offre Part-Time vous donne acces a un consultant HubSpot dedie, integre a votre equipe, pour 2 a 5 jours par semaine. Il gere votre CRM, automatise vos process, deploie l&apos;IA et fait evoluer votre instance en continu. Sans engagement long terme. Consultez nos <Link href="/tarifs" className="text-[#4B5EFC] hover:underline">tarifs detailles</Link>.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
@@ -338,7 +338,7 @@ export default function ConsultantHubSpotPage() {
           <div className="text-center mb-10">
             <div className="mb-4"><Badge>Tarifs</Badge></div>
             <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Tarifs indicatifs consultant HubSpot</h2>
-            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Au forfait, apres cadrage. Pas de taux journalier, pas de surprise. L&apos;appel de cadrage est gratuit.</p>
+            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Au forfait, apres cadrage. Pas de taux journalier, pas de surprise. L&apos;appel de cadrage est gratuit. Nos <Link href="/tarifs" className="text-[#4B5EFC] hover:underline">tarifs complets</Link> sont transparents.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {tarifs.map((t) => (
@@ -359,6 +359,104 @@ export default function ConsultantHubSpotPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </section>
+        <Connector />
+
+        {/* ───── Temoignages ───── */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>T{"\u00e9"}moignages</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em]">
+              Ce que nos clients disent
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { quote: "Migration Dynamics vers HubSpot en 6 semaines, 45K+ contacts, zero perte de donnees. L\u2019equipe Ceres a gere le projet de A a Z.", name: "Chef de projet CRM", company: "TotalEnergies", color: "#E11D48" },
+              { quote: "L\u2019equipe Ceres est ultra reactive. On a toujours une reponse dans la journee.", name: "Antoine C., Head of Sales", company: "Iroko", color: "#4B5EFC" },
+            ].map((t, i) => (
+              <div key={i} className="rounded-2xl border border-[#E8E8E8] bg-white p-6 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <div className="w-6 h-1 rounded-full mb-4" style={{ backgroundColor: t.color }} />
+                <p className="text-[12px] text-[#555] leading-[1.7] mb-4 italic">&laquo; {t.quote} &raquo;</p>
+                <div>
+                  <p className="text-[12px] font-semibold text-[#111]">{t.name}</p>
+                  <p className="text-[11px] text-[#999]">{t.company}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Connector />
+
+        {/* Pages liees */}
+        <section className="mt-12 mb-8">
+          <div className="mb-4"><Badge>Pages li{"\u00e9"}es</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/agence-hubspot" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Agence HubSpot</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Notre expertise HubSpot complete : Sales, Marketing, Service, Ops et CMS Hub.</p>
+            </Link>
+            <Link href="/fondation-data" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Fondation Data</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Le prerequis a toute initiative IA : des donnees propres et structurees.</p>
+            </Link>
+            <Link href="/tarifs" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Nos tarifs</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Audit, implementation, migration, Part-Time : tous nos formats et prix.</p>
+            </Link>
+            <Link href="/agents-ia" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Agents IA</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Des agents Claude connectes a votre HubSpot via MCP.</p>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
+        {/* Ressources blog */}
+        <section className="mb-8">
+          <div className="mb-4"><Badge>Ressources</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/blog/hubspot-tarifs-prix-2026" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">HubSpot tarifs et prix 2026</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Le guide complet des tarifs HubSpot par Hub et par edition.</p>
+            </Link>
+            <Link href="/blog/onboarding-hubspot-30-premiers-jours" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Onboarding HubSpot : les 30 premiers jours</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Comment reussir votre onboarding HubSpot etape par etape.</p>
+            </Link>
+            <Link href="/methode" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Notre methode</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">La methodologie Data, IA et RevOps qui guide chaque mission.</p>
+            </Link>
+            <Link href="/formation-claude" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#D4A27F" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Formation Claude</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Formez vos equipes a utiliser Claude dans vos operations.</p>
+            </Link>
           </div>
         </section>
         <Connector />
