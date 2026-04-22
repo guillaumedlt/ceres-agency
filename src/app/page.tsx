@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   title: "Ceres | Agence RevOps & IA pour entreprises B2B",
   description:
     "Ceres structure, automatise et optimise vos operations commerciales. Audit RevOps, migration HubSpot, agents IA. 250+ clients accompagnes en France.",
+  alternates: {
+    canonical: "https://ceres.agency",
+  },
+  openGraph: {
+    title: "Ceres | Agence RevOps & IA pour entreprises B2B",
+    description: "Ceres structure, automatise et optimise vos operations commerciales. Audit RevOps, migration HubSpot, agents IA.",
+    url: "https://ceres.agency",
+    type: "website",
+  },
 };
 
 

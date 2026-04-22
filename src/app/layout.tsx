@@ -45,16 +45,12 @@ export const metadata: Metadata = {
     siteName: "Ceres",
     title: "Ceres | Agence RevOps & IA",
     description: "L'agence qui structure, automatise et optimise vos operations commerciales grace au RevOps et a l'intelligence artificielle.",
-    url: "https://ceres.agency",
     images: [{ url: "https://ceres.agency/opengraph-image", width: 1200, height: 630, alt: "Ceres - Agence RevOps & IA" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ceres | Agence RevOps & IA",
     description: "Structurez, automatisez et optimisez vos operations commerciales avec le RevOps et l'IA.",
-  },
-  alternates: {
-    canonical: "/",
   },
   category: "technology",
 };
