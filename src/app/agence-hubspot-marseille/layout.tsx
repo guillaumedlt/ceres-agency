@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agence HubSpot Marseille | Optimisation CRM | Ceres",
   description:
-    "Agence HubSpot a Marseille. Configuration, migration et optimisation CRM pour entreprises de la region Sud. Partenaire certifie.",
+    "Agence HubSpot a Marseille. Configuration, migration et optimisation CRM pour entreprises de la region Sud. Audit, formation et support.",
   keywords: [
     "agence hubspot marseille",
     "hubspot marseille",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agence HubSpot Marseille | Optimisation CRM | Ceres",
     description:
-      "Agence HubSpot a Marseille. Configuration, migration et optimisation CRM pour entreprises de la region Sud.",
+      "Agence HubSpot a Marseille. Configuration, migration et optimisation CRM pour entreprises de la region Sud. Audit, formation et support dedies.",
     url: "https://ceres.agency/agence-hubspot-marseille",
     type: "website",
   },

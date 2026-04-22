@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Zapier vs Make vs n8n : quel outil d\u2019automatisation pour le RevOps",
+  title: "Zapier vs Make vs n8n : comparatif automatisation RevOps",
   description:
-    "Comparatif detaille Zapier vs Make vs n8n pour le RevOps : prix, UX, integrations HubSpot, API, self-hosting, scenarios concrets (lead routing, enrichissement, reporting, sync CRM). Table 15 criteres.",
+    "Comparatif Zapier vs Make vs n8n pour le RevOps : prix, UX, integrations HubSpot, API, self-hosting et scenarios concrets.",
   openGraph: {
-    title: "Zapier vs Make vs n8n : quel outil d\u2019automatisation pour le RevOps",
+    title: "Zapier vs Make vs n8n : comparatif automatisation RevOps",
     description:
-      "Comparatif detaille Zapier vs Make vs n8n pour le RevOps : prix, UX, integrations HubSpot, API, self-hosting, scenarios concrets (lead routing, enrichissement, reporting, sync CRM). Table 15 criteres.",
+      "Comparatif Zapier vs Make vs n8n pour le RevOps : prix, UX, integrations HubSpot, API, self-hosting et scenarios concrets.",
     url: "https://ceres.agency/blog/zapier-vs-make-vs-n8n-revops",
     type: "article",
   },

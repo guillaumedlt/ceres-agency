@@ -12,7 +12,7 @@ const jsonLd = {
   "@type": "Blog",
   "@id": "https://ceres.agency/blog#blog",
   name: "Blog Ceres : RevOps, CRM et IA",
-  description: "100+ articles sur le RevOps, le CRM, la data quality et l'IA pour les equipes B2B.",
+  description: "100+ articles sur le RevOps, le CRM, la data quality et l'IA pour les equipes B2B. Guides, comparatifs et methodes actionnables.",
   url: "https://ceres.agency/blog",
   publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" },
   inLanguage: "fr-FR",

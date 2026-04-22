@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Onboarding HubSpot : les 30 premiers jours pour bien demarrer",
+  title: "Onboarding HubSpot : les 30 premiers jours essentiels",
   description:
     "Guide d'onboarding HubSpot semaine par semaine. Checklist des 30 premiers jours : configuration pipeline, import de donnees, automatisation et reporting CRM.",
   openGraph: {
-    title: "Onboarding HubSpot : les 30 premiers jours pour bien demarrer",
+    title: "Onboarding HubSpot : les 30 premiers jours essentiels",
     description:
       "Guide d'onboarding HubSpot semaine par semaine. Checklist des 30 premiers jours : configuration pipeline, import de donnees, automatisation et reporting CRM.",
     url: "https://ceres.agency/blog/onboarding-hubspot-30-premiers-jours",

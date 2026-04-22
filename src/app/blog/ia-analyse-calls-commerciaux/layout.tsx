@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Analyser vos calls commerciaux avec l'IA | Ceres",
   description:
-    "Ce que l'IA extrait d'un call : resume, objections, next steps, sentiment. Le workflow complet d'analyse.",
+    "Ce que l'IA extrait d'un call commercial : resume, objections, next steps et sentiment. Le workflow complet d'analyse pour equipes de vente B2B.",
   keywords: [
     "analyse calls IA",
     "IA calls commerciaux",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Analyser vos calls commerciaux avec l'IA | Ceres",
     description:
-      "Ce que l'IA extrait d'un call : resume, objections, next steps, sentiment. Le workflow complet d'analyse.",
+      "Ce que l'IA extrait d'un call commercial : resume, objections, next steps et sentiment. Le workflow complet d'analyse pour equipes de vente B2B.",
     url: "https://ceres.agency/blog/ia-analyse-calls-commerciaux",
     type: "article",
   },

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contacter Ceres : reservez un appel decouverte",
     description:
-      "Contactez Ceres pour discuter de votre projet RevOps, CRM ou IA. Appel decouverte gratuit de 30 minutes.",
+      "Contactez Ceres pour discuter de votre projet RevOps, CRM ou IA. Reservez un appel decouverte gratuit de 30 minutes avec un consultant.",
     url: "https://ceres.agency/contact",
     type: "website",
   },

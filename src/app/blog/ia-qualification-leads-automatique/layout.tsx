@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Qualification automatique des leads avec l'IA | Ceres",
   description:
-    "Comment l'IA qualifie (comportement + firmographie + intent). MQL>SQL de 15% a 35%. Methode et resultats.",
+    "Comment l'IA qualifie vos leads (comportement + firmographie + intent data). Taux MQL vers SQL de 15% a 35%. Methode et resultats concrets.",
   keywords: [
     "qualification leads IA",
     "lead scoring IA",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Qualification automatique des leads avec l'IA | Ceres",
     description:
-      "Comment l'IA qualifie (comportement + firmographie + intent). MQL>SQL de 15% a 35%. Methode et resultats.",
+      "Comment l'IA qualifie vos leads (comportement + firmographie + intent data). Taux MQL vers SQL de 15% a 35%. Methode et resultats concrets.",
     url: "https://ceres.agency/blog/ia-qualification-leads-automatique",
     type: "article",
   },

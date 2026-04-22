@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Claude vs ChatGPT pour les equipes commerciales : comparatif 2026",
+  title: "Claude vs ChatGPT pour equipes commerciales en 2026",
   description:
-    "Comparaison detaillee de Claude et ChatGPT pour les equipes de vente B2B : emails, analyse CRM, resume de calls, coaching commercial, API, prix et retour terrain.",
+    "Comparaison Claude vs ChatGPT pour les equipes de vente B2B : emails, analyse CRM, resume de calls, coaching, API et prix.",
   openGraph: {
-    title: "Claude vs ChatGPT pour les equipes commerciales : comparatif 2026",
+    title: "Claude vs ChatGPT pour equipes commerciales en 2026",
     description:
-      "Comparaison detaillee de Claude et ChatGPT pour les equipes de vente B2B : emails, analyse CRM, resume de calls, coaching commercial, API, prix et retour terrain.",
+      "Comparaison Claude vs ChatGPT pour les equipes de vente B2B : emails, analyse CRM, resume de calls, coaching, API et prix.",
     url: "https://ceres.agency/blog/claude-vs-chatgpt-equipes-commerciales",
     type: "article",
   },

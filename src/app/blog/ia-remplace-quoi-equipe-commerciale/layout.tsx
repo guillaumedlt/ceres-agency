@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "L'IA remplace quoi dans une equipe commerciale ? | Ceres",
   description:
-    "La matrice complete : ce que l'IA remplace a 100%, partiellement, assiste ou ne peut pas remplacer.",
+    "La matrice complete : ce que l'IA remplace a 100%, partiellement, assiste ou ne peut pas remplacer dans une equipe commerciale B2B.",
   keywords: [
     "IA remplace commerciaux",
     "IA equipe commerciale",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "L'IA remplace quoi dans une equipe commerciale ? | Ceres",
     description:
-      "La matrice complete : ce que l'IA remplace a 100%, partiellement, assiste ou ne peut pas remplacer.",
+      "La matrice complete : ce que l'IA remplace a 100%, partiellement, assiste ou ne peut pas remplacer dans une equipe commerciale B2B.",
     url: "https://ceres.agency/blog/ia-remplace-quoi-equipe-commerciale",
     type: "article",
   },

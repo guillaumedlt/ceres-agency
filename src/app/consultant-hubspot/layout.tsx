@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   keywords: ["consultant hubspot", "expert hubspot", "consultant hubspot france", "freelance hubspot", "consultant crm", "expert hubspot paris", "hubspot certifie", "consultant hubspot certifie", "aide hubspot", "integration hubspot"],
   openGraph: {
     title: "Consultant HubSpot | Expert certifie | Ceres",
-    description: "Consultant HubSpot certifie en France. Setup, migration, optimisation CRM et formation.",
+    description: "Consultant HubSpot certifie en France. Setup, migration, optimisation CRM et formation sur mesure. Expert Sales, Marketing et Operations Hub.",
     url: "https://ceres.agency/consultant-hubspot",
     type: "website",
   },

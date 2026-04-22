@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Quanta : on ouvre notre agence IA a Monaco | Ceres",
   description:
-    "Ceres lance Quanta, son agence IA a Monaco. Deploiement IA pour les entreprises monegasques et de la Cote d'Azur.",
+    "Ceres lance Quanta, son agence IA a Monaco. Deploiement d'agents IA pour les entreprises monegasques et de la Cote d'Azur. Automatisation et CRM.",
   keywords: [
     "agence IA Monaco",
     "Quanta Monaco",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Quanta : on ouvre notre agence IA a Monaco | Ceres",
     description:
-      "Ceres lance Quanta, son agence IA a Monaco. Deploiement IA pour les entreprises monegasques et de la Cote d'Azur.",
+      "Ceres lance Quanta, son agence IA a Monaco. Deploiement d'agents IA pour les entreprises monegasques et de la Cote d'Azur. Automatisation et CRM.",
     url: "https://ceres.agency/blog/agence-ia-monaco-quanta",
     type: "article",
   },

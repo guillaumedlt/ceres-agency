@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "KPI commerciaux : les 25 indicateurs de vente a suivre en 2026",
+  title: "KPI commerciaux : 25 indicateurs de vente a suivre 2026",
   description:
     "Guide des 25 KPI commerciaux essentiels : definition, formule de calcul, benchmark marche et configuration HubSpot. Pipeline, activite, revenue et productivite.",
   openGraph: {
-    title: "KPI commerciaux : les 25 indicateurs de vente a suivre en 2026",
+    title: "KPI commerciaux : 25 indicateurs de vente a suivre 2026",
     description:
       "Guide des 25 KPI commerciaux essentiels : definition, formule de calcul, benchmark marche et configuration HubSpot. Pipeline, activite, revenue et productivite.",
     url: "https://ceres.agency/blog/kpi-commerciaux-indicateurs-vente",

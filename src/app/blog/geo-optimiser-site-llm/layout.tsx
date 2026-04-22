@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GEO : Generative Engine Optimization, optimiser son site pour les LLMs",
+  title: "GEO : optimiser son site pour les LLMs en 2026",
   description:
-    "Guide complet du GEO (Generative Engine Optimization) : definition, differences avec le SEO, 10 criteres pour apparaitre dans ChatGPT et Claude, JSON-LD, FAQ schema, E-E-A-T. Methode actionnable.",
+    "GEO (Generative Engine Optimization) : 10 criteres pour apparaitre dans ChatGPT et Claude. JSON-LD, FAQ schema et E-E-A-T.",
   openGraph: {
-    title: "GEO : Generative Engine Optimization, optimiser son site pour les LLMs",
+    title: "GEO : optimiser son site pour les LLMs en 2026",
     description:
-      "Guide complet du GEO (Generative Engine Optimization) : definition, differences avec le SEO, 10 criteres pour apparaitre dans ChatGPT et Claude, JSON-LD, FAQ schema, E-E-A-T. Methode actionnable.",
+      "GEO (Generative Engine Optimization) : 10 criteres pour apparaitre dans ChatGPT et Claude. JSON-LD, FAQ schema et E-E-A-T.",
     url: "https://ceres.agency/blog/geo-optimiser-site-llm",
     type: "article",
   },

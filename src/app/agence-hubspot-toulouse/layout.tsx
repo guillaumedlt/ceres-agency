@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agence HubSpot Toulouse | Optimisation CRM | Ceres",
   description:
-    "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie. Partenaire certifie.",
+    "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie. Audit, formation et support dedies. Partenaire certifie.",
   keywords: [
     "agence hubspot toulouse",
     "hubspot toulouse",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agence HubSpot Toulouse | Optimisation CRM | Ceres",
     description:
-      "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie.",
+      "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie. Audit, formation et support dedies.",
     url: "https://ceres.agency/agence-hubspot-toulouse",
     type: "website",
   },

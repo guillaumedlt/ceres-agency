@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Consultant RevOps | Expert Revenue Operations France | Ceres",
   description:
-    "Consultant RevOps specialise en Revenue Operations. Alignement Sales, Marketing, CS. Audit, CRM, automatisation, IA. +250 clients accompagnes en France.",
+    "Consultant RevOps en Revenue Operations. Alignement Sales, Marketing et CS. Audit CRM, automatisation et deploiement IA. 250+ clients.",
   keywords: [
     "consultant revops",
     "consultant revops france",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Consultant RevOps | Expert Revenue Operations France | Ceres",
     description:
-      "Consultant RevOps specialise en Revenue Operations. Alignement Sales, Marketing, CS. Audit, CRM, automatisation, IA.",
+      "Consultant RevOps specialise en Revenue Operations. Alignement Sales, Marketing et CS. Audit CRM, automatisation des process et deploiement IA.",
     url: "https://ceres.agency/consultant-revops",
     type: "website",
   },

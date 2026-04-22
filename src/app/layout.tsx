@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Ceres est l'agence RevOps & IA qui structure, automatise et optimise vos operations commerciales. Audit HubSpot, automatisation des process, intelligence artificielle appliquee aux ventes. Basee en France.",
+    "Ceres est l'agence RevOps & IA qui structure et automatise vos operations commerciales. Audit HubSpot, automatisation, IA appliquee aux ventes.",
   keywords: [
     "agence RevOps",
     "agence RevOps France",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ceres | Agence RevOps & IA",
-    description: "Structurez, automatisez et optimisez vos operations commerciales avec le RevOps et l'IA.",
+    description: "Structurez, automatisez et optimisez vos operations commerciales avec le RevOps et l'IA. Audit CRM, automatisation et agents IA.",
   },
   category: "technology",
 };

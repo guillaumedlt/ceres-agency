@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Metadata } from "next";
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";

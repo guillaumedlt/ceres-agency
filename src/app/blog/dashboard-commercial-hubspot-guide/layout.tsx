@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dashboard commercial HubSpot : guide 2026 | Ceres",
   description:
-    "Les 5 dashboards qui comptent : pipeline, activite, forecast, conversion, performance. Templates pour HubSpot.",
+    "Les 5 dashboards commerciaux qui comptent : pipeline, activite, forecast, conversion et performance. Templates prets a copier pour HubSpot.",
   keywords: [
     "dashboard HubSpot",
     "dashboard commercial",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dashboard commercial HubSpot : guide 2026 | Ceres",
     description:
-      "Les 5 dashboards qui comptent : pipeline, activite, forecast, conversion, performance. Templates pour HubSpot.",
+      "Les 5 dashboards commerciaux qui comptent : pipeline, activite, forecast, conversion et performance. Templates prets a copier pour HubSpot.",
     url: "https://ceres.agency/blog/dashboard-commercial-hubspot-guide",
     type: "article",
   },

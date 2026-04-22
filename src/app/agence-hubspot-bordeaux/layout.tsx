@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agence HubSpot Bordeaux | Optimisation CRM | Ceres",
   description:
-    "Agence HubSpot a Bordeaux. Configuration, migration et optimisation CRM pour entreprises de Nouvelle-Aquitaine. Partenaire certifie.",
+    "Agence HubSpot a Bordeaux. Configuration, migration et optimisation CRM pour entreprises de Nouvelle-Aquitaine. Audit et formation.",
   keywords: [
     "agence hubspot bordeaux",
     "hubspot bordeaux",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Agence HubSpot Bordeaux | Optimisation CRM | Ceres",
     description:
-      "Agence HubSpot a Bordeaux. Configuration, migration et optimisation CRM pour entreprises de Nouvelle-Aquitaine.",
+      "Agence HubSpot a Bordeaux. Configuration, migration et optimisation CRM pour entreprises de Nouvelle-Aquitaine. Audit, formation et support.",
     url: "https://ceres.agency/agence-hubspot-bordeaux",
     type: "website",
   },

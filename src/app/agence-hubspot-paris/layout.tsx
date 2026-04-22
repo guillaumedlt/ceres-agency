@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agence HubSpot Paris 8e | Rendez-vous sur site | Ceres",
   description:
-    "Agence HubSpot basee a Paris 8e, rue La Boetie. Rencontrez nos consultants en personne. Expertise fintech, SaaS et ecosysteme tech parisien. Setup, migration, formation sur site. 250+ clients.",
+    "Agence HubSpot a Paris 8e, rue La Boetie. Expertise fintech et SaaS. Setup, migration, formation sur site. 250+ clients accompagnes.",
   alternates: {
     canonical: "https://ceres.agency/agence-hubspot-paris",
   },
   openGraph: {
     title: "Agence HubSpot Paris 8e | Rendez-vous sur site | Ceres",
-    description: "Agence HubSpot basee a Paris 8e, rue La Boetie. Rencontrez nos consultants en personne. Expertise fintech, SaaS et ecosysteme tech parisien. Setup, migration, formation sur site. 250+ clients.",
+    description: "Agence HubSpot a Paris 8e, rue La Boetie. Expertise fintech et SaaS. Setup, migration, formation sur site. 250+ clients accompagnes.",
     url: "https://ceres.agency/agence-hubspot-paris",
     type: "website",
   },

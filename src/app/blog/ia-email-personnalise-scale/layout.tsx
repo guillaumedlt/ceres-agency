@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Emails personnalises a grande echelle avec l'IA | Ceres",
   description:
-    "Le dilemme volume vs personnalisation. Workflow IA complet (CRM > enrichissement > IA > validation). De 3% a 11%.",
+    "Le dilemme volume vs personnalisation en prospection. Workflow IA complet (CRM, enrichissement, IA, validation). Taux de reponse de 3% a 11%.",
   keywords: [
     "emails personnalises IA",
     "cold email IA",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Emails personnalises a grande echelle avec l'IA | Ceres",
     description:
-      "Le dilemme volume vs personnalisation. Workflow IA complet (CRM > enrichissement > IA > validation). De 3% a 11%.",
+      "Le dilemme volume vs personnalisation en prospection. Workflow IA complet (CRM, enrichissement, IA, validation). Taux de reponse de 3% a 11%.",
     url: "https://ceres.agency/blog/ia-email-personnalise-scale",
     type: "article",
   },

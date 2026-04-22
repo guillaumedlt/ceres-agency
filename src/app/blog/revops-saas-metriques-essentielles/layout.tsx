@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Metriques essentielles du RevOps SaaS en 2026 | Ceres",
   description:
-    "MRR, ARR, NRR, GRR, CAC, LTV, Payback, Magic Number, Pipeline Coverage. Dashboard SaaS complet.",
+    "MRR, ARR, NRR, GRR, CAC, LTV, Payback, Magic Number, Pipeline Coverage. Dashboard SaaS complet avec formules et benchmarks par stade de croissance.",
   keywords: [
     "metriques SaaS",
     "KPI SaaS",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Metriques essentielles du RevOps SaaS en 2026 | Ceres",
     description:
-      "MRR, ARR, NRR, GRR, CAC, LTV, Payback, Magic Number, Pipeline Coverage. Dashboard SaaS complet.",
+      "MRR, ARR, NRR, GRR, CAC, LTV, Payback, Magic Number, Pipeline Coverage. Dashboard SaaS complet avec formules et benchmarks par stade de croissance.",
     url: "https://ceres.agency/blog/revops-saas-metriques-essentielles",
     type: "article",
   },

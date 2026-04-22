@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tracking des conversions HubSpot : le guide complet",
   description:
-    "Guide complet du tracking de conversions dans HubSpot : UTM, attribution multi-touch, formulaires, events personnalises, connexion GA4 et dashboard de conversion.",
+    "Tracking de conversions dans HubSpot : UTM, attribution multi-touch, formulaires, events personnalises, GA4 et dashboards.",
   openGraph: {
     title: "Tracking des conversions HubSpot : le guide complet",
     description:
-      "Guide complet du tracking de conversions dans HubSpot : UTM, attribution multi-touch, formulaires, events personnalises, connexion GA4 et dashboard de conversion.",
+      "Tracking de conversions dans HubSpot : UTM, attribution multi-touch, formulaires, events personnalises, GA4 et dashboards.",
     url: "https://ceres.agency/blog/tracking-conversions-hubspot-guide-complet",
     type: "article",
   },

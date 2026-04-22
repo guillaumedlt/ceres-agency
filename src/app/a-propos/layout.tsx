@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A propos de Ceres : agence RevOps et IA, 250+ clients, 9 ans",
     description:
-      "Decouvrez Ceres, agence RevOps et IA basee a Paris. Plus de 250 clients accompagnes en 9 ans.",
+      "Decouvrez Ceres, agence RevOps et IA basee a Paris. Plus de 250 clients accompagnes en 9 ans. Expertise CRM, automatisation et intelligence artificielle.",
     url: "https://ceres.agency/a-propos",
     type: "website",
   },

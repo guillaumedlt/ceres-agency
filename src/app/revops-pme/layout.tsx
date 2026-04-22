@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RevOps pour PME : alignez vos equipes | Ceres",
     description:
-      "Consultant RevOps PME. Audit CRM, restructuration pipeline, SLA marketing-sales, lead scoring et automatisation.",
+      "Consultant RevOps pour PME. Audit CRM, restructuration pipeline, SLA marketing-sales, lead scoring et automatisation des process commerciaux.",
     url: "https://ceres.agency/revops-pme",
     type: "website",
   },

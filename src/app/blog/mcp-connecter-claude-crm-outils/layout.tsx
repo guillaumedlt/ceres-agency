@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "MCP : connecter Claude a votre CRM et vos outils | Ceres",
   description:
-    "Model Context Protocol : connecter Claude a HubSpot, Slack, Notion. Guide complet avec cas d'usage et setup.",
+    "Model Context Protocol (MCP) : connecter Claude a HubSpot, Slack, Notion et vos outils metier. Guide complet avec cas d'usage et setup.",
   keywords: [
     "MCP Claude",
     "Model Context Protocol",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MCP : connecter Claude a votre CRM et vos outils | Ceres",
     description:
-      "Model Context Protocol : connecter Claude a HubSpot, Slack, Notion. Guide complet avec cas d'usage et setup.",
+      "Model Context Protocol (MCP) : connecter Claude a HubSpot, Slack, Notion et vos outils metier. Guide complet avec cas d'usage et setup.",
     url: "https://ceres.agency/blog/mcp-connecter-claude-crm-outils",
     type: "article",
   },
