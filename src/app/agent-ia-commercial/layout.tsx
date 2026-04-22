@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     "ia scoring commercial",
     "claude mcp commercial",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/agent-ia-commercial",
+  },
+  openGraph: {
+    title: "Agent IA commercial : automatiser la vente B2B | Ceres",
+    description: "Deployez un agent IA commercial pour automatiser enrichissement, qualification, scoring, emails et coaching. Stack Claude + MCP + Make. ROI mesurable.",
+    url: "https://ceres.agency/agent-ia-commercial",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

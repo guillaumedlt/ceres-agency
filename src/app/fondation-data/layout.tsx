@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     "qualite donnees crm",
     "nettoyage base crm",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/fondation-data",
+  },
+  openGraph: {
+    title: "Fondation Data : nettoyage CRM et gouvernance | Ceres",
+    description: "On nettoie votre CRM, standardise vos donnees et definit les KPIs par silo. Prerequis a toute initiative IA. Deduplication et gouvernance.",
+    url: "https://ceres.agency/fondation-data",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

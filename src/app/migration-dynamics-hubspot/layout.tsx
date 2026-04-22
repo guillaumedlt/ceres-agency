@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     "migration microsoft dynamics",
     "hubspot vs dynamics",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/migration-dynamics-hubspot",
+  },
+  openGraph: {
+    title: "Migration Dynamics vers HubSpot | Ceres",
+    description: "Migrez de Dynamics 365 vers HubSpot sans perte de donnees. 45 000 contacts migres pour TotalEnergies. Accompagnement complet, devis gratuit.",
+    url: "https://ceres.agency/migration-dynamics-hubspot",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

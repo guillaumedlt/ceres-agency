@@ -4,6 +4,15 @@ export const metadata: Metadata = {
   title: "Guides RevOps, CRM et IA : playbooks et templates gratuits",
   description:
     "Guides RevOps, CRM et IA gratuits : playbooks, templates et frameworks actionables pour structurer vos operations commerciales et marketing en B2B SaaS.",
+  alternates: {
+    canonical: "https://ceres.agency/guides",
+  },
+  openGraph: {
+    title: "Guides RevOps, CRM et IA : playbooks et templates gratuits",
+    description: "Guides RevOps, CRM et IA gratuits : playbooks, templates et frameworks actionables pour structurer vos operations commerciales et marketing en B2B SaaS.",
+    url: "https://ceres.agency/guides",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

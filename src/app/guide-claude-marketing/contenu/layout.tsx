@@ -2,5 +2,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Guide Claude Marketing : contenu complet | Ceres",
   description: "Le guide Claude le plus complet. 20+ prompts marketing, 15 cas d'usage, Claude Code scripts, MCP, agents autonomes et le futur du marketing B2B avec l'IA.",
+  alternates: {
+    canonical: "https://ceres.agency/guide-claude-marketing/contenu",
+  },
+  openGraph: {
+    title: "Guide Claude Marketing : contenu complet | Ceres",
+    description: "Le guide Claude le plus complet. 20+ prompts marketing, 15 cas d'usage, Claude Code scripts, MCP, agents autonomes et le futur du marketing B2B avec l'IA.",
+    url: "https://ceres.agency/guide-claude-marketing/contenu",
+    type: "article",
+  },
 };
 export default function Layout({ children }: { children: React.ReactNode }) { return children; }

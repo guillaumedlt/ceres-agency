@@ -4,6 +4,15 @@ export const metadata: Metadata = {
   title: "RevOps Scale-ups : votre revenue engine | Ceres",
   description:
     "RevOps pour scale-ups de 200 a 1000 personnes. Migration CRM, IA, forecasting predictif, dashboards avances. Cas clients : Alan, Ringover, Dougs.",
+  alternates: {
+    canonical: "https://ceres.agency/revops-scaleup",
+  },
+  openGraph: {
+    title: "RevOps Scale-ups : votre revenue engine | Ceres",
+    description: "RevOps pour scale-ups de 200 a 1000 personnes. Migration CRM, IA, forecasting predictif, dashboards avances. Cas clients : Alan, Ringover, Dougs.",
+    url: "https://ceres.agency/revops-scaleup",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
