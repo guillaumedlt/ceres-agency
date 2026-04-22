@@ -406,7 +406,25 @@ const nextConfig = {
       // Ancien site : /agence-hubspot-monaco
       { source: "/agence-hubspot-monaco", destination: "/agence-hubspot", permanent: true },
 
+      // Ancien site : anciennes pages diverses
+      { source: "/service-support-ops", destination: "/agence-hubspot", permanent: true },
+      { source: "/resources/:slug*", destination: "/outils", permanent: true },
+
+      // Ancien site : anciens articles de blog (batch 2)
+      { source: "/blog/choisir-agence-hubspot", destination: "/blog/top-agences-revops-france", permanent: true },
+      { source: "/blog/raccourcir-cycle-vente-b2b", destination: "/blog/ia-processus-commercial-vente-b2b", permanent: true },
+      { source: "/blog/lead-nurturing-guide", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/cout-migration-crm-estimation", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/les-sieges-hubspot-nouveau-pricing-nouveau-format", destination: "/blog/hubspot-tarifs-prix-2026", permanent: true },
+      { source: "/blog/10-astuces-incontournables-pour-optimiser-les-workflows-de-marketing-automation-sur-hubspot", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/tout-savoir-sur-la-sandbox-lancee-par-hubspot", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/configurer-aircall-avec-hubspot", destination: "/blog/integration-hubspot-whatsapp", permanent: true },
+      { source: "/blog/comment-gerer-votre-revenu-recurrent-mrr-dans-hubspot", destination: "/blog/gerer-mrr-revenu-recurrent-hubspot", permanent: true },
+      { source: "/blog/le-test-les-objets-custom-hubspot", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/comprendre-les-canaux-dacquisition-definition-types-et-rentabilite", destination: "/blog/cest-quoi-acquisition-marketing", permanent: true },
+
       // Ancien site : /cas-clients/ qui n'existent plus
+      { source: "/cas-clients/metron-zuora", destination: "/cas-clients", permanent: true },
       { source: "/cas-clients/toucantoco", destination: "/cas-clients", permanent: true },
       { source: "/cas-clients/fauve", destination: "/cas-clients", permanent: true },
       { source: "/cas-clients/thehackingproject", destination: "/cas-clients", permanent: true },
