@@ -325,10 +325,10 @@ const nextConfig = {
       { source: "/guides/mini-guide-revops", destination: "/guide-revops-ultime", permanent: true },
       { source: "/guides/mini-guide-outbound", destination: "/guide-outbound-b2b", permanent: true },
       { source: "/guides/implementation-hubspot", destination: "/onboarding-hubspot", permanent: true },
-      { source: "/guides/:slug*", destination: "/guides", permanent: true },
+      { source: "/guides/:slug+", destination: "/guides", permanent: true },
 
       // Ancien site : /guide/
-      { source: "/guide/:slug*", destination: "/guides", permanent: true },
+      { source: "/guide/:slug+", destination: "/guides", permanent: true },
 
       // Ancien site : /agency/
       { source: "/agency/:slug*", destination: "/a-propos", permanent: true },
