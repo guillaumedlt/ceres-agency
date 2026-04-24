@@ -3,20 +3,20 @@ import Badge from "./Badge";
 const steps = [
   {
     num: "01",
-    title: "Data clean + KPIs",
-    desc: "On nettoie votre base, unifie vos flux de donnees et definit les KPIs par silo. La fondation sur laquelle tout repose. Sans ca, l'IA multiplie par zero.",
+    title: "Structurer les ops",
+    desc: "On audite vos process RevOps, nettoie votre base CRM, unifie les flux de donnees et definit les KPIs par silo. La fondation sur laquelle tout repose.",
     duration: "4-6 semaines",
   },
   {
     num: "02",
-    title: "L'IA optimise chaque silo",
-    desc: "Marketing, Sales, CS, Finance : l'IA enrichit, score, automatise et detecte les signaux silo par silo. Elle orchestre ce que les equipes n'ont pas le temps de faire.",
+    title: "Accelerer avec l'IA",
+    desc: "Une fois les ops structures, l'IA vient accelerer : enrichissement, scoring, reporting, detection de signaux. Elle amplifie ce que le RevOps a construit.",
     duration: "4-8 semaines",
   },
   {
     num: "03",
-    title: "Iteration et expansion",
-    desc: "On mesure les resultats, on ajuste les modeles, on ajoute des briques. Chaque iteration rend le systeme plus intelligent. L'avantage se compose avec le temps.",
+    title: "Iterer et scaler",
+    desc: "On mesure les resultats, on ajuste, on ajoute des briques. Le RevOps s'affine, l'IA s'ameliore. L'avantage se compose avec le temps.",
     duration: "Continu",
   },
 ];
@@ -29,9 +29,9 @@ export default function HowItWorks() {
           <div className="mb-8">
             <div className="mb-4"><Badge>Méthode</Badge></div>
             <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">
-              L&apos;IA au service du RevOps
+              RevOps d&apos;abord. IA ensuite.
             </h2>
-            <p className="text-[13px] text-[#999]">Donnees propres, KPIs alignes, IA qui orchestre. Chaque etape renforce la suivante.</p>
+            <p className="text-[13px] text-[#999]">On structure vos operations, puis l&apos;IA vient accelerer. Pas l&apos;inverse.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

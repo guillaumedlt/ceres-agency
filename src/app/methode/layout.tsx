@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Notre methode : Data, IA et Revenue Operations | Ceres",
-  description: "La methodologie Ceres pour integrer l'IA dans vos operations commerciales. Donnees propres, KPIs alignes, IA par silo. 250+ entreprises B2B.",
-  keywords: ["methode revops ia", "methodologie ia operations", "data ia revops", "deploiement ia b2b", "framework revenue operations", "audit silos ia", "fondation data ia"],
+  title: "Notre methode RevOps augmentee par l'IA | Ceres",
+  description: "La methodologie Ceres : structurer vos operations RevOps, nettoyer vos donnees, aligner vos KPIs, puis deployer l'IA comme accelerateur. 250+ entreprises B2B.",
+  keywords: ["methode revops", "methodologie revops", "revops ia", "framework revenue operations", "data revops", "audit revops methode", "revops augmente ia"],
   alternates: {
     canonical: "https://ceres.agency/methode",
   },
   openGraph: {
-    title: "Notre methode : Data, IA et Revenue Operations | Ceres",
-    description: "La methodologie Ceres pour integrer l'IA dans vos operations commerciales. Donnees propres, KPIs alignes, IA par silo. 250+ entreprises B2B.",
+    title: "Notre methode RevOps augmentee par l'IA | Ceres",
+    description: "La methodologie Ceres : structurer vos operations RevOps, nettoyer vos donnees, aligner vos KPIs, puis deployer l'IA comme accelerateur.",
     url: "https://ceres.agency/methode",
     type: "website",
   },
