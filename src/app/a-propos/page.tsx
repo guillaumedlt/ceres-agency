@@ -2,56 +2,29 @@ import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 
-const jsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    name: "A propos de Ceres",
-    description: "Ceres est une agence RevOps & IA basee a Paris. On structure, automatise et optimise les operations commerciales des entreprises B2B.",
-    url: "https://ceres.agency/a-propos",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Ceres",
-    url: "https://ceres.agency",
-    foundingDate: "2017",
-    numberOfEmployees: "4",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "128 rue La Boetie",
-      postalCode: "75008",
-      addressLocality: "Paris",
-      addressCountry: "FR",
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://ceres.agency/a-propos#aboutpage",
+      name: "A propos de Ceres",
+      description: "Ceres est une agence RevOps & IA basee a Paris. On structure, automatise et optimise les operations commerciales des entreprises B2B.",
+      url: "https://ceres.agency/a-propos",
+      inLanguage: "fr-FR",
+      isPartOf: { "@id": "https://ceres.agency/#website" },
+      about: { "@id": "https://ceres.agency/#organization" },
+      mainEntity: { "@id": "https://ceres.agency/#organization" },
     },
-    member: [
-      {
-        "@type": "Person",
-        name: "Guillaume Delachet",
-        jobTitle: "Co-fondateur",
-        worksFor: { "@type": "Organization", name: "Ceres" },
-      },
-      {
-        "@type": "Person",
-        name: "Simon Toussaint",
-        jobTitle: "Co-fondateur",
-        worksFor: { "@type": "Organization", name: "Ceres" },
-      },
-      {
-        "@type": "Person",
-        name: "Bruno Teixeira",
-        jobTitle: "Partner",
-        worksFor: { "@type": "Organization", name: "Ceres" },
-      },
-      {
-        "@type": "Person",
-        name: "Stephane Morel",
-        jobTitle: "COO",
-        worksFor: { "@type": "Organization", name: "Ceres" },
-      },
-    ],
-  },
-];
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" },
+        { "@type": "ListItem", position: 2, name: "A propos", item: "https://ceres.agency/a-propos" },
+      ],
+    },
+  ],
+};
 
 const team = [
   { name: "Guillaume Delachet", role: "Co-fondateur", initials: "GD", desc: "Ex-Growth chez des scale-ups B2B. Expert HubSpot, Clay et Claude. Obsede par l\u2019alignement marketing-sales et les systemes qui scalent.", linkedin: "#" },

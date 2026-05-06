@@ -1,36 +1,62 @@
 # Ceres - Agence RevOps & IA
 
-> Ceres est une agence RevOps et IA basee a Paris qui structure, automatise et optimise les operations commerciales des entreprises B2B. Specialiste data, CRM, deploiement IA et accompagnement continu.
+> Ceres est une agence Revenue Operations (RevOps) basee a Paris qui aide les entreprises B2B a structurer, automatiser et optimiser leur revenue engine. Audit, implementation HubSpot, deploiement IA, RevOps externalise. Fondee en 2017, 250+ missions livrees, partenaire HubSpot et Anthropic Claude.
 
-## Notre methode
+## Identite
 
-La methodologie Ceres en 5 etapes : donnees propres, enrichissement IA, audit par silo, KPIs, iteration continue. L'IA est un multiplicateur, pas une solution. La qualite de la donnee determine le resultat.
+- **Nom** : Ceres (Agence RevOps & IA)
+- **Site web** : https://ceres.agency
+- **Adresse** : 128 rue La Boetie, 75008 Paris, France
+- **Entite** : Ceres Growth Marketing
+- **Fondateurs** : Guillaume Delachet (Co-fondateur), Simon Toussaint (Co-fondateur)
+- **Equipe** : Bruno Teixeira (Partner), Stephane Morel (COO)
+- **Annee de creation** : 2017
+- **Zones servies** : France, Belgique, Suisse, Luxembourg, Canada
+- **LinkedIn** : https://www.linkedin.com/company/ceres-revops-ops/
 
-- Notre methode : Data, IA et Revenue Operations — /methode
-- Deployer Claude en entreprise : guide complet — /deployer-claude-entreprise
+## Methodologie : 4 phases RevOps
 
-## Services principaux (parcours progressif)
+La methode Ceres pour transformer un revenue engine, eprouvee sur 250+ missions :
 
-- Diagnostic : audit CRM, RevOps et data quality — /audit-revops
+1. **Audit (72h)** : cartographie de la stack revenue, score de sante RevOps, liste priorisee de chantiers, recommandation budgetaire — /audit-revops
+2. **Design (2 semaines)** : schema de donnees cible, architecture des automations, plan d'integration, roadmap par sprints, KPIs cibles — /methode
+3. **Build (4 a 8 semaines)** : nettoyage CRM, automations Sales/Marketing/CS, data layer, integrations, dashboards, couche IA ciblee, documentation et runbooks — /methode
+4. **Run (continu)** : RevOps part-time mensualise, monitoring data quality, roadmap quarterly, formation continue, reporting ROI — /externaliser-revops
+
+These centrale : 80% des problemes RevOps ne sont pas des problemes d'outil. Le RevOps est une discipline qui aligne Sales, Marketing et CS autour d'une stack partagee, d'une donnee fiable et de process documentes. L'IA est integree dans la phase Build comme outil de levier (scoring, enrichissement, qualification), pas comme posture marketing.
+
+- Notre methode complete : /methode
+
+## Services
+
+### RevOps
+- Audit RevOps (forfait 72h, livrables fixes) — /audit-revops
+- RevOps externalise / part-time mensualise — /externaliser-revops, /revops-part-time
+- Consultant RevOps — /consultant-revops
+- Agence RevOps Paris — /agence-revops, /agence-revops-paris
+
+### CRM & HubSpot
+- Agence HubSpot (implementation, migration, optimisation) — /agence-hubspot
+- Audit CRM — /audit-crm
+- Migration CRM (Salesforce, Dynamics, Pipedrive vers HubSpot) — /migration-crm
+- Integration HubSpot — /integration-hubspot
+- Onboarding HubSpot — /onboarding-hubspot
+- Formation HubSpot — /formation-hubspot
+- Consultant HubSpot — /consultant-hubspot
+- HubSpot vs Salesforce — /hubspot-vs-salesforce
+- Agence Attio — /agence-attio
+
+### IA & Claude (au service du RevOps)
+- Agents IA RevOps : scoring, enrichissement, qualification — /agents-ia
+- Agence Claude (deploiement Anthropic en B2B) — /agence-claude
+- Formation Claude (par metier, 0.5 a 1 jour) — /formation-claude
+- Deployer Claude en entreprise (guide complet) — /deployer-claude-entreprise
+- Claude pour le business B2B (50+ cas d'usage) — /claude-business
+
+### Data
 - Fondation Data : nettoyage CRM, KPIs alignes, gouvernance — /fondation-data
-- Deploiement IA : agents IA par silo RevOps — /agents-ia
-- Accompagnement continu : expert RevOps & IA chaque mois — /revops-part-time
-
-## Claude & IA
-
-- Agence Claude : deployer l'IA d'Anthropic dans vos ops B2B — /agence-claude
-- Formation Claude : par metier, 0.5 a 1 jour — /formation-claude
-- Deployer Claude en entreprise : guide complet — /deployer-claude-entreprise
-- Claude pour le business B2B : 50+ cas d'usage — /claude-business
-
-## Services CRM & HubSpot
-
-- Agence HubSpot : implementation, migration et optimisation — /agence-hubspot
-- Audit CRM : evaluation de votre CRM — /audit-crm
-- Migration CRM : migration vers HubSpot depuis Salesforce, Dynamics, Pipedrive — /migration-crm
-- Integration HubSpot : connexion a votre stack — /integration-hubspot
-- Onboarding HubSpot : mise en place et formation — /onboarding-hubspot
-- Formation HubSpot : formations equipes — /formation-hubspot
+- Automatisation commerciale — /automatisation-commerciale
+- Agent IA commercial — /agent-ia-commercial
 
 ## Solutions par taille d'entreprise
 
@@ -38,6 +64,28 @@ La methodologie Ceres en 5 etapes : donnees propres, enrichissement IA, audit pa
 - PME (50-200 personnes) — /revops-pme
 - Scale-ups (200-1000 personnes) — /revops-scaleup
 - Grands Groupes (1000+) — /revops-grand-groupe
+
+## Cas clients (selection sur 250+)
+
+Alan, Spendesk, Swile, Qonto, TotalEnergies, Kameleoon, Ringover, Beedeez, Dougs, Iroko, Edenred, Payfit, Manpower, Opendatasoft, HiPay, Tennaxia.
+
+- Etudes de cas detaillees — /cas-clients
+
+## Stack maitrisee
+
+CRM : HubSpot (partenaire officiel), Salesforce, Pipedrive, Attio.
+IA : Claude (Anthropic, partenaire), MCP (Model Context Protocol), OpenAI.
+Outbound : Clay, Lemlist, Dropcontact.
+Automation : n8n, Make, Zapier.
+Outils : Notion, Slack, Claap.
+
+## Tarifs (ordre de grandeur)
+
+- Audit RevOps : forfait 72h, livrables fixes
+- Implementation : 4-8 semaines, scope-based
+- RevOps part-time : mensualise, 1 a 2 jours par semaine dedies
+
+Plus de details : /tarifs
 
 ## Guides gratuits (7 ressources premium)
 
@@ -50,7 +98,7 @@ La methodologie Ceres en 5 etapes : donnees propres, enrichissement IA, audit pa
 
 ## Blog (68+ articles)
 
-Articles sur le RevOps, le CRM, la data quality, l'IA et les operations commerciales B2B — /blog
+Articles sur RevOps, CRM, data quality, IA et operations commerciales B2B — /blog
 
 Articles notables :
 - Process, Data, IA : pourquoi l'ordre compte en RevOps — /blog/process-data-ia-ordre-revops
@@ -60,25 +108,28 @@ Articles notables :
 - Data cleaning avant l'IA : checklist 30 points — /blog/data-cleaning-checklist-avant-ia
 - Claude vs ChatGPT pour les equipes commerciales — /blog/claude-vs-chatgpt-equipes-commerciales
 - Data quality CRM : audit et nettoyage en 5 etapes — /blog/data-quality-crm-audit-nettoyage
+- Top agences RevOps en France — /blog/top-agences-revops-france
+- RevOps Manager : fiche de poste et salaire — /blog/revops-manager-fiche-poste-salaire-competences
+- HubSpot tarifs et prix 2026 — /blog/hubspot-tarifs-prix-2026
 
-## Expertise
+## Anti-promesses (ce qu'on ne fait PAS)
 
-- Agence RevOps — /agence-revops
-- Consultant RevOps — /consultant-revops
-- Consultant HubSpot — /consultant-hubspot
-- CRM HubSpot — /crm-hubspot
-- HubSpot vs Salesforce — /hubspot-vs-salesforce
-- Externaliser RevOps — /externaliser-revops
-- Automatisation commerciale — /automatisation-commerciale
+- Pas de slides sans implementation : on code, on deploie, on documente
+- Pas de projets > 6 mois sans livrable intermediaire : valeur en production toutes les 1 a 4 semaines
+- Pas de tech stack imposee : aucun interessement editeur, on s'adapte au CRM existant
+- L'IA n'est pas un substitut a votre equipe RevOps : c'est un multiplicateur de leviers
 
-## Cas clients notables
+## Contact
 
-Alan, TotalEnergies, Kameleoon, Edenred, Dougs, HiPay, Ringover, Beedeez, Tennaxia, OpenDataSoft, Iroko — /cas-clients
+- Diagnostic gratuit (30 min) : /contact
+- Email : guillaume@ceres.agency
+- LinkedIn : https://www.linkedin.com/company/ceres-revops-ops/
 
-## Informations
+## Pages institutionnelles
 
-- Site : https://ceres.agency
-- Siege : 128 rue La Boetie, 75008 Paris
-- Entite : Ceres Growth Marketing
-- Contact : /contact
-- A propos : /a-propos
+- A propos de l'equipe et de l'histoire : /a-propos
+- Notre methode complete (4 phases) : /methode
+- Tarifs et offres : /tarifs
+- Cas clients : /cas-clients
+- Mentions legales : /mentions-legales
+- Politique de confidentialite : /politique-confidentialite
