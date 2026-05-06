@@ -211,6 +211,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased relative overflow-x-hidden">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5B9QRB" height="0" width="0" style={{ display: "none", visibility: "hidden" }} /></noscript>
+        {/* Aikairo · AEO beacon */}
+        <noscript>
+          <img
+            src="https://www.aikairo.app/api/aeo-beacon?w=38febf01-d1a8-4b7d-b3e7-761d28871cb5"
+            width={1}
+            height={1}
+            alt=""
+            loading="lazy"
+          />
+        </noscript>
         <Blobs />
         <Navbar />
         {/* ClaudeBanner removed */}
