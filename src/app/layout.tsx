@@ -146,6 +146,7 @@ const jsonLd = {
       worksFor: { "@id": ORG_ID },
       knowsAbout: ["Revenue Operations", "HubSpot", "Clay", "Claude AI", "Marketing-Sales Alignment"],
       email: "guillaume@ceres.agency",
+      sameAs: ["https://www.linkedin.com/in/delachetguillaume/"],
     },
     {
       "@type": "Person",
@@ -157,6 +158,7 @@ const jsonLd = {
       image: "https://ceres.agency/team/simon.jpg",
       worksFor: { "@id": ORG_ID },
       knowsAbout: ["Sales Operations", "Revenue Operations", "Salesforce", "HubSpot", "Sales Process Design"],
+      sameAs: ["https://www.linkedin.com/in/simontoussaint/"],
     },
     {
       "@type": "Person",
@@ -168,6 +170,7 @@ const jsonLd = {
       image: "https://ceres.agency/team/bruno.jpg",
       worksFor: { "@id": ORG_ID },
       knowsAbout: ["CRM Migration", "HubSpot", "Salesforce", "CRM Integrations", "Data Architecture"],
+      sameAs: ["https://www.linkedin.com/in/brunolt1/"],
     },
     {
       "@type": "Person",
@@ -179,6 +182,7 @@ const jsonLd = {
       image: "https://ceres.agency/team/stephane.png",
       worksFor: { "@id": ORG_ID },
       knowsAbout: ["Operations", "Project Delivery", "Quality Management"],
+      sameAs: ["https://www.linkedin.com/in/stephane-morel-revops/"],
     },
     {
       "@type": "WebSite",

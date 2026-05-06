@@ -27,10 +27,10 @@ const jsonLd = {
 };
 
 const team = [
-  { name: "Guillaume Delachet", role: "Co-fondateur", initials: "GD", desc: "Ex-Growth chez des scale-ups B2B. Expert HubSpot, Clay et Claude. Obsede par l\u2019alignement marketing-sales et les systemes qui scalent.", linkedin: "#" },
-  { name: "Simon Toussaint", role: "Co-fondateur", initials: "ST", desc: "Background Sales et Revenue Operations. Specialiste Salesforce et HubSpot. Construit des process commerciaux qui tiennent sous pression.", linkedin: "#" },
-  { name: "Bruno Teixeira", role: "Partner", initials: "BT", desc: "Expert CRM et integrations complexes. A migre plus de 20 CRM dans sa carriere. Les projets TotalEnergies et HiPay, c\u2019est lui.", linkedin: "#" },
-  { name: "Stephane Morel", role: "COO", initials: "SM", desc: "Operations et delivery. S\u2019assure que chaque projet est livre dans les temps, dans le budget, avec le niveau de qualite attendu.", linkedin: "#" },
+  { name: "Guillaume Delachet", role: "Co-fondateur", initials: "GD", desc: "Ex-Growth chez des scale-ups B2B. Expert HubSpot, Clay et Claude. Obsede par l\u2019alignement marketing-sales et les systemes qui scalent.", linkedin: "https://www.linkedin.com/in/delachetguillaume/" },
+  { name: "Simon Toussaint", role: "Co-fondateur", initials: "ST", desc: "Background Sales et Revenue Operations. Specialiste Salesforce et HubSpot. Construit des process commerciaux qui tiennent sous pression.", linkedin: "https://www.linkedin.com/in/simontoussaint/" },
+  { name: "Bruno Teixeira", role: "Partner", initials: "BT", desc: "Expert CRM et integrations complexes. A migre plus de 20 CRM dans sa carriere. Les projets TotalEnergies et HiPay, c\u2019est lui.", linkedin: "https://www.linkedin.com/in/brunolt1/" },
+  { name: "Stephane Morel", role: "COO", initials: "SM", desc: "Operations et delivery. S\u2019assure que chaque projet est livre dans les temps, dans le budget, avec le niveau de qualite attendu.", linkedin: "https://www.linkedin.com/in/stephane-morel-revops/" },
 ];
 
 const values = [
@@ -151,10 +151,19 @@ export default function AProposPage() {
               <div key={t.name} className="rounded-2xl border border-[#E8E8E8] bg-white p-5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 rounded-full bg-[#111] flex items-center justify-center text-white text-[14px] font-bold">{t.initials}</div>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <p className="text-[14px] font-semibold text-[#111]">{t.name}</p>
                     <p className="text-[11px] text-[#FF7A59] font-medium">{t.role}</p>
                   </div>
+                  <a
+                    href={t.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn de ${t.name}`}
+                    className="shrink-0 w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#999] hover:text-[#0A66C2] hover:border-[#0A66C2]/30 transition-colors"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                  </a>
                 </div>
                 <p className="text-[12px] text-[#777] leading-[1.65]">{t.desc}</p>
               </div>
