@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Attribution marketing multi-touch : guide B2B 2026 | Ceres",
   description:
-    "Les 6 modeles d'attribution, configuration HubSpot, UTM, attribution et IA. Le guide complet pour les equipes B2B.",
+    "Les 6 modeles d'attribution marketing, configuration HubSpot, UTM et IA. Le guide complet pour les equipes B2B qui veulent mesurer le ROI.",
   keywords: [
     "attribution marketing",
     "attribution multi-touch",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Attribution marketing multi-touch : guide B2B 2026 | Ceres",
     description:
-      "Les 6 modeles d'attribution, configuration HubSpot, UTM, attribution et IA. Le guide complet pour les equipes B2B.",
+      "Les 6 modeles d'attribution marketing, configuration HubSpot, UTM et IA. Le guide complet pour les equipes B2B qui veulent mesurer le ROI.",
     url: "https://ceres.agency/blog/attribution-marketing-multi-touch",
     type: "article",
   },

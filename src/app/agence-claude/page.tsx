@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
@@ -211,6 +209,15 @@ export default function AgenceClaudePage() {
                 <p className="text-[12px] text-[#777] leading-[1.65]">{step.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-6">
+            <Link href="/deployer-claude-entreprise" className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] transition-all group flex items-start gap-3">
+              <div className="w-3 h-3 rounded-sm mt-1 shrink-0" style={{ backgroundColor: "#D4A27F" }} />
+              <div>
+                <p className="text-[13px] font-semibold text-[#111] group-hover:text-[#4B5EFC] transition-colors">Deployer Claude en entreprise : le guide complet</p>
+                <p className="text-[11px] text-[#999]">Prerequis, cas d&apos;usage par departement, couts, securite.</p>
+              </div>
+            </Link>
           </div>
         </section>
         <Connector />

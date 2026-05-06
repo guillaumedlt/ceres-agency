@@ -1,22 +1,6 @@
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
-
-/* ─── Metadata ─────────────────────────────────────────────────────────────── */
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot Marseille | Optimisation CRM | Ceres",
-  description:
-    "Agence HubSpot a Marseille. Configuration, migration et optimisation CRM pour entreprises de la region Sud. Partenaire certifie.",
-  keywords: [
-    "agence hubspot marseille",
-    "hubspot marseille",
-    "consultant hubspot marseille",
-    "crm marseille",
-  ],
-  alternates: { canonical: "https://www.ceres-music.com/agence-hubspot-marseille" },
-};
 
 /* ─── Data ──────────────────────────────────────────────────────────────────── */
 
@@ -103,7 +87,7 @@ const jsonLd = {
         addressRegion: "Provence-Alpes-Cote d'Azur",
         addressCountry: "FR",
       },
-      url: "https://www.ceres-music.com/agence-hubspot-marseille",
+      url: "https://ceres.agency/agence-hubspot-marseille",
       areaServed: { "@type": "City", name: "Marseille" },
       priceRange: "\u20ac\u20ac\u20ac",
     },

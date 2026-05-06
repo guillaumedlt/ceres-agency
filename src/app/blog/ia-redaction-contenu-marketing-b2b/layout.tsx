@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "IA et redaction de contenu marketing B2B | Ceres",
   description:
-    "Le workflow contenu avec l'IA : brief, generation, edition, publication. Articles, LinkedIn, newsletters.",
+    "Le workflow contenu marketing B2B avec l'IA : brief, generation, edition et publication. Articles, LinkedIn, newsletters. Guide pratique.",
   keywords: [
     "IA redaction contenu",
     "IA marketing contenu",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IA et redaction de contenu marketing B2B | Ceres",
     description:
-      "Le workflow contenu avec l'IA : brief, generation, edition, publication. Articles, LinkedIn, newsletters.",
+      "Le workflow contenu marketing B2B avec l'IA : brief, generation, edition et publication. Articles, LinkedIn, newsletters. Guide pratique.",
     url: "https://ceres.agency/blog/ia-redaction-contenu-marketing-b2b",
     type: "article",
   },

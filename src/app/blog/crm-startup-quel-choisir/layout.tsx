@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "CRM pour startup : lequel choisir en 2026 | Ceres",
   description:
-    "Comparatif HubSpot Free, Pipedrive, Folk, Attio. Criteres, prix, scalabilite. Le guide pour choisir son premier CRM.",
+    "Comparatif HubSpot Free, Pipedrive, Folk et Attio. Criteres, prix, scalabilite et integrations. Le guide complet pour choisir son premier CRM.",
   keywords: [
     "CRM startup",
     "meilleur CRM startup",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CRM pour startup : lequel choisir en 2026 | Ceres",
     description:
-      "Comparatif HubSpot Free, Pipedrive, Folk, Attio. Criteres, prix, scalabilite. Le guide pour choisir son premier CRM.",
+      "Comparatif HubSpot Free, Pipedrive, Folk et Attio. Criteres, prix, scalabilite et integrations. Le guide complet pour choisir son premier CRM.",
     url: "https://ceres.agency/blog/crm-startup-quel-choisir",
     type: "article",
   },

@@ -4,6 +4,16 @@ export const metadata: Metadata = {
   title: "Data quality CRM : audit et nettoyage en 5 etapes",
   description:
     "Guide complet pour auditer et nettoyer les donnees de votre CRM. Checklist 50 points, deduplication, standardisation, enrichissement et maintenance automatisee.",
+  openGraph: {
+    title: "Data quality CRM : audit et nettoyage en 5 etapes",
+    description:
+      "Guide complet pour auditer et nettoyer les donnees de votre CRM. Checklist 50 points, deduplication, standardisation, enrichissement et maintenance automatisee.",
+    url: "https://ceres.agency/blog/data-quality-crm-audit-nettoyage",
+    type: "article",
+  },
+  alternates: {
+    canonical: "https://ceres.agency/blog/data-quality-crm-audit-nettoyage",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

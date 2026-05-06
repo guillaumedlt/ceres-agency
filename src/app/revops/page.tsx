@@ -1,20 +1,7 @@
+import Link from "next/link";
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import RevOpsQuiz from "@/components/marketing/RevOpsQuiz";
-
-export const metadata: Metadata = {
-  title: "RevOps : guide Revenue Operations complet | Ceres",
-  description:
-    "Le RevOps aligne Sales, Marketing et CS autour de process, outils et donnees communs. Definition, enjeux et mise en place pour les entreprises B2B.",
-  keywords: [
-    "revops", "revenue operations", "qu'est-ce que le revops",
-    "revops définition", "revenue operations définition",
-    "revops c'est quoi", "revops explication", "revops guide",
-    "alignement sales marketing", "operations commerciales",
-    "revops vs sales ops", "revops france", "revops b2b",
-  ],
-};
 
 const pillars = [
   { title: "Process", desc: "Des règles claires partagées entre les équipes. Lead routing, SLA, handoff, lifecycle stages. Tout le monde joue avec les mêmes règles.", color: "#FF7A59" },
@@ -323,6 +310,28 @@ export default function RevOpsPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </section>
+        <Connector />
+
+        {/* Nos services RevOps */}
+        <section>
+          <div className="text-center mb-4">
+            <div className="mb-4"><Badge>Nos services</Badge></div>
+            <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Nos services RevOps</h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+            {[
+              { label: "Diagnostic", href: "/audit-revops", color: "#FF7A59" },
+              { label: "Agence RevOps", href: "/agence-revops", color: "#FF7A59" },
+              { label: "Consultant RevOps", href: "/consultant-revops", color: "#4B5EFC" },
+              { label: "Tarifs", href: "/tarifs", color: "#22C55E" },
+            ].map((s) => (
+              <Link key={s.label} href={s.href} className="rounded-lg border border-[#F2F2F2] p-3 text-center hover:border-[#DDD] transition-all group">
+                <div className="w-2 h-2 rounded-sm mx-auto mb-1.5" style={{ background: s.color }} />
+                <p className="text-[11px] font-medium text-[#111] group-hover:text-[#4B5EFC] transition-colors">{s.label}</p>
+              </Link>
+            ))}
           </div>
         </section>
         <Connector />

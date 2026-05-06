@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ROI de l'IA en B2B : comment le calculer | Ceres",
   description:
-    "La formule, les gains en temps, l'impact revenue, le cout reel. Exemple chiffre sur un SaaS B2B de 15 commerciaux.",
+    "La formule pour calculer le ROI de l'IA, gains en temps, impact revenue et cout reel. Exemple chiffre sur un SaaS B2B de 15 commerciaux.",
   keywords: [
     "ROI IA",
     "calculer ROI IA",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ROI de l'IA en B2B : comment le calculer | Ceres",
     description:
-      "La formule, les gains en temps, l'impact revenue, le cout reel. Exemple chiffre sur un SaaS B2B de 15 commerciaux.",
+      "La formule pour calculer le ROI de l'IA, gains en temps, impact revenue et cout reel. Exemple chiffre sur un SaaS B2B de 15 commerciaux.",
     url: "https://ceres.agency/blog/roi-ia-b2b-calculer",
     type: "article",
   },

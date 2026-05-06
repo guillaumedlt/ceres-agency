@@ -1,10 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Mentions legales",
-  description: "Mentions legales du site ceres.agency, edite par Ceres Growth Marketing.",
-};
 
 export default function MentionsLegalesPage() {
   return (

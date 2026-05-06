@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "HubSpot gratuit : limites et quand passer en Pro | Ceres",
   description:
-    "Les 5 limites qui bloquent en HubSpot Free. A quel moment passer en Starter ou Pro. Le cout reel et la migration.",
+    "Les 5 limites qui bloquent en HubSpot Free et a quel moment passer en Starter ou Pro. Le cout reel de la migration et les gains attendus.",
   keywords: [
     "HubSpot gratuit",
     "HubSpot Free",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HubSpot gratuit : limites et quand passer en Pro | Ceres",
     description:
-      "Les 5 limites qui bloquent en HubSpot Free. A quel moment passer en Starter ou Pro. Le cout reel et la migration.",
+      "Les 5 limites qui bloquent en HubSpot Free et a quel moment passer en Starter ou Pro. Le cout reel de la migration et les gains attendus.",
     url: "https://ceres.agency/blog/hubspot-gratuit-limites-quand-passer-pro",
     type: "article",
   },

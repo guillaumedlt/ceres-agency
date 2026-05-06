@@ -11,6 +11,15 @@ export const metadata: Metadata = {
     "hubspot sante",
     "crm medical",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/revops-healthtech",
+  },
+  openGraph: {
+    title: "RevOps pour Healthtech et medtech | Ceres",
+    description: "RevOps specialise sante et medtech. Cycles de vente longs, multi-decideurs, compliance RGPD sante, pipeline complexe et HubSpot sur mesure.",
+    url: "https://ceres.agency/revops-healthtech",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

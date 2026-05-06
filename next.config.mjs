@@ -262,6 +262,174 @@ const nextConfig = {
       // SEO : consultant-claude -> agence-claude
       { source: "/consultant-claude", destination: "/agence-claude", permanent: true },
       { source: "/expert-claude", destination: "/agence-claude", permanent: true },
+
+      // Ancien site : sections /sectors/
+      { source: "/sectors/:slug*", destination: "/", permanent: true },
+      { source: "/sectors", destination: "/", permanent: true },
+
+      // Ancien site : /expertises/
+      { source: "/expertises/:path*", destination: "/agence-revops", permanent: true },
+
+      // Ancien site : /services/
+      { source: "/services/:path*", destination: "/", permanent: true },
+
+      // Ancien site : /hubspot/ (anciennes pages hub)
+      { source: "/hubspot/integration-custom", destination: "/integration-hubspot", permanent: true },
+      { source: "/hubspot/audit", destination: "/audit-revops", permanent: true },
+      { source: "/hubspot/marketing-ops", destination: "/hubspot-marketing-hub", permanent: true },
+      { source: "/hubspot/sales-ops", destination: "/hubspot-sales-hub", permanent: true },
+      { source: "/hubspot/service-ops", destination: "/agence-hubspot", permanent: true },
+      { source: "/hubspot/support-accompagnement", destination: "/revops-part-time", permanent: true },
+      { source: "/hubspot/integration-aircall", destination: "/integration-hubspot", permanent: true },
+      { source: "/hubspot/:slug*", destination: "/agence-hubspot", permanent: true },
+
+      // Ancien site : /avis-clients/ -> /cas-clients/
+      { source: "/avis-clients/total-energie", destination: "/cas-clients/totalenergies", permanent: true },
+      { source: "/avis-clients/toucan-toco", destination: "/cas-clients", permanent: true },
+      { source: "/avis-clients/toucantoco", destination: "/cas-clients", permanent: true },
+      { source: "/avis-clients/:slug*", destination: "/cas-clients", permanent: true },
+      { source: "/avis-clients", destination: "/cas-clients", permanent: true },
+
+      // Ancien site : /case-studies/ -> /cas-clients/
+      { source: "/case-studies/:slug*", destination: "/cas-clients", permanent: true },
+      { source: "/case-studies", destination: "/cas-clients", permanent: true },
+
+      // Ancien site : /cas-client/ (singulier)
+      { source: "/cas-client/:slug*", destination: "/cas-clients", permanent: true },
+
+      // Ancien site : /fr/ (ancienne version multilingue)
+      { source: "/fr/:path*", destination: "/:path*", permanent: true },
+
+      // Ancien site : /backoffice/
+      { source: "/backoffice/:path*", destination: "/", permanent: true },
+
+      // Ancien site : /outils/ sous-pages
+      { source: "/outils/hubspot", destination: "/crm-hubspot", permanent: true },
+      { source: "/outils/salesforce", destination: "/hubspot-vs-salesforce", permanent: true },
+      { source: "/outils/brevo", destination: "/blog/brevo-vs-hubspot", permanent: true },
+
+      // Ancien site : /tools/ et /tools-stack
+      { source: "/tools/:slug*", destination: "/outils", permanent: true },
+
+      // Ancien site : /integrateur-connecteurs-hubspot
+      { source: "/integrateur-connecteurs-hubspot", destination: "/integration-hubspot", permanent: true },
+
+      // Ancien site : /meilleurs-outils-revops
+      { source: "/meilleurs-outils-revops", destination: "/outils", permanent: true },
+
+      // Ancien site : /mini-guide-*
+      { source: "/mini-guide-outbound", destination: "/guide-outbound-b2b", permanent: true },
+      { source: "/mini-guide-revops", destination: "/guide-revops-ultime", permanent: true },
+
+      // Ancien site : /guides/
+      { source: "/guides/mini-guide-revops", destination: "/guide-revops-ultime", permanent: true },
+      { source: "/guides/mini-guide-outbound", destination: "/guide-outbound-b2b", permanent: true },
+      { source: "/guides/implementation-hubspot", destination: "/onboarding-hubspot", permanent: true },
+      { source: "/guides/:slug+", destination: "/guides", permanent: true },
+
+      // Ancien site : /guide/
+      { source: "/guide/:slug+", destination: "/guides", permanent: true },
+
+      // Ancien site : /agency/
+      { source: "/agency/:slug*", destination: "/a-propos", permanent: true },
+
+      // Ancien site : /acquisition-strategy
+      { source: "/acquisition-strategy", destination: "/", permanent: true },
+
+      // Ancien site : /downloads
+      { source: "/downloads", destination: "/guides", permanent: true },
+
+      // Ancien site : /finance-billing-automation
+      { source: "/finance-billing-automation", destination: "/automatisation-commerciale", permanent: true },
+
+      // Ancien site : /solutions/
+      { source: "/solutions/:slug*", destination: "/agents-ia", permanent: true },
+
+      // Ancien site : /inbound-marketing/
+      { source: "/inbound-marketing/:slug*", destination: "/blog/inbound-marketing-b2b-revops", permanent: true },
+
+      // Ancien site : anciennes landing pages
+      { source: "/lp/agence-brevo", destination: "/blog/brevo-vs-hubspot", permanent: true },
+      { source: "/lp/agence-brevo-:city*", destination: "/blog/brevo-vs-hubspot", permanent: true },
+      { source: "/lp/agence-n8n", destination: "/blog/zapier-vs-make-vs-n8n-revops", permanent: true },
+      { source: "/lp/agence-folk", destination: "/hubspot-vs-folk", permanent: true },
+      { source: "/lp/agence-apollo", destination: "/blog/comparatif-outils-generation-leads-enrichissement", permanent: true },
+      { source: "/lp/agence-marketing-ops", destination: "/agence-revops", permanent: true },
+      { source: "/lp/agence-sales-ops", destination: "/agence-revops", permanent: true },
+      { source: "/lp/agence-crm", destination: "/agence-hubspot", permanent: true },
+      { source: "/lp/agence-salesforce", destination: "/migration-salesforce-hubspot", permanent: true },
+      { source: "/lp/agence-attio-paris", destination: "/agence-attio", permanent: true },
+      { source: "/lp/agence-attio", destination: "/agence-attio", permanent: true },
+      { source: "/lp/agence-hubspot", destination: "/agence-hubspot", permanent: true },
+
+      // Ancien site : anciens articles de blog
+      { source: "/blog/gestion-du-churn-dans-hubspot", destination: "/blog/ia-customer-success-detection-churn", permanent: true },
+      { source: "/blog/optimiser-seo-hubspot", destination: "/blog/geo-optimiser-site-llm", permanent: true },
+      { source: "/blog/avantage-externaliser-gestion-crm", destination: "/blog/externaliser-revops-avantages-inconvenients", permanent: true },
+      { source: "/blog/synchronisation-des-objets-customs-entre-hubspot-et-salesforce", destination: "/blog/hubspot-vs-salesforce-comparatif", permanent: true },
+      { source: "/blog/comment-recruter-et-structurer-une-equipe-revops", destination: "/blog/structurer-equipe-revops", permanent: true },
+      { source: "/blog/meilleures-pratique-sequence-hubspot", destination: "/blog/meilleures-pratiques-sequences-hubspot", permanent: true },
+      { source: "/blog/tendances-revops-2026", destination: "/blog/stack-technologique-revops-2026", permanent: true },
+      { source: "/blog/comment-implanter-le-lead-scoring-guide-hubspot", destination: "/blog/lead-scoring-guide-complet", permanent: true },
+      { source: "/blog/pandadoc-hubspot-comment-simplifier-la-vie-de-vos-sales", destination: "/blog/9-actions-commerciales-automatiser-hubspot", permanent: true },
+      { source: "/blog/hubspot-comparatif-des-integrations-de-gestion-devenements-et-webinaire", destination: "/blog/integration-hubspot-whatsapp", permanent: true },
+      { source: "/blog/comment-peut-on-mettre-en-place-une-structure-revops-et-pourquoi-est-il-important-de-sy-interesser", destination: "/revops", permanent: true },
+      { source: "/blog/hubspot-vs-pipedrive", destination: "/blog/hubspot-vs-pipedrive-comparatif-prix-fonctionnalites", permanent: true },
+      { source: "/blog/construire-une-strategie-revops", destination: "/blog/revops-startups-par-ou-commencer", permanent: true },
+      { source: "/blog/revops-comment-gerer-la-resistance-au-changement", destination: "/blog/aligner-marketing-sales-revops", permanent: true },
+      { source: "/blog/evaluer-sa-maturite-revops", destination: "/blog/audit-revops-checklist-complete", permanent: true },
+      { source: "/blog/reussir-migration-donnees-crm-hubspot", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/formater-ses-donnees-pour-une-migration-crm-reussie", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/comment-savoir-dou-viennent-vos-conversions-telephoniques", destination: "/blog/tracking-conversions-hubspot-guide-complet", permanent: true },
+      { source: "/blog/hubspot-score-des-leads-engagement-fit", destination: "/blog/lead-scoring-guide-complet", permanent: true },
+      { source: "/blog/automatisation-optimisation-service-ops-hubspot", destination: "/blog/9-actions-commerciales-automatiser-hubspot", permanent: true },
+      { source: "/blog/quand-clay-devient-la-piece-manquante-de-ta-stack-revops-et-comment-lintegrer-proprement", destination: "/blog/clay-enrichissement-donnees-b2b-guide", permanent: true },
+      { source: "/blog/comment-bien-structurer-et-maintenir-vos-workflows-a-moyen-et-long-terme", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/les-workflows-hubspot-essentiels-pour-closer-plus-plus-rapidement", destination: "/blog/9-actions-commerciales-automatiser-hubspot", permanent: true },
+      { source: "/blog/hubspot-facebook-ads-connection-des-audiences", destination: "/blog/tracking-conversions-hubspot-guide-complet", permanent: true },
+      { source: "/blog/hubspot-le-tableau-de-bord-ideal-pour-suivre-vos-ventes", destination: "/blog/kpi-commerciaux-indicateurs-vente", permanent: true },
+      { source: "/blog/revops-boucle-fermee-donnee-autoapprenante", destination: "/blog/metriques-revops-indicateurs-performance", permanent: true },
+      { source: "/blog/erreurs-courantes-workflow-hubspot", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/hubspot-cms-les-fondamentaux-pour-une-creer-un-site-internet-performant", destination: "/blog/hubspot-cms-fondamentaux-site-internet-performant", permanent: true },
+      { source: "/blog/le-single-keyword-ad-group-skag-pour-google-ads-bonne-idee-ou-pas", destination: "/blog/skag-single-keyword-ad-group-google-ads", permanent: true },
+      { source: "/blog/hubspot-linkedin-ads-comment-generer-des-leads", destination: "/blog/cold-email-b2b-templates", permanent: true },
+      { source: "/blog/marketing-automation-comment-generer-des-leads-a-faible-cout-en-b2b", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/cest-quoi-de-lacquisition-en-marketing", destination: "/blog/cest-quoi-acquisition-marketing", permanent: true },
+      { source: "/blog/erreurs-implementation-crm", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/integrer-ia-strategie-revops", destination: "/blog/ia-processus-commercial-vente-b2b", permanent: true },
+      { source: "/blog/churn-analysis-identifier-et-reduire-attrition", destination: "/blog/ia-customer-success-detection-churn", permanent: true },
+      { source: "/blog/revops-comment-eviter-les-erreurs", destination: "/blog/revops-10-quick-wins-30-jours", permanent: true },
+      { source: "/blog/revops-management-externaliser-ou-embaucher-en-interne", destination: "/blog/externaliser-revops-avantages-inconvenients", permanent: true },
+      { source: "/blog/migration-des-donn%C3%A9es-de-zendesk-vers-hubspot-service-guide-complet", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/ab-test-hubspot-marketing", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+
+      // Ancien site : /agence-hubspot-monaco
+      { source: "/agence-hubspot-monaco", destination: "/agence-hubspot", permanent: true },
+
+      // Ancien site : anciennes pages diverses
+      { source: "/service-support-ops", destination: "/agence-hubspot", permanent: true },
+      { source: "/resources/:slug*", destination: "/outils", permanent: true },
+
+      // Ancien site : anciens articles de blog (batch 2)
+      { source: "/blog/choisir-agence-hubspot", destination: "/blog/top-agences-revops-france", permanent: true },
+      { source: "/blog/raccourcir-cycle-vente-b2b", destination: "/blog/ia-processus-commercial-vente-b2b", permanent: true },
+      { source: "/blog/lead-nurturing-guide", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/cout-migration-crm-estimation", destination: "/blog/migration-crm-guide-complet", permanent: true },
+      { source: "/blog/les-sieges-hubspot-nouveau-pricing-nouveau-format", destination: "/blog/hubspot-tarifs-prix-2026", permanent: true },
+      { source: "/blog/10-astuces-incontournables-pour-optimiser-les-workflows-de-marketing-automation-sur-hubspot", destination: "/blog/marketing-automation-7-workflows-hubspot", permanent: true },
+      { source: "/blog/tout-savoir-sur-la-sandbox-lancee-par-hubspot", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/configurer-aircall-avec-hubspot", destination: "/blog/integration-hubspot-whatsapp", permanent: true },
+      { source: "/blog/comment-gerer-votre-revenu-recurrent-mrr-dans-hubspot", destination: "/blog/gerer-mrr-revenu-recurrent-hubspot", permanent: true },
+      { source: "/blog/le-test-les-objets-custom-hubspot", destination: "/blog/hubspot-ia-fonctionnalites", permanent: true },
+      { source: "/blog/comprendre-les-canaux-dacquisition-definition-types-et-rentabilite", destination: "/blog/cest-quoi-acquisition-marketing", permanent: true },
+
+      // Ancien site : /cas-clients/ qui n'existent plus
+      { source: "/cas-clients/metron-zuora", destination: "/cas-clients", permanent: true },
+      { source: "/cas-clients/toucantoco", destination: "/cas-clients", permanent: true },
+      { source: "/cas-clients/fauve", destination: "/cas-clients", permanent: true },
+      { source: "/cas-clients/thehackingproject", destination: "/cas-clients", permanent: true },
+      { source: "/cas-clients/evidenceb", destination: "/cas-clients", permanent: true },
+      { source: "/cas-clients/uny", destination: "/cas-clients", permanent: true },
     ];
   },
 };

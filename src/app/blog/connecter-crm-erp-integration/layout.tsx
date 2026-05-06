@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Connecter CRM et ERP : guide d'integration B2B | Ceres",
   description:
-    "Les flux a synchroniser, les architectures, les outils (Make, n8n), les erreurs classiques. Guide pour PME B2B.",
+    "Les flux a synchroniser entre CRM et ERP, les architectures, les outils (Make, n8n) et les erreurs classiques. Guide complet pour PME B2B.",
   keywords: [
     "integration CRM ERP",
     "CRM ERP",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Connecter CRM et ERP : guide d'integration B2B | Ceres",
     description:
-      "Les flux a synchroniser, les architectures, les outils (Make, n8n), les erreurs classiques. Guide pour PME B2B.",
+      "Les flux a synchroniser entre CRM et ERP, les architectures, les outils (Make, n8n) et les erreurs classiques. Guide complet pour PME B2B.",
     url: "https://ceres.agency/blog/connecter-crm-erp-integration",
     type: "article",
   },

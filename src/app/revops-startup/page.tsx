@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
@@ -328,6 +326,22 @@ export default function RevOpsStartupPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+        <Connector />
+
+        {/* ───── Related ───── */}
+        <section>
+          <p className="text-[13px] text-[#777] text-center mb-3">Vous avez depasse le stade startup ? Decouvrez nos offres pour les scale-ups :</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link href="/agence-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#FF7A59] hover:text-[#E5684A] transition-colors">
+              Agence RevOps
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
+            <Link href="/tarifs" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Voir nos tarifs
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </Link>
           </div>
         </section>
         <Connector />

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
@@ -133,7 +131,7 @@ export default function ConsultantRevOpsPage() {
             Consultant RevOps France
           </h1>
           <p className="text-[17px] text-[#666] max-w-[560px] mx-auto leading-[1.7] mb-4">
-            Un expert Revenue Operations integre a votre equipe. Il aligne vos operations Marketing, Sales et CS, deploie votre stack et pilote votre croissance par la donnee.
+            Un expert Revenue Operations integre a votre equipe. Il aligne vos operations Marketing, Sales et CS, deploie votre stack et pilote votre croissance par la donnee. Chez Ceres, <Link href="/agence-revops" className="text-[#4B5EFC] hover:underline">agence RevOps de reference</Link>, on met a disposition des consultants operationnels des la premiere semaine.
           </p>
           <p className="text-[14px] text-[#999] max-w-[500px] mx-auto leading-[1.6] mb-8">
             Le consultant RevOps est le profil le plus recherche et le plus difficile a recruter en France. Chez Ceres, on met a votre disposition un expert RevOps operationnel des la premiere semaine, adosse a une equipe de +10 specialistes.
@@ -166,7 +164,7 @@ export default function ConsultantRevOpsPage() {
           <div className="text-center mb-10">
             <div className="mb-4"><Badge>Definition</Badge></div>
             <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">C&apos;est quoi un consultant RevOps ?</h2>
-            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Le Revenue Operations (RevOps) est la fonction qui unifie les operations de Marketing, Sales et Customer Success. Le consultant RevOps est celui qui met cette vision en pratique dans votre entreprise.</p>
+            <p className="text-[13px] text-[#999] max-w-[520px] mx-auto">Le Revenue Operations (RevOps) est la fonction qui unifie les operations de Marketing, Sales et Customer Success. Le consultant RevOps est celui qui met cette vision en pratique dans votre entreprise, en s&apos;appuyant sur une <Link href="/fondation-data" className="text-[#6D00CC] hover:underline">fondation data</Link> solide et une <Link href="/methode" className="text-[#4B5EFC] hover:underline">methode eprouvee</Link>.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {definition.map((item) => (
@@ -251,7 +249,7 @@ export default function ConsultantRevOpsPage() {
             <div className="mb-6">
               <div className="mb-4"><Badge>Processus</Badge></div>
               <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Comment on travaille avec vous</h2>
-              <p className="text-[13px] text-[#999] mt-2">Un processus simple, transparent et oriente resultats. Pas de consulting theatre.</p>
+              <p className="text-[13px] text-[#999] mt-2">Un processus simple, transparent et oriente resultats. Pas de consulting theatre. Decouvrez notre <Link href="/methode" className="text-[#4B5EFC] hover:underline">methode complete</Link>.</p>
             </div>
             <div className="space-y-3">
               {howWeWork.map((step) => (
@@ -305,7 +303,7 @@ export default function ConsultantRevOpsPage() {
           <div className="text-center mb-10">
             <div className="mb-4"><Badge>Tarifs</Badge></div>
             <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Consultant RevOps Part-Time : nos formules</h2>
-            <p className="text-[13px] text-[#999] max-w-[480px] mx-auto">Pas d&apos;engagement long terme. Vous ajustez le volume chaque mois selon vos besoins. Preavis de 30 jours, c&apos;est tout.</p>
+            <p className="text-[13px] text-[#999] max-w-[480px] mx-auto">Pas d&apos;engagement long terme. Vous ajustez le volume chaque mois selon vos besoins. Preavis de 30 jours, c&apos;est tout. Voir tous nos <Link href="/tarifs" className="text-[#4B5EFC] hover:underline">tarifs detailles</Link>.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {partTimeOffer.map((offer) => (
@@ -328,23 +326,86 @@ export default function ConsultantRevOpsPage() {
         </section>
         <Connector />
 
-        {/* Liens */}
+        {/* ───── Temoignages ───── */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>T{"\u00e9"}moignages</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em]">
+              Ce que nos clients disent
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { quote: "Ce qui nous a rassur\u00e9s, c\u2019est qu\u2019ils comprennent les enjeux business, pas juste la technique.", name: "Ludovic R., VP Sales", company: "Ringover", color: "#22C55E" },
+              { quote: "On a compar\u00e9 avec 3 agences. Ceres \u00e9tait la seule \u00e0 proposer un diagnostic avant de vendre.", name: "Hamza, Head of Sales", company: "Beedeez", color: "#8B5CF6" },
+              { quote: "L\u2019\u00e9quipe Ceres est ultra r\u00e9active. On a toujours une r\u00e9ponse dans la journ\u00e9e.", name: "Antoine C., Head of Sales", company: "Iroko", color: "#4B5EFC" },
+            ].map((t, i) => (
+              <div key={i} className="rounded-2xl border border-[#E8E8E8] bg-white p-6 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <div className="w-6 h-1 rounded-full mb-4" style={{ backgroundColor: t.color }} />
+                <p className="text-[12px] text-[#555] leading-[1.7] mb-4 italic">&laquo; {t.quote} &raquo;</p>
+                <div>
+                  <p className="text-[12px] font-semibold text-[#111]">{t.name}</p>
+                  <p className="text-[11px] text-[#999]">{t.company}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Connector />
+
+        {/* Pages liees */}
         <section className="mt-12 mb-8">
-          <div className="mb-4"><Badge>A decouvrir</Badge></div>
+          <div className="mb-4"><Badge>Pages li{"\u00e9"}es</Badge></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <Link href="/methode" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+            <Link href="/agence-revops" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
-                <h3 className="text-[14px] font-semibold text-[#111]">Notre methode</h3>
+                <h3 className="text-[14px] font-semibold text-[#111]">Agence RevOps</h3>
               </div>
-              <p className="text-[12px] text-[#777] leading-[1.65]">Decouvrez la methodologie Data, IA et RevOps qui guide chaque mission.</p>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Notre offre agence RevOps complete : audit, build et scale.</p>
             </Link>
-            <Link href="/agence-claude" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+            <Link href="/fondation-data" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
-                <h3 className="text-[14px] font-semibold text-[#111]">Agence Claude</h3>
+                <h3 className="text-[14px] font-semibold text-[#111]">Fondation Data</h3>
               </div>
-              <p className="text-[12px] text-[#777] leading-[1.65]">On deploie Claude dans vos operations B2B.</p>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Le prerequis a toute initiative IA : des donnees propres et structurees.</p>
+            </Link>
+            <Link href="/agents-ia" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#6D00CC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Agents IA</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Des agents Claude connectes a votre CRM via MCP.</p>
+            </Link>
+            <Link href="/cas-clients" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#22C55E" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Cas clients</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">13 cas clients documentes avec resultats mesurables.</p>
+            </Link>
+          </div>
+        </section>
+        <Connector />
+
+        {/* ───── Ressources blog ───── */}
+        <section className="mb-8">
+          <div className="mb-4"><Badge>Ressources</Badge></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/blog/revops-manager-fiche-poste-salaire-competences" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#FF7A59" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">RevOps Manager : fiche poste</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Salaire, competences et missions du RevOps Manager en 2026.</p>
+            </Link>
+            <Link href="/blog/externaliser-revops-avantages-inconvenients" className="rounded-2xl border border-[#E8E8E8] bg-white p-5 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all group">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: "#4B5EFC" }} />
+                <h3 className="text-[14px] font-semibold text-[#111]">Externaliser le RevOps</h3>
+              </div>
+              <p className="text-[12px] text-[#777] leading-[1.65]">Les avantages et inconvenients de l&apos;externalisation RevOps.</p>
             </Link>
           </div>
         </section>

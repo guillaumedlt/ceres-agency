@@ -1,10 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Politique de confidentialite",
-  description: "Politique de confidentialite et de protection des donnees personnelles du site ceres.agency.",
-};
 
 export default function PolitiqueConfidentialitePage() {
   return (

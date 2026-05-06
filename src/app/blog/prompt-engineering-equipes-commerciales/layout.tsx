@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Prompt engineering pour equipes commerciales | Ceres",
   description:
-    "5 prompts concrets pour les commerciaux : briefing, email, resume call, proposition, analyse win/loss.",
+    "5 prompts concrets pour les commerciaux B2B : briefing prospect, email personnalise, resume call, proposition et analyse win/loss. Guide pratique.",
   keywords: [
     "prompt engineering",
     "prompt commercial",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Prompt engineering pour equipes commerciales | Ceres",
     description:
-      "5 prompts concrets pour les commerciaux : briefing, email, resume call, proposition, analyse win/loss.",
+      "5 prompts concrets pour les commerciaux B2B : briefing prospect, email personnalise, resume call, proposition et analyse win/loss. Guide pratique.",
     url: "https://ceres.agency/blog/prompt-engineering-equipes-commerciales",
     type: "article",
   },

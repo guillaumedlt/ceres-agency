@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     "operations hub prix",
     "hubspot revops",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/hubspot-operations-hub",
+  },
+  openGraph: {
+    title: "HubSpot Operations Hub : guide et deploiement | Ceres",
+    description: "Guide complet HubSpot Operations Hub : data sync, data quality, programmable automation, datasets, custom code. Plans, prix et deploiement RevOps par Ceres.",
+    url: "https://ceres.agency/hubspot-operations-hub",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

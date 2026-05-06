@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     "hubspot erp integration",
     "integration hubspot france",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/integration-hubspot",
+  },
+  openGraph: {
+    title: "Integration HubSpot | Connectez vos outils | Ceres",
+    description: "Integration HubSpot avec Salesforce, Slack, Make, Lemlist, Clay, ERP et +1500 outils. API, iPaaS, webhooks. Approche RevOps. Devis gratuit.",
+    url: "https://ceres.agency/integration-hubspot",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

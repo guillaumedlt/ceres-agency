@@ -1,22 +1,6 @@
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import Link from "next/link";
-
-/* ─── Metadata ─────────────────────────────────────────────────────────────── */
-
-export const metadata: Metadata = {
-  title: "Agence HubSpot Toulouse | Optimisation CRM | Ceres",
-  description:
-    "Agence HubSpot a Toulouse. Configuration, migration et optimisation CRM pour entreprises d'Occitanie. Partenaire certifie.",
-  keywords: [
-    "agence hubspot toulouse",
-    "hubspot toulouse",
-    "consultant hubspot toulouse",
-    "crm toulouse",
-  ],
-  alternates: { canonical: "https://www.ceres-music.com/agence-hubspot-toulouse" },
-};
 
 /* ─── Data ──────────────────────────────────────────────────────────────────── */
 
@@ -103,7 +87,7 @@ const jsonLd = {
         addressRegion: "Occitanie",
         addressCountry: "FR",
       },
-      url: "https://www.ceres-music.com/agence-hubspot-toulouse",
+      url: "https://ceres.agency/agence-hubspot-toulouse",
       areaServed: { "@type": "City", name: "Toulouse" },
       priceRange: "\u20ac\u20ac\u20ac",
     },

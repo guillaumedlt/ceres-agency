@@ -40,10 +40,10 @@ const iaCapabilities = [
 ];
 
 const offers = [
-  { id: "diagnostic", title: "Diagnostic", subtitle: "Audit CRM, RevOps et data quality", desc: "On audite votre CRM, vos process RevOps, votre stack et la qualite de vos donnees. Vous repartez avec un plan clair : ou en etes-vous, quels sont les trous, par ou commencer.", color: "#FF7A59", features: ["Audit CRM et process RevOps", "Score de maturite data + RevOps", "Cartographie de la stack", "Plan d'action a 90 jours"], href: "/audit-revops" },
-  { id: "data", title: "Fondation Data", subtitle: "CRM propre, KPIs alignes, pret pour l'IA", desc: "On nettoie votre base CRM, standardise vos donnees, unifie les flux entre vos outils et definit les KPIs par silo. C'est la fondation RevOps sur laquelle l'IA peut operer.", color: "#22C55E", features: ["Deduplication et nettoyage CRM", "Standardisation et enrichissement", "Gouvernance automatisee", "KPIs RevOps definis par silo"], href: "/fondation-data" },
-  { id: "ia", title: "Deploiement IA", subtitle: "L'IA qui optimise chaque silo RevOps", desc: "On deploie des agents IA silo par silo sur votre CRM : scoring, enrichissement, reporting, detection de churn. L'IA orchestre vos operations, les equipes se concentrent sur ce qui cree de la valeur.", color: "#6D00CC", features: ["Agents IA connectes au CRM", "Un agent par silo, mesure", "Orchestration RevOps cross-silo", "Formation incluse"], href: "/agents-ia" },
-  { id: "continu", title: "Accompagnement continu", subtitle: "Un expert RevOps & IA chaque mois", desc: "Un expert integre a votre equipe qui pilote votre CRM, optimise les agents IA, itere sur les process RevOps et deploie de nouvelles briques. L'avantage se compose avec le temps.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Optimisation IA continue", "Veille techno et formation", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
+  { id: "diagnostic", title: "Diagnostic", subtitle: "Audit CRM, process et data", desc: "On audite votre CRM, vos process commerciaux, votre stack et la qualite de vos donnees. Vous repartez avec un plan clair et des quick wins.", color: "#FF7A59", features: ["Audit CRM et process commerciaux", "Score de maturite RevOps", "Cartographie de la stack", "Plan d'action a 90 jours"], href: "/audit-revops" },
+  { id: "data", title: "Fondation Data", subtitle: "CRM propre, KPIs alignes", desc: "On nettoie votre base CRM, standardise vos donnees, unifie les flux entre vos outils et definit les KPIs par silo. La fondation sur laquelle tout repose.", color: "#22C55E", features: ["Deduplication et nettoyage CRM", "Standardisation et enrichissement", "Gouvernance automatisee", "KPIs definis par silo"], href: "/fondation-data" },
+  { id: "ops", title: "Automatisation", subtitle: "Workflows, scoring, reporting", desc: "On automatise vos process commerciaux : lead routing, scoring, sequences, reporting, enrichissement. Les equipes se concentrent sur ce qui cree de la valeur.", color: "#6D00CC", features: ["Workflows et automatisations", "Scoring et lead routing", "Reporting automatise", "Formation incluse"], href: "/agents-ia" },
+  { id: "continu", title: "Accompagnement", subtitle: "Un expert RevOps dedie chaque mois", desc: "Un expert integre a votre equipe qui pilote votre CRM, optimise vos process, itere sur les operations et deploie de nouvelles briques. Sans engagement.", color: "#4B5EFC", features: ["Channel Slack dedie", "Iterations hebdomadaires", "Pilotage CRM continu", "Veille et formation", "Sans engagement"], badge: "Populaire", href: "/revops-part-time" },
 ];
 
 function CardStack({ colors }: { colors: string[] }) {
@@ -112,7 +112,7 @@ export default function Services() {
     switch (active) {
       case "diagnostic": return ["#FF7A59", "#4B5EFC", "#6C5CE7", "#22C55E"];
       case "data": return ["#22C55E", "#4B5EFC", "#FF7A59", "#6D00CC"];
-      case "ia": return selectedIA.map((id) => iaCapabilities.find((c) => c.id === id)?.color || "#CCC");
+      case "ops": return ["#6D00CC", "#FF7A59", "#22C55E", "#4B5EFC"];
       case "continu": return ["#4B5EFC", "#6D00CC", "#22C55E", "#FF7A59"];
       default: return [];
     }
@@ -124,8 +124,8 @@ export default function Services() {
         <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
           <div className="mb-8">
             <div className="mb-4"><Badge>Nos offres</Badge></div>
-            <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">Choisissez votre point d&apos;entree</h2>
-            <p className="text-[13px] text-[#999]">4 etapes progressives. Diagnostic, data, IA, accompagnement. Commencez la ou vous en etes.</p>
+            <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">Nos offres</h2>
+            <p className="text-[13px] text-[#999]">Du diagnostic a l&apos;accompagnement. Commencez la ou vous en etes.</p>
           </div>
 
           {/* Tabs — 4 columns */}

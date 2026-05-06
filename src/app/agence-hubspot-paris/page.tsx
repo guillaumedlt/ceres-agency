@@ -32,6 +32,15 @@ const certifications = [
   { hub: "Data Integrations", level: "Accreditation", color: "#D4A27F" },
 ];
 
+const secteursParis = [
+  { titre: "Fintech & Assurtech", desc: "Alan, Qonto, Spendesk, Lydia : Paris est la capitale fintech europeenne. Ces entreprises ont des cycles de vente complexes, des enjeux de conformite (ACPR, RGPD) et des stacks techniques exigeantes. On configure HubSpot pour gerer les pipelines multi-produits, le scoring reglementaire et les integrations avec les outils metier financiers.", color: "#FF7A59" },
+  { titre: "SaaS B2B", desc: "Parisiennes ou francaises, les scale-ups SaaS sont notre coeur de metier. De Lemlist a Kameleoon en passant par Beedeez, on connait les enjeux : product-led growth, self-serve + sales-assist, expansion revenue, churn management. HubSpot est le CRM ideal pour ces modeles et on sait le configurer en consequence.", color: "#4B5EFC" },
+  { titre: "Luxe & Retail", desc: "Paris est la capitale mondiale du luxe. LVMH, Kering, Hermes et des centaines de maisons ont leur siege ici. Leurs enjeux CRM sont specifiques : clienteling, omnicanal, relation client ultra-personnalisee. On adapte HubSpot a ces standards d'exigence.", color: "#6C5CE7" },
+  { titre: "Media & Adtech", desc: "L'ecosysteme media et publicitaire parisien est dense : agences, regies, editeurs, adtech. Ces entreprises gerent des centaines de comptes, des cycles courts et du volume. On configure HubSpot pour le multi-pipeline, l'attribution et le reporting temps reel.", color: "#22C55E" },
+  { titre: "Conseil & Services B2B", desc: "Cabinets de conseil, ESN, agences : Paris concentre la majorite des entreprises de services B2B francaises. Leurs enjeux CRM : gestion des proposals, staffing, pipe de recurrence, upsell sur base installee. On structure HubSpot autour de ces process specifiques.", color: "#D4A27F" },
+  { titre: "Healthtech & Biotech", desc: "Doctolib, Alan, Lifen : le secteur healthtech parisien explose. Enjeux specifiques de conformite HDS, cycles de vente longs avec les etablissements de sante, onboarding complexe. HubSpot bien configure est un levier d'acceleration pour ces entreprises.", color: "#6D00CC" },
+];
+
 const clients = [
   { name: "TotalEnergies", domain: "totalenergies.com" },
   { name: "Alan", domain: "alan.com" },
@@ -61,22 +70,22 @@ const tarifs = [
 ];
 
 const faqItems = [
-  { q: "Combien co\u00fbte une agence HubSpot \u00e0 Paris ?", a: "Le co\u00fbt d\u00e9pend du p\u00e9rim\u00e8tre : un audit d\u00e9marre \u00e0 2 500\u00a0\u20ac, un setup complet entre 5 000 et 15 000\u00a0\u20ac, une migration entre 8 000 et 25 000\u00a0\u20ac. L\u2019appel de cadrage est gratuit et sans engagement." },
-  { q: "Pourquoi choisir HubSpot plut\u00f4t que Salesforce ?", a: "HubSpot offre une interface plus intuitive, une adoption plus rapide par les \u00e9quipes, un co\u00fbt total de possession inf\u00e9rieur et une IA native int\u00e9gr\u00e9e (Breeze). Salesforce reste pertinent pour les tr\u00e8s grandes organisations avec des process ultra-complexes." },
-  { q: "Combien de temps pour migrer de Salesforce vers HubSpot ?", a: "Entre 4 et 8 semaines en moyenne, selon le volume de donn\u00e9es et la complexit\u00e9 des workflows. On inclut syst\u00e9matiquement une p\u00e9riode de double-run pour z\u00e9ro interruption." },
-  { q: "\u00cates-vous partenaire officiel HubSpot ?", a: "Oui. Nous sommes partenaire certifi\u00e9 HubSpot avec plus de 250 clients accompagn\u00e9s et 9 ans d\u2019exp\u00e9rience. Nos consultants sont certifi\u00e9s sur l\u2019ensemble des Hubs : Sales, Marketing, Service et Operations." },
-  { q: "Proposez-vous des formations HubSpot sur site \u00e0 Paris ?", a: "Oui, nous nous d\u00e9pla\u00e7ons dans vos locaux parisiens pour des formations adapt\u00e9es \u00e0 vos process. Formations par \u00e9quipe (Sales, Marketing, CS) avec exercices sur vos propres donn\u00e9es." },
-  { q: "Peut-on garder Salesforce et ajouter HubSpot Marketing ?", a: "Absolument. C\u2019est un sc\u00e9nario fr\u00e9quent : Salesforce c\u00f4t\u00e9 Sales, HubSpot c\u00f4t\u00e9 Marketing. On configure la sync bi-directionnelle entre les deux plateformes." },
-  { q: "Quel est votre d\u00e9lai de r\u00e9ponse ?", a: "Nous r\u00e9pondons sous 2h en jours ouvr\u00e9s via Slack d\u00e9di\u00e9. Nous sommes bas\u00e9s \u00e0 Paris, m\u00eame fuseau horaire, pas de d\u00e9calage." },
-  { q: "Travaillez-vous avec des entreprises hors de Paris ?", a: "Oui, nous accompagnons des clients dans toute la France et en Europe. Le travail se fait en remote avec des sessions sur site ponctuelles si n\u00e9cessaire." },
-  { q: "HubSpot est-il adapt\u00e9 aux PME et ETI fran\u00e7aises ?", a: "HubSpot est particuli\u00e8rement adapt\u00e9 aux PME et ETI. L\u2019adoption est imm\u00e9diate, le co\u00fbt ma\u00eetris\u00e9 et la plateforme \u00e9volue avec vous sans n\u00e9cessiter de d\u00e9veloppeurs d\u00e9di\u00e9s." },
-  { q: "Comment se passe un projet type avec votre agence ?", a: "1) Appel de cadrage gratuit. 2) Proposition d\u00e9taill\u00e9e avec p\u00e9rim\u00e8tre et tarif. 3) Ateliers de cadrage process. 4) Configuration / migration. 5) Formation. 6) Go-live et support post-lancement." },
+  { q: "Y a-t-il des agences HubSpot a Paris ?", a: "Oui, plusieurs agences HubSpot sont basees a Paris. Ceres est situee au 128 rue La Boetie dans le 8e arrondissement. Nous sommes partenaire certifie HubSpot depuis 9 ans avec plus de 250 clients accompagnes, principalement des entreprises parisiennes et francaises." },
+  { q: "Peut-on se rencontrer en personne a Paris ?", a: "Absolument. C'est meme notre mode de fonctionnement privilegie. On vous recoit dans nos bureaux du 8e ou on se deplace dans vos locaux parisiens. Les ateliers de cadrage, les formations et les go-live se font systematiquement en presentiel. C'est ce qui fait la difference avec une agence 100% remote." },
+  { q: "Combien coute une agence HubSpot a Paris ?", a: "Un audit demarre a 2 500 euros, un setup complet entre 5 000 et 15 000 euros, une migration entre 8 000 et 25 000 euros. Les tarifs parisiens ne sont pas plus eleves qu'en province : on facture au forfait apres cadrage, pas a la journee. L'appel de cadrage est gratuit." },
+  { q: "Travaillez-vous avec des fintechs et SaaS parisiennes ?", a: "C'est notre coeur de metier. On accompagne des fintechs (conformite ACPR, pipelines multi-produits), des SaaS B2B (PLG, expansion revenue) et des scale-ups tech parisiennes. On connait leurs stacks (Pennylane, Qonto, Lemlist, Clay) et on sait les connecter a HubSpot." },
+  { q: "Proposez-vous des formations HubSpot sur site a Paris ?", a: "Oui. Nos consultants se deplacent dans vos locaux parisiens pour des formations adaptees a vos process. Par equipe (Sales, Marketing, CS, Direction), avec exercices sur vos propres donnees. Format demi-journee ou journee complete, selon vos besoins." },
+  { q: "Quelle est la difference entre votre agence et les bureaux HubSpot a Paris ?", a: "HubSpot France a Paris vend des licences et fournit du support produit. Nous sommes une agence d'implementation : on configure, on migre, on forme et on administre votre HubSpot au quotidien. On travaille en collaboration avec HubSpot France, pas en concurrence." },
+  { q: "Combien de temps pour deployer HubSpot pour une startup parisienne ?", a: "Pour une startup early-stage, comptez 2 a 3 semaines. Pour une scale-up avec des process existants a migrer, 4 a 8 semaines. On adapte le perimetre a votre stade de croissance et a votre budget. Beaucoup de nos clients parisiens ont commence par un setup minimal et ont evolue avec nous." },
+  { q: "Gerez-vous les integrations avec les outils de l'ecosysteme parisien ?", a: "Oui. Pennylane pour la comptabilite, Qonto pour la banque, Lemlist et La Growth Machine pour la prospection, Clay pour l'enrichissement, Claap pour les calls. On connait ces outils parce qu'on travaille avec les memes entreprises que vous a Paris." },
+  { q: "On a Salesforce, peut-on migrer vers HubSpot ?", a: "C'est notre scenario le plus frequent a Paris. Beaucoup de scale-ups parisiennes ont adopte Salesforce trop tot et trouvent la plateforme trop complexe et trop chere pour leur taille. On migre tout : contacts, deals, historique, workflows. Periode de double-run incluse." },
+  { q: "Comment demarrer avec votre agence HubSpot a Paris ?", a: "Appelez-nous ou reservez un creneau en ligne. L'appel de cadrage dure 30 minutes, il est gratuit et sans engagement. On peut aussi se retrouver dans nos bureaux rue La Boetie ou dans les votres. Sous 48h, vous avez une proposition detaillee avec perimetre, planning et tarif." },
 ];
 
 const temoignages = [
-  { citation: "Ceres a migr\u00e9 notre Salesforce vers HubSpot en 5 semaines. L\u2019\u00e9quipe commerciale a adopt\u00e9 le CRM d\u00e8s le premier jour. On aurait d\u00fb faire \u00e7a il y a 2 ans.", auteur: "Directeur Commercial", entreprise: "Scale-up SaaS, Paris 9e" },
-  { citation: "L\u2019audit de notre instance HubSpot a r\u00e9v\u00e9l\u00e9 15 workflows cass\u00e9s et 40% de donn\u00e9es en doublon. En 3 semaines, tout \u00e9tait propre. Le ROI est imm\u00e9diat.", auteur: "Head of Revenue Operations", entreprise: "Fintech, Paris 8e" },
-  { citation: "La formation sur site a transform\u00e9 notre fa\u00e7on d\u2019utiliser HubSpot. Nos commerciaux remplissent enfin le CRM correctement parce qu\u2019ils comprennent pourquoi.", auteur: "VP Sales", entreprise: "SaaS B2B, Paris 2e" },
+  { citation: "On avait besoin d'une agence qui comprenne notre ecosysteme fintech parisien. Ceres a configure HubSpot avec nos contraintes ACPR et nos pipelines multi-produits. L'equipe est venue 3 fois dans nos bureaux a Paris pour les ateliers. Ca change tout par rapport a une agence remote.", auteur: "COO", entreprise: "Fintech, Paris 8e" },
+  { citation: "L'avantage d'avoir une agence HubSpot a Paris, c'est qu'on dejeune ensemble et on regle en 1h ce qui prendrait 3 calls. Ceres a optimise notre HubSpot en 3 semaines : 15 workflows corriges, 12 000 doublons supprimes.", auteur: "Head of Revenue Operations", entreprise: "Scale-up SaaS, Paris 9e" },
+  { citation: "Nos commerciaux n'utilisaient pas Salesforce. Ceres nous a migres vers HubSpot avec des formations sur site a Sentier. Adoption a 95% des le premier mois. Le fait qu'ils connaissent nos outils parisiens (Pennylane, Lemlist) a accelere l'integration.", auteur: "VP Sales", entreprise: "SaaS B2B, Paris 2e" },
 ];
 
 const jsonLd = {
@@ -84,8 +93,8 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      name: "Ceres - Agence HubSpot Paris",
-      description: "Agence HubSpot \u00e0 Paris. Setup, migration, optimisation et formation HubSpot. Partenaire certifi\u00e9, 250+ clients, 9 ans d\u2019exp\u00e9rience.",
+      name: "Ceres - Agence HubSpot Paris 8e",
+      description: "Agence HubSpot de proximite a Paris 8e. Rencontrez nos consultants en personne. Expertise fintech, SaaS et ecosysteme tech parisien. 250+ clients, 9 ans d'experience.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "128 rue La Bo\u00e9tie",
@@ -101,9 +110,9 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      name: "Agence HubSpot Paris",
+      name: "Agence HubSpot Paris 8e",
       provider: { "@type": "Organization", name: "Ceres" },
-      description: "Agence HubSpot \u00e0 Paris sp\u00e9cialis\u00e9e RevOps & IA. Configuration, migration Salesforce, optimisation, formation sur site.",
+      description: "Agence HubSpot de proximite a Paris 8e. Specialisee fintech, SaaS B2B, luxe et ecosysteme tech parisien. Formation sur site, migration, configuration.",
       serviceType: "HubSpot Consulting",
       areaServed: [
         { "@type": "City", name: "Paris" },
@@ -147,10 +156,10 @@ export default function AgenceHubSpotParisPage() {
         <section className="text-center mb-20">
           <div className="mb-4"><Badge>Agence HubSpot Paris</Badge></div>
           <h1 className="text-[36px] sm:text-[48px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-5">
-            Agence HubSpot &agrave; Paris : votre partenaire certifi&eacute;
+            Votre agence HubSpot de proximit&eacute; &agrave; Paris 8e
           </h1>
           <p className="text-[17px] text-[#666] max-w-[580px] mx-auto leading-[1.7] mb-6">
-            Setup, migration, optimisation et formation HubSpot. Bas&eacute;s &agrave; Paris 8e, nous accompagnons les entreprises fran&ccedil;aises dans le d&eacute;ploiement et l&apos;exploitation de HubSpot depuis 9 ans.
+            Rencontrez-nous rue La Bo&eacute;tie dans le 8e arrondissement. Nos consultants HubSpot certifi&eacute;s se d&eacute;placent dans vos locaux parisiens pour le cadrage, la formation et le go-live. 9 ans d&apos;exp&eacute;rience avec l&apos;&eacute;cosyst&egrave;me tech parisien.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
             <div className="text-center">
@@ -291,6 +300,31 @@ export default function AgenceHubSpotParisPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+        <Connector />
+
+        {/* ── 4b. HubSpot et les secteurs cles parisiens ──────────────────── */}
+        <section>
+          <div className="text-center mb-10">
+            <div className="mb-4"><Badge>&Eacute;cosyst&egrave;me</Badge></div>
+            <h2 className="text-[24px] sm:text-[30px] font-semibold text-[#111] tracking-[-0.02em] mb-2">
+              HubSpot pour les secteurs cl&eacute;s parisiens
+            </h2>
+            <p className="text-[13px] text-[#999] max-w-[560px] mx-auto">
+              Paris concentre des industries sp&eacute;cifiques avec des enjeux CRM uniques. Notre connaissance de ces secteurs nous permet de configurer HubSpot en fonction de vos r&eacute;alit&eacute;s m&eacute;tier, pas d&apos;un template g&eacute;n&eacute;rique.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {secteursParis.map((item) => (
+              <div key={item.titre} className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.06)]">
+                <div className="flex items-center gap-2.5 mb-3">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: item.color }} />
+                  <h3 className="text-[14px] font-semibold text-[#111]">{item.titre}</h3>
+                </div>
+                <p className="text-[12px] text-[#777] leading-[1.65]">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </section>
         <Connector />

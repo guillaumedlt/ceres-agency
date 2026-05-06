@@ -1,18 +1,5 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
-
-export const metadata: Metadata = {
-  title: "Audit RevOps — Diagnostic CRM, Process & Data | Ceres",
-  description:
-    "Audit complet RevOps : CRM, process commerciaux, data quality, integrations. Rapport actionnable avec plan d'action priorise. Resultats en 2 semaines.",
-  keywords: [
-    "audit revops", "audit crm", "audit hubspot", "diagnostic commercial",
-    "data quality crm", "audit process commercial", "optimisation pipeline",
-    "consultant revops", "audit salesforce", "revops diagnostic",
-    "audit ops commerciales", "revops france",
-  ],
-};
 
 const auditPillars = [
   {
@@ -338,6 +325,22 @@ export default function AuditRevOpsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+        <Connector />
+
+        {/* Related */}
+        <section>
+          <p className="text-[13px] text-[#777] text-center mb-3">Apres l&apos;audit, passez a l&apos;action :</p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a href="/agence-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#FF7A59] hover:text-[#E5684A] transition-colors">
+              Agence RevOps
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
+            <a href="/consultant-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+              Consultant RevOps
+              <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
           </div>
         </section>
         <Connector />

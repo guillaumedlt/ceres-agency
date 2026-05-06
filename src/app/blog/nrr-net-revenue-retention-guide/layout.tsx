@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "NRR (Net Revenue Retention) : le KPI cle en SaaS | Ceres",
   description:
-    "Comment calculer le NRR, benchmarks par secteur, les leviers (churn, expansion), comment le tracker dans HubSpot.",
+    "Comment calculer le NRR (Net Revenue Retention), benchmarks par secteur, leviers (churn, expansion) et comment le tracker dans HubSpot.",
   keywords: [
     "NRR",
     "Net Revenue Retention",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NRR (Net Revenue Retention) : le KPI cle en SaaS | Ceres",
     description:
-      "Comment calculer le NRR, benchmarks par secteur, les leviers (churn, expansion), comment le tracker dans HubSpot.",
+      "Comment calculer le NRR (Net Revenue Retention), benchmarks par secteur, leviers (churn, expansion) et comment le tracker dans HubSpot.",
     url: "https://ceres.agency/blog/nrr-net-revenue-retention-guide",
     type: "article",
   },

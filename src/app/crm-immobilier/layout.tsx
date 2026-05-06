@@ -10,6 +10,15 @@ export const metadata: Metadata = {
     "logiciel immobilier",
     "crm agence immobiliere",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/crm-immobilier",
+  },
+  openGraph: {
+    title: "CRM immobilier : HubSpot pour l'immobilier | Ceres",
+    description: "CRM immobilier sur HubSpot. Gestion contacts acheteurs/vendeurs, pipeline mandats, suivi visites, relances automatisees.",
+    url: "https://ceres.agency/crm-immobilier",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

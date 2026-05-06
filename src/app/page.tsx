@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   title: "Ceres | Agence RevOps & IA pour entreprises B2B",
   description:
     "Ceres structure, automatise et optimise vos operations commerciales. Audit RevOps, migration HubSpot, agents IA. 250+ clients accompagnes en France.",
+  alternates: {
+    canonical: "https://ceres.agency",
+  },
+  openGraph: {
+    title: "Ceres | Agence RevOps & IA pour entreprises B2B",
+    description: "Ceres structure, automatise et optimise vos operations commerciales. Audit RevOps, migration HubSpot, agents IA.",
+    url: "https://ceres.agency",
+    type: "website",
+  },
 };
 
 
@@ -73,6 +82,21 @@ export default function LandingPage() {
 
             <div className="mt-5 sm:hidden text-center">
               <Link href="/cas-clients" className="text-[12px] text-[#4B5EFC] font-medium hover:underline">Voir tous les cas clients →</Link>
+            </div>
+
+            {/* Services populaires */}
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2">
+              {[
+                { label: "Agence HubSpot", href: "/agence-hubspot", color: "#FF7A59" },
+                { label: "Agence RevOps", href: "/agence-revops", color: "#FF7A59" },
+                { label: "Consultant RevOps", href: "/consultant-revops", color: "#4B5EFC" },
+                { label: "Consultant HubSpot", href: "/consultant-hubspot", color: "#4B5EFC" },
+              ].map((s) => (
+                <Link key={s.label} href={s.href} className="rounded-lg border border-[#F2F2F2] p-3 text-center hover:border-[#DDD] transition-all group">
+                  <div className="w-2 h-2 rounded-sm mx-auto mb-1.5" style={{ background: s.color }} />
+                  <p className="text-[11px] font-medium text-[#111] group-hover:text-[#4B5EFC] transition-colors">{s.label}</p>
+                </Link>
+              ))}
             </div>
           </div>
           <div className="hidden md:block mx-auto w-px h-10 bg-[#E0E0E0]" />

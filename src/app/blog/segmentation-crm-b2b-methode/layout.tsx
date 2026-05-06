@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Segmentation CRM en B2B : la methode complete | Ceres",
   description:
-    "Les 4 types de segmentation (firmographique, comportementale, intent, lifecycle). Comment segmenter dans HubSpot.",
+    "Les 4 types de segmentation B2B (firmographique, comportementale, intent, lifecycle). Methode pour segmenter vos contacts dans HubSpot.",
   keywords: [
     "segmentation CRM",
     "segmentation HubSpot",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Segmentation CRM en B2B : la methode complete | Ceres",
     description:
-      "Les 4 types de segmentation (firmographique, comportementale, intent, lifecycle). Comment segmenter dans HubSpot.",
+      "Les 4 types de segmentation B2B (firmographique, comportementale, intent, lifecycle). Methode pour segmenter vos contacts dans HubSpot.",
     url: "https://ceres.agency/blog/segmentation-crm-b2b-methode",
     type: "article",
   },

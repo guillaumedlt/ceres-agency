@@ -5,9 +5,6 @@ export const metadata: Metadata = {
   description:
     "100+ articles sur le RevOps, le CRM, la data quality et l'IA. Guides, analyses et cas d'usage pour structurer vos operations commerciales B2B.",
   keywords: ["blog revops", "blog crm", "blog ia b2b", "articles revops", "articles hubspot", "guides crm", "blog data quality"],
-  alternates: {
-    canonical: "https://ceres.agency/blog",
-  },
 };
 
 const jsonLd = {
@@ -15,7 +12,7 @@ const jsonLd = {
   "@type": "Blog",
   "@id": "https://ceres.agency/blog#blog",
   name: "Blog Ceres : RevOps, CRM et IA",
-  description: "100+ articles sur le RevOps, le CRM, la data quality et l'IA pour les equipes B2B.",
+  description: "100+ articles sur le RevOps, le CRM, la data quality et l'IA pour les equipes B2B. Guides, comparatifs et methodes actionnables.",
   url: "https://ceres.agency/blog",
   publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" },
   inLanguage: "fr-FR",

@@ -1,23 +1,6 @@
 import Connector from "@/components/marketing/Connector";
-import type { Metadata } from "next";
 import Badge from "@/components/marketing/Badge";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "RevOps pour PME : alignez vos equipes | Ceres",
-  description:
-    "Consultant RevOps PME. Audit CRM, restructuration pipeline, SLA marketing-sales, lead scoring et automatisation. Accelerez sans recruter.",
-  keywords: [
-    "revops pme",
-    "crm pme",
-    "operations commerciales pme",
-    "consultant revops pme",
-    "revops externalisé pme",
-    "crm hubspot pme",
-    "alignement marketing sales pme",
-    "audit crm pme",
-  ],
-};
 
 const symptoms = [
   { title: "CRM rempli a moitie", desc: "Vos commerciaux remplissent le CRM quand ils y pensent. Les deals avancent sans notes, sans next steps, sans montants. Votre pipe est un mirage.", color: "#EF4444" },

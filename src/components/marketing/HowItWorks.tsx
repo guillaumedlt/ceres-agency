@@ -3,20 +3,20 @@ import Badge from "./Badge";
 const steps = [
   {
     num: "01",
-    title: "Data clean + KPIs",
-    desc: "On nettoie votre base, unifie vos flux de donnees et definit les KPIs par silo. La fondation sur laquelle tout repose. Sans ca, l'IA multiplie par zero.",
-    duration: "4-6 semaines",
+    title: "Diagnostic",
+    desc: "On audite votre CRM, vos process commerciaux et la qualite de vos donnees. Vous repartez avec un plan d'action priorise.",
+    duration: "1-2 semaines",
   },
   {
     num: "02",
-    title: "L'IA optimise chaque silo",
-    desc: "Marketing, Sales, CS, Finance : l'IA enrichit, score, automatise et detecte les signaux silo par silo. Elle orchestre ce que les equipes n'ont pas le temps de faire.",
+    title: "Structuration",
+    desc: "On nettoie votre base, aligne vos equipes sur des KPIs communs, automatise les process et connecte vos outils entre eux.",
     duration: "4-8 semaines",
   },
   {
     num: "03",
-    title: "Iteration et expansion",
-    desc: "On mesure les resultats, on ajuste les modeles, on ajoute des briques. Chaque iteration rend le systeme plus intelligent. L'avantage se compose avec le temps.",
+    title: "Accompagnement",
+    desc: "On pilote vos operations au quotidien, on mesure les resultats et on itere. Votre revenue engine s'ameliore en continu.",
     duration: "Continu",
   },
 ];
@@ -29,9 +29,9 @@ export default function HowItWorks() {
           <div className="mb-8">
             <div className="mb-4"><Badge>Méthode</Badge></div>
             <h2 className="text-[22px] sm:text-[28px] font-semibold text-[#111] leading-[1.2] tracking-[-0.02em] mb-2">
-              L&apos;IA au service du RevOps
+              Comment on travaille
             </h2>
-            <p className="text-[13px] text-[#999]">Donnees propres, KPIs alignes, IA qui orchestre. Chaque etape renforce la suivante.</p>
+            <p className="text-[13px] text-[#999]">Du diagnostic a l&apos;accompagnement. Des resultats mesurables des les premieres semaines.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

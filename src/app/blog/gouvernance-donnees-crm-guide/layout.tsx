@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gouvernance des donnees CRM : guide complet | Ceres",
   description:
-    "Les 4 piliers : champs obligatoires, validation rules, workflows de standardisation, audits automatises.",
+    "Les 4 piliers de la gouvernance de donnees CRM : champs obligatoires, validation rules, workflows de standardisation et audits automatises.",
   keywords: [
     "gouvernance donnees",
     "gouvernance CRM",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gouvernance des donnees CRM : guide complet | Ceres",
     description:
-      "Les 4 piliers : champs obligatoires, validation rules, workflows de standardisation, audits automatises.",
+      "Les 4 piliers de la gouvernance de donnees CRM : champs obligatoires, validation rules, workflows de standardisation et audits automatises.",
     url: "https://ceres.agency/blog/gouvernance-donnees-crm-guide",
     type: "article",
   },

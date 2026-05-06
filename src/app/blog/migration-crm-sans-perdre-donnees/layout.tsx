@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Migration CRM : migrer sans perdre de donnees | Ceres",
   description:
-    "L'audit pre-migration, le mapping des champs, le nettoyage AVANT, la migration technique, les tests, le go-live.",
+    "L'audit pre-migration, le mapping des champs, le nettoyage avant, la migration technique, les tests et le go-live. Guide anti-perte de donnees.",
   keywords: [
     "migration CRM",
     "migration HubSpot",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Migration CRM : migrer sans perdre de donnees | Ceres",
     description:
-      "L'audit pre-migration, le mapping des champs, le nettoyage AVANT, la migration technique, les tests, le go-live.",
+      "L'audit pre-migration, le mapping des champs, le nettoyage avant, la migration technique, les tests et le go-live. Guide anti-perte de donnees.",
     url: "https://ceres.agency/blog/migration-crm-sans-perdre-donnees",
     type: "article",
   },

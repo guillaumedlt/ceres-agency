@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     "formation crm commercial",
     "certification hubspot",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/formation-hubspot",
+  },
+  openGraph: {
+    title: "Formation HubSpot sur mesure | Paris & remote | Ceres",
+    description: "Formation HubSpot sur mesure a Paris et en remote. Programmes par role : admin, commercial, marketing, manager. 1 journee, 3 jours ou programme personnalise.",
+    url: "https://ceres.agency/formation-hubspot",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Onboarding commercial : reduire le ramp-up a 3 semaines | Ceres",
+  title: "Onboarding commercial : reduire le ramp-up a 3 semaines",
   description:
-    "Les 4 piliers de l'onboarding, le playbook commercial, l'IA comme copilote du nouveau commercial.",
+    "Les 4 piliers de l'onboarding commercial, le playbook de vente et l'IA comme copilote du nouveau commercial. Reduire le ramp-up a 3 semaines.",
   keywords: [
     "onboarding commercial",
     "ramp-up commercial",
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "time to first deal",
   ],
   openGraph: {
-    title: "Onboarding commercial : reduire le ramp-up a 3 semaines | Ceres",
+    title: "Onboarding commercial : reduire le ramp-up a 3 semaines",
     description:
-      "Les 4 piliers de l'onboarding, le playbook commercial, l'IA comme copilote du nouveau commercial.",
+      "Les 4 piliers de l'onboarding commercial, le playbook de vente et l'IA comme copilote du nouveau commercial. Reduire le ramp-up a 3 semaines.",
     url: "https://ceres.agency/blog/onboarding-commercial-reduire-ramp-up",
     type: "article",
   },

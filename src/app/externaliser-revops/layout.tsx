@@ -14,6 +14,16 @@ export const metadata: Metadata = {
     "consultant revops externe",
     "revops outsourcing",
   ],
+  alternates: {
+    canonical: "https://ceres.agency/externaliser-revops",
+  },
+  openGraph: {
+    title: "Externaliser son RevOps : guide complet | Ceres",
+    description:
+      "Guide complet pour externaliser votre RevOps. Comparaison interne vs externe, modeles part-time/projet/full, cas clients et tarifs.",
+    url: "https://ceres.agency/externaliser-revops",
+    type: "website",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
