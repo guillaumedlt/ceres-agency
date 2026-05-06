@@ -7,15 +7,14 @@ import Connector from "@/components/marketing/Connector";
 
 const sections = [
   { id: "these", title: "La these" },
-  { id: "multiplicateur", title: "Le multiplicateur" },
-  { id: "etape-1", title: "Etape 1 : Data" },
-  { id: "etape-2", title: "Etape 2 : Enrichissement" },
-  { id: "etape-3", title: "Etape 3 : Audit par silo" },
-  { id: "etape-4", title: "Etape 4 : KPIs" },
-  { id: "etape-5", title: "Etape 5 : Iteration" },
-  { id: "matrice", title: "La matrice par silo" },
-  { id: "delegation", title: "Le modele de delegation" },
-  { id: "impact", title: "L'impact reel" },
+  { id: "equation", title: "L'equation RevOps" },
+  { id: "phase-1", title: "Phase 1 : Audit" },
+  { id: "phase-2", title: "Phase 2 : Design" },
+  { id: "phase-3", title: "Phase 3 : Build" },
+  { id: "phase-4", title: "Phase 4 : Run" },
+  { id: "non-faits", title: "Ce qu'on ne fait pas" },
+  { id: "delegation", title: "Notre engagement" },
+  { id: "impact", title: "L'impact mesure" },
 ];
 
 const jsonLd = {
@@ -23,8 +22,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      name: "Notre methode : Data, IA et Revenue Operations",
-      description: "La methodologie Ceres pour integrer l'IA dans vos operations commerciales. Donnees propres, KPIs alignes, IA qui optimise chaque silo, iteration continue.",
+      name: "Notre methode RevOps : Audit, Design, Build, Run",
+      description:
+        "La methodologie Ceres pour transformer votre revenue engine en 4 phases. Audit (72h), Design (2 sem), Build (4-8 sem), Run (continu). 250+ missions SaaS B2B.",
       url: "https://ceres.agency/methode",
       publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" },
       author: { "@type": "Person", name: "Guillaume Delachet" },
@@ -36,6 +36,15 @@ const jsonLd = {
         { "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" },
         { "@type": "ListItem", position: 2, name: "Methode", item: "https://ceres.agency/methode" },
       ],
+    },
+    {
+      "@type": "Service",
+      name: "Methode RevOps Ceres",
+      serviceType: "Revenue Operations Consulting",
+      provider: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" },
+      areaServed: "FR",
+      description:
+        "Methodologie en 4 phases pour aligner Sales, Marketing et CS autour d'une stack, d'une donnee et de process partages.",
     },
   ],
 };
@@ -106,7 +115,7 @@ export default function MethodePage() {
               <div className="mt-8 pt-6 border-t border-[#F2F2F2]">
                 <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-3">Partager</p>
                 <div className="flex gap-2">
-                  <a href="https://twitter.com/intent/tweet?text=Data%2C%20IA%20et%20Revenue%20Operations%20%E2%80%93%20La%20m%C3%A9thode%20Ceres&url=https://ceres.agency/methode" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
+                  <a href="https://twitter.com/intent/tweet?text=Notre%20methode%20RevOps%20%E2%80%93%20Audit%2C%20Design%2C%20Build%2C%20Run&url=https://ceres.agency/methode" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                   </a>
                   <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ceres.agency/methode" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg border border-[#F0F0F0] flex items-center justify-center text-[#CCC] hover:text-[#666] hover:border-[#DDD] transition-colors">
@@ -129,20 +138,20 @@ export default function MethodePage() {
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-5">
                 <Badge>Notre methode</Badge>
-                <span className="text-[11px] text-[#CCC]">20 min de lecture</span>
+                <span className="text-[11px] text-[#CCC]">15 min de lecture</span>
               </div>
               <h1 className="text-[28px] sm:text-[36px] font-semibold text-[#111] leading-[1.15] tracking-[-0.025em] mb-5">
-                Data, IA et Revenue Operations
+                Notre methode RevOps en 4 phases
               </h1>
               <p className="text-[16px] text-[#666] leading-[1.7] mb-6">
-                L&apos;IA est un multiplicateur. Pas une solution. Notre methodologie en 5 etapes pour integrer l&apos;intelligence artificielle dans chaque couche de vos operations commerciales. De la donnee brute a l&apos;intelligence operationnelle.
+                Audit, Design, Build, Run. Notre methodologie pour transformer votre revenue engine — eprouvee sur 250+ missions SaaS B2B. Pas de slide deck, pas de tunnel, pas de surprise. Vous voyez ce que vous payez, a chaque etape.
               </p>
               <div className="flex items-center gap-4 text-[12px] text-[#999]">
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 rounded-full bg-[#111] flex items-center justify-center text-white text-[9px] font-bold">GD</div>
                   <span>Par <strong className="text-[#111]">Guillaume Delachet</strong></span>
                 </div>
-                <span>Avril 2026</span>
+                <span>Mai 2026</span>
               </div>
             </header>
 
@@ -150,104 +159,172 @@ export default function MethodePage() {
               {/* ───── Section 1 : La these ───── */}
               <section id="these" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">L&apos;IA n&apos;a pas de limite cognitive. Un humain, si.</h2>
+                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">80% des problemes RevOps ne sont pas des problemes d&apos;outil</h2>
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>C&apos;est la realite qu&apos;il faut regarder en face. Un humain traite un volume limite d&apos;informations par jour. Il fatigue, il a des bons jours et des mauvais jours, il part en vacances, il change d&apos;entreprise. L&apos;ecart de performance entre le meilleur et le moins bon commercial d&apos;une equipe est de 3x a 5x.</p>
-                    <p>L&apos;IA ne fatigue pas. Elle ne part pas. Elle traite des milliers de fiches en quelques minutes. Elle applique les memes regles a chaque fois, sans variance.</p>
-                    <p>Mais l&apos;IA est une coquille vide. Elle n&apos;a aucune valeur intrinseque. Sa valeur depend entierement de ce qu&apos;on lui donne. Un modele nourri avec des donnees incoherentes produit des resultats incoherents.</p>
-                    <p>Ce qui est automatisable aujourd&apos;hui ne l&apos;est pas forcement a 100%. Et ce qui ne l&apos;est pas encore le sera peut-etre demain. Le rythme d&apos;evolution est de 3 a 6 mois. C&apos;est pour ca que la methodologie compte plus que l&apos;outil.</p>
+                    <p>La plupart des dirigeants qu&apos;on rencontre pensent qu&apos;ils ont besoin de changer de CRM. De passer a Salesforce. De brancher un outil d&apos;IA. De racheter un module. Dans 4 cas sur 5, le probleme n&apos;est pas la.</p>
+                    <p>Le probleme, c&apos;est que la donnee est sale. Que les process Sales, Marketing et CS ne se parlent pas. Que les KPIs ne sont pas alignes. Que personne ne sait qui est le proprietaire d&apos;un deal apres la signature. Que le forecast est devine, pas calcule. Que la qualification d&apos;un lead prend 15 minutes parce que la fiche est vide.</p>
+                    <p>Le RevOps, ce n&apos;est pas un outil. C&apos;est une discipline qui aligne Sales, Marketing et CS autour d&apos;une stack partagee, d&apos;une donnee fiable et de process documentes. Le but : que la donnee circule sans rupture du premier touch jusqu&apos;au renouvellement.</p>
+                    <p>Notre methode part toujours de la. On regarde votre revenue engine comme un systeme — pas comme une collection d&apos;outils. Et on commence par 72h d&apos;audit. Toujours.</p>
                   </div>
                   {/* Insight box */}
                   <div className="mt-6 rounded-xl bg-[#111] p-5">
-                    <p className="text-[13px] text-white/60 leading-[1.75]">L&apos;IA ne remplace pas les equipes. Elle les recentre sur ce qui cree de la valeur. Et ce qui ne cree pas de valeur, elle le fait mieux, plus vite, et sans cout marginal croissant.</p>
+                    <p className="text-[13px] text-white/60 leading-[1.75]">Un outil sans process amplifie le chaos. Un process sans donnee fiable produit du forecast au doigt. Une donnee fiable sans alignement Sales-Marketing-CS reste cloisonnee. Le RevOps, c&apos;est ce qui fait que les trois tiennent ensemble.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* ───── Section 2 : Le multiplicateur ───── */}
-              <section id="multiplicateur" className="mb-8">
+              {/* ───── Section 2 : L'equation ───── */}
+              <section id="equation" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                   <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">L&apos;equation qui explique tout</h2>
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>L&apos;IA est un coefficient multiplicateur. La qualite de vos donnees est le multiplicande. Le resultat depend entierement de la fondation.</p>
+                    <p>Votre revenue engine se comporte comme un produit : Process &times; Data &times; Outils = Revenue. Si l&apos;un des trois est faible, le tout s&apos;effondre. Trois scenarios qu&apos;on voit chaque semaine :</p>
                   </div>
 
                   {/* 3 scenario cards */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 mb-6">
                     <div className="rounded-xl border border-[#22C55E]/30 bg-[#22C55E]/5 p-4 text-center">
-                      <div className="text-[28px] font-bold text-[#22C55E] tracking-[-0.02em] mb-1">9/10 x IA = 90</div>
-                      <p className="text-[11px] text-[#22C55E] font-medium mb-2">Fondation solide</p>
-                      <p className="text-[11px] text-[#777] leading-[1.5]">ROI majeur, adoption forte, resultats durables</p>
+                      <div className="text-[20px] font-bold text-[#22C55E] tracking-[-0.02em] mb-1">9 &times; 9 &times; 9</div>
+                      <p className="text-[11px] text-[#22C55E] font-medium mb-2">Stack alignee</p>
+                      <p className="text-[11px] text-[#777] leading-[1.5]">Process clairs, data fiable, outils integres. Pipeline previsible, NRR &gt; 110%.</p>
                     </div>
                     <div className="rounded-xl border border-[#F59E0B]/30 bg-[#F59E0B]/5 p-4 text-center">
-                      <div className="text-[28px] font-bold text-[#F59E0B] tracking-[-0.02em] mb-1">4/10 x IA = 40</div>
-                      <p className="text-[11px] text-[#F59E0B] font-medium mb-2">Fondation partielle</p>
-                      <p className="text-[11px] text-[#777] leading-[1.5]">Resultats mitiges, frustrations, ROI partiel</p>
+                      <div className="text-[20px] font-bold text-[#F59E0B] tracking-[-0.02em] mb-1">9 &times; 4 &times; 9</div>
+                      <p className="text-[11px] text-[#F59E0B] font-medium mb-2">Donnee sale</p>
+                      <p className="text-[11px] text-[#777] leading-[1.5]">Pipeline correct mais forecast au doigt, marketing aveugle, churn detecte trop tard.</p>
                     </div>
                     <div className="rounded-xl border border-[#EF4444]/30 bg-[#EF4444]/5 p-4 text-center">
-                      <div className="text-[28px] font-bold text-[#EF4444] tracking-[-0.02em] mb-1">1/10 x IA = 10</div>
-                      <p className="text-[11px] text-[#EF4444] font-medium mb-2">Fondation absente</p>
-                      <p className="text-[11px] text-[#777] leading-[1.5]">Budget brule, equipes sceptiques, outil desactive</p>
+                      <div className="text-[20px] font-bold text-[#EF4444] tracking-[-0.02em] mb-1">3 &times; 3 &times; 9</div>
+                      <p className="text-[11px] text-[#EF4444] font-medium mb-2">Stack tech-driven</p>
+                      <p className="text-[11px] text-[#777] leading-[1.5]">Outils premium achetes, jamais adoptes, equipes en Excel paralleles. Le pire ROI qu&apos;on rencontre.</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Le meme outil. Le meme budget. Le meme modele d&apos;IA. Trois resultats radicalement differents. La seule variable : la qualite de la fondation.</p>
-                    <p className="font-semibold text-[#111]">Le vrai investissement n&apos;est pas l&apos;outil IA. C&apos;est la donnee.</p>
+                    <p>L&apos;ordre d&apos;intervention compte. Acheter HubSpot Enterprise quand votre process Sales n&apos;est pas documente, c&apos;est multiplier le chaos par un coefficient plus eleve. C&apos;est pour ca qu&apos;on commence par l&apos;audit.</p>
+                    <p className="font-semibold text-[#111]">Le vrai investissement RevOps, ce n&apos;est pas l&apos;outil. C&apos;est ce qui le rend utile.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* ───── Section 3 : Etape 1 - Data ───── */}
-              <section id="etape-1" className="mb-8">
+              {/* ───── Phase 1 : Audit ───── */}
+              <section id="phase-1" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                   <div className="flex items-start gap-4 mb-5">
                     <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">01</div>
                     <div>
-                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Structurer et nettoyer la donnee</h2>
+                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Audit &mdash; 72h pour cartographier votre revenue engine</h2>
+                      <p className="mt-1 text-[12px] text-[#999] uppercase tracking-wider font-medium">Duree : 72h &middot; Forfait fixe</p>
                     </div>
                   </div>
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Avant de deployer quoi que ce soit, il faut une fondation propre. Savoir quel outil fait quoi, comment ils communiquent entre eux, et avoir une base de donnees claire, precise et maintenable automatiquement.</p>
+                    <p>Stack actuelle, qualite de la donnee, process Sales / Marketing / CS, alignement des equipes, dette technique CRM. Trois jours pour cartographier ce qui marche, ce qui fuit, et ce qui merite d&apos;etre detruit.</p>
+                    <p>On parle a vos commerciaux, vos marketers, vos CS. On regarde votre CRM en direct. On cherche les ruptures de donnees, les doublons, les workflows casses, les KPIs qui ne sont mesures par personne.</p>
                   </div>
 
-                  {/* 4 chantier cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+                  {/* 4 livrables cards */}
+                  <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mt-7 mb-3">Livrables</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#EF4444]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Deduplication</h3>
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#FF7A59]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Carte de la stack revenue</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Identifier et fusionner les doublons. 15-25% en moyenne dans un CRM B2B.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Data flow, integrations, points de friction. Vous voyez votre stack comme un schema, pas comme une liste d&apos;outils.</p>
                     </div>
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#F97316]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Standardisation</h3>
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Score de sante RevOps</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Convertir chaque champ en format exploitable. Pays en ISO, telephones en E.164, industries en liste fermee.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Quatre dimensions notees : data, process, outils, equipes. Benchmark contre nos 250+ missions.</p>
                     </div>
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
                         <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Enrichissement</h3>
+                        <h3 className="text-[13px] font-semibold text-[#111]">Liste priorisee de chantiers</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Combler les champs vides via l&apos;IA. Un contact sans industrie est exclu de toute segmentation.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Quick wins (&lt;2 sem) et chantiers structurants (4-8 sem), chiffres, classes par ROI estime.</p>
                     </div>
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
                         <div className="w-2.5 h-2.5 rounded-sm bg-[#4B5EFC]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Gouvernance</h3>
+                        <h3 className="text-[13px] font-semibold text-[#111]">Recommandation budgetaire</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Champs obligatoires, validations en temps reel, audits mensuels automatises. La base reste propre.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Allocation suggeree sur 6 mois entre stack, build et formation. Hypotheses explicites.</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6">
+                    <Link href="/audit-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+                      En savoir plus sur l&apos;Audit RevOps
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+              <Connector />
+
+              {/* ───── Phase 2 : Design ───── */}
+              <section id="phase-2" className="mb-8">
+                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
+                  <div className="flex items-start gap-4 mb-5">
+                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">02</div>
+                    <div>
+                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Design &mdash; On concoit la cible avant de toucher au CRM</h2>
+                      <p className="mt-1 text-[12px] text-[#999] uppercase tracking-wider font-medium">Duree : 2 semaines</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
+                    <p>Vous validez l&apos;architecture avant qu&apos;on construise une seule ligne de workflow. Schema de donnees cible, refonte du pipeline, automations, integrations, KPIs. Chaque decision documentee, chaque trade-off explicite.</p>
+                    <p>C&apos;est plus lent au depart. C&apos;est ce qui evite les refontes a 6 mois et les budgets qui doublent. La phase Design est la moins glamour de la methode. C&apos;est aussi celle qui paye le plus.</p>
+                  </div>
+
+                  {/* 5 livrables cards */}
+                  <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mt-7 mb-3">Livrables</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Schema de donnees cible</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Objects, properties, relations. Le langage commun a Sales, Marketing, CS et Finance.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#4B5EFC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Architecture des automations</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Triggers, conditions, actions. Document avant code. Chaque flow validable a la lecture.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Plan d&apos;integration</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">CRM &harr; outils marketing, billing, support, data warehouse. Mapping et SLA des syncs.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#FF7A59]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Roadmap par sprints</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Decoupage hebdo, livrable par sprint, validation par votre equipe avant passage au suivant.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all sm:col-span-2">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#D4A27F]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">KPIs cibles et seuils d&apos;alerte</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Marketing, Sales, CS, Finance. Indicateurs alignes, seuils chiffres, frequence de revue. Si une metrique n&apos;a pas de proprietaire, on la jette.</p>
                     </div>
                   </div>
 
                   <div className="mt-6">
                     <Link href="/fondation-data" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
-                      En savoir plus sur la Fondation Data
+                      Notre approche Fondation Data
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                     </Link>
                   </div>
@@ -255,99 +332,127 @@ export default function MethodePage() {
               </section>
               <Connector />
 
-              {/* ───── Section 4 : Etape 2 - Enrichissement IA ───── */}
-              <section id="etape-2" className="mb-8">
+              {/* ───── Phase 3 : Build ───── */}
+              <section id="phase-3" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                   <div className="flex items-start gap-4 mb-5">
-                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">02</div>
+                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">03</div>
                     <div>
-                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">La couche IA sur la donnee</h2>
+                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Build &mdash; On construit. Vous validez a chaque sprint.</h2>
+                      <p className="mt-1 text-[12px] text-[#999] uppercase tracking-wider font-medium">Duree : 4 a 8 semaines</p>
                     </div>
                   </div>
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Une fois que la base est propre, l&apos;IA peut aller plus loin. Parce que le systeme a la bonne donnee, il sait qui est la personne, son metier, son entreprise, il peut enrichir automatiquement.</p>
+                    <p>Implementation hands-on : nettoyage CRM, automations Sales / Marketing / CS, data layer, integrations, dashboards, alertes. Sprints d&apos;une semaine, demos hebdomadaires, vous validez avant qu&apos;on passe au sprint suivant.</p>
+                    <p>L&apos;IA intervient ici, mais comme outil de levier &mdash; pas comme posture marketing. Scoring, enrichissement, qualification, brief contextuel : la ou elle a un ROI mesurable. Pas pour l&apos;effet de manche.</p>
                   </div>
 
-                  {/* 4 enrichment cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+                  {/* 5 livrables cards */}
+                  <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mt-7 mb-3">Livrables</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Scoring intelligent</h3>
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#FF7A59]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">CRM nettoye et structure</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;IA analyse des dizaines de signaux et produit un score dynamique. Plus precis que des regles manuelles.</p>
-                    </div>
-                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
-                      <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Remplissage de champs</h3>
-                      </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Les champs manquants sont completes automatiquement. Le commercial ouvre une fiche complete.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">HubSpot, Salesforce, Pipedrive, Attio. Doublons fusionnes, champs standardises, gouvernance en place.</p>
                     </div>
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
                         <div className="w-2.5 h-2.5 rounded-sm bg-[#4B5EFC]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Segmentation dynamique</h3>
+                        <h3 className="text-[13px] font-semibold text-[#111]">Automations live</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Segmenter par intent, pas juste par secteur. L&apos;IA identifie des micro-segments invisibles manuellement.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Lead routing, lifecycle, retention, churn signals, expansion triggers. Documentees et monitorees.</p>
                     </div>
                     <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#D4A27F]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Brief contextuel</h3>
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Couche IA ciblee</h3>
                       </div>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Avant chaque call, un brief genere automatiquement. Qui est le prospect, quelles sont ses actualites, quel angle.</p>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Scoring, enrichissement, qualification, brief pre-call. Chaque agent mesure : input, output, ROI.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Dashboards par silo</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Sales, Marketing, CS, Finance. Source unique, KPIs alignes, alertes sur seuils critiques.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all sm:col-span-2">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#D4A27F]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Documentation + runbooks</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Chaque automation, chaque dashboard, chaque integration documente. Vos equipes peuvent maintenir sans nous.</p>
                     </div>
                   </div>
 
                   {/* Result box */}
                   <div className="mt-6 rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-5">
-                    <p className="text-[13px] text-[#555] leading-[1.75] text-center">Temps de recherche pre-appel : <strong className="text-[#111]">15 min &rarr; 2 min</strong>. Taux de reponse cold email : <strong className="text-[#111]">3% &rarr; 11%</strong>.</p>
+                    <p className="text-[13px] text-[#555] leading-[1.75] text-center">Temps de qualification d&apos;un lead : <strong className="text-[#111]">15 min &rarr; 2 min</strong>. Reporting hebdo : <strong className="text-[#111]">12h &rarr; 30 min</strong>. Forecast accuracy : <strong className="text-[#111]">35% &rarr; 88%</strong>.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* ───── Section 5 : Etape 3 - Audit par silo ───── */}
-              <section id="etape-3" className="mb-8">
+              {/* ───── Phase 4 : Run ───── */}
+              <section id="phase-4" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                   <div className="flex items-start gap-4 mb-5">
-                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">03</div>
+                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">04</div>
                     <div>
-                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Auditer chaque silo</h2>
+                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Run &mdash; On reste, mais on degage quand vous le decidez</h2>
+                      <p className="mt-1 text-[12px] text-[#999] uppercase tracking-wider font-medium">Duree : continu &middot; Mensualise &middot; Sans engagement</p>
                     </div>
                   </div>
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>C&apos;est la ou ca devient strategique. Silo par silo, tache par tache, on classe chaque activite dans 4 categories :</p>
+                    <p>RevOps part-time mensualise : maintenance, monitoring data quality, optimisation continue, formation continue de votre equipe RevOps interne. Le but : que dans 12 mois vous ayez le choix entre internaliser ou continuer avec nous, sans rupture si vous internalisez.</p>
+                    <p>Notre meilleure mission, c&apos;est celle qui prepare votre autonomie. Si vous nous gardez par captivite technique, on a echoue.</p>
                   </div>
 
-                  {/* 4 category cards */}
-                  <div className="grid grid-cols-1 gap-3 mt-6">
-                    <div className="rounded-xl border-l-[3px] border-[#22C55E] bg-[#FAFAFA] p-4">
-                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Remplacable a 100%</h3>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;IA le fait mieux, plus vite, sans variance.</p>
+                  {/* 5 livrables cards */}
+                  <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mt-7 mb-3">Livrables</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#FF7A59]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Presence dediee</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">1 a 2 jours par semaine sur votre stack. Pas de fragmentation entre 10 clients, pas de delai de reponse.</p>
                     </div>
-                    <div className="rounded-xl border-l-[3px] border-[#4B5EFC] bg-[#FAFAFA] p-4">
-                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Partiellement remplacable</h3>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;IA fait 80%, l&apos;humain finalise.</p>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#4B5EFC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Monitoring data quality</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Detection automatique des incidents : doublons, champs manquants, ruptures de sync. Alertes sur Slack ou email.</p>
                     </div>
-                    <div className="rounded-xl border-l-[3px] border-[#6C5CE7] bg-[#FAFAFA] p-4">
-                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Assistable</h3>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;IA prepare le contexte, l&apos;humain execute mieux.</p>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Roadmap quarterly</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Priorisee avec vos equipes Sales / Marketing / CS chaque trimestre. Pas decidee en silo.</p>
                     </div>
-                    <div className="rounded-xl border-l-[3px] border-[#FF7A59] bg-[#FAFAFA] p-4">
-                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Non remplacable</h3>
-                      <p className="text-[12px] text-[#777] leading-[1.65]">Le jugement humain cree une valeur disproportionnee.</p>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Formation continue</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Sessions hebdo avec votre RevOps interne. Pair-programming sur les nouveaux chantiers.</p>
+                    </div>
+                    <div className="rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all sm:col-span-2">
+                      <div className="flex items-center gap-2.5 mb-2">
+                        <div className="w-2.5 h-2.5 rounded-sm bg-[#D4A27F]" />
+                        <h3 className="text-[13px] font-semibold text-[#111]">Reporting mensuel ROI</h3>
+                      </div>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Chantiers livres, KPIs impactes, prochain quarter. Pas de vanity metrics. Du mesurable.</p>
                     </div>
                   </div>
 
-                  <div className="mt-6 space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>A partir de cette map, on repond a la question : ok, cette tache peut etre remplacee. Par quoi ? Un agent autonome ? Un workflow automatise ? Une formation des equipes ? Ou juste un meilleur process ?</p>
-                  </div>
-
-                  <div className="mt-4">
-                    <Link href="/agents-ia" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
-                      Voir le deploiement IA en detail
+                  <div className="mt-6">
+                    <Link href="/externaliser-revops" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+                      Voir l&apos;offre RevOps externalise
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                     </Link>
                   </div>
@@ -355,309 +460,121 @@ export default function MethodePage() {
               </section>
               <Connector />
 
-              {/* ───── Section 6 : Etape 4 - KPIs ───── */}
-              <section id="etape-4" className="mb-8">
+              {/* ───── Section : Ce qu'on ne fait pas ───── */}
+              <section id="non-faits" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                  <div className="flex items-start gap-4 mb-5">
-                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">04</div>
-                    <div>
-                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Definir ce qu&apos;on mesure</h2>
-                    </div>
-                  </div>
-                  <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Ce qui ne se mesure pas ne s&apos;ameliore pas. Avant de deployer l&apos;IA, il faut definir les KPIs par silo. C&apos;est du travail de fond, pas du travail d&apos;IA. Mais sans les bons indicateurs, impossible de piloter.</p>
+                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Ce qu&apos;on ne fait pas</h2>
+                  <div className="space-y-4 text-[13px] text-[#555] leading-[1.75] mb-6">
+                    <p>Une methode, c&apos;est aussi ce qu&apos;elle exclut. Voilà nos quatre lignes rouges &mdash; explicites des la premiere conversation.</p>
                   </div>
 
-                  {/* 4 silo KPI cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
-                    <div className="rounded-xl border border-[#F2F2F2] p-4">
-                      <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#FF7A59]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Marketing</h3>
-                      </div>
-                      <ul className="space-y-1.5">
-                        {["CAC", "Taux MQL \u2192 SQL", "Attribution", "Pipeline marketing"].map((kpi) => (
-                          <li key={kpi} className="flex items-center gap-2 text-[12px] text-[#777]">
-                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" className="shrink-0 text-[#FF7A59]"><path d="M13.3 4.3L6 11.6L2.7 8.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                            {kpi}
-                          </li>
-                        ))}
-                      </ul>
+                  <div className="grid grid-cols-1 gap-3">
+                    <div className="rounded-xl border-l-[3px] border-[#EF4444] bg-[#FAFAFA] p-4">
+                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Slides sans implementation</h3>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Si vous cherchez un cabinet qui livre 80 pages PowerPoint et disparait, on n&apos;est pas le bon partenaire. On code, on deploie, on documente.</p>
                     </div>
-                    <div className="rounded-xl border border-[#F2F2F2] p-4">
-                      <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#6D00CC]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Sales</h3>
-                      </div>
-                      <ul className="space-y-1.5">
-                        {["Conversion par etape", "Cycle de vente", "Win rate", "Forecast accuracy"].map((kpi) => (
-                          <li key={kpi} className="flex items-center gap-2 text-[12px] text-[#777]">
-                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" className="shrink-0 text-[#6D00CC]"><path d="M13.3 4.3L6 11.6L2.7 8.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                            {kpi}
-                          </li>
-                        ))}
-                      </ul>
+                    <div className="rounded-xl border-l-[3px] border-[#FF7A59] bg-[#FAFAFA] p-4">
+                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Projets &gt; 6 mois sans livrable intermediaire</h3>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">Toute mission Ceres delivre de la valeur en production toutes les 1 a 4 semaines. Si on ne sait pas decouper, c&apos;est qu&apos;on n&apos;a pas compris le probleme.</p>
                     </div>
-                    <div className="rounded-xl border border-[#F2F2F2] p-4">
-                      <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#22C55E]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">CS</h3>
-                      </div>
-                      <ul className="space-y-1.5">
-                        {["NRR", "Taux de churn", "Time to value", "Health score"].map((kpi) => (
-                          <li key={kpi} className="flex items-center gap-2 text-[12px] text-[#777]">
-                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" className="shrink-0 text-[#22C55E]"><path d="M13.3 4.3L6 11.6L2.7 8.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                            {kpi}
-                          </li>
-                        ))}
-                      </ul>
+                    <div className="rounded-xl border-l-[3px] border-[#F59E0B] bg-[#FAFAFA] p-4">
+                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Tech stack imposee</h3>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">On s&apos;adapte a votre CRM (HubSpot, Salesforce, Pipedrive, Attio...), pas l&apos;inverse. Pas de revente deguisee, pas d&apos;agency-lock-in technique. Aucun interessement editeur.</p>
                     </div>
-                    <div className="rounded-xl border border-[#F2F2F2] p-4">
-                      <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-2.5 h-2.5 rounded-sm bg-[#4B5EFC]" />
-                        <h3 className="text-[13px] font-semibold text-[#111]">Finance</h3>
-                      </div>
-                      <ul className="space-y-1.5">
-                        {["MRR reconcilie", "CAC payback", "LTV/CAC", "Revenue par employe"].map((kpi) => (
-                          <li key={kpi} className="flex items-center gap-2 text-[12px] text-[#777]">
-                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" className="shrink-0 text-[#4B5EFC]"><path d="M13.3 4.3L6 11.6L2.7 8.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                            {kpi}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 text-[13px] text-[#555] leading-[1.75]">
-                    <p>Une fois ces KPIs definis et mesures, chaque silo peut etre pilote intelligemment. L&apos;IA devient l&apos;outil qui surveille, alerte et optimise.</p>
-                  </div>
-                </div>
-              </section>
-              <Connector />
-
-              {/* ───── Section 7 : Etape 5 - Iteration ───── */}
-              <section id="etape-5" className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                  <div className="flex items-start gap-4 mb-5">
-                    <div className="text-[48px] font-bold text-[#F2F2F2] leading-none select-none">05</div>
-                    <div>
-                      <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em]">Iterer et composer</h2>
-                    </div>
-                  </div>
-                  <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p>L&apos;IA deployee n&apos;est pas un projet qu&apos;on livre et qu&apos;on oublie. C&apos;est un systeme vivant qui s&apos;ameliore avec le temps. Chaque iteration rend le systeme plus intelligent. L&apos;avantage se compose.</p>
-                  </div>
-
-                  {/* 5 iteration items */}
-                  <div className="mt-6 space-y-3">
-                    {[
-                      { title: "Ajustement des modeles", desc: "Les regles de scoring, les seuils de delegation evoluent. Ce qui marchait en janvier ne marche plus en juin.", color: "#6D00CC" },
-                      { title: "Nouvelles briques", desc: "Un agent d'enrichissement ouvre la porte a un agent de scoring, puis un agent de reporting. La stack grandit.", color: "#4B5EFC" },
-                      { title: "Veille technologique", desc: "Les modeles d'IA evoluent tous les 3 mois. L'outil peut changer, la methodologie reste.", color: "#FF7A59" },
-                      { title: "Formation continue", desc: "Les equipes montent en competence. L'objectif : autonomie complete.", color: "#22C55E" },
-                      { title: "Mesure et ROI", desc: "Dashboard mensuel avec les KPIs de chaque agent. Pas de vanity metrics. Du mesurable.", color: "#D4A27F" },
-                    ].map((item, i) => (
-                      <div key={item.title} className="flex items-start gap-3">
-                        <div className="shrink-0 mt-1.5 w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: item.color }} />
-                        <div>
-                          <h3 className="text-[13px] font-semibold text-[#111] mb-0.5">{i + 1}. {item.title}</h3>
-                          <p className="text-[12px] text-[#777] leading-[1.65]">{item.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </section>
-              <Connector />
-
-              {/* ───── Section 8 : La matrice par silo ───── */}
-              <section id="matrice" className="mb-8">
-                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
-                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-white tracking-[-0.02em] mb-2">Ce que l&apos;IA peut faire dans chaque silo</h2>
-                  <p className="text-[12px] text-white/40 mb-6">Classification par silo et par niveau de delegation.</p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {/* Marketing */}
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-5">
-                      <h3 className="text-[14px] font-semibold text-white mb-4">Marketing</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#22C55E]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Remplacable :</span> reporting, attribution, A/B testing</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Partiel :</span> segmentation, nurturing, personnalisation</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#6C5CE7]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Assiste :</span> strategie contenu, positionnement</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#FF7A59]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Protege :</span> branding, vision marque</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Sales */}
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-5">
-                      <h3 className="text-[14px] font-semibold text-white mb-4">Sales</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#22C55E]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Remplacable :</span> enrichissement, scheduling, relances, data entry</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Partiel :</span> emails prospection, prep calls, scoring</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#6C5CE7]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Assiste :</span> discovery, negociation, proposition</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#FF7A59]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Protege :</span> relation C-level, closing complexe</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* CS */}
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-5">
-                      <h3 className="text-[14px] font-semibold text-white mb-4">CS</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#22C55E]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Remplacable :</span> renouvellements simples, reporting, alertes</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Partiel :</span> health scoring, detection churn</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#6C5CE7]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Assiste :</span> plans expansion, comptes strategiques</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#FF7A59]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Protege :</span> gestion de crise, relation long terme</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Finance */}
-                    <div className="rounded-xl bg-white/5 border border-white/10 p-5">
-                      <h3 className="text-[14px] font-semibold text-white mb-4">Finance</h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#22C55E]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Remplacable :</span> reconciliation, reporting, audits</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Partiel :</span> previsions revenus, analyse pipeline</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#6C5CE7]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Assiste :</span> analyse strategique, budgeting</p>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="shrink-0 mt-1 w-2 h-2 rounded-sm bg-[#FF7A59]" />
-                          <p className="text-[11px] text-white/50 leading-[1.6]"><span className="text-white/70 font-medium">Protege :</span> decisions investissement</p>
-                        </div>
-                      </div>
+                    <div className="rounded-xl border-l-[3px] border-[#6D00CC] bg-[#FAFAFA] p-4">
+                      <h3 className="text-[13px] font-semibold text-[#111] mb-1">Le mythe &laquo; l&apos;IA remplace votre equipe RevOps &raquo;</h3>
+                      <p className="text-[12px] text-[#777] leading-[1.65]">L&apos;IA est un multiplicateur de leviers. Sans data propre et process structure, elle amplifie le chaos. On l&apos;integre la ou elle paye, pas comme posture commerciale.</p>
                     </div>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* ───── Section 9 : Le modele de delegation ───── */}
+              {/* ───── Section : Notre engagement ───── */}
               <section id="delegation" className="mb-8">
-                <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Quand l&apos;IA agit seule et quand l&apos;humain decide</h2>
+                <div className="rounded-2xl bg-[#111] p-5 md:p-8">
+                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-white tracking-[-0.02em] mb-2">Quand on intervient, quand vos equipes pilotent</h2>
+                  <p className="text-[12px] text-white/40 mb-6">La methode RevOps Ceres n&apos;est pas un &laquo; on prend le pouvoir &raquo;. C&apos;est une repartition explicite des roles.</p>
 
                   <div className="space-y-3">
-                    {/* Level 1 - Rouge */}
-                    <div className="rounded-xl border-l-[3px] border-[#EF4444] bg-[#EF4444]/[0.03] p-4">
+                    <div className="rounded-xl border-l-[3px] border-[#22C55E] bg-white/5 p-4">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <span className="text-[11px] font-bold text-[#EF4444] uppercase tracking-wider">Humain seul</span>
+                        <span className="text-[11px] font-bold text-[#22C55E] uppercase tracking-wider">Ceres execute</span>
                       </div>
-                      <p className="text-[13px] text-[#555] leading-[1.65] mb-1.5">Le cout d&apos;erreur depasse 10x le gain de temps.</p>
-                      <p className="text-[12px] text-[#999] leading-[1.5]">Negociation finale, gestion de crise, relation strategique</p>
+                      <p className="text-[13px] text-white/70 leading-[1.65] mb-1.5">Ce qui demande de l&apos;expertise technique RevOps qu&apos;on ne recrute pas en interne.</p>
+                      <p className="text-[12px] text-white/40 leading-[1.5]">Refonte schema CRM, integrations multi-outils, data layer, automations cross-equipes, deploiement IA cible.</p>
                     </div>
 
-                    {/* Level 2 - Orange */}
-                    <div className="rounded-xl border-l-[3px] border-[#FF7A59] bg-[#FF7A59]/[0.03] p-4">
+                    <div className="rounded-xl border-l-[3px] border-[#4B5EFC] bg-white/5 p-4">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <span className="text-[11px] font-bold text-[#FF7A59] uppercase tracking-wider">L&apos;IA prepare, l&apos;humain execute</span>
+                        <span className="text-[11px] font-bold text-[#4B5EFC] uppercase tracking-wider">On co-construit</span>
                       </div>
-                      <p className="text-[13px] text-[#555] leading-[1.65] mb-1.5">La tache requiert du jugement contextuel.</p>
-                      <p className="text-[12px] text-[#999] leading-[1.5]">Discovery call, proposition commerciale, compte a risque</p>
+                      <p className="text-[13px] text-white/70 leading-[1.65] mb-1.5">Ce qui exige votre connaissance metier que personne d&apos;externe ne peut avoir.</p>
+                      <p className="text-[12px] text-white/40 leading-[1.5]">Definition des KPIs, segmentation prospects, scoring rules, criteres de qualification, playbook commercial.</p>
                     </div>
 
-                    {/* Level 3 - Jaune */}
-                    <div className="rounded-xl border-l-[3px] border-[#F59E0B] bg-[#F59E0B]/[0.03] p-4">
+                    <div className="rounded-xl border-l-[3px] border-[#FF7A59] bg-white/5 p-4">
                       <div className="flex items-center gap-2.5 mb-2">
-                        <span className="text-[11px] font-bold text-[#F59E0B] uppercase tracking-wider">L&apos;IA execute, l&apos;humain valide</span>
+                        <span className="text-[11px] font-bold text-[#FF7A59] uppercase tracking-wider">Vous pilotez</span>
                       </div>
-                      <p className="text-[13px] text-[#555] leading-[1.65] mb-1.5">Le travail est standardisable.</p>
-                      <p className="text-[12px] text-[#999] leading-[1.5]">Emails de prospection, follow-ups, reporting</p>
-                    </div>
-
-                    {/* Level 4 - Vert */}
-                    <div className="rounded-xl border-l-[3px] border-[#22C55E] bg-[#22C55E]/[0.03] p-4">
-                      <div className="flex items-center gap-2.5 mb-2">
-                        <span className="text-[11px] font-bold text-[#22C55E] uppercase tracking-wider">L&apos;IA autonome</span>
-                      </div>
-                      <p className="text-[13px] text-[#555] leading-[1.65] mb-1.5">Cout d&apos;erreur faible et fiabilite prouvee.</p>
-                      <p className="text-[12px] text-[#999] leading-[1.5]">Enrichissement, scheduling, scoring, relances</p>
+                      <p className="text-[13px] text-white/70 leading-[1.65] mb-1.5">Ce qui touche a votre revenue, vos clients, votre culture.</p>
+                      <p className="text-[12px] text-white/40 leading-[1.5]">Strategie commerciale, decisions pricing, choix des comptes strategiques, gestion de crise, embauches.</p>
                     </div>
                   </div>
 
                   {/* Rule box */}
-                  <div className="mt-6 rounded-xl border border-dashed border-[#333] bg-[#111] p-5">
-                    <p className="text-[13px] text-white/60 leading-[1.75]">Regle : une tache passe au niveau superieur apres 50+ occurrences avec un taux d&apos;erreur acceptable. Concret, mesurable, auditable.</p>
+                  <div className="mt-6 rounded-xl border border-dashed border-[#333] p-5">
+                    <p className="text-[13px] text-white/60 leading-[1.75]">Regle : si on commence a prendre des decisions qui devraient etre votres, on a derive. Notre job, c&apos;est de vous donner les outils, la donnee et la methode pour decider mieux &mdash; pas de decider a votre place.</p>
                   </div>
                 </div>
               </section>
               <Connector />
 
-              {/* ───── Section 10 : L'impact reel ───── */}
+              {/* ───── Section : L'impact mesure ───── */}
               <section id="impact" className="mb-8">
                 <div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-6">Ce que ca change concretement</h2>
+                  <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-2">Ce que la methode produit</h2>
+                  <p className="text-[12px] text-[#999] mb-6">Medianes observees sur des missions Ceres comparables &mdash; scale-ups SaaS B2B entre 30 et 300 personnes. Mesure en production, pas modelise.</p>
 
-                  {/* 5 before/after metrics */}
                   <div className="space-y-3 mb-6">
                     {[
-                      { label: "Equipe pour 1000 leads/mois", before: "8 personnes", after: "3 personnes" },
-                      { label: "Temps de qualification", before: "15 min", after: "2 min par lead" },
-                      { label: "Precision forecast", before: "35%", after: "88%" },
-                      { label: "Reporting", before: "12h/semaine", after: "30 min" },
-                      { label: "Detection churn", before: "J-10", after: "J-45" },
+                      { label: "Pipeline qualifie en sortie de marketing", before: "100%", after: "+38%", note: "Apres refonte scoring + lead routing" },
+                      { label: "Temps de qualification d'un lead", before: "15 min", after: "2 min", note: "Data layer + enrichissement automatique" },
+                      { label: "Forecast accuracy a 90 jours", before: "35%", after: "88%", note: "Stage criteria stricts + suivi data quality" },
+                      { label: "Reporting hebdo par silo", before: "12h", after: "30 min", note: "Dashboards automatises + source unique" },
+                      { label: "Detection signaux de churn", before: "J-10", after: "J-45", note: "Health score + alertes triggers CS" },
                     ].map((item) => (
-                      <div key={item.label} className="rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4 flex items-center justify-between gap-4">
-                        <p className="text-[13px] font-medium text-[#111] flex-1">{item.label}</p>
-                        <div className="flex items-center gap-3 shrink-0">
-                          <div className="text-right">
-                            <div className="text-[14px] font-bold text-[#EF4444]">{item.before}</div>
-                            <p className="text-[9px] text-[#999]">Avant</p>
-                          </div>
-                          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="text-[#999]"><path d="M4 8h8M9 5l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                          <div>
-                            <div className="text-[14px] font-bold text-[#22C55E]">{item.after}</div>
-                            <p className="text-[9px] text-[#999]">Apres</p>
+                      <div key={item.label} className="rounded-xl border border-[#F2F2F2] bg-[#FAFAFA] p-4">
+                        <div className="flex items-center justify-between gap-4 mb-2">
+                          <p className="text-[13px] font-medium text-[#111] flex-1">{item.label}</p>
+                          <div className="flex items-center gap-3 shrink-0">
+                            <div className="text-right">
+                              <div className="text-[14px] font-bold text-[#999]">{item.before}</div>
+                              <p className="text-[9px] text-[#999]">Avant</p>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="text-[#999]"><path d="M4 8h8M9 5l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                            <div>
+                              <div className="text-[14px] font-bold text-[#22C55E]">{item.after}</div>
+                              <p className="text-[9px] text-[#999]">Apres</p>
+                            </div>
                           </div>
                         </div>
+                        <p className="text-[11px] text-[#777] leading-[1.5]">{item.note}</p>
                       </div>
                     ))}
                   </div>
 
                   <div className="space-y-4 text-[13px] text-[#555] leading-[1.75]">
-                    <p className="font-semibold text-[#111]">Parlons clairement. Le premier levier de l&apos;IA dans une organisation commerciale, c&apos;est la capacite a absorber plus de volume avec la meme equipe. Une equipe de 3 augmentee par l&apos;IA produit ce qu&apos;une equipe de 8 produisait sans. Pas parce que l&apos;IA remplace. Parce qu&apos;elle elimine les taches qui ne requierent pas de jugement humain.</p>
-                    <p>Les entreprises qui mettent en place cette methodologie maintenant construisent un avantage compose irreversible.</p>
+                    <p className="font-semibold text-[#111]">Un revenue engine bien structure ne fait pas seulement gagner du temps. Il rend votre equipe previsible. Une previsibilite qui se traduit en confiance des investisseurs, en pricing power, en capacite a recruter sans paniquer sur le runway.</p>
+                    <p>C&apos;est ce que produit le RevOps. Pas une optimisation locale, mais un changement de regime de votre revenue.</p>
+                  </div>
+
+                  <div className="mt-6 flex items-center justify-between flex-wrap gap-4">
+                    <p className="text-[12px] text-[#999]">+250 missions livrees depuis 2019.</p>
+                    <Link href="/cas-clients" className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#4B5EFC] hover:text-[#3A4DE0] transition-colors">
+                      Voir les cas clients detailles
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    </Link>
                   </div>
                 </div>
               </section>
@@ -666,11 +583,11 @@ export default function MethodePage() {
               {/* ───── CTA ───── */}
               <section className="mb-8">
                 <div className="rounded-2xl p-8 md:p-12 text-center" style={{ background: "linear-gradient(135deg, #FF7A59, #E8533F)" }}>
-                  <h2 className="text-[24px] sm:text-[28px] font-semibold text-white tracking-[-0.02em] mb-3">Pret a structurer vos operations pour l&apos;IA ?</h2>
-                  <p className="text-[14px] text-white/70 mb-6 max-w-[460px] mx-auto">30 minutes pour comprendre ou vous en etes et par ou commencer.</p>
+                  <h2 className="text-[24px] sm:text-[28px] font-semibold text-white tracking-[-0.02em] mb-3">Pret a transformer votre revenue engine ?</h2>
+                  <p className="text-[14px] text-white/70 mb-6 max-w-[460px] mx-auto">30 minutes pour identifier vos quick wins RevOps. Pas de slide deck, pas de bullshit &mdash; juste des recommandations actionnables.</p>
                   <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors">
                     <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
-                    Reserver un appel
+                    Reserver un diagnostic
                   </Link>
                 </div>
               </section>
@@ -680,26 +597,26 @@ export default function MethodePage() {
               <section>
                 <p className="text-[11px] font-semibold text-[#999] uppercase tracking-wider mb-4">Continuer la lecture</p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <Link href="/fondation-data" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                  <Link href="/audit-revops" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-2 h-2 rounded-sm bg-[#FF7A59]" />
-                      <h3 className="text-[12px] font-semibold text-[#111]">Fondation Data</h3>
+                      <h3 className="text-[12px] font-semibold text-[#111]">Audit RevOps</h3>
                     </div>
-                    <p className="text-[11px] text-[#777] leading-[1.5]">CRM propre, KPIs alignes</p>
+                    <p className="text-[11px] text-[#777] leading-[1.5]">Diagnostic stack + data + process en 72h</p>
                   </Link>
-                  <Link href="/agents-ia" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                  <Link href="/externaliser-revops" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-2 h-2 rounded-sm bg-[#6D00CC]" />
-                      <h3 className="text-[12px] font-semibold text-[#111]">Deploiement IA</h3>
+                      <div className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                      <h3 className="text-[12px] font-semibold text-[#111]">RevOps externalise</h3>
                     </div>
-                    <p className="text-[11px] text-[#777] leading-[1.5]">Optimiser chaque silo</p>
+                    <p className="text-[11px] text-[#777] leading-[1.5]">RevOps part-time mensualise</p>
                   </Link>
-                  <Link href="/blog" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
+                  <Link href="/cas-clients" className="block rounded-xl border border-[#F2F2F2] p-4 hover:border-[#DDD] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)] transition-all">
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-2 h-2 rounded-sm bg-[#4B5EFC]" />
-                      <h3 className="text-[12px] font-semibold text-[#111]">Blog</h3>
+                      <h3 className="text-[12px] font-semibold text-[#111]">Cas clients</h3>
                     </div>
-                    <p className="text-[11px] text-[#777] leading-[1.5]">68+ articles RevOps, Data et IA</p>
+                    <p className="text-[11px] text-[#777] leading-[1.5]">250+ missions SaaS B2B</p>
                   </Link>
                 </div>
               </section>
