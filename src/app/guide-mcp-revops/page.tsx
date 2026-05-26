@@ -57,7 +57,7 @@ export default function GuideMcpRevopsLandingPage() {
     if ((window as any).hbspt) {
       (window as any).hbspt.forms.create({
         portalId: "2703445",
-        formId: "461a976f-66db-4946-9e3f-883c83d4a084",
+        formId: "a873c183-29ba-4553-bc40-3e01678ef5f6",
         region: "na1",
         target: "#hs-guide-form",
       });
@@ -72,7 +72,7 @@ export default function GuideMcpRevopsLandingPage() {
       if ((window as any).hbspt) {
         (window as any).hbspt.forms.create({
           portalId: "2703445",
-          formId: "461a976f-66db-4946-9e3f-883c83d4a084",
+          formId: "a873c183-29ba-4553-bc40-3e01678ef5f6",
           region: "na1",
           target: "#hs-guide-form",
         });

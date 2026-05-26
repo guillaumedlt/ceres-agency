@@ -44,6 +44,7 @@ const guideCovers: Record<string, { gradient: string; title: string }> = {
   "guide-migration-crm": { gradient: "linear-gradient(135deg, #4B5EFC 0%, #3B82F6 50%, #1D4ED8 100%)", title: "Migration" },
   "guide-data-quality-crm": { gradient: "linear-gradient(135deg, #22C55E 0%, #16A34A 50%, #15803D 100%)", title: "Data" },
   "guide-claude-marketing": { gradient: "linear-gradient(135deg, #D4A27F 0%, #B8956A 50%, #8B7355 100%)", title: "Claude" },
+  "guide-mcp-revops": { gradient: "linear-gradient(135deg, #0EA5E9 0%, #6366F1 50%, #4338CA 100%)", title: "MCP" },
 };
 
 function MiniBookCover({ slug, size = 40 }: { slug: string; size?: number }) {
@@ -71,6 +72,47 @@ const categories = [
 ];
 
 const guides: Guide[] = [
+  {
+    slug: "guide-mcp-revops",
+    title: "Le Guide MCP pour le RevOps",
+    subtitle: "Claude, ChatGPT et votre CRM en 2026",
+    description: "Le guide complet pour deployer Model Context Protocol dans votre revenue engine. Architecture, HubSpot MCP server (GA avril 2026), 9 serveurs RevOps indispensables, 12 cas d’usage avec extraits de code, securite RGPD et plan 30/60/90 jours. A jour mai 2026.",
+    category: "ia",
+    pages: 65,
+    format: "PDF + Code + Checklists",
+    color: "#6366F1",
+    icon: "MCP",
+    landingUrl: "/guide-mcp-revops",
+    featured: true,
+    chapters: [
+      "MCP en 2026 : pourquoi c’est devenu le standard",
+      "Architecture MCP : host, client, server, transport",
+      "MCP vs API REST, Zapier, iPaaS : quand utiliser quoi",
+      "Le HubSpot MCP server (GA depuis avril 2026)",
+      "Les 9 MCP servers RevOps indispensables",
+      "12 cas d’usage RevOps avec extraits de code",
+      "Securite, gouvernance, RGPD",
+      "Build vs Buy : votre MCP server ou celui de l’editeur",
+      "Multi-CRM : federation ou gateway",
+      "MCP tunnels et sandboxes self-hosted",
+      "Plan d’implementation 30 / 60 / 90 jours",
+    ],
+    includes: [
+      "65 pages a jour mai 2026 (HubSpot MCP GA, rachat Stainless)",
+      "12 extraits de code prets a coller (Claude Desktop, ChatGPT, Vercel AI SDK)",
+      "Checklist securite OAuth 2.1 + RGPD 8 points",
+      "Templates de prompts pour 12 agents RevOps",
+      "Plan 30/60/90 jours avec KPIs de validation",
+      "Sources et liens vers tous les MCP servers officiels",
+      "Bonus : table de decision build vs buy avec TCO 12 mois",
+    ],
+    forWho: [
+      "VP RevOps / Head of Ops qui priorisent la stack IA 2026",
+      "Founders et CRO scale-ups qui evaluent build vs buy",
+      "RevOps Managers et leur IT qui deploient techniquement",
+      "Equipes Sales-Marketing-CS qui veulent industrialiser leurs agents IA",
+    ],
+  },
   {
     slug: "guide-revops-complet",
     title: "Le Guide RevOps Complet",
