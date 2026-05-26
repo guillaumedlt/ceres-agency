@@ -381,6 +381,36 @@ export default function OutilsPage() {
           </p>
         </section>
 
+        {/* Calculateurs Ceres */}
+        <section className="max-w-6xl mx-auto px-6 pb-12">
+          <div className="rounded-2xl border border-[#E8E8E8] bg-white p-6 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
+            <div className="flex items-center gap-3 mb-4">
+              <Badge>Nos outils gratuits</Badge>
+              <span className="text-[11px] text-[#999]">Calculs unit economics SaaS B2B</span>
+            </div>
+            <h2 className="text-[24px] md:text-[28px] font-semibold text-[#111] tracking-[-0.02em] mb-5">
+              3 calculateurs RevOps interactifs
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <Link href="/outils/calculateur-cac-payback" className="block rounded-xl border border-[#F2F2F2] p-5 hover:border-[#FF7A59] hover:shadow-[0_4px_12px_-4px_rgba(255,122,89,0.15)] transition-all group">
+                <div className="w-10 h-10 rounded-lg bg-[#FF7A59]/10 text-[#FF7A59] flex items-center justify-center mb-3 font-mono text-[13px] font-bold">CAC</div>
+                <h3 className="text-[14px] font-semibold text-[#111] mb-1.5">Calculateur CAC Payback</h3>
+                <p className="text-[12px] text-[#777] leading-[1.6]">Combien de mois pour rentabiliser un client SaaS B2B ? Formule + benchmark 2026.</p>
+              </Link>
+              <Link href="/outils/calculateur-ltv-cac" className="block rounded-xl border border-[#F2F2F2] p-5 hover:border-[#4B5EFC] hover:shadow-[0_4px_12px_-4px_rgba(75,94,252,0.15)] transition-all group">
+                <div className="w-10 h-10 rounded-lg bg-[#4B5EFC]/10 text-[#4B5EFC] flex items-center justify-center mb-3 font-mono text-[12px] font-bold">LTV</div>
+                <h3 className="text-[14px] font-semibold text-[#111] mb-1.5">Calculateur LTV / CAC</h3>
+                <p className="text-[12px] text-[#777] leading-[1.6]">Mesurer la rentabilite unitaire de votre SaaS. LTV, CAC, ratio, 5 zones d&apos;interpretation.</p>
+              </Link>
+              <Link href="/outils/calculateur-pipeline-coverage" className="block rounded-xl border border-[#F2F2F2] p-5 hover:border-[#22C55E] hover:shadow-[0_4px_12px_-4px_rgba(34,197,94,0.15)] transition-all group">
+                <div className="w-10 h-10 rounded-lg bg-[#22C55E]/10 text-[#22C55E] flex items-center justify-center mb-3 font-mono text-[13px] font-bold">P/C</div>
+                <h3 className="text-[14px] font-semibold text-[#111] mb-1.5">Pipeline Coverage</h3>
+                <p className="text-[12px] text-[#777] leading-[1.6]">Avez-vous assez de pipeline pour atteindre vos objectifs Q ? Coverage actuel vs minimum requis.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Search + Filters */}
         <section className="max-w-6xl mx-auto px-6 pb-8">
           {/* Search bar */}
