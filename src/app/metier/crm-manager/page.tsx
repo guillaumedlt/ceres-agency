@@ -7,7 +7,6 @@ import Connector from "@/components/marketing/Connector";
 
 const faqs = [
   { q: "Quelle est la difference entre CRM Manager et Sales Ops ?", a: "Le CRM Manager est focalise sur l'outil : configuration, integrations, qualite data, administration. Le Sales Ops est plus large : il utilise le CRM comme moyen, mais pilote aussi le pipeline, le forecast, les quotas. Le CRM Manager est parfois rattache au Sales Ops Manager dans les grosses structures." },
-  { q: "Quel salaire pour un CRM Manager en France en 2026 ?", a: "Junior (1-2 ans) : 38-48k EUR. Confirme (3-5 ans) : 50-65k EUR. Senior (5+ ans) : 65-85k EUR. Lead CRM Architect : 80-110k EUR. A Paris, +10%." },
   { q: "Quelles certifications obtenir ?", a: "Pour HubSpot : HubSpot Marketing Hub, Sales Hub, Service Hub, Solutions Architect Design (toutes gratuites). Pour Salesforce : Salesforce Administrator (ADM-201), Advanced Administrator, Platform App Builder. Ces certifs ouvrent 80% des opportunites." },
   { q: "Faut-il savoir coder pour etre CRM Manager ?", a: "Pas en entree de poste. Mais des le niveau Confirme, savoir lire/ecrire du JavaScript pour HubSpot custom code workflows, du Apex pour Salesforce, et du SQL pour les analyses devient un plus tres differenciant en remuneration." },
   { q: "Le metier de CRM Manager va-t-il disparaitre avec l'IA ?", a: "Non, il evolue. Les agents IA et MCP servers necessitent encore plus de gouvernance CRM : qualite data, gestion des permissions, audit des actions. Le CRM Manager devient le gardien du systeme dans lequel les agents tournent." },
@@ -42,7 +41,7 @@ const evolution = [
 ];
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
-  { "@type": "Occupation", name: "CRM Manager", description: "Le CRM Manager administre, configure et fait evoluer la plateforme CRM (HubSpot, Salesforce, Pipedrive, Attio). Garant de la qualite data, des integrations et de l'adoption.", occupationLocation: { "@type": "Country", name: "France" }, estimatedSalary: [{ "@type": "MonetaryAmountDistribution", name: "Senior", currency: "EUR", duration: "P1Y", percentile10: 60000, median: 72000, percentile90: 85000 }], skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
+  { "@type": "Occupation", name: "CRM Manager", description: "Le CRM Manager administre, configure et fait evoluer la plateforme CRM (HubSpot, Salesforce, Pipedrive, Attio). Garant de la qualite data, des integrations et de l'adoption.", occupationLocation: { "@type": "Country", name: "France" }, skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
   { "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" }, { "@type": "ListItem", position: 2, name: "Fiches metier", item: "https://ceres.agency/metier/crm-manager" }, { "@type": "ListItem", position: 3, name: "CRM Manager", item: "https://ceres.agency/metier/crm-manager" }] },
 ]};
@@ -51,7 +50,6 @@ const sections = [
   { id: "definition", title: "Definition" },
   { id: "missions", title: "Missions cles" },
   { id: "competences", title: "Competences" },
-  { id: "salaire", title: "Salaire 2026" },
   { id: "evolution", title: "Evolution carriere" },
   { id: "faq", title: "FAQ" },
 ];
@@ -117,23 +115,6 @@ export default function CRMManagerPage() {
               <section id="competences" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                 <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Competences requises</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{competences.map((c) => (<div key={c.title} className="rounded-xl border border-[#F2F2F2] p-4 flex items-center justify-between gap-3"><p className="text-[13px] text-[#111] font-medium">{c.title}</p><span className="text-[10px] px-2 py-0.5 rounded bg-[#4B5EFC]/10 text-[#4B5EFC] font-mono shrink-0">{c.level}</span></div>))}</div>
-              </div></section>
-              <Connector />
-
-              <section id="salaire" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Salaire CRM Manager en France 2026</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-[12px] border border-[#E8E8E8]">
-                    <thead className="bg-[#FAFAFA]"><tr><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Seniorite</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Salaire fixe</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Variable typique</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Total OTE</th></tr></thead>
-                    <tbody className="text-[#555]">
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Junior (1-2 ans)</td><td className="p-3 border-b border-[#F2F2F2]">38-48 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">3-5 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">41-53 k EUR</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Confirme (3-5 ans)</td><td className="p-3 border-b border-[#F2F2F2]">50-65 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">5-10 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">55-75 k EUR</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Senior (5+ ans)</td><td className="p-3 border-b border-[#F2F2F2]">65-85 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">10-15 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">75-100 k EUR</td></tr>
-                      <tr><td className="p-3 font-medium text-[#111]">CRM Architect</td><td className="p-3">80-110 k EUR</td><td className="p-3">10-20 k EUR</td><td className="p-3">90-130 k EUR</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[12px] text-[#999] mt-4">Les CRM Managers avec certification Salesforce Advanced Administrator ou HubSpot Solutions Architect peuvent negocier +15% au-dessus de ces fourchettes.</p>
               </div></section>
               <Connector />
 

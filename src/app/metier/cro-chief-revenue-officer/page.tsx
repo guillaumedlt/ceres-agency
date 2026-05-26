@@ -7,7 +7,6 @@ import Connector from "@/components/marketing/Connector";
 
 const faqs = [
   { q: "Quelle est la difference entre CRO, VP Sales et VP Revenue ?", a: "Le VP Sales pilote uniquement la fonction commerciale. Le VP Revenue couvre Sales + RevOps mais reste un niveau VP. Le CRO est un titre executif qui inclut Sales + Marketing + souvent CS + RevOps, et siege au comite executif (comex) avec reporting direct au CEO." },
-  { q: "Quel salaire pour un CRO en France en 2026 ?", a: "Scale-up Serie A : 130-170k EUR fixe + variable 50-80k + equity. Scale-up Serie B/C : 170-220k EUR fixe + variable 80-120k + equity significatif. Scale-up Serie D+ ou licorne : 200-300k EUR fixe + 150k+ variable + equity premium. Total comp peut atteindre 600k-1M EUR avec l'equity." },
   { q: "Quand recruter un CRO ?", a: "Typiquement entre la Serie A et la Serie B, quand l'ARR depasse 5-10M EUR et que les fonctions Sales/Marketing/CS sont stabilisees mais pas encore alignees strategiquement. Trop tot, le CRO ne sert a rien. Trop tard, vous perdez 6-12 mois de croissance optimisable." },
   { q: "Quel parcours pour devenir CRO ?", a: "Trois chemins. (1) VP Sales evolue avec elargissement perimetre Marketing/CS. (2) Operateur SaaS B2B (Founder repenti, COO) qui se specialise revenue. (3) Senior partner en VC ou conseil strategique qui passe operationnel. Tous ont 12-20 ans d'experience B2B." },
   { q: "Le CRO va-t-il etre remplace par l'IA ?", a: "Non. Le CRO devient encore plus indispensable car il est le pilote strategique des agents IA, du build vs buy, et des decisions d'investissement RevOps. L'IA augmente sa productivite mais ne remplace pas son jugement strategique et politique." },
@@ -42,7 +41,7 @@ const evolution = [
 ];
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
-  { "@type": "Occupation", name: "Chief Revenue Officer", description: "Le CRO (Chief Revenue Officer) dirige strategiquement l'ensemble de la fonction revenue d'une entreprise B2B : Sales, Marketing, Customer Success et RevOps. Membre du comex avec reporting direct au CEO.", occupationLocation: { "@type": "Country", name: "France" }, estimatedSalary: [{ "@type": "MonetaryAmountDistribution", name: "Senior", currency: "EUR", duration: "P1Y", percentile10: 150000, median: 200000, percentile90: 280000 }], skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
+  { "@type": "Occupation", name: "Chief Revenue Officer", description: "Le CRO (Chief Revenue Officer) dirige strategiquement l'ensemble de la fonction revenue d'une entreprise B2B : Sales, Marketing, Customer Success et RevOps. Membre du comex avec reporting direct au CEO.", occupationLocation: { "@type": "Country", name: "France" }, skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
   { "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" }, { "@type": "ListItem", position: 2, name: "Fiches metier", item: "https://ceres.agency/metier/sales-ops-manager" }, { "@type": "ListItem", position: 3, name: "CRO Chief Revenue Officer", item: "https://ceres.agency/metier/cro-chief-revenue-officer" }] },
 ]};
@@ -51,7 +50,6 @@ const sections = [
   { id: "definition", title: "Definition" },
   { id: "missions", title: "Missions cles" },
   { id: "competences", title: "Competences" },
-  { id: "salaire", title: "Salaire 2026" },
   { id: "evolution", title: "Evolution carriere" },
   { id: "faq", title: "FAQ" },
 ];
@@ -94,7 +92,7 @@ export default function CROPage() {
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-4"><Badge>Fiche metier</Badge><span className="text-[12px] text-[#999]">Mai 2026</span><span className="text-[12px] text-[#999]">11 min</span></div>
               <h1 className="text-[32px] sm:text-[44px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-4">Chief Revenue Officer (CRO) : fiche metier 2026</h1>
-              <p className="text-[17px] text-[#666] leading-[1.7]">Le poste cle du comex en SaaS B2B. Missions, salaire, competences, parcours et evolution.</p>
+              <p className="text-[17px] text-[#666] leading-[1.7]">Le poste cle du comex en SaaS B2B. Missions, competences, parcours et evolution.</p>
             </div>
 
             <article>
@@ -117,23 +115,6 @@ export default function CROPage() {
               <section id="competences" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                 <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Competences requises</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{competences.map((c) => (<div key={c.title} className="rounded-xl border border-[#F2F2F2] p-4 flex items-center justify-between gap-3"><p className="text-[13px] text-[#111] font-medium">{c.title}</p><span className="text-[10px] px-2 py-0.5 rounded bg-[#22C55E]/10 text-[#22C55E] font-mono shrink-0">{c.level}</span></div>))}</div>
-              </div></section>
-              <Connector />
-
-              <section id="salaire" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Salaire CRO en France 2026</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-[12px] border border-[#E8E8E8]">
-                    <thead className="bg-[#FAFAFA]"><tr><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Stade boite</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Fixe</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Variable + Equity</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Total comp annuel</th></tr></thead>
-                    <tbody className="text-[#555]">
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Scale-up Serie A (5-15M ARR)</td><td className="p-3 border-b border-[#F2F2F2]">130-170 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">50-80 k + equity 0.5-2%</td><td className="p-3 border-b border-[#F2F2F2]">180-250 k EUR (+equity)</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Scale-up Serie B/C (20-80M ARR)</td><td className="p-3 border-b border-[#F2F2F2]">170-220 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">80-120 k + equity 0.25-1%</td><td className="p-3 border-b border-[#F2F2F2]">250-340 k EUR (+equity)</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Scale-up Serie D+ / licorne</td><td className="p-3 border-b border-[#F2F2F2]">220-300 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">100-200 k + equity premium</td><td className="p-3 border-b border-[#F2F2F2]">320-500 k EUR (+equity)</td></tr>
-                      <tr><td className="p-3 font-medium text-[#111]">Pre-IPO / public company</td><td className="p-3">300-450 k EUR</td><td className="p-3">200-400 k + stock options</td><td className="p-3">500k-1M EUR+</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[12px] text-[#999] mt-4">L&apos;equity est le levier dominant en CRO scale-up : un CRO bien place sur une scale-up qui sort en IPO peut faire 5-20M EUR sur ses stocks. C&apos;est l&apos;upside qui justifie le risque vs un VP Sales.</p>
               </div></section>
               <Connector />
 

@@ -6,8 +6,7 @@ const metiers = [
     slug: "sales-ops-manager",
     title: "Sales Operations Manager",
     desc: "Garant de l'efficacite de l'equipe Sales : pipeline, forecast, CRM, sales enablement, reporting.",
-    salary: "45-90 k EUR + variable",
-    seniority: "Confirme : 60-80k EUR",
+    seniority: "1-8 ans d'experience",
     color: "#FF7A59",
     href: "/metier/sales-ops-manager",
   },
@@ -15,8 +14,7 @@ const metiers = [
     slug: "crm-manager",
     title: "CRM Manager",
     desc: "Administrateur et architecte de la plateforme CRM. Qualite data, integrations, gouvernance.",
-    salary: "40-85 k EUR + variable",
-    seniority: "Confirme : 50-65k EUR",
+    seniority: "1-8 ans d'experience",
     color: "#4B5EFC",
     href: "/metier/crm-manager",
   },
@@ -24,8 +22,7 @@ const metiers = [
     slug: "revops-director",
     title: "RevOps Director",
     desc: "Direction strategique de la fonction RevOps. Equipe 5-15 personnes, architecture stack, gouvernance KPIs.",
-    salary: "90-160 k EUR + equity",
-    seniority: "Senior : 120-160k EUR",
+    seniority: "5+ ans d'experience",
     color: "#6D00CC",
     href: "/metier/revops-director",
   },
@@ -33,15 +30,14 @@ const metiers = [
     slug: "cro-chief-revenue-officer",
     title: "Chief Revenue Officer (CRO)",
     desc: "Direction strategique de l'ensemble du revenue : Sales + Marketing + CS + RevOps. Membre du comex.",
-    salary: "130-300 k EUR + equity significatif",
-    seniority: "Scale-up Serie B/C : 200k+",
+    seniority: "12+ ans d'experience",
     color: "#22C55E",
     href: "/metier/cro-chief-revenue-officer",
   },
 ];
 
 const otherMetiers = [
-  { title: "RevOps Manager", desc: "Fiche metier complete avec missions, salaire et competences.", href: "/blog/revops-manager-fiche-poste-salaire-competences" },
+  { title: "RevOps Manager", desc: "Fiche metier complete avec missions et competences.", href: "/blog/revops-manager-fiche-poste-salaire-competences" },
   { title: "Marketing Operations Manager", desc: "Definition et perimetre du metier Marketing Ops.", href: "/blog/marketing-ops-definition" },
   { title: "RevOps vs Sales Ops vs Marketing Ops", desc: "Quelle difference entre ces 3 metiers et comment ils s'articulent.", href: "/blog/revops-vs-sales-ops-marketing-ops" },
 ];
@@ -49,7 +45,7 @@ const otherMetiers = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "CollectionPage", name: "Fiches metier RevOps", description: "Toutes les fiches metier RevOps : Sales Ops, CRM Manager, RevOps Director, CRO. Missions, salaires 2026, competences, evolution.", url: "https://ceres.agency/metier", inLanguage: "fr-FR", isPartOf: { "@id": "https://ceres.agency/#website" } },
+    { "@type": "CollectionPage", name: "Fiches metier RevOps", description: "Toutes les fiches metier RevOps : Sales Ops, CRM Manager, RevOps Director, CRO. Missions, competences, evolution.", url: "https://ceres.agency/metier", inLanguage: "fr-FR", isPartOf: { "@id": "https://ceres.agency/#website" } },
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" },
       { "@type": "ListItem", position: 2, name: "Fiches metier", item: "https://ceres.agency/metier" },
@@ -80,7 +76,7 @@ export default function MetierIndexPage() {
             Les metiers du RevOps en France
           </h1>
           <p className="text-[17px] text-[#666] max-w-[640px] mx-auto leading-[1.7]">
-            Missions, salaires, competences, evolution de carriere. Le panorama complet des roles Revenue Operations en France en 2026.
+            Missions, competences, evolution de carriere. Le panorama complet des roles Revenue Operations en France en 2026.
           </p>
         </div>
 
@@ -95,12 +91,11 @@ export default function MetierIndexPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-[16px] font-semibold text-[#111] group-hover:text-[#FF7A59] transition-colors">{m.title}</h3>
-                    <p className="text-[11px] text-[#999] font-mono mt-0.5">{m.salary}</p>
+                    <p className="text-[11px] text-[#999] mt-0.5">{m.seniority}</p>
                   </div>
                 </div>
                 <p className="text-[13px] text-[#555] leading-[1.65] mb-3">{m.desc}</p>
-                <div className="flex items-center justify-between pt-3 border-t border-[#F2F2F2]">
-                  <span className="text-[11px] text-[#999]">{m.seniority}</span>
+                <div className="flex items-center justify-end pt-3 border-t border-[#F2F2F2]">
                   <span className="text-[12px] font-medium text-[#FF7A59] flex items-center gap-1">
                     Lire la fiche
                     <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>

@@ -7,7 +7,6 @@ import Connector from "@/components/marketing/Connector";
 
 const faqs = [
   { q: "Quelle est la difference entre Sales Ops et RevOps Manager ?", a: "Le Sales Ops est focalise sur l'equipe Sales : pipeline, forecast, sales enablement, outils CRM cote sales. Le RevOps est plus large : il aligne Sales, Marketing et CS. Le RevOps Manager est souvent l'evolution du Sales Ops dans les boites qui maturent leur ops." },
-  { q: "Quel salaire pour un Sales Ops Manager en France en 2026 ?", a: "Junior (1-3 ans) : 45-55k EUR. Confirme (3-5 ans) : 55-75k EUR. Senior (5+ ans) : 70-90k EUR. Lead Sales Ops dans une scale-up : 80-110k EUR. A Paris, ajouter 10-15% sur ces fourchettes." },
   { q: "Quels outils maitriser pour devenir Sales Ops Manager ?", a: "CRM (HubSpot, Salesforce, Pipedrive), outils de sales engagement (Lemlist, Outreach, Salesloft), Clay et outils d'enrichissement, BI (Looker, Tableau, BigQuery), Excel/Sheets avance, et idealement un peu de SQL et Python pour les analyses ad hoc." },
   { q: "Quelle formation pour devenir Sales Ops Manager ?", a: "Pas de cursus dedie. Les profils typiques viennent de l'ecole de commerce (audit, conseil, finance) ou d'ingenieur. Le plus important : 2-3 ans d'experience commerciale ou data analyst en B2B avant de basculer." },
   { q: "Le poste de Sales Ops va-t-il disparaitre avec l'IA ?", a: "Non. Au contraire, il evolue. Les taches operationnelles (reporting, data entry) sont automatisees, mais le Sales Ops devient le pilote des agents IA, la garante de la qualite data, et l'architecte du systeme RevOps. Plus strategique, plus complexe." },
@@ -42,11 +41,7 @@ const evolution = [
 ];
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
-  { "@type": "Occupation", name: "Sales Operations Manager", description: "Le Sales Ops Manager est le garant de l'efficacite operationnelle de l'equipe Sales en B2B. Il pilote le pipeline, le forecast, le CRM, le sales enablement et le reporting commercial.", occupationLocation: { "@type": "Country", name: "France" }, estimatedSalary: [
-    { "@type": "MonetaryAmountDistribution", name: "Junior", currency: "EUR", duration: "P1Y", percentile10: 42000, median: 50000, percentile90: 58000 },
-    { "@type": "MonetaryAmountDistribution", name: "Confirme", currency: "EUR", duration: "P1Y", percentile10: 55000, median: 65000, percentile90: 75000 },
-    { "@type": "MonetaryAmountDistribution", name: "Senior", currency: "EUR", duration: "P1Y", percentile10: 70000, median: 80000, percentile90: 95000 },
-  ], skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; "), educationRequirements: "Bac+5 ecole de commerce, ingenieur, ou equivalent. 2-3 ans d'experience en commercial, audit, conseil ou data analyst B2B." },
+  { "@type": "Occupation", name: "Sales Operations Manager", description: "Le Sales Ops Manager est le garant de l'efficacite operationnelle de l'equipe Sales en B2B. Il pilote le pipeline, le forecast, le CRM, le sales enablement et le reporting commercial.", occupationLocation: { "@type": "Country", name: "France" }, skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; "), educationRequirements: "Bac+5 ecole de commerce, ingenieur, ou equivalent. 2-3 ans d'experience en commercial, audit, conseil ou data analyst B2B." },
   { "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" }, { "@type": "ListItem", position: 2, name: "Fiches metier", item: "https://ceres.agency/metier/sales-ops-manager" }, { "@type": "ListItem", position: 3, name: "Sales Ops Manager", item: "https://ceres.agency/metier/sales-ops-manager" }] },
 ]};
@@ -55,7 +50,6 @@ const sections = [
   { id: "definition", title: "Definition" },
   { id: "missions", title: "Missions cles" },
   { id: "competences", title: "Competences" },
-  { id: "salaire", title: "Salaire 2026" },
   { id: "evolution", title: "Evolution carriere" },
   { id: "faq", title: "FAQ" },
 ];
@@ -98,7 +92,7 @@ export default function SalesOpsManagerPage() {
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-4"><Badge>Fiche metier</Badge><span className="text-[12px] text-[#999]">Mai 2026</span><span className="text-[12px] text-[#999]">10 min</span></div>
               <h1 className="text-[32px] sm:text-[44px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-4">Sales Ops Manager : fiche metier 2026</h1>
-              <p className="text-[17px] text-[#666] leading-[1.7]">Missions, competences, salaire, evolution. Le guide complet du metier Sales Operations Manager en B2B en France en 2026.</p>
+              <p className="text-[17px] text-[#666] leading-[1.7]">Missions, competences, evolution. Le guide complet du metier Sales Operations Manager en B2B en France en 2026.</p>
             </div>
 
             <article>
@@ -135,23 +129,6 @@ export default function SalesOpsManagerPage() {
                     </div>
                   ))}
                 </div>
-              </div></section>
-              <Connector />
-
-              <section id="salaire" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Salaire Sales Ops Manager en France 2026</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-[12px] border border-[#E8E8E8]">
-                    <thead className="bg-[#FAFAFA]"><tr><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Seniorite</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Salaire fixe</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Variable typique</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Total OTE</th></tr></thead>
-                    <tbody className="text-[#555]">
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Junior (1-3 ans)</td><td className="p-3 border-b border-[#F2F2F2]">42-55 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">5-10 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">47-65 k EUR</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Confirme (3-5 ans)</td><td className="p-3 border-b border-[#F2F2F2]">55-75 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">10-15 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">65-90 k EUR</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Senior (5+ ans)</td><td className="p-3 border-b border-[#F2F2F2]">70-90 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">15-25 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">85-115 k EUR</td></tr>
-                      <tr><td className="p-3 font-medium text-[#111]">Lead Sales Ops scale-up</td><td className="p-3">80-110 k EUR</td><td className="p-3">15-30 k EUR + equity</td><td className="p-3">95-140 k EUR + equity</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[12px] text-[#999] mt-4">A Paris, ajouter 10-15% sur ces fourchettes. En full remote depuis une grande ville europeenne ou la province, le delta tombe a 0-5%.</p>
               </div></section>
               <Connector />
 

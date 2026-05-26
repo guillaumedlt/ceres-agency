@@ -7,7 +7,6 @@ import Connector from "@/components/marketing/Connector";
 
 const faqs = [
   { q: "Quelle est la difference entre RevOps Director et VP RevOps ?", a: "Le RevOps Director pilote operationnellement le RevOps : equipe, roadmap, livrables, KPIs. Le VP RevOps a une dimension plus strategique et siege au comite executif. Dans les scale-ups jusqu'a 500 personnes, les deux roles se confondent souvent." },
-  { q: "Quel salaire pour un RevOps Director en France en 2026 ?", a: "Confirme (5-8 ans) : 90-120k EUR. Senior (8+ ans) : 120-160k EUR. Avec equity, le total compensation atteint facilement 180-250k EUR dans une scale-up Serie B/C." },
   { q: "Combien de personnes dans une equipe RevOps ?", a: "PME (50-200 pers) : 1 a 3 personnes (souvent juste un Manager). Scale-up Serie B (200-500 pers) : 4 a 8 personnes (Manager + analystes + CRM). Enterprise (500+) : 10 a 25 personnes structurees en sous-fonctions (Sales Ops, Marketing Ops, CS Ops, Analytics)." },
   { q: "Quel parcours pour devenir RevOps Director ?", a: "Trois chemins typiques. (1) Sales Ops Manager senior qui monte. (2) Consultant strategie (McKinsey, Bain, BCG) qui passe industrie. (3) Operateur en SaaS B2B (Head of Ops, Head of CS) qui se specialise. Tous ont en commun 7-10 ans d'experience B2B." },
   { q: "Le RevOps Director rapporte a qui ?", a: "Le plus souvent au CRO (Chief Revenue Officer) ou directement au CEO dans les boites sans CRO. Dans les enterprises matures, peut rapporter au COO ou au CFO." },
@@ -42,7 +41,7 @@ const evolution = [
 ];
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
-  { "@type": "Occupation", name: "RevOps Director", description: "Le RevOps Director dirige la fonction Revenue Operations d'une entreprise B2B. Pilote l'equipe RevOps, l'architecture de la stack, la gouvernance des KPIs revenue et l'alignement cross-equipes.", occupationLocation: { "@type": "Country", name: "France" }, estimatedSalary: [{ "@type": "MonetaryAmountDistribution", name: "Senior", currency: "EUR", duration: "P1Y", percentile10: 100000, median: 130000, percentile90: 160000 }], skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
+  { "@type": "Occupation", name: "RevOps Director", description: "Le RevOps Director dirige la fonction Revenue Operations d'une entreprise B2B. Pilote l'equipe RevOps, l'architecture de la stack, la gouvernance des KPIs revenue et l'alignement cross-equipes.", occupationLocation: { "@type": "Country", name: "France" }, skills: competences.map((c) => c.title).join(", "), responsibilities: missions.map((m) => m.title).join("; ") },
   { "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: "https://ceres.agency" }, { "@type": "ListItem", position: 2, name: "Fiches metier", item: "https://ceres.agency/metier/sales-ops-manager" }, { "@type": "ListItem", position: 3, name: "RevOps Director", item: "https://ceres.agency/metier/revops-director" }] },
 ]};
@@ -51,7 +50,6 @@ const sections = [
   { id: "definition", title: "Definition" },
   { id: "missions", title: "Missions cles" },
   { id: "competences", title: "Competences" },
-  { id: "salaire", title: "Salaire 2026" },
   { id: "evolution", title: "Evolution carriere" },
   { id: "faq", title: "FAQ" },
 ];
@@ -117,22 +115,6 @@ export default function RevOpsDirectorPage() {
               <section id="competences" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
                 <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Competences requises</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">{competences.map((c) => (<div key={c.title} className="rounded-xl border border-[#F2F2F2] p-4 flex items-center justify-between gap-3"><p className="text-[13px] text-[#111] font-medium">{c.title}</p><span className="text-[10px] px-2 py-0.5 rounded bg-[#6D00CC]/10 text-[#6D00CC] font-mono shrink-0">{c.level}</span></div>))}</div>
-              </div></section>
-              <Connector />
-
-              <section id="salaire" className="mb-8"><div className="rounded-2xl border border-[#E8E8E8] bg-white p-5 md:p-8 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)]">
-                <h2 className="text-[20px] sm:text-[24px] font-semibold text-[#111] tracking-[-0.02em] mb-5">Salaire RevOps Director en France 2026</h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-[12px] border border-[#E8E8E8]">
-                    <thead className="bg-[#FAFAFA]"><tr><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Profil</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Fixe</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Variable + Equity</th><th className="text-left p-3 border-b border-[#E8E8E8] font-semibold text-[#111]">Total comp</th></tr></thead>
-                    <tbody className="text-[#555]">
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Confirme (5-8 ans)</td><td className="p-3 border-b border-[#F2F2F2]">90-120 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">15-30 k + equity</td><td className="p-3 border-b border-[#F2F2F2]">110-180 k EUR</td></tr>
-                      <tr><td className="p-3 border-b border-[#F2F2F2] font-medium text-[#111]">Senior (8+ ans)</td><td className="p-3 border-b border-[#F2F2F2]">120-160 k EUR</td><td className="p-3 border-b border-[#F2F2F2]">25-50 k + equity</td><td className="p-3 border-b border-[#F2F2F2]">160-250 k EUR</td></tr>
-                      <tr><td className="p-3 font-medium text-[#111]">VP RevOps</td><td className="p-3">150-200 k EUR</td><td className="p-3">40-80 k + equity significatif</td><td className="p-3">200-350 k EUR</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-[12px] text-[#999] mt-4">L&apos;equity en scale-up Serie B+ peut representer 50-150 k EUR equivalent annuel. Tres dependant du stade et du valuation de la boite.</p>
               </div></section>
               <Connector />
 
