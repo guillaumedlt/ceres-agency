@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
+import TrustStrip from "@/components/marketing/TrustStrip";
+import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
 
 const faqs = [
   { q: "Combien coute une agence RevOps en France en 2026 ?", a: "Trois fourchettes selon le modele. Audit RevOps : 5 a 15k EUR forfait. Implementation : 25 a 80k EUR selon scope. RevOps externalise mensualise : 4 500 a 12 000 EUR/mois selon le volume. Au-dela de 20k EUR/mois, c'est souvent surdimensionne pour une PME ou scale-up moyenne." },
@@ -199,10 +201,20 @@ export default function CommentChoisirAgenceRevOpsPage() {
               </div></section>
               <Connector />
 
+              <TrustStrip />
+
               <section className="mb-8"><div className="rounded-2xl p-8 md:p-12 text-center" style={{ background: "linear-gradient(135deg, #FF7A59, #E8533F)" }}>
                 <h2 className="text-[24px] sm:text-[28px] font-semibold text-white tracking-[-0.02em] mb-3">Vous evaluez Ceres ? On vous donne nos cas clients chiffres en 30 min.</h2>
                 <p className="text-[14px] text-white/70 mb-6 max-w-[460px] mx-auto">NRR, forecast accuracy, pipeline coverage avant/apres sur 5 cas representatifs. Sans engagement.</p>
-                <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors"><span className="w-2 h-2 rounded-sm bg-[#22C55E]" />Reserver un diagnostic</Link>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                  <a href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors">
+                    <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                    Reserver 30 min avec Guillaume
+                  </a>
+                  <a href="https://meetings.hubspot.com/simon156" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white/10 text-white text-[13px] font-medium hover:bg-white/20 transition-colors">
+                    Ou avec Simon
+                  </a>
+                </div>
               </div></section>
               <Connector />
 
@@ -213,6 +225,13 @@ export default function CommentChoisirAgenceRevOpsPage() {
           </div>
         </div>
       </div>
+
+      <StickyBottomCTA
+        message="On vous donne nos cas clients chiffres en 30 min"
+        ctaLabel="Reserver"
+        ctaHref="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9"
+        storageKey="comment-choisir-agence"
+      />
     </div>
   );
 }

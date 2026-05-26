@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
+import TrustStrip from "@/components/marketing/TrustStrip";
+import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
 
 const faqs = [
   { q: "Qu'est-ce que le framework SCORE de Ceres ?", a: "SCORE est un framework propriete Ceres pour evaluer la maturite d'un revenue engine B2B en 5 piliers : Strategie revenue, CRM et data, Operations et process, Reporting et KPIs, Equipes alignees. Chaque pilier est note de 0 a 4. Le score total sur 20 donne une lecture immediate de la maturite RevOps." },
@@ -232,10 +234,20 @@ export default function FrameworkScorePage() {
               </div></section>
               <Connector />
 
+              <TrustStrip />
+
               <section className="mb-8"><div className="rounded-2xl p-8 md:p-12 text-center" style={{ background: "linear-gradient(135deg, #FF7A59, #E8533F)" }}>
                 <h2 className="text-[24px] sm:text-[28px] font-semibold text-white tracking-[-0.02em] mb-3">Audit RevOps avec le framework SCORE</h2>
-                <p className="text-[14px] text-white/70 mb-6 max-w-[460px] mx-auto">72h d&apos;audit, notation SCORE complete sur les 5 piliers, roadmap chiffree. Forfait fixe.</p>
-                <Link href="/audit-revops" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors"><span className="w-2 h-2 rounded-sm bg-[#22C55E]" />Decouvrir l&apos;audit RevOps</Link>
+                <p className="text-[14px] text-white/70 mb-6 max-w-[460px] mx-auto">72h d&apos;audit avec notation SCORE complete sur les 5 piliers + roadmap chiffree. Ou 30 min avec Guillaume pour pre-qualifier votre besoin.</p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                  <a href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors">
+                    <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                    Reserver 30 min avec Guillaume
+                  </a>
+                  <Link href="/audit-revops" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white/10 text-white text-[13px] font-medium hover:bg-white/20 transition-colors">
+                    Voir l&apos;offre audit RevOps
+                  </Link>
+                </div>
               </div></section>
               <Connector />
 
@@ -246,6 +258,13 @@ export default function FrameworkScorePage() {
           </div>
         </div>
       </div>
+
+      <StickyBottomCTA
+        message="Notez votre revenue engine avec Guillaume Delachet"
+        ctaLabel="Reserver"
+        ctaHref="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9"
+        storageKey="framework-score"
+      />
     </div>
   );
 }

@@ -3,6 +3,8 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import Badge from "@/components/marketing/Badge";
+import TrustStrip from "@/components/marketing/TrustStrip";
+import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
   { "@type": "SoftwareApplication", name: "Calculateur Pipeline Coverage", description: "Outil gratuit pour calculer le pipeline coverage requis pour atteindre vos objectifs commerciaux. Formule + benchmark 2026.", applicationCategory: "BusinessApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" }, url: "https://ceres.agency/outils/calculateur-pipeline-coverage", publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" } },
@@ -143,11 +145,21 @@ export default function CalculateurPipelineCoveragePage() {
           </div>
         </section>
 
+        <TrustStrip />
+
         <section className="mb-8">
           <div className="rounded-2xl p-8 text-center" style={{ background: "linear-gradient(135deg, #FF7A59, #E8533F)" }}>
             <h2 className="text-[22px] font-semibold text-white tracking-[-0.02em] mb-3">Coverage insuffisant pour atteindre vos objectifs ?</h2>
-            <p className="text-[14px] text-white/70 mb-5 max-w-[460px] mx-auto">Diagnostic pipeline + plan d&apos;action en 30 min. Identification des leviers prioritaires selon votre contexte.</p>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors"><span className="w-2 h-2 rounded-sm bg-[#22C55E]" />Reserver un diagnostic</Link>
+            <p className="text-[14px] text-white/70 mb-5 max-w-[460px] mx-auto">30 minutes avec Guillaume Delachet (co-fondateur) pour diagnostiquer votre pipeline et identifier les leviers prioritaires. Sans engagement.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <a href="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white text-[#111] text-[13px] font-medium hover:bg-white/90 transition-colors">
+                <span className="w-2 h-2 rounded-sm bg-[#22C55E]" />
+                Reserver un creneau direct
+              </a>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-white/10 text-white text-[13px] font-medium hover:bg-white/20 transition-colors">
+                Ou nous ecrire
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -160,6 +172,13 @@ export default function CalculateurPipelineCoveragePage() {
           </div>
         </section>
       </div>
+
+      <StickyBottomCTA
+        message="Discuter de votre pipeline coverage avec Guillaume Delachet"
+        ctaLabel="Reserver"
+        ctaHref="https://meetings.hubspot.com/guillaume104?uuid=4a9f5cd8-627d-46b1-907c-fff636378ab9"
+        storageKey="calc-pipeline"
+      />
     </div>
   );
 }
