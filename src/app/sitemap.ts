@@ -156,6 +156,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guide-data-quality-crm/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guide-claude-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guide-claude-marketing/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/guide-mcp-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guide-mcp-revops/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // SEO pages
     { url: `${base}/agence-hubspot-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -210,7 +212,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/hubspot-vs-folk`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/hubspot-vs-axonaut`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/hubspot-vs-notion-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-vs-attio`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/hubspot-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/attio-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/salesforce-vs-attio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/salesforce-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/claude-vs-chatgpt-vs-gemini-b2b`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Guides choix prestataires
+    { url: `${base}/comment-choisir-agence-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Fiches metier
+    { url: `${base}/metier/sales-ops-manager`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/crm-manager`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/revops-director`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/cro-chief-revenue-officer`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // Claude pages
     { url: `${base}/agence-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
