@@ -92,7 +92,7 @@ export default function RevOpsDirectorPage() {
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-4"><Badge>Fiche metier</Badge><span className="text-[12px] text-[#999]">Mai 2026</span><span className="text-[12px] text-[#999]">10 min</span></div>
               <h1 className="text-[32px] sm:text-[44px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-4">RevOps Director : fiche metier 2026</h1>
-              <p className="text-[17px] text-[#666] leading-[1.7]">Le profil cle pour les scale-ups B2B en hyper-croissance. Missions, salaire, competences et evolution.</p>
+              <p className="text-[17px] text-[#666] leading-[1.7]">Le profil cle pour les scale-ups B2B en hyper-croissance. Missions, competences et evolution.</p>
             </div>
 
             <article>

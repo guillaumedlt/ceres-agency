@@ -92,7 +92,7 @@ export default function CRMManagerPage() {
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-4"><Badge>Fiche metier</Badge><span className="text-[12px] text-[#999]">Mai 2026</span><span className="text-[12px] text-[#999]">9 min</span></div>
               <h1 className="text-[32px] sm:text-[44px] font-semibold text-[#111] leading-[1.1] tracking-[-0.03em] mb-4">CRM Manager : fiche metier 2026</h1>
-              <p className="text-[17px] text-[#666] leading-[1.7]">Missions, competences, certifications, salaire et evolution. Le guide complet du metier CRM Manager en B2B en France.</p>
+              <p className="text-[17px] text-[#666] leading-[1.7]">Missions, competences, certifications et evolution. Le guide complet du metier CRM Manager en B2B en France.</p>
             </div>
 
             <article>
