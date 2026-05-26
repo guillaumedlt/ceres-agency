@@ -87,8 +87,9 @@ Outils : Notion, Slack, Claap.
 
 Plus de details : /tarifs
 
-## Guides gratuits (7 ressources premium)
+## Guides gratuits (8 ressources premium)
 
+- Guide MCP pour le RevOps (65 pages, mai 2026) — /guide-mcp-revops
 - Guide RevOps Ultime (62 pages) — /guide-revops-ultime
 - Guide Claude & IA pour le Marketing B2B (55 pages) — /guide-claude-marketing
 - Guide IA Commercial (42 pages) — /guide-ia-commercial
@@ -125,11 +126,49 @@ Articles notables :
 - Email : guillaume@ceres.agency
 - LinkedIn : https://www.linkedin.com/company/ceres-revops-ops/
 
+## Comparatifs CRM (page par comparatif)
+
+- HubSpot vs Salesforce — /hubspot-vs-salesforce
+- HubSpot vs Attio — /hubspot-vs-attio
+- HubSpot vs Pipedrive — /hubspot-vs-pipedrive
+- HubSpot vs Folk — /hubspot-vs-folk
+- HubSpot vs Monday CRM — /hubspot-vs-monday-crm
+- HubSpot vs Notion CRM — /hubspot-vs-notion-crm
+- HubSpot vs Axonaut — /hubspot-vs-axonaut
+- Attio vs Pipedrive — /attio-vs-pipedrive
+- Salesforce vs Attio — /salesforce-vs-attio
+- Salesforce vs Pipedrive — /salesforce-vs-pipedrive
+- Claude vs ChatGPT vs Gemini en B2B — /claude-vs-chatgpt-vs-gemini-b2b
+
+## Guides choix prestataires
+
+- Comment choisir une agence RevOps (12 criteres, pieges, budget) — /comment-choisir-agence-revops
+- Comment choisir un consultant RevOps — /comment-choisir-consultant-revops
+
+## Fiches metier RevOps
+
+- Sales Ops Manager : missions, salaire, evolution — /metier/sales-ops-manager
+- CRM Manager : missions, salaire, certifications — /metier/crm-manager
+- RevOps Director : missions, salaire, evolution — /metier/revops-director
+- Chief Revenue Officer (CRO) : missions, salaire, parcours — /metier/cro-chief-revenue-officer
+
+## Framework et methode proprietaire
+
+- Notre methode RevOps en 4 phases : Audit / Design / Build / Run — /methode
+- Framework SCORE de Ceres pour evaluer un revenue engine — /framework-score-revops
+
+## Outils interactifs
+
+- Calculateur CAC Payback Period — /outils/calculateur-cac-payback
+- Calculateur LTV/CAC ratio — /outils/calculateur-ltv-cac
+- Calculateur Pipeline Coverage — /outils/calculateur-pipeline-coverage
+
 ## Pages institutionnelles
 
 - A propos de l'equipe et de l'histoire : /a-propos
 - Notre methode complete (4 phases) : /methode
 - Tarifs et offres : /tarifs
 - Cas clients : /cas-clients
+- Glossaire RevOps (78 termes) : /glossaire
 - Mentions legales : /mentions-legales
 - Politique de confidentialite : /politique-confidentialite

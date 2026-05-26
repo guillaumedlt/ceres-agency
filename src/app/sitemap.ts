@@ -1,8 +1,14 @@
 import { MetadataRoute } from "next";
+import { terms as glossaryTerms } from "./glossaire/terms-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://ceres.agency";
   const now = new Date();
+  // Date buckets : evite tout-a-la-meme-seconde (deprecie par Google)
+  const recent = new Date("2026-05-26"); // pages livrees ce mois
+  const fresh = new Date("2026-04-13"); // contenu retravaille recemment
+  const stable = new Date("2026-02-15"); // pages anciennes stabilisees
+  const legal = new Date("2025-09-01"); // pages legales rarement modifiees
 
   // Blog slugs
   const blogSlugs = [
@@ -156,8 +162,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guide-data-quality-crm/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guide-claude-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/guide-claude-marketing/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/guide-mcp-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/guide-mcp-revops/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/guide-mcp-revops`, lastModified: recent, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guide-mcp-revops/contenu`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
 
     // SEO pages
     { url: `${base}/agence-hubspot-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -194,8 +200,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/externaliser-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // Methode & Fondation Data
-    { url: `${base}/methode`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/fondation-data`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/methode`, lastModified: recent, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/fondation-data`, lastModified: stable, changeFrequency: "monthly", priority: 0.9 },
 
     // Tarifs
     { url: `${base}/tarifs`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -212,21 +218,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/hubspot-vs-folk`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/hubspot-vs-axonaut`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/hubspot-vs-notion-crm`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/hubspot-vs-attio`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/hubspot-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/attio-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/salesforce-vs-attio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/salesforce-vs-pipedrive`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/hubspot-vs-attio`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/hubspot-vs-pipedrive`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/attio-vs-pipedrive`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/salesforce-vs-attio`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/salesforce-vs-pipedrive`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/claude-vs-chatgpt-vs-gemini-b2b`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // Guides choix prestataires
-    { url: `${base}/comment-choisir-agence-revops`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/comment-choisir-agence-revops`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/comment-choisir-consultant-revops`, lastModified: stable, changeFrequency: "monthly", priority: 0.8 },
 
     // Fiches metier
-    { url: `${base}/metier/sales-ops-manager`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/metier/crm-manager`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/metier/revops-director`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/metier/cro-chief-revenue-officer`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/sales-ops-manager`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/crm-manager`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/revops-director`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/metier/cro-chief-revenue-officer`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+
+    // Framework et calculateurs
+    { url: `${base}/framework-score-revops`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/outils/calculateur-cac-payback`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/outils/calculateur-ltv-cac`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/outils/calculateur-pipeline-coverage`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
 
     // Claude pages
     { url: `${base}/agence-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -238,8 +251,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/outils`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // Legal
-    { url: `${base}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${base}/politique-confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/mentions-legales`, lastModified: legal, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/politique-confidentialite`, lastModified: legal, changeFrequency: "yearly", priority: 0.3 },
 
     // Blog articles
     ...blogSlugs.map((slug) => ({
@@ -247,6 +260,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: slug.includes("hubspot-tarifs") || slug.includes("top-agences") || slug.includes("audit-revops-checklist") ? 0.8 : 0.6,
+    })),
+
+    // Glossaire (pages individuelles par terme)
+    ...glossaryTerms.map((t) => ({
+      url: `${base}/glossaire/${t.slug}`,
+      lastModified: recent,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     })),
 
     // Cas clients
