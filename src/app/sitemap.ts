@@ -118,6 +118,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "mcp-vs-zapier-vs-make-revops",
     "recruter-revops-manager-6-etapes",
     "anthropic-stainless-acquisition-revops",
+    "roi-revops-calculer-defendre-board",
+    "forecast-accuracy-35-vers-88-framework",
+    "gtm-motion-plg-sales-led-hybrid",
+    "revenue-waterfall-scale-up",
+    "erreur-1-revops-outil-avant-process",
   ];
 
   // Case study slugs
