@@ -236,16 +236,16 @@ export default function FrameworkScorePage() {
               <Connector />
 
               <LeadMagnetInline
-                title="Recevez le framework SCORE en PDF + Excel"
-                subtitle="Le framework documente sur 12 pages + la grille de notation Excel pour faire tourner l'evaluation en interne avec votre equipe."
+                title="Appliquer le framework SCORE a votre boite"
+                subtitle="On vous accompagne sur l'audit complet en 72h : interviews, observation directe du CRM, notation SCORE des 5 piliers, plan d'action priorise."
                 bullets={[
-                  "Framework SCORE complet (12 pages PDF)",
-                  "Grille Excel : 15 questions + scoring automatique",
-                  "Benchmarks par stade (Serie A, B, C, enterprise)",
-                  "Templates d'action plan par pilier",
+                  "Audit RevOps complet en 72h chrono",
+                  "Notation SCORE sur les 5 piliers + benchmarks vs nos 250+ missions",
+                  "Plan d'action chiffre sur 6 mois",
+                  "Forfait fixe, sans engagement long",
                 ]}
-                ctaLabel="Recevoir le pack SCORE"
-                sourcePage="framework-score-revops"
+                ctaLabel="Discuter de votre audit SCORE"
+                ctaHref="/contact"
                 color="#22C55E"
               />
 
