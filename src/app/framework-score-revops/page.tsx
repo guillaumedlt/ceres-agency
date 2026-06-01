@@ -6,6 +6,7 @@ import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import TrustStrip from "@/components/marketing/TrustStrip";
 import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
+import LeadMagnetInline from "@/components/marketing/LeadMagnetInline";
 
 const faqs = [
   { q: "Qu'est-ce que le framework SCORE de Ceres ?", a: "SCORE est un framework propriete Ceres pour evaluer la maturite d'un revenue engine B2B en 5 piliers : Strategie revenue, CRM et data, Operations et process, Reporting et KPIs, Equipes alignees. Chaque pilier est note de 0 a 4. Le score total sur 20 donne une lecture immediate de la maturite RevOps." },
@@ -233,6 +234,20 @@ export default function FrameworkScorePage() {
                 <div className="space-y-4">{faqs.map((f, i) => (<div key={i} className="border-l-[3px] border-[#FF7A59] pl-4"><p className="text-[13px] font-semibold text-[#111] mb-2">{f.q}</p><p className="text-[12px] text-[#555] leading-[1.7]">{f.a}</p></div>))}</div>
               </div></section>
               <Connector />
+
+              <LeadMagnetInline
+                title="Recevez le framework SCORE en PDF + Excel"
+                subtitle="Le framework documente sur 12 pages + la grille de notation Excel pour faire tourner l'evaluation en interne avec votre equipe."
+                bullets={[
+                  "Framework SCORE complet (12 pages PDF)",
+                  "Grille Excel : 15 questions + scoring automatique",
+                  "Benchmarks par stade (Serie A, B, C, enterprise)",
+                  "Templates d'action plan par pilier",
+                ]}
+                ctaLabel="Recevoir le pack SCORE"
+                sourcePage="framework-score-revops"
+                color="#22C55E"
+              />
 
               <TrustStrip />
 
