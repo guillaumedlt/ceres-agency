@@ -255,6 +255,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/outils/calculateur-cac-payback`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/outils/calculateur-ltv-cac`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/outils/calculateur-pipeline-coverage`, lastModified: recent, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/outils/quiz-maturite-revops`, lastModified: recent, changeFrequency: "monthly", priority: 0.9 },
 
     // Claude pages
     { url: `${base}/agence-claude`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
