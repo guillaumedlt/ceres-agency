@@ -6,6 +6,7 @@ import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import TrustStrip from "@/components/marketing/TrustStrip";
 import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
+import LeadMagnetInline from "@/components/marketing/LeadMagnetInline";
 
 const jsonLd = { "@context": "https://schema.org", "@graph": [
   { "@type": "SoftwareApplication", name: "Calculateur CAC Payback Period", description: "Outil gratuit pour calculer le CAC Payback Period d'un client SaaS B2B. Formule + benchmark 2026.", applicationCategory: "BusinessApplication", operatingSystem: "Web", offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" }, url: "https://ceres.agency/outils/calculateur-cac-payback", publisher: { "@type": "Organization", name: "Ceres", url: "https://ceres.agency" } },
@@ -127,6 +128,20 @@ export default function CalculateurCACPaybackPage() {
             </div>
           </div>
         </section>
+
+        <LeadMagnetInline
+          title="Recevez le rapport benchmarks CAC Payback 2026 complet"
+          subtitle="Medianes SaaS B2B France par segment (SMB / mid-market / enterprise), evolution 2024-2026, leviers concrets de reduction. PDF 14 pages."
+          bullets={[
+            "Benchmarks CAC payback par segment et par stade de funding",
+            "Top 10 leviers reduction CAC vus chez nos clients",
+            "Calculateur Excel avance avec sensibilites",
+            "Mis a jour mai 2026",
+          ]}
+          ctaLabel="Recevoir le rapport"
+          sourcePage="calculateur-cac-payback"
+          color="#FF7A59"
+        />
 
         {/* Trust strip */}
         <TrustStrip />
