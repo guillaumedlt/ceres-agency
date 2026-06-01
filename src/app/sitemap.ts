@@ -123,6 +123,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "gtm-motion-plg-sales-led-hybrid",
     "revenue-waterfall-scale-up",
     "erreur-1-revops-outil-avant-process",
+    "agentforce-vs-breeze-vs-attio-ai",
+    "revops-externalise-vs-internalise-cro",
+    "pipeline-hygiene-12-automations-crm",
+    "meddic-vs-meddpicc-vs-bant-qualification",
+    "customer-success-ops-nouvelle-frontiere",
   ];
 
   // Case study slugs
