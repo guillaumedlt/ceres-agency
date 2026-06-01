@@ -113,6 +113,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "migration-crm-sans-perdre-donnees",
     "ia-b2b-par-ou-commencer",
     "agence-ia-monaco-quanta",
+    "tutoriel-hubspot-mcp-server-setup",
+    "top-mcp-servers-revops-2026",
+    "mcp-vs-zapier-vs-make-revops",
+    "recruter-revops-manager-6-etapes",
+    "anthropic-stainless-acquisition-revops",
   ];
 
   // Case study slugs
