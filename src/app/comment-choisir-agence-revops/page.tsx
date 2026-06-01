@@ -6,6 +6,7 @@ import Badge from "@/components/marketing/Badge";
 import Connector from "@/components/marketing/Connector";
 import TrustStrip from "@/components/marketing/TrustStrip";
 import StickyBottomCTA from "@/components/marketing/StickyBottomCTA";
+import LeadMagnetInline from "@/components/marketing/LeadMagnetInline";
 
 const faqs = [
   { q: "Combien coute une agence RevOps en France en 2026 ?", a: "Trois fourchettes selon le modele. Audit RevOps : 5 a 15k EUR forfait. Implementation : 25 a 80k EUR selon scope. RevOps externalise mensualise : 4 500 a 12 000 EUR/mois selon le volume. Au-dela de 20k EUR/mois, c'est souvent surdimensionne pour une PME ou scale-up moyenne." },
@@ -184,6 +185,20 @@ export default function CommentChoisirAgenceRevOpsPage() {
                 <p className="text-[12px] text-[#999] mt-4">Au-dela de 20k EUR/mois en RevOps externalise pour une PME, posez-vous des questions sur l&apos;adequation taille-prestation.</p>
               </div></section>
               <Connector />
+
+              <LeadMagnetInline
+                title="Recevez nos 5 cas clients chiffres par email"
+                subtitle="NRR avant/apres, forecast accuracy, pipeline coverage, CAC payback. Les chiffres reels sur 5 missions Ceres representatives."
+                bullets={[
+                  "5 etudes de cas anonymisees mais chiffrees",
+                  "Avant/apres sur les 4 metriques cles RevOps",
+                  "Profils : scale-up Serie A a C, SaaS B2B et fintech",
+                  "Format PDF 8 pages, exploitable immediatement",
+                ]}
+                ctaLabel="Recevoir les cas clients"
+                sourcePage="comment-choisir-agence-revops"
+                color="#FF7A59"
+              />
 
               <section id="verdict" className="mb-8"><div className="rounded-2xl bg-[#111] p-5 md:p-8">
                 <h2 className="text-[20px] sm:text-[24px] font-semibold text-white tracking-[-0.02em] mb-5">Notre verdict</h2>
