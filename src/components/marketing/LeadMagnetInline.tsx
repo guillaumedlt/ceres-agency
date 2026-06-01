@@ -1,79 +1,29 @@
-"use client";
-
-import { useState } from "react";
+import Link from "next/link";
 
 interface LeadMagnetInlineProps {
   title: string;
   subtitle: string;
   bullets: string[];
   ctaLabel?: string;
-  successMessage?: string;
-  /** HubSpot form ID. Defaults to the contact form. */
-  formId?: string;
-  /** Additional context sent to HubSpot (which guide / which page). */
-  sourcePage?: string;
+  /** URL de destination du CTA. Defaults to /contact. */
+  ctaHref?: string;
   /** Accent color for the card. */
   color?: string;
 }
-
-const PORTAL_ID = "2703445";
-const DEFAULT_FORM_ID = "c7a632d2-943b-4245-ac61-9b00953b63e0";
 
 export default function LeadMagnetInline({
   title,
   subtitle,
   bullets,
-  ctaLabel = "Recevoir par email",
-  successMessage = "Merci ! Vous recevez le document dans les 2 minutes.",
-  formId = DEFAULT_FORM_ID,
-  sourcePage,
+  ctaLabel = "Nous contacter",
+  ctaHref = "/contact",
   color = "#FF7A59",
 }: LeadMagnetInlineProps) {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
-  const [errorMsg, setErrorMsg] = useState("");
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      setErrorMsg("Email invalide");
-      setStatus("error");
-      return;
-    }
-    setStatus("loading");
-    setErrorMsg("");
-
-    try {
-      const res = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${formId}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            fields: [
-              { name: "email", value: email },
-              ...(sourcePage
-                ? [{ name: "lead_magnet_source", value: sourcePage }]
-                : []),
-            ],
-            context: {
-              pageUri: typeof window !== "undefined" ? window.location.href : "",
-              pageName: sourcePage || (typeof document !== "undefined" ? document.title : ""),
-            },
-          }),
-        }
-      );
-
-      if (!res.ok) {
-        const text = await res.text().catch(() => "");
-        throw new Error(text || `HTTP ${res.status}`);
-      }
-      setStatus("ok");
-    } catch (err) {
-      setStatus("error");
-      setErrorMsg("Une erreur est survenue. Reessayez ou contactez-nous directement.");
-    }
-  }
+  const isExternal = ctaHref.startsWith("http");
+  const CtaTag: React.ElementType = isExternal ? "a" : Link;
+  const ctaProps = isExternal
+    ? { href: ctaHref, target: "_blank", rel: "noopener noreferrer" }
+    : { href: ctaHref };
 
   return (
     <div
@@ -131,43 +81,18 @@ export default function LeadMagnetInline({
         </ul>
       )}
 
-      <form onSubmit={handleSubmit} className="mt-5 flex flex-col sm:flex-row gap-2">
-        <input
-          type="email"
-          required
-          placeholder="Votre email professionnel"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-            if (status === "error") setStatus("idle");
-          }}
-          disabled={status === "loading" || status === "ok"}
-          className="flex-1 px-4 py-3 rounded-lg border border-[#E8E8E8] bg-white text-[14px] text-[#111] placeholder:text-[#999] focus:outline-none focus:border-[#111] disabled:opacity-60"
-          aria-label="Votre email professionnel"
-        />
-        <button
-          type="submit"
-          disabled={status === "loading" || status === "ok"}
-          className="px-5 py-3 rounded-lg text-white text-[13px] font-medium transition-opacity disabled:opacity-60 hover:opacity-90"
+      <div className="mt-6">
+        <CtaTag
+          {...ctaProps}
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-white text-[13px] font-medium transition-opacity hover:opacity-90"
           style={{ background: color }}
         >
-          {status === "loading" ? "Envoi..." : status === "ok" ? "Envoye" : ctaLabel}
-        </button>
-      </form>
-
-      {status === "ok" && (
-        <p className="mt-3 text-[12px] text-[#22C55E] font-medium flex items-center gap-1.5">
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13.3 4.3L6 11.6L2.7 8.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-          {successMessage}
-        </p>
-      )}
-      {status === "error" && (
-        <p className="mt-3 text-[12px] text-[#EF4444]">{errorMsg}</p>
-      )}
-
-      <p className="mt-3 text-[10px] text-[#999]">
-        Pas de spam. Vos donnees ne sont jamais revendues. Desinscription en 1 clic.
-      </p>
+          {ctaLabel}
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </CtaTag>
+      </div>
     </div>
   );
 }
