@@ -130,16 +130,16 @@ export default function CalculateurCACPaybackPage() {
         </section>
 
         <LeadMagnetInline
-          title="Recevez le rapport benchmarks CAC Payback 2026 complet"
-          subtitle="Medianes SaaS B2B France par segment (SMB / mid-market / enterprise), evolution 2024-2026, leviers concrets de reduction. PDF 14 pages."
+          title="Reduire votre CAC payback de 30 a 50 %"
+          subtitle="Audit RevOps de 72h : diagnostic complet de votre stack acquisition et identification des 3-5 leviers concrets de reduction du CAC sur votre contexte specifique."
           bullets={[
-            "Benchmarks CAC payback par segment et par stade de funding",
-            "Top 10 leviers reduction CAC vus chez nos clients",
-            "Calculateur Excel avance avec sensibilites",
-            "Mis a jour mai 2026",
+            "Diagnostic complet de votre stack acquisition + scoring",
+            "Benchmarks CAC payback par segment partages live",
+            "Top leviers de reduction priorises selon votre stade",
+            "Forfait fixe, livrable en 72h",
           ]}
-          ctaLabel="Recevoir le rapport"
-          sourcePage="calculateur-cac-payback"
+          ctaLabel="Discuter d'un audit"
+          ctaHref="/contact"
           color="#FF7A59"
         />
 
