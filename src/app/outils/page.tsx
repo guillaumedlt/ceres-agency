@@ -389,8 +389,21 @@ export default function OutilsPage() {
               <span className="text-[11px] text-[#999]">Calculs unit economics SaaS B2B</span>
             </div>
             <h2 className="text-[24px] md:text-[28px] font-semibold text-[#111] tracking-[-0.02em] mb-5">
-              3 calculateurs RevOps interactifs
+              Nos outils RevOps interactifs
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <Link href="/outils/quiz-maturite-revops" className="block rounded-xl border-2 border-[#FF7A59] bg-gradient-to-br from-[#FFF4EF] to-white p-5 hover:shadow-[0_8px_24px_-6px_rgba(255,122,89,0.25)] transition-all">
+                <div className="flex items-center gap-2 mb-3"><span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#FF7A59] text-white">Nouveau</span><div className="w-10 h-10 rounded-lg bg-[#FF7A59] text-white flex items-center justify-center font-bold text-[14px]">SCORE</div></div>
+                <h3 className="text-[15px] font-semibold text-[#111] mb-1.5">Quiz Maturite RevOps</h3>
+                <p className="text-[12px] text-[#777] leading-[1.6]">15 questions guidees pour evaluer votre revenue engine sur les 5 piliers SCORE. Score sur 20 + recommandations personnalisees instantanees.</p>
+              </Link>
+              <Link href="/framework-score-revops" className="block rounded-xl border border-[#F2F2F2] p-5 hover:border-[#6D00CC] hover:shadow-[0_4px_12px_-4px_rgba(109,0,204,0.15)] transition-all">
+                <div className="w-10 h-10 rounded-lg bg-[#6D00CC]/10 text-[#6D00CC] flex items-center justify-center mb-3 font-mono text-[12px] font-bold">DOC</div>
+                <h3 className="text-[15px] font-semibold text-[#111] mb-1.5">Framework SCORE complet</h3>
+                <p className="text-[12px] text-[#777] leading-[1.6]">Documentation du framework Ceres : 5 piliers, 15 questions, grille de notation 0-4. La methode derriere le quiz.</p>
+              </Link>
+            </div>
+            <p className="text-[11px] uppercase tracking-wider text-[#999] font-semibold mb-3 mt-6">Calculateurs unit economics SaaS</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link href="/outils/calculateur-cac-payback" className="block rounded-xl border border-[#F2F2F2] p-5 hover:border-[#FF7A59] hover:shadow-[0_4px_12px_-4px_rgba(255,122,89,0.15)] transition-all group">
                 <div className="w-10 h-10 rounded-lg bg-[#FF7A59]/10 text-[#FF7A59] flex items-center justify-center mb-3 font-mono text-[13px] font-bold">CAC</div>
