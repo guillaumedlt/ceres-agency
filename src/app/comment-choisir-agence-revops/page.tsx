@@ -187,16 +187,16 @@ export default function CommentChoisirAgenceRevOpsPage() {
               <Connector />
 
               <LeadMagnetInline
-                title="Recevez nos 5 cas clients chiffres par email"
-                subtitle="NRR avant/apres, forecast accuracy, pipeline coverage, CAC payback. Les chiffres reels sur 5 missions Ceres representatives."
+                title="Demandez nos 5 cas clients chiffres"
+                subtitle="NRR avant/apres, forecast accuracy, pipeline coverage, CAC payback. Les chiffres reels sur 5 missions Ceres representatives - presentes en 20 min."
                 bullets={[
                   "5 etudes de cas anonymisees mais chiffrees",
                   "Avant/apres sur les 4 metriques cles RevOps",
                   "Profils : scale-up Serie A a C, SaaS B2B et fintech",
-                  "Format PDF 8 pages, exploitable immediatement",
+                  "Discussion live, pas un PDF qui finit oublie",
                 ]}
-                ctaLabel="Recevoir les cas clients"
-                sourcePage="comment-choisir-agence-revops"
+                ctaLabel="Demander un creneau de 20 min"
+                ctaHref="/contact"
                 color="#FF7A59"
               />
 
