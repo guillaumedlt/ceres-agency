@@ -45,6 +45,7 @@ const guideCovers: Record<string, { gradient: string; title: string }> = {
   "guide-data-quality-crm": { gradient: "linear-gradient(135deg, #22C55E 0%, #16A34A 50%, #15803D 100%)", title: "Data" },
   "guide-claude-marketing": { gradient: "linear-gradient(135deg, #D4A27F 0%, #B8956A 50%, #8B7355 100%)", title: "Claude" },
   "guide-mcp-revops": { gradient: "linear-gradient(135deg, #0EA5E9 0%, #6366F1 50%, #4338CA 100%)", title: "MCP" },
+  "guide-hubspot-ultime": { gradient: "linear-gradient(135deg, #FF7A59 0%, #FF5733 50%, #C0392B 100%)", title: "HubSpot" },
 };
 
 function MiniBookCover({ slug, size = 40 }: { slug: string; size?: number }) {
@@ -72,6 +73,48 @@ const categories = [
 ];
 
 const guides: Guide[] = [
+  {
+    slug: "guide-hubspot-ultime",
+    title: "Le Guide HubSpot Ultime 2026",
+    subtitle: "80 pages pour tout maitriser : Hubs, Breeze AI, MCP, integrations",
+    description: "Le guide HubSpot le plus complet en francais. Choisir la bonne edition, setup proprement, Marketing/Sales/Service Hub avancees, Breeze AI, HubSpot MCP server (GA avril 2026), reporting, integrations, migration et plan 90 jours. 12 chapitres denses, 30+ templates, retour d'experience sur +60 implementations HubSpot.",
+    category: "crm",
+    pages: 80,
+    format: "PDF + Templates + Workflows",
+    color: "#FF7A59",
+    icon: "HS",
+    landingUrl: "/guide-hubspot-ultime",
+    featured: true,
+    chapters: [
+      "HubSpot en 2026 : l'etat de l'art (Breeze, MCP, AI Agents)",
+      "Choisir le bon Hub et la bonne edition (Starter / Pro / Enterprise)",
+      "Setup initial : properties, pipelines, equipe, RGPD",
+      "Lead routing et lead scoring (fit + engagement + AI)",
+      "Marketing Hub : campaigns, workflows, listes, ABM",
+      "Sales Hub : sequences, playbooks, prevision, forecast",
+      "Service Hub : tickets, SLA, Help Desk, Knowledge Base",
+      "Breeze AI : agents, copilot, prospecting, content remix",
+      "HubSpot MCP server : 12 cas d'usage RevOps avec prompts",
+      "Reporting : single object, custom, attribution, revenue",
+      "Integrations : Salesforce, Slack, Linear, Stripe, Zapier, Make",
+      "Migration vers HubSpot + plan 90 jours d'adoption",
+    ],
+    includes: [
+      "80 pages a jour mai 2026 (Breeze AI, MCP GA, nouvelles editions)",
+      "30+ templates : workflows, sequences, scoring, dashboards",
+      "12 prompts MCP pour Claude / ChatGPT connectes a HubSpot",
+      "Checklist d'audit HubSpot 50 points",
+      "Plan d'adoption 90 jours par persona (Sales, Marketing, Ops)",
+      "Comparatif Hubs et editions (matrice de decision)",
+      "Bonus : grille de scoring fit+engagement (Sheets)",
+    ],
+    forWho: [
+      "Founders et CRO qui evaluent ou redeploient HubSpot",
+      "RevOps Managers et HubSpot admins qui veulent industrialiser",
+      "Marketing / Sales / CS Ops qui exploitent un Hub specifique",
+      "Equipes qui migrent vers HubSpot ou changent d'edition",
+    ],
+  },
   {
     slug: "guide-mcp-revops",
     title: "Le Guide MCP pour le RevOps",
