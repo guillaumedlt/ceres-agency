@@ -179,6 +179,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guide-claude-marketing/contenu`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guide-mcp-revops`, lastModified: recent, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/guide-mcp-revops/contenu`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/guide-hubspot-ultime`, lastModified: recent, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guide-hubspot-ultime/contenu`, lastModified: recent, changeFrequency: "monthly", priority: 0.8 },
 
     // SEO pages
     { url: `${base}/agence-hubspot-paris`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
