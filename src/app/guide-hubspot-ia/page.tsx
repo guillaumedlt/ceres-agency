@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import Script from "next/script";
+import { useEffect } from "react";
 import Badge from "@/components/marketing/Badge";
 
 const ACCENT = "#FF7A59"; // HubSpot orange
@@ -75,11 +77,33 @@ const clients = [
 ];
 
 export default function GuideHubspotIaPage() {
+  useEffect(() => {
+    const w = window as any;
+    function createForm() {
+      if (w.hbspt) {
+        w.hbspt.forms.create({
+          region: "eu1",
+          portalId: "26299837",
+          formId: "461a976f-66db-4946-9e3f-883c83d4a084",
+          target: "#hubspot-form-guide-hubspot-ia",
+        });
+      }
+    }
+    if (w.hbspt) {
+      createForm();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
+    script.charset = "utf-8";
+    script.async = true;
+    script.onload = createForm;
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <>
-      <Script id="ld-guide-hubspot-ia" type="application/ld+json" strategy="afterInteractive">
-        {JSON.stringify(jsonLd)}
-      </Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="relative pt-[80px] md:pt-[100px] pb-16 overflow-x-hidden">
         <div className="hidden lg:block absolute pointer-events-none" style={{ left: "3%", top: "8%", width: 320, height: 320, borderRadius: "50%", background: ACCENT, opacity: 0.16, filter: "blur(70px)" }} />
@@ -263,23 +287,6 @@ export default function GuideHubspotIaPage() {
                 </div>
                 <div>
                   <div id="hubspot-form-guide-hubspot-ia" />
-                  <Script
-                    id="hubspot-form-script-guide-hubspot-ia"
-                    src="//js-eu1.hsforms.net/forms/embed/v2.js"
-                    strategy="afterInteractive"
-                    onLoad={() => {
-                      // @ts-ignore
-                      if (typeof window !== "undefined" && (window as any).hbspt) {
-                        // @ts-ignore
-                        (window as any).hbspt.forms.create({
-                          region: "eu1",
-                          portalId: "26299837",
-                          formId: "461a976f-66db-4946-9e3f-883c83d4a084",
-                          target: "#hubspot-form-guide-hubspot-ia",
-                        });
-                      }
-                    }}
-                  />
                 </div>
               </div>
             </div>
