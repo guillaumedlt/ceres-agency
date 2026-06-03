@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Script from "next/script";
 import { useEffect, useState } from "react";
 
 const ACCENT = "#FF7A59";
@@ -132,9 +131,7 @@ export default function GuideHubspotIaContenuPage() {
 
   return (
     <>
-      <Script id="ld-article-hubspot-ia" type="application/ld+json" strategy="afterInteractive">
-        {JSON.stringify(articleJsonLd)}
-      </Script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       {/* Progress bar */}
       <div className="fixed top-0 left-0 right-0 h-[2px] z-50 bg-transparent">
