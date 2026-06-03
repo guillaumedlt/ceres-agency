@@ -46,6 +46,7 @@ const guideCovers: Record<string, { gradient: string; title: string }> = {
   "guide-claude-marketing": { gradient: "linear-gradient(135deg, #D4A27F 0%, #B8956A 50%, #8B7355 100%)", title: "Claude" },
   "guide-mcp-revops": { gradient: "linear-gradient(135deg, #0EA5E9 0%, #6366F1 50%, #4338CA 100%)", title: "MCP" },
   "guide-hubspot-ultime": { gradient: "linear-gradient(135deg, #FF7A59 0%, #FF5733 50%, #C0392B 100%)", title: "HubSpot" },
+  "guide-hubspot-ia": { gradient: "linear-gradient(135deg, #FF7A59 0%, #FF5733 35%, #B83280 65%, #6D00CC 100%)", title: "HubSpot+IA" },
 };
 
 function MiniBookCover({ slug, size = 40 }: { slug: string; size?: number }) {
@@ -73,6 +74,48 @@ const categories = [
 ];
 
 const guides: Guide[] = [
+  {
+    slug: "guide-hubspot-ia",
+    title: "Le Guide HubSpot + IA 2026",
+    subtitle: "Breeze, Claude, MCP, agents autonomes",
+    description: "Le guide le plus complet en francais sur HubSpot a l'ere de l'IA agentique. Breeze AI (20+ agents, Studio, Marketplace), HubSpot MCP server, integration Claude / ChatGPT, Smart Deal Progression, AEO HubSpot, Audit Cards, outcome-based pricing. 15 cas d'usage avec prompts et plan 90 jours d'adoption. A jour juin 2026 (Spring Spotlight 2026 inclus).",
+    category: "ia",
+    pages: 75,
+    format: "PDF + Prompts + Sheets",
+    color: "#FF7A59",
+    icon: "AI",
+    landingUrl: "/guide-hubspot-ia",
+    featured: true,
+    chapters: [
+      "L'etat de HubSpot et de l'IA en juin 2026",
+      "Breeze AI vs Claude vs ChatGPT vs Gemini : la stack hybride",
+      "Breeze Assistant : le copilot HubSpot au quotidien",
+      "Les 20+ Breeze Agents : panorama complet",
+      "Customer Agent : -39% de temps de resolution",
+      "Prospecting Agent : SDR autonome a $1 par lead",
+      "Content Agent + Loop Marketing : content remix",
+      "Breeze Studio + Marketplace : votre agent custom",
+      "HubSpot MCP server : Claude/ChatGPT branches",
+      "15 cas d'usage Claude + HubSpot avec prompts",
+      "Spring 2026 : AEO, Smart Deal Progression, Audit Cards",
+      "Gouvernance, securite, ROI + plan 90 jours",
+    ],
+    includes: [
+      "75 pages a jour juin 2026 (Spring Spotlight 2026 inclus)",
+      "15 prompts Claude prets a coller (meeting prep, deal review, ICP, dashboard, forecast)",
+      "Matrice de decision Breeze vs Claude vs ChatGPT pour 12 cas d'usage",
+      "Checklist setup Customer Agent en 12 etapes",
+      "Calculateur ROI agent par agent (Sheets)",
+      "Plan 30/60/90 jours d'adoption par persona (Sales, Marketing, CS, Ops)",
+      "Bonus : 12 questions a poser a votre CSM HubSpot avant d'activer un agent",
+    ],
+    forWho: [
+      "RevOps Managers qui arbitrent la stack IA + HubSpot",
+      "Marketing/Sales/CS Ops qui deploient Breeze au quotidien",
+      "Founders et CRO scale-ups qui investissent IA + HubSpot",
+      "Equipes utilisatrices finales des agents et de Breeze Assistant",
+    ],
+  },
   {
     slug: "guide-hubspot-ultime",
     title: "Le Guide HubSpot Ultime 2026",
