@@ -82,9 +82,9 @@ export default function GuideHubspotIaPage() {
     function createForm() {
       if (w.hbspt) {
         w.hbspt.forms.create({
-          region: "eu1",
-          portalId: "26299837",
-          formId: "461a976f-66db-4946-9e3f-883c83d4a084",
+          region: "na1",
+          portalId: "2703445",
+          formId: "401f2967-9b95-4a6e-b816-a5b11024eb2a",
           target: "#hubspot-form-guide-hubspot-ia",
         });
       }
@@ -94,7 +94,7 @@ export default function GuideHubspotIaPage() {
       return;
     }
     const script = document.createElement("script");
-    script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
+    script.src = "//js.hsforms.net/forms/embed/v2.js";
     script.charset = "utf-8";
     script.async = true;
     script.onload = createForm;
